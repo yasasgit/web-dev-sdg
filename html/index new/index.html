@@ -37,14 +37,20 @@
 	<link href="https://testhtml/zh/" hreflang="zh" rel="alternate">
 	<link href="https://testhtml/news/rss" rel="alternate" title="Foster+Partners" type="application/rss+xml">
 	<link href="https://testhtml/manifest.json?v=2.3.0.2676" rel="manifest">
-	<!--
+
 	<link href="data/css.css" rel="stylesheet">
 	<link href="data/main.css" rel="stylesheet" type="text/css">
-	<script async src="data/hotjar-623806.js">
-	</script>
-	-->
+
 </head>
 <body>
+	<script src="data/modernizr.min.js">
+	</script>
+	<script src="data/libs.js">
+	</script>
+	<script src="data/main.js">
+	</script>
+	<script async src="data/hotjar-623806.js">
+	</script>
 	<script type="text/javascript">
 	   (function(doc) {
 	     if (/webkit/i.test(navigator.appVersion)) {
@@ -60,6 +66,19 @@
 	     }
 	   })(document);
 	</script>
+	<script>
+										 var fpLocale = "en";
+	</script>
+	<script>
+									 (function(h,o,t,j,a,r){
+										 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+										 h._hjSettings={hjid:623806,hjsv:5};
+										 a=o.getElementsByTagName('head')[0];
+										 r=o.createElement('script');r.async=1;
+										 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+										 a.appendChild(r);
+									 })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
 	<div class="fp-sprite-svg">
 		<svg xmlns="http://www.w3.org/2000/svg">
 		<symbol id="source--logo" viewbox="0 0 188 16">
@@ -72,7 +91,6 @@
 		<h1 class="fp-header__logo"><a class="component fp-logo" data-component-name="logo" href="index.html"><span class="fp-logo__text">LOGO</span> <svg class="fp-svg-icon fp-svg-logo" style="fill: rgb(255, 255, 255);">
 		<use href="#source--logo" xlink:href="#source--logo"></use></svg></a></h1>
 		<div class="component fp-header-search fp-hs-header" data-component-name="header-search" data-is-navigation="false" style="left: 50%;">
-			<button class="fp-hs-toggle" type="button">Search</button>
 			<div class="fp-hs-search-wrapper" style="opacity: 0; width: 0px;">
 				<div class="fp-hs-search-content">
 					<form action="https://testhtml/search" class="fp-hs-form">
@@ -87,18 +105,6 @@
 			<div class="fp-nav-list-mask"></div>
 			<div class="fp-nav-list-wrap">
 				<ul class="fp-nav-list" style="height: auto;">
-					<li class="fp-nav-list-item fp-nav-list-search">
-						<div class="component fp-header-search fp-hs-navigation" data-component-name="header-search" data-is-navigation="true">
-							<button class="fp-hs-toggle" type="button">Search</button>
-							<div class="fp-hs-search-wrapper" style="opacity: 0; width: 16px;">
-								<div class="fp-hs-search-content">
-									<form action="https://testhtml/search" class="fp-hs-form">
-										<label class="fp-hs-label" for="fp-search-term-navigation">Search Foster + Partners</label> <input autocomplete="off" class="fp-hs-term" data-original-value="" id="fp-search-term-navigation" placeholder="Search Foster + Partners" tabindex="-1" type="search"> <input class="fp-hs-submit" tabindex="-1" type="submit" value="Search"> <input class="fp-hs-search-clear" type="reset" value="Clear">
-									</form>
-								</div>
-							</div>
-						</div>
-					</li>
 					<li class="fp-nav-list-item" style="">
 						<a class="no-auto-detection fp-nav-link" href="studio.html" target="" title="About">About</a>
 					</li>
@@ -128,7 +134,7 @@
 	<div id="container-fluid">
 		<div class="page">
 			<div class="fp-carousel-overlay"></div>
-			<div class="component fp-carousel" data-component-name="carousel" data-video-urls="https://player.vimeo.com/external/538563644.hd.mp4?s=7b7e9579cdbc1d2bbe90da9c9878fa7bb9006ad5&amp;amp;profile_id=175&amp;amp;download=1,https://player.vimeo.com/external/530328605.hd.mp4?s=120f0aa1fe0fd6494b252e0337d18e6a049a0767&amp;amp;profile_id=175,https://player.vimeo.com/external/522085736.hd.mp4?s=52263ab0c0ded5ca6e2553de7bc1a0f4b5701b9c&amp;amp;profile_id=175,https://player.vimeo.com/external/513947937.hd.mp4?s=f5c8c976f14898889c7d99b4ed1ce287c8f21e78&amp;amp;profile_id=175,https://player.vimeo.com/external/478085167.hd.mp4?s=667f3fbb5448db7d7a3534d39cb894eddf5c375b&amp;amp;profile_id=175" data-video-urls-low="https://player.vimeo.com/external/538563644.hd.mp4?s=7b7e9579cdbc1d2bbe90da9c9878fa7bb9006ad5&amp;amp;profile_id=174&amp;amp;download=1,https://player.vimeo.com/external/530328605.hd.mp4?s=120f0aa1fe0fd6494b252e0337d18e6a049a0767&amp;amp;profile_id=174,https://player.vimeo.com/external/522085736.hd.mp4?s=52263ab0c0ded5ca6e2553de7bc1a0f4b5701b9c&amp;amp;profile_id=174,https://player.vimeo.com/external/513947937.hd.mp4?s=f5c8c976f14898889c7d99b4ed1ce287c8f21e78&amp;amp;profile_id=174,https://player.vimeo.com/external/478085167.hd.mp4?s=667f3fbb5448db7d7a3534d39cb894eddf5c375b&amp;amp;profile_id=174">
+			<div class="component fp-carousel" data-component-name="carousel" data-video-urls="" data-video-urls-low="">
 				<div class="fp-slide-container slick-initialized slick-slider slick-dotted is-horizontal" style="margin-left: 2em">
 					<div aria-live="polite" class="slick-list draggable">
 						<div class="slick-track" role="listbox" style="opacity: 1; width: 13160px; transform: translate3d(-1880px, 0px, 0px);">
@@ -166,34 +172,34 @@
 				</div>
 				<div class="fp-slide-labels">
 					<ul class="fp-slide-labels__titles" style="height: 247px;">
-						<li aria-hidden="false" id="home-title-slide0" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-							<figure class="fp-relative fp-hp-figure fp-news">
-								<cite class="fp-hp-figure__title">19 April 2021</cite>
-								<h3 class="fp-hp-figure__body">RCC Headquarters – the practice’s first office building in Russia opens</h3>
-							</figure>
-						</li>
 						<li aria-hidden="true" class="is-transparent" id="home-title-slide1" style="opacity: 0; transform: translate(150%, 0%) matrix(1, 0, 0, 1, 0, 0);">
 							<figure class="fp-relative fp-hp-figure fp-news">
 								<cite class="fp-hp-figure__title">29 March 2021</cite>
 								<h3 class="fp-hp-figure__body">Towards Artificial Intelligence in Architecture</h3>
 							</figure>
 						</li>
+						<li aria-hidden="false" id="home-title-slide0" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+							<figure class="fp-relative fp-hp-figure fp-news">
+								<cite class="fp-hp-figure__title">1111</cite>
+								<h3 class="fp-hp-figure__body">1st Slide</h3>
+							</figure>
+						</li>
 						<li id="home-title-slide2">
 							<figure class="fp-relative fp-hp-figure fp-news">
-								<cite class="fp-hp-figure__title">11 March 2021</cite>
-								<h3 class="fp-hp-figure__body">House of Wisdom in Sharjah welcomes its first visitors</h3>
+								<cite class="fp-hp-figure__title">2222</cite>
+								<h3 class="fp-hp-figure__body">2nd Slide</h3>
 							</figure>
 						</li>
 						<li id="home-title-slide3">
 							<figure class="fp-relative fp-hp-figure fp-news">
-								<cite class="fp-hp-figure__title">11 February 2021</cite>
-								<h3 class="fp-hp-figure__body">Designs for Shurayrah Island in the Red Sea revealed</h3>
+								<cite class="fp-hp-figure__title">3333</cite>
+								<h3 class="fp-hp-figure__body">3rd Slide</h3>
 							</figure>
 						</li>
 						<li id="home-title-slide4">
 							<figure class="fp-relative fp-hp-figure fp-news">
-								<cite class="fp-hp-figure__title">11 November 2020</cite>
-								<h3 class="fp-hp-figure__body">Foster + Partners collaborates with Boston Dynamics to monitor construction progress with Spot</h3>
+								<cite class="fp-hp-figure__title">4444</cite>
+								<h3 class="fp-hp-figure__body">4th Slide</h3>
 							</figure>
 						</li>
 					</ul>
@@ -250,23 +256,8 @@
 			<div class="fp-homepage-overlay component" data-component-name="homepage-overlay" style="opacity: 0; z-index: -10;"></div>
 		</div>
 	</div>
-	<div class="component fp-cookie-bar" data-component-name="cookie-bar">
-		<div class="fm-cookie-copy">
-			<p>This website uses cookies. By continuing to use this website, you agree to the use of cookies. More info <a data-id="28255" href="https://testhtml/privacy-notice/" title="Privacy policy">here</a></p>
-		</div><button class="fp-button fp-button-icon fp-cookie-close icon-close-cookie" type="button"><span class="icon__i"></span></button>
-	</div>
-	<script>
-	                   var fpLocale = "en";
-	</script>
+
 	<div data-locale="en_GB" id="fb-root"></div>
-	<!--
-	<script src="data/modernizr.min.js">
-	</script>
-	<script src="data/libs.js">
-	</script>
-	<script src="data/main.js">
-	</script>
-	-->
 	<div class="fp-instant-search" style="left: 929px; opacity: 0; display: none;">
 		<div class="fp-is-container">
 			<p class="fp-is-title">Recommended searches</p>
@@ -307,15 +298,5 @@
 		</div>
 	</div>
 	<div class="autocomplete-suggestions" style="position: absolute; max-height: 300px;"></div>
-	<script>
-	                 (function(h,o,t,j,a,r){
-	                   h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-	                   h._hjSettings={hjid:623806,hjsv:5};
-	                   a=o.getElementsByTagName('head')[0];
-	                   r=o.createElement('script');r.async=1;
-	                   r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-	                   a.appendChild(r);
-	                 })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
 </body>
 </html>
