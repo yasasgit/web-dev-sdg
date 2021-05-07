@@ -1,0 +1,39 @@
+*{margin: 0;}
+li{float: right;
+list-style-type: none;
+}
+
+ul{background-color: white;
+    overflow: hidden;
+}
+
+a{text-decoration: none;
+display: block;
+margin: 35px;
+color: black;}
+
+.pp{width: 100%; height: 100px;}
+
+.ppp{width: 60%; height: 100px;
+float: right;}
+
+.t{width:40% ; height: 100px;
+float: left;}
+
+.kk{margin:0;}
+
+h3{padding: 20px;}
+
+.full{width: 100%;
+height: 100%;}
+
+.sec{width: 50%;height: 300px;
+background-color: red;
+
+float: left;}
+
+.seb{width: 50%;height: 300px;
+    background-color: rgb(47, 0, 255);
+float: right;
+
+}
