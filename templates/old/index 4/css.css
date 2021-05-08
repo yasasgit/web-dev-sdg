@@ -20,17 +20,14 @@ float: left;}
 .nav2{width: 80%; height: 100%;
 float: right;}
 
-.logo{width: 50%;
+.logo{width: 100;
 height: 100%;
 display: inline;
 background-size: cover;}
 
 .e{padding: 0;}
 
-/*.bot{background-image: url("hh.jpg");
-width: 100%;height: 900px;
-background-size: cover;
-}*/
+
 
 footer{width: 100%; height: 60px;
 background-color:white;}
@@ -38,10 +35,12 @@ background-color:white;}
 body{background-image: url("hh.jpg");
 background-repeat: no-repeat;
 background-size: contain;
+object-fit: cover;
+width: 100%;height: 100%;
 }
 
 .nav:hover {background:black;
-color: black;}
+/*color: black;*/}
 
 a:hover{color:blanchedalmond;}
 
