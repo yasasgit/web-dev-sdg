@@ -1,0 +1,13 @@
+.fp-navigation .fp-nav-list-wrap {
+	display: inline-block;
+	font-size: 0;
+	position: absolute;
+	top: 100px;
+	right: -100%;
+	text-align: right
+}
+.fp-navigation .fp-nav-list-wrap {
+  padding-right: 30px;
+  right: 0;
+  top: 32px
+}
