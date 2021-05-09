@@ -13,10 +13,12 @@ div.tabs a{
   text-decoration: none;
   font-size: 17px;
 }
-nav{
-
+div.gradient{
   background-color: black;
   background-image: linear-gradient(to bottom,black, white);
+}
+nav{
+  bac
   overflow: hidden;
 }
 nav a.active {
