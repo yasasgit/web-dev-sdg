@@ -1,0 +1,42 @@
+*{margin: 0%;
+    font-family: "Open Sans";}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../media/OpenSans.ttf');
+}
+
+.nav-div{width: 100%; height: 80px;}
+
+.nav-div-logo{width:40% ; height: 50px;
+    float: left;}
+
+.nav-div-ancor{margin:0;
+        padding-top: 0;}  
+
+.nav-div-tab{width: 60%; height: 80px;
+            float: right;}   
+
+.nav-ul{background-color: white;
+                overflow: hidden;
+        }
+
+ .nav-li{float: right;
+    list-style-type: none;
+ overflow: hidden;
+            }  
+            
+            
+.nav{text-decoration: none;
+                display: block;
+                padding: 25px;
+                color: black;}   
+  
+.div-goals-invest-about{width: 100%; height: 200px;
+background-color: rgb(95, 95, 189);}                
+
+.div-goals-invest{width: 80%; height: 800px;
+border: 1px solid black;
+margin-left: 35px;}
+
+.goals-details{color: brown;}
