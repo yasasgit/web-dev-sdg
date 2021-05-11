@@ -1,4 +1,10 @@
-*{margin: 0;}
+*{margin: 0;
+    font-family: "Open Sans";}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../media/OpenSans.ttf');
+}
 .nav-li{float: right;
 list-style-type: none;
 overflow: hidden;
