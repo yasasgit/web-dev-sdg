@@ -1,4 +1,9 @@
 *{margin: 0;
+    font-family: "Open Sans";}
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('../media/OpenSans.ttf');
     }
 
 .nav-div{width: 100%; height: 80px;}
