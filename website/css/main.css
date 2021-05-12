@@ -21,7 +21,6 @@ ul {
 	top:0;
 	width: 100%;
 	background-image: url("../media/gradient.png");
-
 }
 .nav-li-a{
 		float: right;
@@ -46,10 +45,13 @@ nav a{
 	display:block;
 }
 nav :hover {
-	color: grey;
 	background-color: black;
-	background: black;
-	transition: 0.4s;
+	color: grey;
+	transition: .3s;
+}
+nav ul :hover{
+	background-color: black;
+		transition: 1.5s;
 }
 .news {
 	width: 100%;
@@ -85,6 +87,7 @@ footer {
 /*
 li a :hover :not(.active) {
   background-color: black;
+	bold
 }
 .active {
   background-color: green;
