@@ -9,7 +9,7 @@
 li{float: right;
 list-style-type: none;}
 
-a{text-decoration: none;
+.nav-li-a{text-decoration: none;
 display: block;
 padding: 20px;
 
@@ -28,10 +28,20 @@ float: left;}
 .nav2{width: 80%; height: 100%;
 float: right;}
 
-.logo{width: 50%;
-height: 100%;
+.logo{
+    display: block;
+    max-width:230px;
+    max-height:85px;
+    width: auto;
+    height: auto;
+}
+
+
+
+/*.logo{width: 50%;
+height: 80%;
 display: inline;
-background-size: cover;}
+background-size: cover;}*/
 
 .e{padding: 0;}
 
