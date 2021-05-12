@@ -1,0 +1,10 @@
+Title
+First Name
+Last Name
+Address
+company name
+email verify
+industry
+type of investor 
+investement stage
+investment amount
