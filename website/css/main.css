@@ -1,20 +1,17 @@
 * {
 	margin: 0;
 	padding: 0;
+	border: 0;
+}
+body{
 	font-family: "Open Sans";
-
+	text-align:center; 
 }
 @font-face {
 	font-family: 'Open Sans';
 	src: url('../media/OpenSans.ttf');
 }
-body {
-	background-image: url("../media/home-back01.jpg");
-  background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	background-position: center;
-}
+
 ul {
 	list-style-type: none;
 	overflow: hidden;
@@ -22,6 +19,7 @@ ul {
 	top:0;
 	width: 100%;
 	background-image: url("../media/gradient.png");
+	z-index: 999;
 }
 .nav-li-a{
 		float: right;
@@ -40,7 +38,6 @@ ul {
 }
 nav a{
 	text-decoration: none;
-	text-align: center;
 	padding: 29px 12px;
 	color: white;
 	display:block;
@@ -55,7 +52,14 @@ nav :hover {
 }
 nav ul :hover{
 	background-color: black;
-		transition: 1.5s;
+		transition: 2s;
+}
+body {
+	background-image: url("../media/home-back01.jpg");
+  background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	background-position: center;
 }
 .news {
 	width: 100%;

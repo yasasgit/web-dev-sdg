@@ -17,7 +17,8 @@ body{
 	position: fixed;
 	top:0;
 	width: 100%;
-	background-color: #f2eee4;
+	background-color: white;
+
 }
 .nav-li-a{
 		float: right;
@@ -36,6 +37,7 @@ body{
 }
 nav a{
 	text-decoration: none;
+	text-align: center;
 	padding: 29px 12px;
 	color: black;
 	display:block;
@@ -43,31 +45,32 @@ nav a{
 	justify-content: center;
 	align-items: center;
 }
+/*
 nav :hover {
-	background-color: white;
-	color: #736747;
+	background-color: black;
+	color: grey;
 	transition: .3s;
 }
 nav ul :hover{
-	background-color: white;
-		transition: 2s;
-}
-.inno-div {
-	width: 80%;
-	height: 280px;
 	background-color: black;
+		transition: 2s;
+	}
+
+.div-goals-invest-about {
+	width: 100%;
+	height: 200px;
+	background-color: rgb(95, 95, 189);
 }
-.inno-div-image {
-	width: 30%;
-	height: 280px;
-	background-color: red;
-	float: left;
+.div-goals-invest {
+	width: 80%;
+	height: 1000px;
+	border: 1px solid black;
+	margin-left: 140px;
 }
-h2, p {
-	color: white;
-	float: left;
+.goals-details {
+	color: brown;
 }
-h3 {
-	float: right;
-	margin: 10px;
+.goals-details, .ACTION-list {
+	margin-top: 10px;
+	font-weight: 600;
 }
