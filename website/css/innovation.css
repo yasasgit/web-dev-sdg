@@ -69,8 +69,11 @@ nav ul :hover{
 	height: 280px;
 	background-color: rgb(61, 21, 124);
 	background-image: url('../media/vega-car.jpg');
-	background-image: cover;
-	float: left;}
+	float: left;
+	background-size: cover;
+	display: flex;
+   }
+	
 
 h2, p {
 	color: white;
