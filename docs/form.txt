@@ -1,10 +1,10 @@
-Title
-First Name
-Last Name
-Address
-company name
-email verify
-industry
-type of investor 
-investement stage
-investment amount
+Title type=text
+First Name type=text
+Last Name type=text
+Address type=text
+company name type=text
+email verify type=text
+industry type=select(select option tham haduwe naha danata option 1 2 3 wage hadapan)
+type of investor type="checkbox"
+investement stage type="checkbox"
+investment amount type="checkbox"
