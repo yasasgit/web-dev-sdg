@@ -54,11 +54,14 @@ nav ul :hover{
 	background-color: black;
 		transition: 2s;
 }
-body {
+header {
 	background-image: url("../media/home-back01.jpg");
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 960px;
   background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
 	background-position: center;
 }
 .news {
