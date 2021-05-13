@@ -63,6 +63,15 @@ nav ul :hover{
 	background-color: red;
 	float: left;
 }
+
+.inno-div-image1 {
+	width: 30%;
+	height: 280px;
+	background-color: rgb(61, 21, 124);
+	background-image: url('../media/vega-car.jpg');
+	background-image: cover;
+	float: left;}
+
 h2, p {
 	color: white;
 	float: left;
