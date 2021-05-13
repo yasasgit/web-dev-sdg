@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans";
+
 }
 @font-face {
 	font-family: 'Open Sans';
@@ -21,7 +22,6 @@ ul {
 	top:0;
 	width: 100%;
 	background-image: url("../media/gradient.png");
-
 }
 .nav-li-a{
 		float: right;
@@ -41,15 +41,21 @@ ul {
 nav a{
 	text-decoration: none;
 	text-align: center;
-	padding: 27px 18px 14px 18px;
+	padding: 29px 12px;
 	color: white;
 	display:block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 nav :hover {
-	color: grey;
 	background-color: black;
-	background: black;
-	transition: 0.4s;
+	color: grey;
+	transition: .3s;
+}
+nav ul :hover{
+	background-color: black;
+		transition: 1.5s;
 }
 .news {
 	width: 100%;
@@ -85,6 +91,7 @@ footer {
 /*
 li a :hover :not(.active) {
   background-color: black;
+	bold
 }
 .active {
   background-color: green;
