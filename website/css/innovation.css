@@ -109,17 +109,13 @@ background-size: cover;
 .item3{width: 100%;height: 250px;
 border-radius: 20px;
 border: 2px solid #00000046;
-<<<<<<< HEAD
 background-image: url('../media/diyazen.jpg');
-=======
-background-image: url('../media/Genesis-bike.jpg');
->>>>>>> a62cd840cb453c985702a3884077a1b256de4dfc
 background-size: cover;
 }
 .item4{width: 100%;height: 250px;	
 border-radius: 20px;
 border: 2px solid #00000046;
-background-image: url('../media/Diyazen-01.jpg');
+background-image: url('../media/vega-car.jpg');
 background-size: cover;
 }
 .item5{width: 100%;height: 250px;	
