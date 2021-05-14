@@ -5,6 +5,7 @@
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+<div class="gradient"></div>
 	<nav>
 			<ul class="nav">
 				<li class="logo-li">
@@ -30,18 +31,18 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="gradient"></div>
+
 		<header>
 			<div class="Slides">
 				<img src="media/slide1.jpg" style="width:100%">
 				<div class="text">Caption Text</div>
 			  </div>
-			
+
 			  <div class="Slides">
 				<img src="media/slide2.jpg" style="width:100%">
 				<div class="text">Caption Two</div>
 			  </div>
-			
+
 			  <div class="Slides">
 				<img src="media/slide3.jpg" style="width:100%">
 				<div class="text">Caption Three</div>
@@ -56,7 +57,6 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
               </div>
 		</header>
-		<br>
 		     <!-- Next and previous buttons -->
 		     <div style="text-align:center">
 			    <span class="dot" onclick="currentSlide(1)"></span>
@@ -67,17 +67,17 @@
 		   <script>
 		     var slideIndex = 1;
 			 showSlides(slideIndex);
-			
+
 			 // Next/previous controls
 			 function plusSlides(n) {
 			  showSlides(slideIndex += n);
 			}
-			
+
 			// Thumbnail image controls
 			function currentSlide(n) {
 			  showSlides(slideIndex = n);
 			}
-			
+
 			function showSlides(n) {
 			  var i;
 			  var slides = document.getElementsByClassName("mySlides");
@@ -94,8 +94,6 @@
 			  dots[slideIndex-1].className += " active";
 			}
 			</script>
-		
-<br>
 	<div class="news">
 		<span class="news">news+update</span> <a class="tttttt" href="#"></a>
 		<div class="news1">
