@@ -127,13 +127,13 @@ background-size: cover;
 .item6{width: 100%;height: 250px;	
 border-radius: 20px;
 border: 2px solid #00000046;
-background-image: url('../media/vega-car.jpg');
+background-image: url('../media/low\ cost\ ventilator.jpg');
 background-size: cover;
 }
 .item7{width: 100%;height: 250px;	
 border-radius: 20px;
 border: 2px solid #00000046;
-background-image: url('../media/vega-car.jpg');
+background-image: url('../media/weeder.jpg');
 background-size: cover;
 }
 .item8{width: 100%;height: 250px;	
@@ -173,6 +173,30 @@ background-size: cover;
 	font-weight: bold;
 }
 .div-list-innvo-05{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: transparent;
+	font-weight: bold;
+}
+.div-list-innvo-06{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: transparent;
+	font-weight: bold;
+}
+.div-list-innvo-07{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: transparent;
+	font-weight: bold;
+}
+.div-list-innvo-08{
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: transparent;
+	font-weight: bold;
+}
+.div-list-innvo-09{
 	color: #ffffff;
 	text-decoration: none;
 	text-shadow: transparent;
