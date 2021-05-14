@@ -79,6 +79,7 @@ background-color: blue;
 
 .div-for-innvo-list{width: 100%;height: 320px;
 background-color: red;
+
 }
 
 .div-for-innvo-list-r1{width: 30%;height: 250px;
@@ -87,19 +88,25 @@ float: right;
 box-sizing: border-box;
 margin-top: 2%;
 background-image: url('../media/vega-car.jpg');
-background-size: cover;}
+background-size: cover;
+
+}
 
 .div-for-innvo-list-r2{width: 30%;height: 250px;
 	background-color: rgb(231, 219, 219);
 	float: right;
 	box-sizing: border-box;
-margin-top: 2%;}
+margin-top: 2%;
+
+}
 
 	.div-for-innvo-list-r3{width: 30%;height: 250px;
 		background-color: rgb(68, 28, 28);
 		float: right;
 		box-sizing: border-box;
-		margin-top: 2%;}	
+		margin-top: 2%;
+		
+		}	
 
 .div-for-innvo-list2{width: 100%;height: 320px;
 	background-color: rgb(51, 161, 36);}	
