@@ -52,12 +52,12 @@ nav a{
 }
 nav :hover {
 	background-color: rgba(0, 0, 0, 0.315);
-	color: grey;
+	color: rgb(180, 180, 180);
 	transition: .3s;
 }
 nav ul :hover{
-	background-color: rgba(0, 0, 0, 0.781);
-		transition: 2s;
+	background-color: rgba(0, 0, 0, 0.301);
+		transition: 1s;
 }
 header {
 	top: 0px;
