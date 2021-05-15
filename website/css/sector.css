@@ -5,7 +5,7 @@
 }
 body{
 	font-family: "Open Sans";
-	text-align:center; 
+	text-align:center;
 }
 @font-face {
 	font-family: 'Open Sans';
@@ -27,11 +27,11 @@ body{
 		float: left;
 }
 .logo-li a{
-	padding: 0px 12px;
+	padding: 5px 12px;
 }
 .logo {
 	max-width: 79px;
-	max-height: 80px;
+	max-height: 70px;
 	width: auto;
 	height: auto;
 }
