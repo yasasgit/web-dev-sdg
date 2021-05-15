@@ -62,8 +62,8 @@ nav ul :hover{
 header {
 	background-color: yellow;
 	top: 0px;
-	width: 100%;
-	height: 960px;
+	width:  100%; /* For 100% screen width */
+	height: 100vh; /* For 100% screen height */
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -73,7 +73,7 @@ header {
 	display: none;
 }
 .prev, .next {
-	cursor: pointer;
+	cursor:pointer;
 	position: absolute;
 	top: 50%;
 	width: auto;
@@ -97,12 +97,7 @@ header {
 	background-color: rgba(0,0,0,0.8);
   }
   .text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
+	color: black;
 	text-align: center;
   }
   .dot {
@@ -134,33 +129,22 @@ header {
 	from {opacity: .4}
 	to {opacity: 1}
   }
-.news {
+.news-grid {
+	display: grid;
 	width: 100%;
-	height: 550px;
-	background-color: rgb(255, 255, 255);
-	margin-top: 1100px;
+	height: 40px;
+	background-color: red;
 }
-.news1 {
-	width: 30%;
-	height: 400px;
-	background-color: rgb(15, 23, 128);
-	float: right;
-	margin: 20px;
-	margin-top: 50px;
-	margin-right: 35px;
+.news1 ,.news2,.news3{
+	width: 20%;
+	height: 40px;
+	background-color: green;
 }
-.news {
-	font-size: 20;
-	text-align: center;
-	padding-top: 25px;
-}
-.div-in-news1 {
-	width: 100%;
-	height: 40%;
-	background-color: blanchedalmond;
-	margin-top: 240px;
+.news1 a{
 }
 footer {
+	position: fixed;
+  bottom: 0;
 	width: 100%;
 	height: 60px;
 	background-color: gray;
@@ -173,15 +157,4 @@ li a :hover :not(.active) {
 }
 .active {
   background-color: green;
-}
-.logo{
-width: 50%;
-height: 80%;
-display: inline;
-background-size: cover;}
-
-.bot{
-background-image: url("hh.jpg");
-width: 100%;height: 900px;
-background-size: cover;
 }
