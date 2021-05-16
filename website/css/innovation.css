@@ -17,7 +17,7 @@ body{
 	position: fixed;
 	top:0;
 	width: 100%;
-	background-color: #6a856a;
+	background-color: #5F6D70;
 }
 .nav-li-a{
 		float: right;
@@ -44,12 +44,12 @@ nav a{
 	align-items: center;
 }
 nav :hover {
-	background-color: white;
-	color: #736747;
+	background-color:#475153;
+	color: #000000;
 	transition: .3s;
 }
 nav ul :hover{
-	background-color: white;
+	background-color: #5F6D70;
 		transition: 2s;
 }
 
@@ -58,7 +58,7 @@ nav ul :hover{
 .div-head{width: 100%; height: 160px;
 background-color: #5F6D70;}
 
-.div-image-invester{width: 100%; height: 650px;
+.div-image-invester{width: 100%; height: 750px;
 background-image:url('../media/vega-car\ main.jpg');
 background-attachment: fixed;
 background-size: cover;}
