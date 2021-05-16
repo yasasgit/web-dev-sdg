@@ -92,113 +92,115 @@ background-color: blue;
 	padding: 5%;
 
 }
+.grid-container div{
+	height: 30px;
+	position: static;
+	background-color: rgba(0, 0, 0, 0.144);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
 
 .item1{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
-background-color: rosybrown;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/vega-car.jpg');
 background-size: cover;
 }
+.item1 :hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(180, 180, 180);
+	transition: .5s;
+}
 .item2{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/F1.jpg');
 background-size: cover;
 }
 .item3{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/Genesis-Ark01.jpg');
 background-size: cover;
 }
 .item4{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/diyazen01.jpg');
 background-size: cover;
 }
 .item5{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/Respirone\ Nano\ AV99.jpg');
 background-size: cover;
 }
 .item6{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/low\ cost\ ventilator.jpg');
 background-size: cover;
 }
 .item7{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/weeder.jpg');
 background-size: cover;
 }
 .item8{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/Hand\ made\ \(Japan\ Jabara\).jpg');
 background-size: cover;
 }
 .item9{width: 100%;height: 250px;
-border-radius: 20px;
-border: 2px solid #00000046;
+border-radius: 15px;
+text-decoration: none;
 background-image: url('../media/remote\ controlled\ smart\ appliance.jpg');
 background-size: cover;
 }
 .div-list-innvo-01{
 	color: #ffffff;
-	text-decoration: none;
 	font-weight: bold;
 
 }
 .div-list-innvo-02{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-03{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-04{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-05{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-06{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-07{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-08{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
 .div-list-innvo-09{
 	color: #ffffff;
-	text-decoration: none;
 	text-shadow: transparent;
 	font-weight: bold;
 }
