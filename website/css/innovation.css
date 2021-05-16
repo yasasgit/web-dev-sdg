@@ -46,11 +46,11 @@ nav a{
 nav :hover {
 	background-color:#475153;
 	color: #000000;
-	transition: .3s;
+	transition: .5s;
 }
 nav ul :hover{
 	background-color: #5F6D70;
-		transition: 2s;
+		transition: .9s;
 }
 
 .nav-div-inno{width: 100%;}

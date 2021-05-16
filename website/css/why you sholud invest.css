@@ -47,11 +47,11 @@ nav a{
 nav :hover {
 	background-color: white;
 	color: #736747;
-	transition: .3s;
+	transition: .5s;
 }
 nav ul :hover{
 	background-color: white;
-		transition: 2s;
+		transition: .9s;
 }
 .div-goals-invest-about {
 	position: relative;
