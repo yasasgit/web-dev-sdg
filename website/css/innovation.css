@@ -67,16 +67,19 @@ background-image:url('../media/vega-car\ main.jpg');
 background-attachment: fixed;
 background-size: cover;}
 
-.div-mid-about-inno{width: 100%;height: 600px;
+.div-mid-about-inno{
+	width: 100%;
+	height: 50vh;
 background-color: #5F6D70;}
 
-.div-inside-mid-about{width: 80%; height: 30vh;
+.div-inside-mid-about{
+	width: 80%;
+	height: 30vh;
 border: 1px solid black;
 margin-top: 30px;}
 
 .main-div-for-innvo-list{
 	width: 100%;
-	height: 1000px;
 }
 
 .div-for-innvo-name{width: 100%; height: 90px;

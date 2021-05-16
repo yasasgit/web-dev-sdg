@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	  	box-sizing: border-box;
 }
 body{
 	font-family: "Open Sans";
@@ -206,9 +207,21 @@ footer {
 	position:static;
   bottom: 0;
 	width: 100%;
-	height: 60px;
-	background-color: gray;
+	background-color: #24252a;
+	padding: 110px 0 0 0;
+	display: block;
 }
+.container {
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+.row {
+margin-left: -15px;
+margin-right: -15px;
+}
+
 
 /*
 li a :hover :not(.active) {
