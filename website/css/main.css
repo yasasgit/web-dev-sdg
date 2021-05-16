@@ -71,6 +71,10 @@ header {
 {
 	display: none;
 }
+.Slides img{
+	width: 100%;
+
+}
 .prev, .next {
 	cursor:pointer;
 	position: absolute;
@@ -95,15 +99,21 @@ header {
   .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);
   }
-  .text {
-width: 25%;
-height: 100vh;
-	background-color: rgba(0, 0, 0, 0.315);
+.textbox {
+    width: 100%;
+	background-image: linear-gradient(-2deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
 	color: rgb(255, 255, 255);
-		position: absolute;
+	position: absolute;
 	right: 0;
 	background-repeat: repeat-x;
-	top: 80px;
+	bottom: 0;
+	height:100vh;
+  }
+  .text {
+	position: absolute;
+	bottom: 5%;
+	right: 1%;
+	font-size: 18px;
   }
   .dot {
 	cursor: pointer;
