@@ -89,10 +89,19 @@ h3{
 	justify-content: center;
 	align-items: center;
 }
-.fffffffff{width: 100px; height: 100px;
+.fff{width: 100px; height: 100px;
 background-color: black;
-color: white;
+color: red;
+position: absolute;
+top: 81px;
 }
+body{background-image: url("../media/team-sri-lanka-arena-2.jpg");
+height: 100vh;
+width: 100vh;
+background-size:cover ;
+}
+
+
 
 
 /*
