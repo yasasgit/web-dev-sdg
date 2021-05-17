@@ -42,6 +42,20 @@
 <br>
 Link - http://sri.ciifad.cornell.edu/countries/srilanka/ariyatneweeder.html <br></p></div>
 <br><br>
-			<a href="#" class="are-you">Are you interested in investing to this?</a>
+<script>
+	function showmail()
+	{
+		var txt=confirm("Do you want to contact innovator?");
+		if (txt == true) 
+			{
+			   window.location.href = "mailto:mail@example.org";
+			 }
+		 else {
+		  alert("thank you");
+		  }
+		  }
+
+</script>
+	<button class="are-you" onclick="showmail();">Are you interested in investing to this?</button>
         </div>
 </body>  
