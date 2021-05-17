@@ -17,7 +17,7 @@ body{
 	position: fixed;
 	top:0;
 	width: 100%;
-	background-color: #727272;
+	background-color: #5F6D70;
 }
 .nav-li-a{
 		float: right;
@@ -59,12 +59,18 @@ nav ul :hover{
     background-size: cover;}
 
 .div-mid-about-inno{width: 100%;height: 600px;
-    background-color: #727272;}
+    background-color: #5F6D70;}
 h2 ,p{
 	color: white;
 }
 
-.are-you{color: white;
-text-decoration: none;
 
-}
+.are-you{background-color:rgba(0, 0, 0, 0.15);
+width: 30vh; height: 5vh;
+border-radius: 20px;
+color: white;
+ }
+
+.are-you:hover{background-color: rgba(255, 255, 255, 0.13);}
+
+/*#736747;*/
