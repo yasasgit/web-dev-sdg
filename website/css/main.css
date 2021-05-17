@@ -5,6 +5,9 @@
 	box-sizing: border-box;
 }
 body{
+	background-size: cover;
+	background-image: url("../media/hutha.jpg");
+	background-attachment: fixed;
 	font-family: "Open Sans";
 	text-align:center;
 }
@@ -62,12 +65,14 @@ nav ul :hover{
 	transition: .6s;
 }
 header {
+	background-color: rgba(255, 255, 255, 0);
 	top: 0px;
 	width:  100%; /* For 100% screen width */
 	height: 100vh; /* For 100% screen height */
 }
 .Slides
 {
+	background-color: rgba(255, 255, 255, 0);
 	display: none;
 	height: 100vh;
 	overflow: hidden;
@@ -76,6 +81,7 @@ header {
 	align-items: center;
 }
 .Slides img{
+	
 	flex-shrink:0;
 	max-width: 100%;
 }
@@ -104,6 +110,7 @@ header {
 	background-color: rgba(0,0,0,0.8);
   }
 .textbox {
+	background-color: rgba(255, 255, 255, 0);
   width: 100%;
 	background-image: url("../media/gradient-invert.png");
 	position: absolute;
