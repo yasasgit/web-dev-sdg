@@ -56,15 +56,27 @@ nav ul :hover{
 .nav-div-inno{width: 100%;}
 
 .div-head{
+	border-top: 1px solid rgb(149, 178, 182) ;
+	position: absolute;
+	top: 80px;
 	width: 100%;
-	height: 15vh;
+	height: 10vh;
 background-color: #5F6D70;
 
+}
+.description{
+	line-height: 100%;
+	font-weight: lighter;
+	font-size: 12px;
+	position: absolute;
+	left: 1.5vh;
+	bottom: 2vh;
+	color: rgba(255, 255, 255, 0.671);
 }
 
 .div-image-invester{
 	width: 100%;
-	height: 70vh;
+	height: 88vh;
 background-image:url('../media/vega-car\ main.jpg');
 background-attachment: fixed;
 background-size: cover;}
@@ -215,6 +227,7 @@ background-size: cover;
 	text-shadow: transparent;
 	font-weight: bold;
 }
+
 
 
 
