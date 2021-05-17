@@ -51,9 +51,17 @@
 
 		<br><br>
 		<script>
-			function showmail(){
-				alert("vega@gmail.com");
-			}
+			function showmail()
+			{
+				var txt=confirm("Do you want to contact innovator?");
+				if (txt == true) 
+                    {
+                       window.location.href = "mailto:mail@example.org";
+                     }
+                 else {
+                  alert("thank you");
+                  }
+			      }
 		
 		</script>
 			<button class="are-you" onclick="showmail();">Are you interested in investing to this?</button>
