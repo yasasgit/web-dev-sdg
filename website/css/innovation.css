@@ -50,19 +50,18 @@ nav :hover {
 }
 nav ul :hover{
 	background-color: #5F6D70;
-		transition: .9s;
+	transition: .9s;
 }
-
-.nav-div-inno{width: 100%;}
-
+.nav-div-inno{
+	width: 100%;
+}
 .div-head{
 	border-top: 1px solid rgb(149, 178, 182) ;
 	position: absolute;
 	top: 80px;
 	width: 100%;
 	height: 10vh;
-background-color: #5F6D70;
-
+	background-color: #5F6D70;
 }
 .description{
 	line-height: 100%;
@@ -73,25 +72,24 @@ background-color: #5F6D70;
 	bottom: 2vh;
 	color: rgba(255, 255, 255, 0.671);
 }
-
 .div-image-invester{
 	width: 100%;
 	height: 88vh;
-background-image:url('../media/vega-car\ main.jpg');
-background-attachment: fixed;
-background-size: cover;}
-
+	background-image:url('../media/vega-car\ main.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
 .div-mid-about-inno{
 	width: 100%;
 	height: 50vh;
-background-color: #5F6D70;}
-
+	background-color: #5F6D70;
+}
 .div-inside-mid-about{
 	width: 80%;
 	height: 30vh;
-border: 1px solid black;
-margin-top: 30px;}
-
+	border: 1px solid black;
+	margin-top: 30px;
+}
 .main-div-for-innvo-list{
 	width: 100%;
 }
@@ -108,7 +106,6 @@ margin-top: 30px;}
 .item5 { grid-area: 2 / 2 / 3 / 3; }
 .item6 { grid-area: 2 / 3 / 3 / 4; }
 
-
 .grid-container{
 	display: grid;
 	grid-auto-columns: 30%;
@@ -116,17 +113,9 @@ margin-top: 30px;}
 	background-color: #ffffff;
 	padding: 5%;
 }
-
 .grid-container a{
 	text-decoration: none;
 }
-/* .grid-container{
-	height: 30px;
-	position: static;
-	background-color: rgba(0, 0, 0, 0.144);
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
- }*/
 [class*="item"] {
 	height: 250px;
 	border-radius:  10px;
@@ -135,14 +124,13 @@ margin-top: 30px;}
 a div{
 	width: 100%;
 	height: 100%;
-	color: #ffffff;
-	text-shadow: transparent;
 	font-weight: bold;
+	color: white;
 }
 [class*="item"] :hover {
-	background-color: rgba(255, 255, 255, 0.123);
-	color: rgb(180, 180, 180);
-	transition: .5s;
+	background-color: rgba(255, 255, 255, .5);
+	color: black;
+	transition: .8s;
 }
 .item1{
 	background-image: url('../media/vega-car.jpg');
@@ -171,3 +159,8 @@ a div{
 .item9{
 	background-image: url('../media/remote-controlled-smart-appliance.jpg');
 }
+/* .grid-container{
+	background-color: rgba(0, 0, 0, 0.144);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+ }
