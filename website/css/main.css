@@ -4,6 +4,12 @@
 	border: 0;
 	box-sizing: border-box;
 }
+@media only screen and (orientation: portrait) {
+	/* Mobile Phone View */
+  body {
+    
+  }
+}
 body{
 	background-size: cover;
 	background-image: url("../media/hutha.jpg");
@@ -81,7 +87,6 @@ header {
 	align-items: center;
 }
 .Slides img{
-	
 	flex-shrink:0;
 	max-width: 100%;
 }
@@ -156,7 +161,7 @@ header {
 	to {opacity: 1}
   }
 .back{
-	
+
 	background-size: cover;
 	background-image: url("../media/hutha.jpg");
 	background-attachment: fixed;
