@@ -130,6 +130,12 @@ background-color: blue;
 	text-decoration: none;
 	background-size: cover;
 }
+[class*="item"] :hover {
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0.123);
+	color: rgb(180, 180, 180);
+	transition: .5s;
+}
 .item1{
 	background-image: url('../media/vega-car.jpg');
 }
@@ -157,54 +163,9 @@ background-color: blue;
 .item9{
 	background-image: url('../media/remote-controlled-smart-appliance.jpg');
 }
-[class*="item"] :hover {
-	height: 250px;
-	background-color: rgba(255, 255, 255, 0.123);
-	color: rgb(180, 180, 180);
-	transition: .5s;
-}
-.div-list-innvo-01{
-	width: 100%;height: 100%;
-	color: #ffffff;
-	font-weight: bold;
-
-}/*
-.div-list-innvo-02{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-03{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-04{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-05{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-06{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-07{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-08{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-09{
+[class*="div-list-innvo-"]{
+	width: 100%;
+	height: 100%;
 	color: #ffffff;
 	text-shadow: transparent;
 	font-weight: bold;
