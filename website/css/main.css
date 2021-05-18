@@ -2,8 +2,12 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 body{
+	background-size: cover;
+	background-image: url("../media/hutha.jpg");
+	background-attachment: fixed;
 	font-family: "Open Sans";
 	text-align:center;
 }
@@ -13,7 +17,6 @@ body{
 }
 .gradient{
 	background-image: url("../media/gradient.png");
-	background-repeat: repeat-x;
 	height:204px;
 	width: 100%;
 	position: fixed;
@@ -44,7 +47,7 @@ body{
 nav a{
 	text-decoration: none;
 	padding: 29px 12px;
-	color: white;
+	color: rgb(206, 206, 206);
 	display:block;
 	display: flex;
 	justify-content: center;
@@ -56,25 +59,36 @@ nav :hover {
 	transition: .5s;
 }
 nav ul :hover{
-	background-color: rgba(0, 0, 0, 0.301);
-		transition: .9s;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	transition: .6s;
 }
 header {
+	background-color: rgba(255, 255, 255, 0);
 	top: 0px;
 	width:  100%; /* For 100% screen width */
 	height: 100vh; /* For 100% screen height */
-  background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 }
 .Slides
 {
+	background-color: rgba(255, 255, 255, 0);
 	display: none;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Slides img{
+	
+	flex-shrink:0;
+	max-width: 100%;
 }
 .prev, .next {
 	cursor:pointer;
 	position: absolute;
-	top: 45%;
+	top: 50vh;
 	width: auto;
 	margin-top: -22px;
 	padding: 16px;
@@ -95,15 +109,20 @@ header {
   .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);
   }
+.textbox {
+	background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+	background-image: url("../media/gradient-invert.png");
+	position: absolute;
+	bottom: 0;
+	height:204px;
+  }
   .text {
-width: 25%;
-height: 100vh;
-	background-color: rgba(0, 0, 0, 0.315);
+	text-align: right;
 	color: rgb(255, 255, 255);
-		position: absolute;
-	right: 0;
-	background-repeat: repeat-x;
-	top: 80px;
+	position: absolute;
+	bottom: 3vh;
+	right: 1vw;
   }
   .dot {
 	cursor: pointer;
@@ -116,9 +135,9 @@ height: 100vh;
 	transition: background-color 0.6s ease;
   }
   .dots{
-	left: 48%;
+	left: 48vw;
 	position: absolute;
-	top: 94%;
+	bottom: 1vh;
   }
   .active, .dot:hover {
 	  height: 11px;
@@ -136,10 +155,20 @@ height: 100vh;
 	from {opacity: .4}
 	to {opacity: 1}
   }
-.news{
-	font-size: 150%;
-	padding-top: 10%;
+.back{
+	
+	background-size: cover;
+	background-image: url("../media/hutha.jpg");
+	background-attachment: fixed;
+	opacity: unset;
 
+}
+.news{
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.24));
+	background-color: #ffffff3d;
+	color: white;
+	font-size: 150%;
+	padding-top: 8vh;
 }
 
 .news1 { grid-area: 1 / 1 / 2 / 2; }
@@ -147,59 +176,60 @@ height: 100vh;
 .news3 { grid-area: 1 / 3 / 2 / 4; }
 
 .news-grid{
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(255, 255, 255, 0));
+	background-color: #ffffff3d;
 	text-decoration: none;
-	color: white;
+	color: rgb(255, 255, 255);
 	display: grid;
 	grid-auto-columns: 32%;
 	grid-gap: 2%;
-	background-color: #ffffff;
 	padding: 1%;
-	padding-top: 5%;
-	padding-bottom: 10%;
+	padding-top: 8vh;
+	padding-bottom: 15vh;
 }
 
-.news1{width: 100%;height: 250px;
-	border-radius: 10px;
-	border: 2px solid #00000046;
-	background-color: rosybrown;
+.news1{
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+	border: 1px solid #c2c2c2;
 	background-image: url('../media/vega-car.jpg');
 	background-size: cover;
 	}
-.news2{width: 100%;height: 250px;
-	border-radius: 20px;
-	border: 2px solid #00000046;
+.news2{
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+	border: 1px solid #c2c2c2;
 	background-image: url('../media/F1.jpg');
 	background-size: cover;
 	}
-.news3{width: 100%;height: 250px;
-	border-radius: 20px;
-	border: 2px solid #00000046;
+.news3{
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+	border: 1px solid #c2c2c2;
 	background-image: url('../media/f1car-01.jpg');
 	background-size: cover;
 	}
-
-/*
-.news-grid {
-	display: grid;
-	width: 100%;
-	height: 40px;
-	background-color: red;
-}
-.news1 ,.news2,.news3{
-	width: 20%;
-	height: 40px;
-	background-color: green;
-}
-.news1 a{
-}*/
 footer {
 	position:static;
   bottom: 0;
 	width: 100%;
-	height: 60px;
-	background-color: gray;
+	background-color: #24252a;
+	padding: 110px 0 0 0;
+	display: block;
 }
-
+.container {
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+.row {
+margin-left: -15px;
+margin-right: -15px;
+}
 /*
 li a :hover :not(.active) {
   background-color: black;

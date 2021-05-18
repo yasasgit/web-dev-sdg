@@ -3,6 +3,7 @@
 <head>
 	<title>innovation</title>
 	<link href="../css/inno4.css" rel="stylesheet">
+	<link rel="icon" href="../media/gov-logo.png"  sizes="16x16">
 </head>
 <body>
 	
@@ -44,6 +45,20 @@
                   disability, gender reassignment, marriage and civil partnership,
                  race, religion or belief, sex and sexual orientation.</p></div>
 				 <br><br>
-			<a href="#" class="are-you">Are you interested in investing to this?</a>
+				 <script>
+					function showmail()
+					{
+						var txt=confirm("Do you want to contact innovator?");
+						if (txt == true) 
+							{
+							   window.location.href = "mailto:mail@example.org";
+							 }
+						 else {
+						  alert("thank you");
+						  }
+						  }
+				
+				</script>
+					<button class="are-you" onclick="showmail();">Are you interested in investing to this?</button>
         </div></center>
 </body>  

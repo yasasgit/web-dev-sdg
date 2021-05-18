@@ -49,11 +49,11 @@ nav a{
 nav :hover {
 	background-color: black;
 	color: grey;
-	transition: .3s;
+	transition: .5s;
 }
 nav ul :hover{
 	background-color: black;
-		transition: 2s;
+		transition: .9s;
 	}
 
 .div-goals-invest-about {

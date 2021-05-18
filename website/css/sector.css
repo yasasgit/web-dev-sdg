@@ -47,48 +47,29 @@ nav a{
 nav :hover {
 	background-color: white;
 	color: #736747;
-	transition: .3s;
+	transition: .5s;
 }
 nav ul :hover{
 	background-color: white;
-		transition: 2s;
+		transition: .9s;
 }
-h3{
-	padding: 20px;
+
+
+.fff{width: 100px; height: 100px;
+background-color: black;
+color: red;
+position: absolute;
+top: 81px;
 }
-.main-3-sector{
-	position: relative;
-	left: 25%;
-	top: 15px;
-	width: 640px;
-	overflow: hidden;
+body{background-image: url("../media/team-sri-lanka-arena-2.jpg");
+height: 100vh;
+width: 100vh;
+background-size:cover ;
 }
-.sec1{
-	width: 100%;
-	height: 320px;
-	background-image: url('../media/sector-agriculture.png');
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.sec2{
-	width: 100%;
-	height: 320px;
-  background-color: rgb(47, 0, 255);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.sec3{
-	width: 100%;
-	height: 320px;
-  background-image: url('../media/sector-service.jpg');
-  background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
+
+
+
 /*
 background:linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
 #container {
