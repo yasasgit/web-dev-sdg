@@ -50,19 +50,18 @@ nav :hover {
 }
 nav ul :hover{
 	background-color: #5F6D70;
-		transition: .9s;
+	transition: .9s;
 }
-
-.nav-div-inno{width: 100%;}
-
+.nav-div-inno{
+	width: 100%;
+}
 .div-head{
 	border-top: 1px solid rgb(149, 178, 182) ;
 	position: absolute;
 	top: 80px;
 	width: 100%;
 	height: 10vh;
-background-color: #5F6D70;
-
+	background-color: #5F6D70;
 }
 .description{
 	line-height: 100%;
@@ -73,31 +72,32 @@ background-color: #5F6D70;
 	bottom: 2vh;
 	color: rgba(255, 255, 255, 0.671);
 }
-
 .div-image-invester{
 	width: 100%;
 	height: 88vh;
-background-image:url('../media/vega-car\ main.jpg');
-background-attachment: fixed;
-background-size: cover;}
-
+	background-image:url('../media/vega-car\ main.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
 .div-mid-about-inno{
 	width: 100%;
 	height: 50vh;
-background-color: #5F6D70;}
-
+	background-color: #5F6D70;
+}
 .div-inside-mid-about{
 	width: 80%;
 	height: 30vh;
-border: 1px solid black;
-margin-top: 30px;}
-
+	border: 1px solid black;
+	margin-top: 30px;
+}
 .main-div-for-innvo-list{
 	width: 100%;
 }
 
-.div-for-innvo-name{width: 100%; height: 90px;
-background-color: blue;
+.div-for-innvo-name{
+	width: 100%;
+	height: 90px;
+	background-color: blue;
 }
 .item1 { grid-area: 1 / 1 / 2 / 2; }
 .item2 { grid-area: 1 / 2 / 2 / 3; }
@@ -106,132 +106,61 @@ background-color: blue;
 .item5 { grid-area: 2 / 2 / 3 / 3; }
 .item6 { grid-area: 2 / 3 / 3 / 4; }
 
-
 .grid-container{
 	display: grid;
 	grid-auto-columns: 30%;
 	grid-gap: 5%;
 	background-color: #ffffff;
 	padding: 5%;
-
 }
-.grid-container div{
-	height: 30px;
-	position: static;
+.grid-container a{
+	text-decoration: none;
+}
+[class*="item"] {
+	height: 250px;
+	border-radius:  10px;
+	background-size: cover;
+}
+a div{
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	color: white;
+}
+[class*="item"] :hover {
+	background-color: rgba(255, 255, 255, .5);
+	color: black;
+	transition: .8s;
+}
+.item1{
+	background-image: url('../media/vega-car.jpg');
+}
+.item2{
+	background-image: url('../media/F1.jpg');
+}
+.item3{
+	background-image: url('../media/Genesis-Ark01.jpg');
+}
+.item4{
+	background-image: url('../media/diyazen01.jpg');
+}
+.item5{
+	background-image: url('../media/Respirone-Nano-AV99.jpg');
+}
+.item6{
+	background-image: url('../media/low-cost-ventilator.jpg');
+}
+.item7{
+	background-image: url('../media/weeder.jpg');
+}
+.item8{
+	background-image: url('../media/Hand-made-Japan-Jabara.jpg');
+}
+.item9{
+	background-image: url('../media/remote-controlled-smart-appliance.jpg');
+}
+/* .grid-container{
 	background-color: rgba(0, 0, 0, 0.144);
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-}
-
-.item1{width: 100%;height: 100%;
-	color: white;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/vega-car.jpg');
-background-size: cover;
-}
-.item1 :hover {
-	height: 250px;
-	background-color: rgba(255, 255, 255, 0.123);
-	color: rgb(180, 180, 180);
-	transition: .5s;
-}
-
-.item2{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/F1.jpg');
-background-size: cover;
-}
-.item3{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/Genesis-Ark01.jpg');
-background-size: cover;
-}
-.item4{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/diyazen01.jpg');
-background-size: cover;
-}
-.item5{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/Respirone\ Nano\ AV99.jpg');
-background-size: cover;
-}
-.item6{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/low\ cost\ ventilator.jpg');
-background-size: cover;
-}
-.item7{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/weeder.jpg');
-background-size: cover;
-}
-.item8{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/Hand\ made\ \(Japan\ Jabara\).jpg');
-background-size: cover;
-}
-.item9{width: 100%;height: 250px;
-border-radius: 15px;
-text-decoration: none;
-background-image: url('../media/remote\ controlled\ smart\ appliance.jpg');
-background-size: cover;
-}
-.div-list-innvo-01{
-	width: 100%;height: 100%;
-	color: #ffffff;
-	font-weight: bold;
-
-}/*
-.div-list-innvo-02{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-03{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-04{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-05{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-06{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-07{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-08{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-.div-list-innvo-09{
-	color: #ffffff;
-	text-shadow: transparent;
-	font-weight: bold;
-}
-
-
-
-
+ }
