@@ -216,53 +216,54 @@ a div{
 	transition: .8s;
 }
 .row1{
-	width: 100%;
 	height: 30vh;
 	background-color: #5f6d70;
 }
-
-.col1{
-	width: 25%;
-	height: 30vh;
-	border: 1px solid #4b5456;
-	float:right}
-.col2{
-	width: 25%;
-	height: 30vh;
-	border: 1px solid #4b5456;
-	float:right}
-.col3{
-	width: 25%;
-	height: 30vh;
-	border: 1px solid #4b5456;
-	float:right}
-.col4{
-	width: 25%;
-	height: 30vh;
-	border: 1px solid #4b5456;
-	float:right
-}
-/* [class*="col"]{
-	width: 25%;height: 450px;
-	float:right;
-	color: black;
-	transition: .8s;
-}
-.container {
-margin-right: auto;
-margin-left: auto;
-padding-left: 15px;
-padding-right: 15px;
-}*/
-
 .row2 {
+	height: 5vh;
 	background-color: #5f6d70;
+}
+[class*="col"]{
+	width: 25%;
+	height: 30vh;
+	border: 1px solid #4b5456;
+	float:right;
 }
 /*
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 li a :hover :not(.active) {
   background-color: black;
 	bold
 }
 .active {
   background-color: green;
+}
+.col1{
+	width: 25%;
+	height: 30vh;
+	border: 1px solid #4b5456;
+	float:right;
+}
+.col2{
+	width: 25%;
+	height: 30vh;
+	border: 1px solid #4b5456;
+	float:right;
+}
+.col3{
+	width: 25%;
+	height: 30vh;
+	border: 1px solid #4b5456;
+	float:right;
+}
+.col4{
+	width: 25%;
+	height: 30vh;
+	border: 1px solid #4b5456;
+	float:right;
 }
