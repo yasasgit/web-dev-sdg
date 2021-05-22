@@ -67,6 +67,27 @@ width: 100vh;
 background-size:cover ;
 }
 
+.div-for-stat{width: 50%; height: 100px;
+margin-top: 500px;
+/* border: 1px solid black; */
+margin-left: 700px;}
+
+
+.but01{cursor: pointer;
+width: 100px; height: 30px;
+margin: 20px;
+border-radius: 15px;}
+
+.but02{cursor: pointer;
+	width: 100px; height: 30px;
+	margin: 20px;
+border-radius: 15px;}
+
+	.but03{cursor: pointer;
+		width: 100px; height: 30px;
+		margin: 20px;
+		border-radius: 15px;}
+
 
 
 
