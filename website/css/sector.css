@@ -1,95 +1,27 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
 body{
-	font-family: "Open Sans";
-	text-align:center;
+	background-image: url("../media/slide2.jpg");
+	background-position: center;
+	background-size: cover;
 }
-@font-face {
-	font-family: 'Open Sans';
-	src: url('../media/OpenSans.ttf');
-}
-.nav  {
-	list-style-type: none;
-	overflow: hidden;
-	position: fixed;
-	top:0;
+.eco-main{
+ height: 100vh;
+	top: 0;
 	width: 100%;
-	background-color: #f2eee4;
-	z-index: 999;
 }
-.nav-li-a{
-		float: right;
+.div-for-stat{
+	top: 50vh;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	/* border: 1px solid black; */
 }
-.logo-li {
-		float: left;
-}
-.logo-li a{
-	padding: 5px 12px;
-}
-.logo {
-	max-width: 79px;
-	max-height: 70px;
-	width: auto;
-	height: auto;
-}
-nav a{
-	text-decoration: none;
-	padding: 29px 12px;
-	color: black;
-	display:block;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-nav :hover {
-	background-color: white;
-	color: #736747;
-	transition: .5s;
-}
-nav ul :hover{
-	background-color: white;
-		transition: .9s;
-}
-
-
-.fff{width: 100px; height: 100px;
-background-color: black;
-color: red;
-position: absolute;
-top: 81px;
-}
-body{background-image: url("../media/team-sri-lanka-arena-2.jpg");
-height: 100vh;
-width: 100vh;
-background-size:cover ;
-}
-
-.div-for-stat{width: 50%; height: 100px;
-margin-top: 500px;
-/* border: 1px solid black; */
-margin-left: 700px;}
-
-
-.but01{cursor: pointer;
-width: 100px; height: 30px;
-margin: 20px;
-border-radius: 15px;}
-
-.but02{cursor: pointer;
-	width: 100px; height: 30px;
+[class*="but"]{
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
 	margin: 20px;
-border-radius: 15px;}
-
-	.but03{cursor: pointer;
-		width: 100px; height: 30px;
-		margin: 20px;
-		border-radius: 15px;}
-
-
-
+	border-radius: 15px;
+}
 
 /*
 background:linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
@@ -167,3 +99,74 @@ text-decoration: none;}
 	padding: 0px;
 	text-decoration: none;
 }
+
+.fff{
+	width: 100px;
+	height: 100px;
+background-color: black;
+color: red;
+position: absolute;
+top: 81px;
+}
+.nav  {
+	list-style-type: none;
+	overflow: hidden;
+	position: fixed;
+	top:0;
+	width: 100%;
+	background-color: #f2eee4;
+	z-index: 999;
+}
+.nav-li-a{
+		float: right;
+}
+.logo-li {
+		float: left;
+}
+.logo-li a{
+	padding: 5px 12px;
+}
+.logo {
+	max-width: 79px;
+	max-height: 70px;
+	width: auto;
+	height: auto;
+}
+nav a{
+	text-decoration: none;
+	padding: 29px 12px;
+	color: black;
+	display:block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav :hover {
+	background-color: white;
+	color: #736747;
+	transition: .5s;
+}
+nav ul :hover{
+	background-color: white;
+		transition: .9s;
+}
+.but01{
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+	border-radius: 15px;
+}
+.but02{
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+	border-radius: 15px;
+}
+	.but03{
+		cursor: pointer;
+		width: 100px;
+		height: 30px;
+		margin: 20px;
+		border-radius: 15px;}

@@ -1,16 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-body{
-	font-family: "Open Sans";
-	text-align:center;
-}
-@font-face {
-	font-family: 'Open Sans';
-	src: url('../media/OpenSans.ttf');
-}
+
 .nav  {
 	list-style-type: none;
 	overflow: hidden;
