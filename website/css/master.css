@@ -64,6 +64,11 @@ nav ul :hover{
 	font-weight: 400;
 	transition: .6s;
 }
+footer{
+	position:static;
+	bottom: 0;
+	width: 100%;
+}
 .row1{
 	text-align: left;
 	height: 27vh;
