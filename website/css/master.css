@@ -1,7 +1,13 @@
 * {
-	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
+}
+@media only screen and (orientation: portrait) {
+	/* Mobile Phone View */
+  body {
+
+  }
 }
 body{
 	font-family: "Open Sans";
@@ -11,15 +17,21 @@ body{
 	font-family: 'Open Sans';
 	src: url('../media/OpenSans.ttf');
 }
-.nav  {
+.gradient{
+	background-image: url("../media/gradient.png");
+	height:204px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+.nav {
 	list-style-type: none;
 	overflow: hidden;
-	position: fixed;
-	top:0;
 	width: 100%;
-	background-color: white;
-
+	position: fixed;
+	top: 0px;
 }
+
 .nav-li-a{
 		float: right;
 }
@@ -37,40 +49,35 @@ body{
 }
 nav a{
 	text-decoration: none;
-	text-align: center;
 	padding: 29px 12px;
-	color: black;
-	display:block;
+	color: rgb(206, 206, 206);
 	display: flex;
-	justify-content: center;
-	align-items: center;
 }
-/*
 nav :hover {
-	background-color: black;
-	color: grey;
+	background-color: rgba(0, 0, 0, 0.315);
+	color: rgb(180, 180, 180);
 	transition: .5s;
 }
 nav ul :hover{
-	background-color: black;
-		transition: .9s;
-	}
-
-.div-goals-invest-about {
-	width: 100%;
-	height: 200px;
-	background-color: rgb(95, 95, 189);
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	transition: .6s;
 }
-.div-goals-invest {
-	width: 80%;
-	height: 1000px;
-	border: 1px solid black;
-	margin-left: 140px;
+.row1{
+	padding-left: 2vw;
+	text-align: left;
+	height: 27vh;
+	background-color: #5f6d70;
 }
-.goals-details {
-	color: brown;
+.row2 {
+	font-size: 90%;
+	height: 3vh;
+	background-color: #5f6d70;
 }
-.goals-details, .ACTION-list {
-	margin-top: 10px;
-	font-weight: 600;
+[class*="col"]{
+	width: 25%;
+	height: 20vh;
+	border: 1px solid #4b5456;
+	float:right;
 }
