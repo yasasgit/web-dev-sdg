@@ -12,16 +12,26 @@
 
 		<script>
 			function eco(){
-				document.body.style.backgroundColor="red"
+				document.body.style.backgroundImage = "url('../media/vega-car.jpg')";
+			}
+			function cam(){
+				document.body.style.backgroundImage = "url('../media/F1.jpg')";
+			}
+			function other(){
+				document.body.style.backgroundImage = "url('../media/slide1.jpg')";
+			}
+			function huththa(){
+				document.body.style.backgroundImage = "url('../media/slide2.jpg')";
+
 			}
 		</script>
 </head>
 <body>
 <div class="eco-main">
 	<div class="div-for-stat">
-		<button onclick="window.location.href='economic activities.html" type="button1" class="but01" onmouseover="eco();">economy</button>
-		<button onclick="window.location.href='#'" type="button" class="but02">campus</button>
-		<button onclick="window.location.href='#'" type="button" class="but03">other</button>
+		<button onclick="window.location.href='#'" type="button1" class="but01" onmouseout="huththa();" onmouseover="eco();">economy</button>
+		<button onclick="window.location.href='#'" type="button" class="but02" onmouseout="huththa();" onmouseover="cam();">campus</button>
+		<button onclick="window.location.href='#'" type="button" class="but03" onmouseout="huththa ();" onmouseover="other();">other</button>
 	</div>
 </div>
 	<footer>

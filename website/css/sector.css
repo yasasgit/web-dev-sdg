@@ -1,9 +1,12 @@
+body{
+	background-image: url("../media/slide2.jpg");
+	background-position: center;
+	background-size: cover;
+}
 .eco-main{
- height: 70vh;
+ height: 100vh;
 	top: 0;
 	width: 100%;
-	background-image: url("../media/team-sri-lanka-arena-2.jpg");
-	background-size:cover ;
 }
 .div-for-stat{
 	top: 50vh;
