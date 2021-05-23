@@ -5,6 +5,7 @@
 }
 body{
 	background-color: salmon;
+	background-image:url("investor.jpg")
 	font-family: "Open Sans";
 	text-align:center;
 }
