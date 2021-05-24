@@ -6,7 +6,6 @@
 body{
 	background-color: white;
 	background-image:url("../media/investor.jpg");
-	text-align:center;
 }
 @font-face {
 	font-family: 'Open Sans';
@@ -70,6 +69,7 @@ nav ul :hover{
 	height: 1000px;
 	border: 1px solid black;
 	margin-left: 140px;
+	color:white;
 }
 .goals-details {
 	color: white;
@@ -77,9 +77,21 @@ nav ul :hover{
 .goals-details, .ACTION-list {
 	margin-top: 10px;
 	font-weight: 600;
-	color:gray;
+	color:white;
 }
-.button {
-	background-color:red;
-	padding: 30px;
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.unordred {
+	list-style:inside;
+}
+.ordred {
+	list-style:inside;
 }
