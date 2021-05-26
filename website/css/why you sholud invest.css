@@ -13,53 +13,15 @@ body{
 	src: url('../media/OpenSans.ttf');
 }
 .nav  {
-	list-style-type: none;
-	overflow: hidden;
-	position: fixed;
-	top:0;
-	width: 100%;
-	background-color: #f2eee4;
-	z-index: 999;
-}
-.nav-li-a{
-		float: right;
-}
-.logo-li {
-		float: left;
-}
-.logo-li a{
-	padding: 5px 12px;
-}
-.logo {
-	max-width: 79px;
-	max-height: 70px;
-	width: auto;
-	height: auto;
-}
-nav a{
-	text-decoration: none;
-	padding: 29px 12px;
-	color: white;
-	display:block;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-nav :hover {
-	background-color: white;
-	color: #736747;
-	transition: .5s;
-}
-nav ul :hover{
-	background-color: white;
-		transition: .9s;
+	background-color: #4b4848;
 }
 .div-goals-invest-about {
 	position: relative;
-	line-height: 20px;
+	line-height: 25px;
 	top: 80px;
 	width: 100%;
-	height: 250px;
+	height: 40%;
+	padding: 40px;
 	background-color: rgba(95, 95, 189, 0.281);
 	color:white;
 }
@@ -69,9 +31,9 @@ nav ul :hover{
 	position: relative;
 	top: 80px;
 	width: 80%;
-	height: 1000px;
+	height: 100%;
 	border: 1px solid black;
-	margin-left: 140px;
+	margin:5% 10% 10% 10%;
 	color:white;
 }
 .goals-details {
@@ -82,8 +44,13 @@ nav ul :hover{
 	font-weight: 600;
 	color:white;
 }
+.button{
+	position: relative;
+	height: 10vh;
+	width: 100%;
+}
 button {
-  background-color: #4CAF50;
+  background-color: #419944;
   border: none;
   color: white;
   padding:20px;
@@ -92,11 +59,21 @@ button {
   display: inline-block;
   font-size: 16px;
   position: relative;
-  bottom:50px;
+}
+button:hover {
+	background-color: #73ec77;
+	font-size: 110%;
+	transition: .5s;
+
 }
 .unordred {
 	list-style:inside;
 }
 .ordred {
 	list-style:inside;
+}
+.action{
+	padding: 10px;
+	padding-left: 40px;
+	line-height: 25px;
 }
