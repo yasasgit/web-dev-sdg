@@ -18,7 +18,7 @@ body{
     position: absolute;
     text-align: center;
     transform: translateX(-50%);
-    background-color: purple;
+    background-color: lightblue;
     background-image: url("../media/login2.jpg");
     opacity:1.0;
     border-radius: 9px;
