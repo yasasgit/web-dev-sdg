@@ -1,7 +1,10 @@
 body{
     background-color: #1d243d;
+    background-image: url("../media/login2.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
     padding: 0;
-    margin:0;
+    margin: 0;
   }
   @font-face {
     font-family: 'Open Sans';
@@ -15,7 +18,9 @@ body{
     position: absolute;
     text-align: center;
     transform: translateX(-50%);
-    background-color: rgb( 33, 41, 66 );
+    background-color: purple;
+    background-image: url("../media/login2.jpg");
+    opacity:1.0;
     border-radius: 9px;
     border-top: 10px solid #79a6fe;
     border-bottom: 10px solid #8BD17C;
