@@ -1,6 +1,6 @@
 
 .nav  {
-	background-color: #5F6D70;
+	/* background-color: #5F6D70; */
 }
 nav a{
 	color: black;
@@ -9,7 +9,7 @@ nav :hover {
 	background-color:#475153;
 }
 nav ul :hover{
-	background-color: #5f6d7000; 
+	background-color: #5f6d7000;
 }
 .nav-div-inno{
 	width: 100%;
