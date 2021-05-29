@@ -18,7 +18,7 @@ body{
     position: absolute;
     text-align: center;
     transform: translateX(-50%);
-    background-color: purple;
+    background-color: lightblue;
     background-image: url("../media/login2.jpg");
     opacity:1.0;
     border-radius: 9px;
@@ -101,7 +101,7 @@ body{
     left: 7.5%;
   }
   
-  .btn1 {
+  .butn {
     border:0;
     background: #7f5feb;
     color: #dfdeee;
@@ -116,26 +116,28 @@ body{
     cursor: pointer;
   }
   
-  .btn1:hover {
+  .butn:hover {
     background: #5d33e6;
   }
   
-  .rmb {
+  .remembr {
     position: absolute;
     margin-left: -24%;
     margin-top: 0px;
-    color: #dfdeee;
+    color: black;
     font-size: 13px;
   }
   
-  .forgetpass {
+  .fogotpas {
     position: relative;
+    color:black;
     float: right;
     right: 28px;
   }
   
-  .dnthave{
+  .donthve{
       position: absolute;
+      color: black;
       top: 92%;
       left: 24%;
   }
