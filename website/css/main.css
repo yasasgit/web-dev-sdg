@@ -2,8 +2,13 @@ body{
 	background-size: cover;
 	background-image: url("../media/lot-tower.jpg");
 	background-attachment: fixed;
+
+}
+html{
+	scroll-snap-type: y mandatory;
 }
 header {
+	scroll-snap-align: start;
 	background-color: rgba(255, 255, 255, 0);
 	top: 0px;
 	width:  100%; /* For 100% screen width */
@@ -98,6 +103,7 @@ header {
 	opacity: unset;
 }
 .news{
+	scroll-snap-align: start;
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.24));
 	color: white;
 	font-size: 150%;
