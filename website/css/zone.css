@@ -5,7 +5,7 @@
 	position: fixed;
 	top:0;
 	width: 100%;
-	background-color: #f2eee4;
+	/* background-color: #f2eee4; */
 	z-index: 999;
 }
 .nav-li-a{

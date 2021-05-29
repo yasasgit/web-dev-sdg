@@ -12,7 +12,7 @@ body{
 	src: url('../media/OpenSans.ttf');
 }
 .nav  {
-	background-color: #4b4848;
+	/* background-color: #4b4848; */
 }
 .div-goals-invest-about {
 	position: relative;
