@@ -1,7 +1,7 @@
 NAV eka hama page ekema Transparent karamutheee?
 Background eka adala pata karamu
  
-
+lankawe sectors nathi business open karanna 
 
 
 •	About
