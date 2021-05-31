@@ -22,7 +22,7 @@ div, textarea, input {
   &.header {
     padding: 1.5em 2.5em;
     border-bottom: 1px solid $grey; 
-    background: url(https://images2.imgbox.com/a5/2e/m3lRbCCA_o.jpg) left -80px;
+    background: url() left -80px;
     color: $white;
   }
   &.body {
