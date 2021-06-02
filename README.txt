@@ -53,3 +53,6 @@ startup tab
  *Vlog + apply button
  *Monthly top 3 enterpreneur (https://www.fosterandpartners.com/news/events/) show more option
  *Frequently Asked Questions (https://www.futurpreneur.ca/en/get-started/faq)show more option
+
+Other
+*form walin ena data tika filw write eken write wenna hadamu EX- investoer registation,sratup
