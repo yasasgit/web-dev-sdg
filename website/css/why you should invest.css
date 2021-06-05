@@ -85,7 +85,6 @@ button:hover {
 }
 
 .action {
-    padding: 10px;
-    padding-left: 40px;
+    padding: 10px 10px 10px 40px;
     line-height: 25px;
 }

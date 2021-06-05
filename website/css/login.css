@@ -27,7 +27,7 @@ body {
     border-bottom: 10px solid orange;
     width: 400px;
     height: 500px;
-    box-shadow: 1px 1px 108.8px 19.2px rgb(25, 31, 53);
+    box-shadow: 1px 1px 108px 19px rgb(25, 31, 53);
 }
 
 .box h4 {
@@ -44,12 +44,12 @@ body {
 .box h5 {
     font-size: 13px;
     color: #a1a4ad;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     margin-top: -15px;
     margin-bottom: 70px;
 }
 
-.box input[type = "text"] {
+.box input{
     display: block;
     margin: 20px auto;
     background: #262e49;
@@ -64,25 +64,6 @@ body {
     -ms-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
-
-}
-
-.box input[type = "password"] {
-    display: block;
-    margin: 20px auto;
-    background: #262e49;
-    border: 0;
-    border-radius: 5px;
-    padding: 14px 10px;
-    width: 320px;
-    outline: none;
-    color: #d6d6d6;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-
 }
 
 .box input[type = "text"]:focus. {
@@ -141,7 +122,7 @@ label span {
 .remembr {
     position: absolute;
     margin-left: -24%;
-    margin-top: 0px;
+    margin-top: 0;
     color: black;
     font-size: 13px;
 }
@@ -161,7 +142,6 @@ label span {
 }
 
 [type=checkbox]:checked + span:before {
-    font-family: FontAwesome;
     font-size: 16px;
     content: "\f00c";
     position: absolute;

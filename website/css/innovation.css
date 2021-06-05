@@ -41,7 +41,7 @@ nav ul :hover {
 .div-image-Investor {
     width: 100%;
     height: 88vh;
-    background-image: url('../media/vega-car\ main.jpg');
+    background-image: url('../media/vega-car-main.jpg');
     background-attachment: fixed;
     background-size: cover;
 }

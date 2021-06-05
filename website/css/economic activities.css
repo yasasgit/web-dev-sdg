@@ -32,7 +32,6 @@ nav a {
     text-decoration: none;
     padding: 29px 12px;
     color: black;
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
