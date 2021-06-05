@@ -1,43 +1,73 @@
-*{margin: 0%;}
-.div-news-back-image{width: 100%; height: 683px;
-background-image:url(../media/Port_City_Colombo_for_news.jpg);
-background-repeat: no-repeat;
-background-size: cover;}
-
-.div-news-back{width: 100%; height: 600px;
-/* background-color: blanchedalmond; */
+* {
+    margin: 0%;
 }
 
-.div-news-content{width: 45%;height: 450px;
-border: 1px solid black;
-margin-top: 60px;}
+.div-news-back-image {
+    width: 100%;
+    height: 683px;
+    background-image: url(../media/Port_City_Colombo_for_news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.div-news-back-content{width: 30%; height: 150px;
-border: 5px solid wheat;
-margin-left: 40px;
-margin-top: 420px;}
+.div-news-back {
+    width: 100%;
+    height: 600px;
+    /* background-color: blanchedalmond; */
+}
 
-h1{color: white;}
+.div-news-content {
+    width: 45%;
+    height: 450px;
+    border: 1px solid black;
+    margin-top: 60px;
+}
 
-.div-news-more-news{width: 100%; height: 400px;
-background-color: teal;}
+.div-news-back-content {
+    width: 30%;
+    height: 150px;
+    border: 5px solid wheat;
+    margin-left: 40px;
+    margin-top: 420px;
+}
 
-.news-more-news01{width: 50%;height: 100%;
-background-color: yellow;
-float: right;}
+h1 {
+    color: white;
+}
 
-.news-more-news02{width: 50%;height: 100%;
+.div-news-more-news {
+    width: 100%;
+    height: 400px;
+    background-color: teal;
+}
+
+.news-more-news01 {
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+    float: right;
+}
+
+.news-more-news02 {
+    width: 50%;
+    height: 100%;
     background-color: rgb(211, 72, 17);
-    }
+}
 
-.news-more-float01{width: 500px; height: 300px; 
-border: 1px solid black;
-margin-top: 42px;
-margin-left: 40px;}    
-
-.news-more-float02{width: 500px; height: 300px; 
+.news-more-float01 {
+    width: 500px;
+    height: 300px;
     border: 1px solid black;
     margin-top: 42px;
-float: right;
-margin-right: 40px;} 
+    margin-left: 40px;
+}
+
+.news-more-float02 {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 42px;
+    float: right;
+    margin-right: 40px;
+}
 

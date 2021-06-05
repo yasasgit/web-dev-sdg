@@ -1,123 +1,165 @@
 
-.nav  {
-	/* background-color: #5F6D70; */
+.nav {
+    /* background-color: #5F6D70; */
 }
-nav a{
-	color: black;
+
+nav a {
+    color: black;
 }
+
 nav :hover {
-	background-color:#475153;
-}
-nav ul :hover{
-	background-color: #5f6d7000;
-}
-.nav-div-inno{
-	width: 100%;
-}
-.div-head{
-	border-top: 1px solid rgb(149, 178, 182) ;
-	position: absolute;
-	top: 80px;
-	width: 100%;
-	height: 10vh;
-	background-color: #5F6D70;
-}
-.description{
-	line-height: 100%;
-	font-weight: lighter;
-	font-size: 12px;
-	position: absolute;
-	left: 1.5vh;
-	bottom: 2vh;
-	color: rgba(255, 255, 255, 0.671);
-}
-.div-image-invester{
-	width: 100%;
-	height: 88vh;
-	background-image:url('../media/vega-car\ main.jpg');
-	background-attachment: fixed;
-	background-size: cover;
-}
-.div-mid-about-inno{
-	width: 100%;
-	height: 50vh;
-	background-color: #5F6D70;
-}
-.div-inside-mid-about{
-	width: 80%;
-	height: 30vh;
-	border: 1px solid black;
-	margin-top: 30px;
-}
-.main-div-for-innvo-list{
-	width: 100%;
+    background-color: #475153;
 }
 
-.div-for-innvo-name{
-	width: 100%;
-	height: 90px;
-	background-color: blue;
+nav ul :hover {
+    background-color: #5f6d7000;
 }
-.item1 { grid-area: 1 / 1 / 2 / 2; }
-.item2 { grid-area: 1 / 2 / 2 / 3; }
-.item3 { grid-area: 1 / 3 / 2 / 4; }
-.item4 { grid-area: 2 / 1 / 3 / 2; }
-.item5 { grid-area: 2 / 2 / 3 / 3; }
-.item6 { grid-area: 2 / 3 / 3 / 4; }
 
-.grid-container{
-	display: grid;
-	grid-auto-columns: 30%;
-	grid-gap: 5%;
-	background-color: #ffffff;
-	padding: 5%;
+.nav-div-inno {
+    width: 100%;
 }
-.grid-container a{
-	text-decoration: none;
+
+.div-head {
+    border-top: 1px solid rgb(149, 178, 182);
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 10vh;
+    background-color: #5F6D70;
 }
+
+.description {
+    line-height: 100%;
+    font-weight: lighter;
+    font-size: 12px;
+    position: absolute;
+    left: 1.5vh;
+    bottom: 2vh;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.div-image-invester {
+    width: 100%;
+    height: 88vh;
+    background-image: url('../media/vega-car\ main.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.div-mid-about-inno {
+    width: 100%;
+    height: 50vh;
+    background-color: #5F6D70;
+}
+
+.div-inside-mid-about {
+    width: 80%;
+    height: 30vh;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.main-div-for-innvo-list {
+    width: 100%;
+}
+
+.div-for-innvo-name {
+    width: 100%;
+    height: 90px;
+    background-color: blue;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.item2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.item3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.item4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.item5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.item6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: 30%;
+    grid-gap: 5%;
+    background-color: #ffffff;
+    padding: 5%;
+}
+
+.grid-container a {
+    text-decoration: none;
+}
+
 [class*="item"] {
-	height: 250px;
-	border-radius:  10px;
-	background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
 }
-a div{
-	width: 100%;
-	height: 100%;
-	font-weight: bold;
-	color: white;
+
+a div {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    color: white;
 }
+
 [class*="item"] :hover {
-	background-color: rgba(255, 255, 255, .5);
-	color: black;
-	transition: .8s;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+    transition: .8s;
 }
-.item1{
-	background-image: url('../media/vega-car.jpg');
+
+.item1 {
+    background-image: url('../media/vega-car.jpg');
 }
-.item2{
-	background-image: url('../media/F1.jpg');
+
+.item2 {
+    background-image: url('../media/F1.jpg');
 }
-.item3{
-	background-image: url('../media/Genesis-Ark01.jpg');
+
+.item3 {
+    background-image: url('../media/Genesis-Ark01.jpg');
 }
-.item4{
-	background-image: url('../media/diyazen01.jpg');
+
+.item4 {
+    background-image: url('../media/diyazen01.jpg');
 }
-.item5{
-	background-image: url('../media/Respirone-Nano-AV99.jpg');
+
+.item5 {
+    background-image: url('../media/Respirone-Nano-AV99.jpg');
 }
-.item6{
-	background-image: url('../media/low-cost-ventilator.jpg');
+
+.item6 {
+    background-image: url('../media/low-cost-ventilator.jpg');
 }
-.item7{
-	background-image: url('../media/weeder.jpg');
+
+.item7 {
+    background-image: url('../media/weeder.jpg');
 }
-.item8{
-	background-image: url('../media/Hand-made-Japan-Jabara.jpg');
+
+.item8 {
+    background-image: url('../media/Hand-made-Japan-Jabara.jpg');
 }
-.item9{
-	background-image: url('../media/remote-controlled-smart-appliance.jpg');
+
+.item9 {
+    background-image: url('../media/remote-controlled-smart-appliance.jpg');
 }
+
 /* .grid-container{
 	background-color: rgba(0, 0, 0, 0.144);
 	border-top-left-radius: 15px;
