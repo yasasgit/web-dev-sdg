@@ -1,45 +1,52 @@
-*{margin: 0%;}
+* {
+    margin: 0%;
+}
 
-.div-for-but{
+.div-for-but {
     width: 100%;
     height: 90px;
     background-color: aqua;
 }
-.div-main-for-stat{
+
+.div-main-for-stat {
     width: 100%;
     height: 400px;
     background-color: rgb(13, 31, 31);
 }
-.div-main-for-stat-data{
+
+.div-main-for-stat-data {
     width: 50%;
     height: 400px;
     background-color: rgb(133, 20, 104);
     float: left;
 
 }
-.div-main-for-stat-data-sum{
+
+.div-main-for-stat-data-sum {
     width: 50%;
     height: 400px;
     background-color: rgb(85, 76, 83);
     float: right;
 }
 
-.div-main-for-stat-data-00{
+.div-main-for-stat-data-00 {
     width: 80%;
     height: 300px;
     background-color: bisque;
-    float:right;
+    float: right;
     margin-top: 45px;
 }
-.div-main-for-stat-data-sum-00{
+
+.div-main-for-stat-data-sum-00 {
     width: 80%;
     height: 300px;
     background-color: rgb(228, 133, 18);
-    float:left;
+    float: left;
     margin-top: 45px;
 
 }
-.div-for-barchart{
+
+.div-for-barchart {
     width: 100%;
     height: 300px;
     background-color: blue;

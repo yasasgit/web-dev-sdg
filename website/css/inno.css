@@ -1,90 +1,117 @@
 
-.nav  {
-	list-style-type: none;
-	overflow: hidden;
-	position: fixed;
-	top:0;
-	width: 100%;
-	background-color: #5F6D70;
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #5F6D70;
 }
-.nav-li-a{
-		float: right;
-}
-.logo-li {
-		float: left;
-}
-.logo-li a{
-	padding: 5px 12px;
-}
-.logo {
-	max-width: 79px;
-	max-height: 70px;
-	width: auto;
-	height: auto;
-}
-nav a{
-	text-decoration: none;
-	padding: 29px 12px;
-	color: black;
-	display:block;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-nav :hover {
-	background-color: white;
-	color: #736747;
-	transition: .5s;
-}
-nav ul :hover{
-	background-color: white;
-		transition: .9s;
-}
-[class*="div-image-invester-"] {
-	width: 100%;
-	height: 850px;
-	margin-left: 0px;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.div-image-invester-01{
-	  background-image:url('../media/vegacar-front.jpg');
-}
-.div-image-invester-02{
-	  background-image:url('../media/f1car-01.jpg');
-}
-.div-image-invester-03{
-	  background-image:url('../media/Genesisfront.jpg');
-}
-.div-image-invester-04{
-	  background-image:url('../media/diyazen01.jpg');
-}
-.div-image-invester-05{
-	  background-image:url('../media/Respirone-Nano-AV99-front.jpg');
-}
-.div-image-invester-06{
-	  background-image:url('../media/low-cost-ventilator-front.jpg');
-}
-.div-image-invester-07{
-	  background-image:url('../media/Weederfront.jpg');
-}
-.div-image-invester-08{
-	  background-image:url('../media/Hand-made-Japan-Jabara-front.jpg');
-}
-.div-image-invester-09{
-	  background-image:url('../media/remote-controlled-smart-appliance.png');
-}
-.div-mid-about-inno{width: 100%;height: 600px;
-    background-color: #5F6D70;}
-h2 ,p{
-	color: white;
-}
-.are-you{background-color:rgba(0, 0, 0, 0.15);
-width: 30vh; height: 5vh;
-border-radius: 20px;
-color: white;
- }
 
-.are-you:hover{background-color: rgba(255, 255, 255, 0.13);}
+.nav-li-a {
+    float: right;
+}
+
+.logo-li {
+    float: left;
+}
+
+.logo-li a {
+    padding: 5px 12px;
+}
+
+.logo {
+    max-width: 79px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 29px 12px;
+    color: black;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav :hover {
+    background-color: white;
+    color: #736747;
+    transition: .5s;
+}
+
+nav ul :hover {
+    background-color: white;
+    transition: .9s;
+}
+
+[class*="div-image-invester-"] {
+    width: 100%;
+    height: 850px;
+    margin-left: 0px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.div-image-invester-01 {
+    background-image: url('../media/vegacar-front.jpg');
+}
+
+.div-image-invester-02 {
+    background-image: url('../media/f1car-01.jpg');
+}
+
+.div-image-invester-03 {
+    background-image: url('../media/Genesisfront.jpg');
+}
+
+.div-image-invester-04 {
+    background-image: url('../media/diyazen01.jpg');
+}
+
+.div-image-invester-05 {
+    background-image: url('../media/Respirone-Nano-AV99-front.jpg');
+}
+
+.div-image-invester-06 {
+    background-image: url('../media/low-cost-ventilator-front.jpg');
+}
+
+.div-image-invester-07 {
+    background-image: url('../media/Weederfront.jpg');
+}
+
+.div-image-invester-08 {
+    background-image: url('../media/Hand-made-Japan-Jabara-front.jpg');
+}
+
+.div-image-invester-09 {
+    background-image: url('../media/remote-controlled-smart-appliance.png');
+}
+
+.div-mid-about-inno {
+    width: 100%;
+    height: 600px;
+    background-color: #5F6D70;
+}
+
+h2, p {
+    color: white;
+}
+
+.are-you {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 30vh;
+    height: 5vh;
+    border-radius: 20px;
+    color: white;
+}
+
+.are-you:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+}
 
 /*#736747;*/
