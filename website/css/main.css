@@ -12,19 +12,18 @@ html {
 header {
     scroll-snap-align: start;
     background-color: rgba(255, 255, 255, 0);
-    top: 0px;
+    top: 0;
     width: 100%; /* For 100% screen width */
     height: 100vh; /* For 100% screen height */
 }
 
 .Slides {
     background-color: rgba(255, 255, 255, 0);
-    display: none;
     height: 100vh;
     overflow: hidden;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .Slides img {
@@ -60,7 +59,7 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.textbox {
+.text-box {
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     background-image: url("../media/gradient-invert.png");
@@ -143,11 +142,11 @@ header {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.24);
     color: rgb(255, 255, 255);
-    padding-top: 8vh;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 0%;
+    grid-gap: 0;
     padding-top: 2%;
+
 }
 
 .item1 {
@@ -172,7 +171,7 @@ header {
 
 [class*="item"] {
     height: 30vh;
-    border: 0.5px solid #000000;
+    border: 1px solid #000000;
     background-size: cover;
 }
 

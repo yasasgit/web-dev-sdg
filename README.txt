@@ -13,13 +13,13 @@ lankawe sectors nathi business open karanna
 *99th of best countries to invest in businesses.
 *Details about airports and other
 * Investors expect more women employment so we prioritize women (news ekakta gannath puluwan)
-* why you should invest (goals, summary taxes, policies, pdf link, will reduce taxes if investing in rural areas, should engage in after investment care, acknowledging the demonstration effects from satisfied investors, the potential foe reinvestments, and the potential for cluster-development because of follow up investments)
+* why you should invest (goals, summary taxes, policies, pdf link, will reduce taxes if investing in rural areas, should engage in after investment care, acknowledging the demonstration effects from satisfied Investors, the potential foe reinvestments, and the potential for cluster-development because of follow up investments)
 
 
 
 
-2 invester zone
-*foreign investor government approve 23 legal offices 4 months (meka nisa api online registration ekka dnewa ethakota masa 4k yanne naha )
+2 Investor zone
+*foreign Investor government approve 23 legal offices 4 months (meka nisa api online registration ekka dnewa ethakota masa 4k yanne naha )
 *project reports submit from abroad 
 * Selling deceased business spaces
 
