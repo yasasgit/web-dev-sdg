@@ -14,10 +14,7 @@ header {
     width: 100%; /* For 100% screen width */
     height: 100vh; /* For 100% screen height */
 }
-
-img {
-    vertical-align: middle;
-}
+img {vertical-align: middle;}
 
 .Slides {
     background-color: rgba(255, 255, 255, 0);
@@ -99,7 +96,6 @@ img {
     width: 11px;
     background-color: #ffffff9c;
 }
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: .7s;
@@ -108,21 +104,13 @@ img {
 }
 
 @-webkit-keyframes fade {
-    from {
-        opacity: .5
-    }
-    to {
-        opacity: 1
-    }
+    from {opacity: .5}
+    to {opacity: 1}
 }
 
 @keyframes fade {
-    from {
-        opacity: .5
-    }
-    to {
-        opacity: 1
-    }
+    from {opacity: .5}
+    to {opacity: 1}
 }
 
 .back {

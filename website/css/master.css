@@ -2,7 +2,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 @media only screen and (orientation: portrait) {
@@ -58,6 +57,7 @@ body {
 }
 
 nav a {
+    text-decoration: none;
     padding: 29px 12px;
     color: rgb(206, 206, 206);
     display: flex;
@@ -75,48 +75,34 @@ nav ul :hover {
     font-weight: 400;
     transition: .6s;
 }
-
-:not(.active) {
+:not(.active){
 
 }
-
 .active {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
 }
 
 footer {
-    text-align: left;
+    text-decoration: none;
     bottom: 0;
     scroll-snap-align: end;
     width: 100%;
-    background-color: #000;
-    color: #9b9b9b;
-    font-size: 12px;
-    height: 70vh;
-    display: block;
+    height: 60vh;
+    background-color: white;
+}
+footer a{
 }
 
-footer a {
+.row1 {
+    height: 56vh;
 }
 
-.row {
-    margin: 5%;
-    /*border-top: 1px solid #949494 ;*/
+.row2 {
+    height: 4vh;
 }
 
-.col {
-    display: inline-block;
-    line-height: 25px;
-    margin: 8%;
-}
-
-.col a {
-    display: block;
-    color: #9b9b9b;
-}
-
-.col h4 {
-    color: #fff;
-    font-weight: 400;
+[class*="col"] {
+    width: 25%;
+    height: 56vh;
+    border: 1px solid #EBEBEB;
+    float: right;
 }
