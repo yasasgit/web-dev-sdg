@@ -78,6 +78,7 @@ nav ul :hover {
 
 footer {
     bottom: 0;
+    scroll-snap-align: end;
     width: 100%;
 }
 
@@ -98,4 +99,12 @@ footer {
     height: 20vh;
     border: 1px solid #4b5456;
     float: right;
+}
+/*
+li a :hover :not(.active) {
+  background-color: black;
+	bold
+}
+.active {
+  background-color: green;
 }
