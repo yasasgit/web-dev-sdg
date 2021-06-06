@@ -75,36 +75,34 @@ nav ul :hover {
     font-weight: 400;
     transition: .6s;
 }
+:not(.active){
+
+}
+.active {
+}
 
 footer {
+    text-decoration: none;
     bottom: 0;
     scroll-snap-align: end;
     width: 100%;
+    height: 60vh;
+    background-color: white;
+}
+footer a{
 }
 
 .row1 {
-    text-align: left;
-    height: 27vh;
-    background-color: #5f6d70;
+    height: 56vh;
 }
 
 .row2 {
-    font-size: 90%;
-    height: 3vh;
-    background-color: #5f6d70;
+    height: 4vh;
 }
 
 [class*="col"] {
     width: 25%;
-    height: 20vh;
-    border: 1px solid #4b5456;
+    height: 56vh;
+    border: 1px solid #EBEBEB;
     float: right;
-}
-/*
-li a :hover :not(.active) {
-  background-color: black;
-	bold
-}
-.active {
-  background-color: green;
 }
