@@ -10,3 +10,21 @@ html {
     padding-top: 85px;
     display: block;
 }
+.middle-right-container {
+    flex-direction: column;
+    text-align: center;
+}
+.socials-list{
+    display: flex;
+    justify-content: flex-end;
+}
+socials.li{
+    background-image: url("linkedin-icon.png");
+}
+.socials.tw {
+    background-image: url("tw-icon.png");
+}
+
+.socials.fb {
+    background-image: url("fb-icon.png");
+}
