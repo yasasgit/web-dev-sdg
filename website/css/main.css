@@ -139,7 +139,6 @@ img {
     flex-direction: column;
     background-color: black;
     color: white;
-    font-size: 150%;
     height: 20vh;
 }
 .news-grid {
@@ -157,7 +156,7 @@ img {
     background-size: cover;
 }
 .item1 {
-    background-image: url('../media/news\ 01.jpg');
+    background-image: url('../media/news-01.jpg');
 }
 
 .item2 {
