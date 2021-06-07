@@ -152,8 +152,8 @@ img {
 }
 
 [class*="item"] {
-    /*height: 40vh;*/
-    /*border: 1px solid #000000;*/
+    border-radius: 3px;
+    border: 1px solid #9b9b9b;
     background-size: cover;
 }
 
@@ -172,22 +172,25 @@ img {
 .item4 {
     background-image: url('../media/f1car-01.jpg');
 }
+[class*="item"] :hover{
 
+}
 .news-grid div {
     width: 100%;
     height: 100%;
 }
 
-.news-grid div :hover {
+.news-grid a :hover {
     background-color: rgba(255, 255, 255, 0.288);
-    /*overflow: hidden;*/
     color: black;
-    /*transform: scale(1.05);*/
-    /*transition: .8s;*/
+    transition: .8s;
+    overflow: hidden;
+    transform: scale(1.05);
 }
 
 .news-grid h3 {
     color: white;
+    height: 100%;
 }
 
 
