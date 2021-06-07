@@ -42,6 +42,14 @@ function currentSlide(index) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[index-1].style.display = "block";
-    dots[index-1].className += " active";
+    slides[index - 1].style.display = "block";
+    dots[index - 1].className += " active";
+}
+function responsive() {
+    let x = document.getElementById("nav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
 }
