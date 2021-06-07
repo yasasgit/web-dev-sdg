@@ -19,12 +19,12 @@ html {
     justify-content: flex-end;
 }
 socials.li{
-    background-image: url("linkedin-icon.png");
+    background-image: url("../media/linkedin-icon.png.png");
 }
 .socials.tw {
-    background-image: url("tw-icon.png");
+    background-image: url("../media/tw-icon.png.png");
 }
 
 .socials.fb {
-    background-image: url("fb-icon.png");
+    background-image: url("../media/fb-icon.png.png");
 }
