@@ -2,6 +2,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 @media only screen and (orientation: portrait) {
@@ -9,17 +10,21 @@
     .nav {
     }
 }
-.icon{
+
+.icon {
     display: none;
 }
-@media screen and (max-width: 770px){
+
+@media screen and (max-width: 770px) {
     .nav-a {
         display: none;
     }
+
     .nav a :not(:first-child) {
         display: none;
     }
-    .nav .icon{
+
+    .nav .icon {
         float: right;
         display: block;
     }
@@ -27,17 +32,20 @@
     .nav.responsive {
         position: relative;
     }
+
     .nav.responsive .icon {
         right: 0;
         top: 0;
         position: fixed;
     }
+
     .nav.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
 }
+
 body {
     font-family: "Open Sans", serif;
     text-align: center;
@@ -84,6 +92,7 @@ body {
     width: auto;
     height: auto;
 }
+
 /*.menu {*/
 /*    !*max-width: 30px;*!*/
 /*    max-height: 20px;*/
@@ -91,7 +100,7 @@ body {
 /*    !*height: auto;*!*/
 /*}*/
 nav a {
-    text-decoration: none;
+
     padding: 29px 12px;
     color: rgb(206, 206, 206);
     display: flex;
@@ -109,30 +118,42 @@ nav ul :hover {
     font-weight: 400;
     transition: .6s;
 }
-:not(.active){
+
+:not(.active) {
 
 }
+
 .active {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 
 footer {
-    text-decoration: none;
+    text-align: left;
     bottom: 0;
     scroll-snap-align: end;
     width: 100%;
-    height: 60vh;
-    background-color: white;
-}
-footer a{
-}
-
-.row1 {
-    height: 56vh;
+    background-color: #000;
+    color: #9b9b9b;
+    font-size: 12px;
+    height: 70vh;
+    display: block;
 }
 
-.row2 {
-    height: 4vh;
+footer a {
 }
+
+.row {
+    margin: 5%;
+    /*border-top: 1px solid #949494 ;*/
+}
+
+.col {
+    display: inline-block;
+    line-height: 25px;
+    margin: 8%;
+}
+
 /*!*.row {*!*/
 /*!*    padding: 3%;*!*/
 /*!*    !*border-top: 1px solid #949494 ;*!*!*/
@@ -143,9 +164,12 @@ footer a{
 /*    padding: 3%;*/
 /*}*/
 
-[class*="col"] {
-    width: 25%;
-    height: 56vh;
-    border: 1px solid #EBEBEB;
-    float: right;
+.col a {
+    display: block;
+    color: #9b9b9b;
+}
+
++ .col h4 {
+    color: #fff;
+    font-weight: 400;
 }
