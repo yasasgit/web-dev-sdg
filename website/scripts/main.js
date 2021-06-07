@@ -64,8 +64,8 @@ function responsive() {
         x.className = "navi";
     }
 }
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
+function openTab(evt, cityName) {
+    let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
