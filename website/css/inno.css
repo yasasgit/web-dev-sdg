@@ -1,50 +1,29 @@
 
 .nav {
-    list-style-type: none;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #5F6D70;
+    /*list-style-type: none;*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*background-color: #5F6D70;*/
 }
-
-.nav-li-a {
-    float: right;
-}
-
-.logo-li {
-    float: left;
-}
-
-.logo-li a {
-    padding: 5px 12px;
-}
-
-.logo {
-    max-width: 79px;
-    max-height: 70px;
-    width: auto;
-    height: auto;
-}
-
 nav a {
-    text-decoration: none;
-    padding: 29px 12px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*text-decoration: none;*/
+    /*padding: 29px 12px;*/
+    /*color: black;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
-
 nav :hover {
-    background-color: white;
-    color: #736747;
-    transition: .5s;
+    /*background-color: white;*/
+    /*color: #736747;*/
+    /*transition: .5s;*/
 }
 
 nav ul :hover {
-    background-color: white;
-    transition: .9s;
+    /*background-color: white;*/
+    /*transition: .9s;*/
 }
 
 [class*="div-image-Investor-"] {
