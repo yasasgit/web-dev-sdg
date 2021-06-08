@@ -22,7 +22,7 @@ html {
 }
 
 .socials.li {
-    background-image: url("../media/linkedin-icon.png.png");
+    background-image: url("../media/linkedin-icon.png");
     width: 30px;
     height: 30px;
     display: block;
@@ -35,7 +35,7 @@ html {
 }
 
 .socials.tw {
-    background-image: url("../media/tw-icon.png.png");
+    background-image: url("../media/tw-icon.png");
     width: 30px;
     height: 30px;
     display: block;
@@ -48,7 +48,7 @@ html {
 }
 
 .socials.fb {
-    background-image: url("../media/fb-icon.png.png");
+    background-image: url("../media/fb-icon.png");
     width: 30px;
     height: 30px;
     display: block;
@@ -58,4 +58,17 @@ html {
     background-size: contain;
     margin-left: 10px;
     cursor: pointer;
+}
+.socials.insta {
+    background-image: url("../media/instagram-icon.png");
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    cursor: pointer;
+
 }
