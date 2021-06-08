@@ -2,6 +2,7 @@ let i;
 let slideIndex = 0;
 let slides = document.getElementsByClassName("Slides");
 let dots = document.getElementsByClassName("dot");
+let prevScrollPos = window.pageYOffset;
 showSlides();
 
 function showSlides() {
@@ -63,6 +64,43 @@ function responsive() {
     } else {
         x.className = "navi";
     }
+}
+function showMail() {
+    let txt = confirm("Do you want to contact innovator?");
+    if (txt === true) {
+        window.location.href = "mailto:mail@example.org";
+    } else {
+        alert("thank you");
+    }
+}
+ function hideNav(){
+    let nav=document.getElementsByClassName("navi");
+    let menu=document.getElementsByClassName("menu-li");
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+        nav[0].style.top = "0";
+        menu[0].style.top = "0";
+    } else {
+        nav[0].style.top = "-80px";
+        menu[0].style.top = "-80px";
+    }
+    prevScrollPos = currentScrollPos;
+}
+function eco() {
+    document.body.style.backgroundImage = "url('../media/vega-car.jpg')";
+}
+
+function cam() {
+    document.body.style.backgroundImage = "url('../media/F1.jpg')";
+}
+
+function other() {
+    document.body.style.backgroundImage = "url('../media/slide1.jpg')";
+}
+
+function solid() {
+    document.body.style.backgroundImage = "url('../media/slide2.jpg')";
+
 }
 function openTab(evt, cityName) {
     let i, tabcontent, tablinks;
