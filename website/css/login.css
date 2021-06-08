@@ -59,11 +59,6 @@ body {
     width: 320px;
     outline: none;
     color: #d6d6d6;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
 }
 
 .box input[type = "text"]:focus. {
@@ -93,7 +88,6 @@ label span {
     width: 13px;
     border: 2px solid #464d64;
     border-radius: 2px;
-    display: inline-block;
     position: relative;
     cursor: pointer;
     float: left;
@@ -109,8 +103,8 @@ label span {
     height: 49px;
     font-size: 16px;
     position: absolute;
-    top: 79%;
-    left: 8%;
+    top: 50%;
+    left: 10%;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -121,7 +115,6 @@ label span {
 
 .remembr {
     position: absolute;
-    margin-left: -24%;
     margin-top: 0;
     color: black;
     font-size: 13px;
@@ -137,7 +130,7 @@ label span {
 .donthve {
     position: absolute;
     color: black;
-    top: 92%;
+    top: 80%;
     left: 24%;
 }
 
