@@ -7,6 +7,7 @@
     /*width: 100%;*/
     /*background-color: #5F6D70;*/
 }
+
 nav a {
     /*text-decoration: none;*/
     /*padding: 29px 12px;*/
@@ -15,6 +16,7 @@ nav a {
     /*justify-content: center;*/
     /*align-items: center;*/
 }
+
 nav :hover {
     /*background-color: white;*/
     /*color: #736747;*/

@@ -65,6 +65,7 @@ function responsive() {
         x.className = "navi";
     }
 }
+
 function showMail() {
     let txt = confirm("Do you want to contact innovator?");
     if (txt === true) {
@@ -73,9 +74,10 @@ function showMail() {
         alert("thank you");
     }
 }
- function hideNav(){
-    let nav=document.getElementsByClassName("navi");
-    let menu=document.getElementsByClassName("menu-li");
+
+function hideNav() {
+    let nav = document.getElementsByClassName("navi");
+    let menu = document.getElementsByClassName("menu-li");
     let currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
         nav[0].style.top = "0";
@@ -86,6 +88,7 @@ function showMail() {
     }
     prevScrollPos = currentScrollPos;
 }
+
 function eco() {
     document.body.style.backgroundImage = "url('../media/vega-car.jpg')";
 }
@@ -102,6 +105,7 @@ function solid() {
     document.body.style.backgroundImage = "url('../media/slide2.jpg')";
 
 }
+
 function openTab(evt, cityName) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

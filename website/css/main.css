@@ -174,19 +174,23 @@ img {
 .item4 {
     background-image: url('../media/f1car-01.jpg');
 }
-[class*="item"] :hover{
+
+[class*="item"] :hover {
     color: black;
     background-color: rgba(255, 255, 255, 0.1);
     transition: .6s;
 }
+
 .news-grid div {
     width: 100%;
     height: 100%;
 }
+
 .news-grid a:hover {
     transition: .6s;
     transform: scale(1.02);
 }
+
 .news-grid h3 {
     color: white;
     height: 100%;
