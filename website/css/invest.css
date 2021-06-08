@@ -8,10 +8,10 @@ body {
     background-color: #5F6D70;
 }
 
-@font-face {
+/* @font-face { 
     font-family: 'Open Sans';
-    src: url('../media/OpenSans.ttf');
-}
+    src: url('../media/Open Sans.ttf');
+}*/
 
 .navi {
     background-color: #5F6D70;
@@ -19,35 +19,41 @@ body {
 
 .div-goals-invest-about {
     position: relative;
-    line-height: 25px;
-    top: 80px;
+    line-height: 30px;
+    top: 60px;
     width: 100%;
     height: 40%;
-    padding: 40px;
-    background-color: #5F6D70;
+    padding: 60px;
+    background-color: #455153;
     color: white;
+}
+.div-goals-invest-about p {
+    color: rgb(214, 214, 214);
 }
 
 .div-goals-invest {
     text-align: left;
     padding: 50px;
+    font-family: 'Open Sans';
+    font-size: 105%;
     position: relative;
-    top: 80px;
+    line-height: 26px;
+    top: 20px;
     width: 80%;
     height: 100%;
-    border: 1px solid black;
-    margin: 5% 10% 10% 10%;
+    border: 1px solid #455153;
+    margin: 5% 10% 4% 10%;
     color: white;
 }
 
 .goals-details {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .goals-details, .ACTION-list {
     margin-top: 10px;
-    font-weight: 600;
-    color: white;
+    /* font-weight: 600; */
+    color: rgb(233, 232, 232);
 }
 
 .button {
@@ -57,33 +63,37 @@ body {
 }
 
 button {
-    background-color: #419944;
-    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #399c36;
+    border-radius: 6px;
     color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    position: relative;
 }
 
 button:hover {
-    background-color: #73ec77;
-    font-size: 110%;
-    transition: .5s;
+    background-color: #36b83a;
+    font-size: 105%;
+    transition: .9s;
 
 }
 
 .unordred {
     list-style: inside;
+    padding: 2%;
+    padding-left: 3%;
 }
 
 .ordred {
     list-style: inside;
+    padding: 2%;
+    padding-left: 3%;
 }
 
 .action {
     padding: 10px 10px 10px 40px;
-    line-height: 25px;
+    line-height: 28px;
+    color: rgb(194, 194, 194);
+    padding-left: 4%;
+    padding-bottom: 2.5%;
 }
