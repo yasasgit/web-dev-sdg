@@ -4,108 +4,121 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body {
+    font-family: "Open Sans", serif;
+    text-align: center;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../media/OpenSans.ttf');
+}
+*::selection {
+    color: #fff;
+    background: #000;
+}
+
+.navi{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+.gradient {
+    width: 100%;
+    height: 204px;
+    pointer-events: none;
+    background-image: url("../media/gradient.png");
+}
+.menu-li {
+    display: none;
+}
 @media only screen and (orientation: portrait) {
     /* Mobile Phone View */
     .nav {
     }
 }
-.nav .menu-li {
-    display: none;
-}
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 780px) {
     .nav .nav-li {
         display: none;
     }
-    .nav .menu :not(:first-child) {
-        display: none;
+   .menu-li {
+       display:block;
+       position: fixed;
+       top: 0;
+       right: 0;
+       padding: 29px 18px;
     }
-    .nav .menu-li {
-        display:inline-block;
-    }
-    .navi-responsive {
-        display: block;
-        text-align: left;
+    .navi-responsive{
         position: fixed;
-        right: 0;
         top: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0.9);
     }
-    .navi-responsive {
-        position: fixed;
+    .navi-responsive .nav li{
+        display: block;
+        /*text-align: left;*/
+        padding: 4vh 20px;
     }
-    .navi-responsive {
-        display:inline-block;
+    .navi-responsive .menu-li{
+        padding: 29px 18px;
     }
-    .navi-responsive {
+    .navi-responsive .right{
+        /*display:inline-block;*/
+        /*background-color: rgba(0, 0, 0, 0.6);*/
+    }
+    .navi-responsive .gradient{
         display: none;
     }
+    .navi-responsive .left{
+        width: 100%;
+    }
+    .navi-responsive .right{
+        width: 100%;
+    }
+    .navi-responsive .nav li:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: .3s;
+    }
 }
-body {
-    font-family: "Open Sans", serif;
-    text-align: center;
+.left{
+    float: left;
 }
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../media/OpenSans.ttf');
-}
-
-.gradient {
-    pointer-events: none;
-    background-image: url("../media/gradient.png");
-    height: 204px;
-    width: 100%;
-    position: fixed;
-    top: 0;
+.right{
+    float: right;
 }
 .logo {
-    max-width: 79px;
     max-height: 70px;
-    /*width: auto;*/
-    /*height: auto;*/
-}
-.nav li {
-    padding: 5px 12px;
 }
 .menu {
-    max-width: 1024px;
     max-height: 20px;
-    /*width: auto;*/
-    /*height: auto;*/
 }
-.navi{
-    position: fixed;
-    top: 0;
-    width: 100%;
+.left {
+    padding: 5px 12px;
 }
-.nav li {
+.right li{
+    padding: 31px 12px;
+}
+.nav li{
     display: inline-block;
-    list-style-type: none;
+    /*list-style-type: none;*/
 }
-.navi :hover {
+.navi a{
+}
+.navi:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    transition: .5s;
+    transition: .6s;
 }
-.nav :hover {
-    background-color: rgba(0, 0, 0, 0);
+.navi :hover{
     color: rgb(255, 255, 255);
     font-weight: 400;
-    transition: .6s;
+    transition: .4s;
 }
 .nav-li a{
     color: rgb(206, 206, 206);
-    color: rgb(180, 180, 180);
-}
-.nav{
-    float: right;
-    width: 100%;
-}
-li {
-    /*clear: right;*/
-    /*overflow: hidden;*/
-    /*float: left;*/
-    /*text-align: right;*/
-    /*padding: 29px 12px;*/
-    /*display: flex;*/
+    /*color: rgb(180, 180, 180);*/
 }
 :not(.active) {
 }
@@ -113,7 +126,6 @@ li {
     color: rgb(255, 255, 255);
     font-weight: 400;
 }
-
 footer {
     text-align: left;
     bottom: 0;
@@ -125,23 +137,21 @@ footer {
     display: block;
     scroll-snap-align: end;
 }
-
 footer a {
 }
 
 .row2 {
-    margin: 1%;
-    padding: 2%;
+    margin: 0 3%;
+    padding: 1% 1%;
     border-top: 1px solid #9b9b9b;
 }
 .row1 {
-    padding: 3%;
+    padding: 3% 1%;
 }
 .col {
     display: inline-block;
     line-height: 25px;
-    padding: 1%;
-    margin: 1%;
+    padding: 1% 3%;
 }
 .col a {
     display: block;

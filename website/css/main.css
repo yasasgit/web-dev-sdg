@@ -60,12 +60,11 @@ img {
 }
 
 .text-box {
-    background-color: rgba(255, 255, 255, 0);
     width: 100%;
     background-image: url("../media/gradient-invert.png");
-    position: absolute;
     bottom: 0;
     height: 204px;
+    position: absolute;
 }
 
 .text {
@@ -146,15 +145,18 @@ img {
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5px;
+    grid-template-columns:auto auto;
+    grid-gap: 8px;
     height: 80vh;
+    padding: 8px;
 }
 
 [class*="item"] {
     border-radius: 3px;
     border: 1px solid #9b9b9b;
     background-size: cover;
+
+
 }
 
 .item1 {
@@ -179,13 +181,11 @@ img {
     width: 100%;
     height: 100%;
 }
-
-.news-grid a :hover {
+.news-grid a:hover {
     background-color: rgba(255, 255, 255, 0.288);
     color: black;
     transition: .8s;
-    overflow: hidden;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .news-grid h3 {
