@@ -1,17 +1,18 @@
-body{
-    background-color: #1d243d;
+body {
+    background-color: #5F6D70;
     background-image: url("../media/login2.jpg");
     background-repeat: no-repeat;
     background-size: 2000px 1000px;
     padding: 0;
     margin: 0;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Open Sans';
     src: url('../media/OpenSans.ttf');
-  }
-  
-  .container{
+}
+
+.container {
     margin: 0;
     top: 50px;
     left: 50%;
@@ -20,35 +21,35 @@ body{
     transform: translateX(-50%);
     background-color: lightblue;
     background-image: url("../media/login2.jpg");
-    opacity:1.0;
+    opacity: 1.0;
     border-radius: 9px;
     border-top: 10px solid orange;
     border-bottom: 10px solid orange;
     width: 400px;
     height: 500px;
-    box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
-  }
-  
-  .box h4 {
-    color: #5c6bc0; 
+    box-shadow: 1px 1px 108px 19px rgb(25, 31, 53);
+}
+
+.box h4 {
+    color: #5c6bc0;
     font-size: 18px;
-    margin-top:94px;;
-  }
-  
-  .box h4 span {
+    margin-top: 94px;;
+}
+
+.box h4 span {
     color: #dfdeee;
     font-weight: lighter;
-  }
-  
-  .box h5 {
+}
+
+.box h5 {
     font-size: 13px;
     color: #a1a4ad;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     margin-top: -15px;
     margin-bottom: 70px;
-  }
-  
-  .box input[type = "text"]{
+}
+
+.box input {
     display: block;
     margin: 20px auto;
     background: #262e49;
@@ -58,66 +59,43 @@ body{
     width: 320px;
     outline: none;
     color: #d6d6d6;
-        -webkit-transition: all .2s ease-out;
-      -moz-transition: all .2s ease-out;
-      -ms-transition: all .2s ease-out;
-      -o-transition: all .2s ease-out;
-      transition: all .2s ease-out;
-    
-  }
-  .box input[type = "password"] {
-    display: block;
-    margin: 20px auto;
-    background: #262e49;
-    border: 0;
-    border-radius: 5px;
-    padding: 14px 10px;
-    width: 320px;
-    outline: none;
-    color: #d6d6d6;
-        -webkit-transition: all .2s ease-out;
-      -moz-transition: all .2s ease-out;
-      -ms-transition: all .2s ease-out;
-      -o-transition: all .2s ease-out;
-      transition: all .2s ease-out;
-    
-  }
-  
-  .box input[type = "text"]:focus.{
+}
+
+.box input[type = "text"]:focus. {
     border: 1px solid #79A6FE;
-    
-  }
-  .box input[type = "password"]:focus{
+
+}
+
+.box input[type = "password"]:focus {
     border: 1px solid #79A6FE;
-  }
-  
-  a{
+}
+
+a {
     color: #5c7fda;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-   label input[type = "checkbox"] {
+}
+
+label input[type = "checkbox"] {
     display: none;
-  }
-  
-  label span {
+}
+
+label span {
     height: 13px;
     width: 13px;
     border: 2px solid #464d64;
     border-radius: 2px;
-    display: inline-block;
     position: relative;
     cursor: pointer;
     float: left;
     left: 7.5%;
-  }
-  
-  .butn {
-    border:0;
+}
+
+.butn {
+    border: 0;
     background: #7f5feb;
     color: #dfdeee;
     border-radius: 100px;
@@ -125,45 +103,43 @@ body{
     height: 49px;
     font-size: 16px;
     position: absolute;
-    top: 79%;
-    left: 8%;
+    top: 50%;
+    left: 10%;
     transition: 0.3s;
     cursor: pointer;
-  }
-  
-  .butn:hover {
+}
+
+.butn:hover {
     background: #5d33e6;
-  }
-  
-  .remembr {
+}
+
+.remembr {
     position: absolute;
-    margin-left: -24%;
-    margin-top: 0px;
+    margin-top: 0;
     color: black;
     font-size: 13px;
-  }
-  
-  .fogotpas {
+}
+
+.fogotpas {
     position: relative;
-    color:black;
+    color: black;
     float: right;
     right: 28px;
-  }
-  
-  .donthve{
-      position: absolute;
-      color: black;
-      top: 92%;
-      left: 24%;
-  }
-  
-  [type=checkbox]:checked + span:before {
-      font-family: FontAwesome;
-      font-size: 16px;
-      content: "\f00c";
-      position: absolute;
-      top: -4px;
-      color: #896cec;
-      left: -1px;
-      width: 13px;
-  }
+}
+
+.donthve {
+    position: absolute;
+    color: black;
+    top: 80%;
+    left: 24%;
+}
+
+[type=checkbox]:checked + span:before {
+    font-size: 16px;
+    content: "\f00c";
+    position: absolute;
+    top: -4px;
+    color: #896cec;
+    left: -1px;
+    width: 13px;
+}

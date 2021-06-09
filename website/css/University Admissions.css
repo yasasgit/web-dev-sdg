@@ -1,46 +1,56 @@
 
-.nav  {
-	list-style-type: none;
-	overflow: hidden;
-	position: fixed;
-	top:0;
-	width: 100%;
-	background-color: #f2eee4;
-	z-index: 999;
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f2eee4;
+    z-index: 999;
 }
-.nav-li-a{
-		float: right;
+
+.nav-li-a {
+    float: right;
 }
+
 .logo-li {
-		float: left;
+    float: left;
 }
-.logo-li a{
-	padding: 5px 12px;
+
+.logo-li a {
+    padding: 5px 12px;
 }
+
 .logo {
-	max-width: 79px;
-	max-height: 70px;
-	width: auto;
-	height: auto;
+    max-width: 79px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
 }
-nav a{
-	text-decoration: none;
-	padding: 29px 12px;
-	color: black;
-	display:block;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+nav a {
+    text-decoration: none;
+    padding: 29px 12px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 nav :hover {
-	background-color: white;
-	color: #736747;
-	transition: .5s;
+    background-color: white;
+    color: #736747;
+    transition: .5s;
 }
-nav ul :hover{
-	background-color: white;
-		transition: .9s;
+
+nav ul :hover {
+    background-color: white;
+    transition: .9s;
 }
-.div-uni-about{width: 100%; height: 50vh;
-background-color: aqua;
-margin-top: 80px;}
+
+.div-uni-about {
+    width: 100%;
+    height: 50vh;
+    background-color: aqua;
+    margin-top: 80px;
+}

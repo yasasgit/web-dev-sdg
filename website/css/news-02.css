@@ -1,11 +1,12 @@
 * {
-    margin: 0;
+    margin: 0%;
 }
 
 .div-news-back-image {
     width: 100%;
-    height: 683px;
-    background-image: url(../media/Port_City_Colombo_for_news.jpg);
+    height: 740px;
+    background-color: black;
+    background-image: url('../media/forum0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,14 +14,14 @@
 .div-news-back {
     width: 100%;
     height: 600px;
-    /* background-color: blanchedalmond; */
+    background-color: rgb(247, 247, 247);
 }
 
 .div-news-content {
-    width: 45%;
-    height: 450px;
+    width: 85%;
+    height: 400px;
     border: 1px solid black;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .div-news-back-content {
