@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+}
+.div-for-main-cover{
+    width: 100%;
+    height: 500px;
+    background-color: darkgreen;
+}
+.div-for-main-content{
+    width: 100%;
+    height: 200px;
+    background-color: darkgrey;
+}
+
+/* grid css */
+.div-for-grid{
+    width: 100%;
+    height: 700px;
+    background-color: darkred;
+}
+.div-grid-all{
+    width: 84%;
+    height: 600px;
+    background-color: darkslateblue;
+}
+
+/* grid row */
+.div-grid-row01{
+    width: 100%;
+    height: 200px; 
+    background-color: darkturquoise;
+}
+.div-grid-row02{
+    width: 100%;
+    height: 200px; 
+    background-color: deeppink;
+}
+.div-grid-row03{
+    width: 100%;
+    height: 200px; 
+    background-color: gold;
+}
+
+/* row 01 css */
+.div-row-01{
+    width: 33.3%;
+    height: 200px;
+    background-color: greenyellow;
+    float: left;
+
+}
+.div-row-02{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(63, 22, 175);
+    float: left;
+
+}
+.div-row-03{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(38, 54, 14);
+    float: right;
+
+}
+
+/* row 02 css */
+
+.div-row02-01{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(18, 19, 16);
+    float: left;
+}
+.div-row02-02{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(136, 7, 108);
+    float: left;
+}
+
+.div-row02-03{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(36, 34, 143);
+    float: left;
+}
+
+/* row 3 css */
+
+.div-row03-01{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(214, 213, 223);
+    float: left;
+}
+.div-row03-02{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(28, 168, 58);
+    float: left;
+}
+.div-row03-03{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(172, 27, 22);
+    float: left;
+}
