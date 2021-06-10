@@ -47,3 +47,34 @@ nav ul :hover {
     background-color: white;
     transition: .9s;
 }
+.div-for-back{
+    width: 100%;
+    height: 680px;
+    background-color:rgb(231, 213, 50);
+}
+.div-for-discribe-content{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(161, 135, 131);
+}
+.div-for-3main-inno{
+   
+    width: 100%;
+    height: 610px;
+    
+}
+.div-for-01-inno{
+    width: 50%;
+    height: 150px;
+    background-color: darkgoldenrod;
+}
+.div-for-02-inno{
+    width: 50%;
+    height: 150px;
+    background-color: rgb(35, 168, 53);
+}
+.div-for-03-inno{
+    width: 50%;
+    height: 150px;
+    background-color: rgb(41, 32, 9);
+}
