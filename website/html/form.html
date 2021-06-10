@@ -10,137 +10,116 @@
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <style>
-        .section {
+        .section{
+            margin-top: 90px;
+        }
+        .section2{
             background-color: rgb(133, 129, 129);
             color: seashell;
             width: 500px;
             height: 20px;
             border-radius: 100px;
-            position: relative;
-            top: 75px;
-            left: 9px;
-        }
+            padding: 10px;
+            }
 
-        .section2 {
-            background-color: rgb(133, 129, 129);
-            color: seashell;
-            width: 500px;
-            height: 20px;
-            border-radius: 100px;
-            position: relative;
-            top: 75px;
-            left: 20px;
-
-        }
-
-        .section3 {
-            background-color: rgb(133, 129, 129);
-            color: seashell;
-            width: 500px;
-            height: 20px;
-            border-radius: 100px;
-            position: relative;
-            top: 75px;
-            right: 9px;
-        }
-
-        .section4 {
-            background-color: rgb(133, 129, 129);
-            color: seashell;
-            width: 500px;
-            height: 20px;
-            border-radius: 100px;
-            position: relative;
-            top: 75px;
-            left: 30px;
-        }
-
-        .section5 {
+        .section3{
             background-color: rgb(133, 129, 129);
             color: seashell;
             width: 50px;
             height: 20px;
             border-radius: 100px;
-            position: relative;
-            top: 75px;
-            right: 180px;
+            margin-right: 530px;
+            padding: 10px;
+            }
+        .section4{
+            background-color:rgb(133, 129, 129);
+            border: none;
+            color: white;
+            padding: 10px 12px;
+            text-align: center;
+            text-decoration: none;
         }
-
-
+        .section5{
+            margin-right: 20px;
+        }
+       
+    
     </style>
 </head>
 <body>
-
 <hr>
-
+<div class="section">
 <form>
-    <br>
-
     <div>
-        <label>First Name<input class="section" name="First Name" type="text"></label>
-
+        <label>First Name</label><br>
+        <input type="text" name="First Name" class="section2">
     </div>
     <br>
     <div>
-        <label>Last Name<input class="section" name="Last Name" type="text"></label>
-
+        <label>Last Name</label><br>
+        <input type="text" name="Last Name" class="section2">
     </div>
     <br>
     <div>
-        <label>Address<input class="section2" name="Address" type="text"></label>
-
+        <label>Address</label><br>
+        <input type="text" name="Address" class="section2">
     </div>
     <br>
     <div>
-        <label>Company Name<input class="section3" name="Company Name" type="text"></label>
-
+        <label>Company Name</label><br>
+        <input type="text" name="Company Name" class="section2">
     </div>
     <br>
     <div>
-        <label>Email<input class="section4" name="Email" type="text"></label>
-
+        <label>Email</label><br>
+        <input type="text" name="Email" class="section2">
     </div>
     <br>
     <br>
     <div>
-        <label>select the industry level <select class="section5" name="industry level">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
+        <label>Type of investor<select name="industry level"><br>
+            <option value="">Angle</option>
+            <option value="">Family Office</option>
+            <option value="">Corporate</option>
+            <option value="">Corporate Venture Capital</option>
+            <option value="">Venture Capital Firm</option>
+            <option value="">Private Equity Firm</option>
         </select></label>
 
     </div>
     <br>
     <div>
-        <label>Investor type</label>
+        <label>Investment Stage</label><br>
 
-        <label>1<input name="Investor" type="radio"></label>
+        <label>Angle<input name="Investor" type="radio"></label><br>
 
-        <label>2<input name="Investor" type="radio"></label>
+        <label>Speed/Startup<input name="Investor" type="radio"></label><br>
 
-        <label>3<input name="Investor" type="radio"></label>
+        <label>Series A<input name="Investor" type="radio"></label>
 
-        <label>4<input name="Investor" type="radio"></label>
+        <label>Series B<input name="Investor" type="radio"></label>
 
-        <label>5<input name="Investor" type="radio"></label>
+        <label>Late Stage<input name="Investor" type="radio"></label>
     </div>
     <br>
     <div>
-        <label>Investment amount</label>
+        <label>Investment amount</label><br>
 
-        <label>1<input name="Investor" type="radio"></label>
+        <label>USD250K<input name="Investor" type="radio"></label>
 
-        <label>2<input name="Investor" type="radio"></label>
+        <label>USD250K-USD500K<input name="Investor" type="radio"></label>
 
-        <label>3<input name="Investor" type="radio"></label>
+        <label>USD500K-USD1M<input name="Investor" type="radio"></label>
 
-        <label>4<input name="Investor" type="radio"></label>
+        <label>USD1M-USD5M<input name="Investor" type="radio"></label>
 
-        <label>5<input name="Investor" type="radio"></label>
+        <label>UPtoUSD5M<input name="Investor" type="radio"></label>
+    </div>
+    <div>
+        <input type="submit" value="Submit" class="section4">
     </div>
 </form>
+</div>
 <footer>
     <div class="row1">
         <div class="col">
