@@ -56,3 +56,4 @@ startup tab
 
 Other
 *form walin ena data tika filw write eken write wenna hadamu EX- investoer registation,sratup
+*projgect propolse eke template ekak download wenna damu
