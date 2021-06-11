@@ -12,42 +12,6 @@ body {
     src: url('../media/OpenSans.ttf');
 }
 
-.container {
-    margin: 0;
-    top: 50px;
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%);
-    background-color: lightblue;
-    background-image: url("../media/login2.jpg");
-    opacity: 1.0;
-    border-radius: 9px;
-    border-top: 10px solid orange;
-    border-bottom: 10px solid orange;
-    width: 400px;
-    height: 500px;
-    box-shadow: 1px 1px 108px 19px rgb(25, 31, 53);
-}
-
-.box h4 {
-    color: #5c6bc0;
-    font-size: 18px;
-    margin-top: 94px;;
-}
-
-.box h4 span {
-    color: #dfdeee;
-    font-weight: lighter;
-}
-
-.box h5 {
-    font-size: 13px;
-    color: #a1a4ad;
-    letter-spacing: 1px;
-    margin-top: -15px;
-    margin-bottom: 70px;
-}
 
 .box input {
     display: block;
@@ -61,27 +25,60 @@ body {
     color: #d6d6d6;
 }
 
-.box input[type = "text"]:focus. {
-    border: 1px solid #79A6FE;
-
-}
-
-.box input[type = "password"]:focus {
-    border: 1px solid #79A6FE;
-}
-
-a {
-    color: #5c7fda;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-label input[type = "checkbox"] {
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    float: left;
+    left: 600px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
     display: none;
-}
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
 label span {
     height: 13px;
@@ -91,7 +88,7 @@ label span {
     position: relative;
     cursor: pointer;
     float: left;
-    left: 7.5%;
+    left: 12%;
 }
 
 .butn {
@@ -102,7 +99,7 @@ label span {
     width: 340px;
     height: 49px;
     font-size: 16px;
-    position: absolute;
+    position: center;
     top: 50%;
     left: 10%;
     transition: 0.3s;
@@ -114,32 +111,25 @@ label span {
 }
 
 .remembr {
-    position: absolute;
+    position: center;
     margin-top: 0;
     color: black;
     font-size: 13px;
+    float: right;
+    right: 28px;
+    
 }
 
 .fogotpas {
-    position: relative;
+    position: center;
     color: black;
-    float: right;
-    right: 28px;
+    float: center;
+    right: 78px;
 }
 
 .donthve {
-    position: absolute;
+    position: center;
     color: black;
     top: 80%;
     left: 24%;
-}
-
-[type=checkbox]:checked + span:before {
-    font-size: 16px;
-    content: "\f00c";
-    position: absolute;
-    top: -4px;
-    color: #896cec;
-    left: -1px;
-    width: 13px;
 }
