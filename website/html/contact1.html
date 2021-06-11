@@ -12,42 +12,35 @@
     <link href="../media/gov-logo-ico.png" rel="icon">
 </head>
 <body>
-<div>
-    <div class="container">
-        <div class="row">
-            <h1>Contact Us</h1>
-        </div>
-        <div class="row">
-            <h4>We'd love to hear from you!</h4>
-        </div>
-        <div class="row input-container">
-            <div class="col-xs-12">
+<div class="header">
+    <div class="row">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="row">
+        <h3>We'd love to hear from you!</h3>
+    </div>
+    <div class="row">
+        <div class="input-container">
+            <form action="">
                 <div class="styled-input wide">
-                    <input type="text" required />
-					<label>Name</label>
+                    <input aria-label="Name" placeholder="Name" required type="text"/>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
                 <div class="styled-input">
-                    <input type="text" required />
-					<label>Email</label>
+                    <input aria-label="Email" placeholder="Email" required type="text"/>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="styled-input" style="float:right;">
-                    <input type="text" required />
-					<label>Phone Number</label>
+                <!--                style="float:right;"-->
+                <div class="styled-input">
+                    <input aria-label="Phone Number" placeholder="Phone Number" required type="text"/>
                 </div>
-            </div>
-            <div class="col-xs-12">
                 <div class="styled-input wide">
-                    <textarea required></textarea>
-					<label>Message</label>
+                    <textarea aria-label="Message" placeholder="Message" required></textarea>
                 </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
-            </div>
+                <a href="">
+                    <div class="btn-lrg submit-btn">
+                        Send Message
+                    </div>
+                </a>
+            </form>
         </div>
     </div>
 </div>
