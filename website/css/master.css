@@ -193,7 +193,7 @@ footer {
     transition: .4s;
 }
 
-.row2 {
+footer .row2 {
     position: static;
     bottom: 0;
     margin: 0 3%;
@@ -201,7 +201,7 @@ footer {
     border-top: 1px solid #9b9b9b;
 }
 
-.row1 {
+footer .row1 {
     padding: 3% 1%;
 }
 
