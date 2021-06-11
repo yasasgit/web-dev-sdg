@@ -1,77 +1,56 @@
-html {
-    overflow-x: hidden;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    margin: 0;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+body {
+    /*vertical-align: baseline;*/
+    /*-moz-box-sizing: border-box;*/
     background-color: #444442;
-    padding-top: 85px;
+}
+
+.header {
+    position: relative;
+    top: 80px;
+    height: 60vh;
 }
 
 .middle-right-container {
-    flex-direction: column;
-    text-align: center;
-    cursor: pointer;
+}
+
+.contact-list-item {
+    display: inline-block;
 }
 
 .socials-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.socials-list li {
+    display: inline-block;
+}
+
+.socials {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-size: contain;
+    margin: 10px;
+    /*cursor: pointer;*/
 }
 
 .socials.li {
     background-image: url("../media/linkedin-icon.png");
-    width: 30px;
-    height: 30px;
-    display: block;
-    text-decoration: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 10px;
-    cursor: pointer;
 }
 
 .socials.tw {
     background-image: url("../media/tw-icon.png");
-    width: 30px;
-    height: 30px;
-    display: block;
-    text-decoration: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 10px;
-    cursor: pointer;
 }
 
 .socials.fb {
     background-image: url("../media/fb-icon.png");
-    width: 30px;
-    height: 30px;
-    display: block;
-    text-decoration: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 10px;
-    cursor: pointer;
 }
+
 .socials.insta {
     background-image: url("../media/instagram-icon.png");
-    width: 30px;
-    height: 30px;
-    display: block;
-    text-decoration: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 10px;
-    cursor: pointer;
-
 }
+
 button {
     width: 100px;
     height: 30px;
@@ -82,7 +61,7 @@ button {
 }
 
 button:hover {
-    background-color: gray;
-    font-size: 105%;
+    background-color: black;
+    /*font-size: 105%;*/
     transition: .9s;
 }
