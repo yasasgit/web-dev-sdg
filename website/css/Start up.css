@@ -1,5 +1,15 @@
-* {
-    margin: 0;
+
+@media screen and (max-width: 780px){
+    .image{
+      width: 30vh;
+      height: 30vh;
+      float: none;
+    }
+    .div-main-vlog {
+        width: 100%;
+        height: 200vh;
+        background-color: rgb(63, 42, 42);
+    }
 }
 
 
@@ -19,7 +29,8 @@
     height: 80vh;
     background-color: rgb(63, 42, 42);
 }
-p {
+.div-main-vlog p {
+    position: relative;
     color: white;
     margin: 1% 5% 2% 5%;
     text-indent: 30px;
@@ -32,21 +43,22 @@ p {
     padding: 10px;
   }
 .grid-item {
-    height: 25vh;
+    /* position: relative; */
+    border-top: 0.2px solid rgba(0, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 100%;
     text-align: left;
+    padding-bottom: 2vh;
   }
   .main_details{
       line-height: 25px;
       width: 75%;
-      border-top: 0.2px solid rgba(0, 0, 0, 0.8);
       padding-top: 3vh;
       float: left;
 
   }
   .image {
-      padding-top: 5vh;
+      margin-top: 3vh;
       width: 20vh;
       height: 20vh;
       background-color: brown;
@@ -56,13 +68,14 @@ p {
       line-height: 40px;
       font-size: 80%;
   }
-  .btn{
-    border-radius: 10px solid black;
-    color: rgb(0, 0, 0);
-    padding: 10px 28px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  #more {display: none;}
+
+  .more{
+      top: 5vh;
+      color: black;
+  }
+  #btn {
+      margin: 10px;
+      padding: 10px;
+
   }

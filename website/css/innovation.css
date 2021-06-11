@@ -1,6 +1,6 @@
 
-.nav {
-    /* background-color: #5F6D70; */
+.navi {
+    background-color: #5F6D70;
 }
 
 nav a {
@@ -33,7 +33,7 @@ nav ul :hover {
     font-weight: lighter;
     font-size: 12px;
     position: absolute;
-    left: 1.5vh;
+    left: 1.5vh; 
     bottom: 2vh;
     color: rgba(255, 255, 255, 0.671);
 }
@@ -47,6 +47,8 @@ nav ul :hover {
 }
 
 .div-mid-about-inno {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50vh;
     background-color: #5F6D70;
