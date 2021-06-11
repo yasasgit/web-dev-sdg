@@ -57,3 +57,4 @@ startup tab
 Other
 *form walin ena data tika filw write eken write wenna hadamu EX- investoer registation,sratup
 *projgect propolse eke template ekak download wenna damu
+*port city eke local ayata thaniyama invest karanna baha.invest karanwanm aniwaren fid ekak wenna ona(pita rata kenek ekkke ekathu wela witharai karanna puluwan)
