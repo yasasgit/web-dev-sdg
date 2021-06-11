@@ -142,6 +142,7 @@ img {
 }
 
 .news-grid {
+    padding: 6px;
     height: 80vh;
 }
 .news-grid .row1{
@@ -151,7 +152,7 @@ img {
     grid-template-columns:auto auto auto;
     grid-gap: 8px;
     padding: 3px 6px;
-    height: 40vh;
+    height: 35vh;
 }
 .news-grid .row2{
     /*overflow: hidden;*/
@@ -175,7 +176,7 @@ img {
 }
 
 .item2 {
-    background-image: url('../media/F1.jpg');
+    background-image: url('../media/forum0.jpg');
 }
 
 .item3 {
@@ -186,15 +187,19 @@ img {
     background-image: url('../media/f1car-01.jpg');
 }
 
+.item5 {
+    background-image: url('../media/f1car-01.jpg');
+}
+
 [class*="item"] :hover {
     color: black;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.062);
     transition: .6s;
 }
 
 .news-grid div {
-    /*width: 100%;*/
-    /*height: 100%;*/
+    width: 100%;
+    height: 100%;
 }
 
 .news-grid a:hover {
@@ -206,5 +211,7 @@ img {
     color: white;
     height: 100%;
 }
+
+
 
 
