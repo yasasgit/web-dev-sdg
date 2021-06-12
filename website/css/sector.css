@@ -1,4 +1,5 @@
-body {
+.navi {
+	background-color: rgb(75, 42, 75);
 }
 
 .header {
@@ -8,7 +9,7 @@ body {
 }
 
 .tab {
-    top: 200px;
+    top: 150px;
     position: relative;
 }
 
@@ -19,20 +20,47 @@ body {
 }
 
 .content {
+	padding-top: 3%;
+	margin: 0% 10%;
+	height: 80vh;
     position: relative;
-    top: 300px;
+	background-color: purple;
+    top: 200px;
 }
 
 .tab a.active {
     font-weight: bold;
     color: black;
+	border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 .tab a:hover {
     color: black;
 
 }
-
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+	background-color: #ccc; 
+  }
+  
+  .panel {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+  }
 /*
 background:linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
 #container {
