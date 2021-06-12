@@ -1,29 +1,36 @@
 body {
-    background-image: url("../media/slide2.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
-.eco-main {
+.header {
     height: 100vh;
     top: 0;
     width: 100%;
 }
 
-.div-for-stat {
-    top: 50vh;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid black; */
+.tab {
+    top: 200px;
+    position: relative;
 }
 
-[class*="but"] {
+[class*="btn"] {
+    color: gray;
+    padding: 10px 40px;
     cursor: pointer;
-    width: 100px;
-    height: 30px;
-    margin: 20px;
-    border-radius: 15px;
+}
+
+.content {
+    position: relative;
+    top: 300px;
+}
+
+.tab a.active {
+    font-weight: bold;
+    color: black;
+}
+
+.tab a:hover {
+    color: black;
+
 }
 
 /*
@@ -50,28 +57,6 @@ padding-top: 120px;}
 
 .sectorA{padding: 0px;
 text-decoration: none;}
-
-
-
-.nav-div {
-	width: 100%;
-	height: 80px;
-}
-.nav-div-tab {
-	width: 60%;
-	height: 80px;
-	float: right;
-}
-.nav-div-logo {
-	width: 40%;
-	height: 50px;
-	float: left;
-}
-.nav-div-ancor {
-	margin: 0;
-	padding-top: 0;
-}
-
 .main-3-sector {
 	width: 100%;
 	height: 100%;

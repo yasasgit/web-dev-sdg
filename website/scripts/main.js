@@ -89,36 +89,33 @@ function hideNav() {
     prevScrollPos = currentScrollPos;
 }
 
-function eco() {
-    document.body.style.backgroundImage = "url('../media/vega-car.jpg')";
-}
+// function eco() {
+//     document.body.style.backgroundImage = "url('../media/vega-car.jpg')";
+// }
+//
+// function cam() {
+//     document.body.style.backgroundImage = "url('../media/F1.jpg')";
+// }
+//
+// function other() {
+//     document.body.style.backgroundImage = "url('../media/slide1.jpg')";
+// }
+//
+// function solid() {
+//     document.body.style.backgroundImage = "url('../media/slide2.jpg')";
+//
+// }
 
-function cam() {
-    document.body.style.backgroundImage = "url('../media/F1.jpg')";
-}
-
-function other() {
-    document.body.style.backgroundImage = "url('../media/slide1.jpg')";
-}
-
-function solid() {
-    document.body.style.backgroundImage = "url('../media/slide2.jpg')";
-
-}
-
-function openTab(evt, cityName) {
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+function openTab(evt, tabName) {
+    let i, content, btn;
+    content = document.getElementsByClassName("content");
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    btn = document.getElementsByClassName("btn");
+    for (i = 0; i < btn.length; i++) {
+        btn[i].className = btn[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
