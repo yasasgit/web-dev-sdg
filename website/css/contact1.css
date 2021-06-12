@@ -10,10 +10,7 @@ h1 {
 }
 
 h3 {
-    /*font-weight: 400;*/
-    /*font-size: 20px;*/
     color: #9b9b9b;
-    /*line-height: 1.5;*/
 }
 
 .header {
@@ -29,45 +26,29 @@ h3 {
 
 .input-container {
     width: 600px;
-    /*margin: 20px auto 25px auto;*/
 }
 
 input:focus::placeholder, textarea:focus::placeholder {
     font-size: 0.75em;
-    /*color: #999;*/
-    /*top: -5px;*/
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 
 }
 
-input:valid ~ label, textarea:valid ~ label {
-
-}
 
 input:focus, textarea:focus {
     outline: 0;
 }
 
-input:focus ~ span, textarea:focus ~ span {
-    /*width: 100%;*/
-    /*-webkit-transition: all 0.075s ease;*/
-    /*transition: all 0.075s ease;*/
-}
-
 .styled-input {
     display: inline-block;
-    /*float: left;*/
     width: 293px;
     margin: 2px;
-    /*position: relative;*/
     border-radius: 4px;
-    /*pointer-events: none;*/
 }
 
 .styled-input.wide {
     width: 595px;
-    /*max-width: 100%;*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,16 +62,6 @@ input:focus ~ span, textarea:focus ~ span {
     }
 }
 
-.styled-input label {
-    /*color: #a21e1e;*/
-    /*padding: 1.3rem 30px 1rem 30px;*/
-    /*position: absolute;*/
-    /*top: 10px;*/
-    /*left: 0;*/
-    /*-webkit-transition: all 0.25s ease;*/
-    /*transition: all 0.25s ease;*/
-}
-
 input, textarea {
     padding: 30px;
     border: 0;
@@ -99,7 +70,6 @@ input, textarea {
     background-color: #2d2d2d;
     color: white;
     border-radius: 4px;
-    /*display: block;*/
 }
 
 textarea {
@@ -114,22 +84,9 @@ textarea {
     background-color: #4b8cfb;
     color: white;
     font-size: 18px;
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06) , 0 2px 10px 0 rgba(0, 0, 0, 0.07);*/
-    /*-webkit-transition: all 300ms ease;*/
-    /*transition: all 300ms ease;*/
 }
 
 .submit-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
-
-/*input[type=checkbox] + label {*/
-/*    color: #ccc;*/
-/*    font-style: italic;*/
-/*}*/
-
-/*input[type=checkbox]:checked + label {*/
-/*    color: #f00;*/
-/*    font-style: normal;*/
-/*}*/
