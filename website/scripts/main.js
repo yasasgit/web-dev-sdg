@@ -119,15 +119,14 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
 function openAcc(panName) {
     let x = document.getElementById(panName);
-    if (x.className.indexOf("show") === -1) {
+    if (x.style.display !== "block") {
         x.style.display = "block";
-        x.className += " show";
         x.previousElementSibling.className += " active";
     } else {
         x.style.display = "none";
-        x.className = x.className.replace(" show", "");
         x.previousElementSibling.className = x.previousElementSibling.className.replace(" active", "");
     }
 }
