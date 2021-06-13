@@ -12,7 +12,7 @@
     <link href="../media/gov-logo-ico.png" rel="icon">
 </head>
 <body>
-<div class="header">
+<header>
     <div class="tab">
         <a class="btn" id="defaultOpen" onclick="openTab(event, 'econ')">
             Economy
@@ -28,22 +28,22 @@
         <h3>economy</h3>
         <p>London is the capital city of England.</p>
         <br><br>
-        <button class="accordion">Section 1</button>
-        <div class="panel">
+        <button class="accordion" onclick="openAcc(event, 'p1')">Section 1</button>
+        <div class="panel" id="p1">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
         </div>
 
-        <button class="accordion">Section 2</button>
-        <div class="panel">
+        <button class="accordion" onclick="openAcc(event, 'p2')">Section 2</button>
+        <div class="panel" id="p2">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
         </div>
 
-        <button class="accordion">Section 3</button>
-        <div class="panel">
+        <button class="accordion" onclick="openAcc(event, 'p3')">Section 3</button>
+        <div class="panel" id="p3">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
@@ -59,7 +59,7 @@
         <h3>other</h3>
         <p>Tokyo is the capital of Japan.</p>
     </div>
-</div>
+</header>
 <footer>
     <div class="row1">
         <div class="col">
@@ -141,21 +141,6 @@
     window.onscroll = function () {
         hideNav();
     }
-    let acc = document.getElementsByClassName("accordion");
-    let i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            let panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-
 </script>
 </body>
 </html>

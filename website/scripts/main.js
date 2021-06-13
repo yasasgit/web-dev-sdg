@@ -119,3 +119,16 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+function openAcc(evt, panName) {
+    let i, panel, acc;
+    panel = document.getElementsByClassName("panel");
+    for (i = 0; i < panel.length; i++) {
+        panel[i].style.display = "none";
+    }
+    acc = document.getElementsByClassName("accordion");
+    for (i = 0; i < acc.length; i++) {
+        acc[i].className = acc[i].className.replace(" active", "");
+    }
+    document.getElementById(panName).style.display = "block";
+    evt.currentTarget.className += " active";
+}

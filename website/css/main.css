@@ -6,19 +6,21 @@ body {
 html {
     scroll-snap-type: y mandatory;
 }
+header {
+    scroll-snap-align: start;
+    background-color: rgba(255, 255, 255, 0);
+    height: 200vh;
+}
 
 @media screen and (max-width: 780px) {
-    .text {
+    header {
         font-size: 70%;
     }
 }
 
-header {
-    scroll-snap-align: start;
-    background-color: rgba(255, 255, 255, 0);
-    top: 0;
-    width: 100%; /* For 100% screen width */
-    height: 100vh; /* For 100% screen height */
+.slideshow {
+    /*width: 100%;*/
+
 }
 
 img {
@@ -135,7 +137,6 @@ img {
     background-image: url("../media/body.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 .news {

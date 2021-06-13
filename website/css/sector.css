@@ -2,10 +2,14 @@
     background-color: rgb(75, 42, 75);
 }
 
-.header {
-    height: 100vh;
-    top: 0;
-    width: 100%;
+header {
+    height: 200vh;
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        font-size: 70%;
+    }
 }
 
 .tab {

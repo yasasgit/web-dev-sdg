@@ -12,11 +12,13 @@ h1 {
 h3 {
     color: #9b9b9b;
 }
-
-.header {
-    position: relative;
-    top: 80px;
-    height: 895px;
+@media screen and (max-width: 780px) {
+    header {
+        font-size: 70%;
+    }
+}
+header {
+    height: 200vh;
 }
 
 .row {
