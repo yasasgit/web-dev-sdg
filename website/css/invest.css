@@ -22,6 +22,7 @@ body {
     background-color: #455153;
     color: white;
 }
+
 .div-goals-invest-about p {
     color: rgb(214, 214, 214);
 }
@@ -29,7 +30,7 @@ body {
 .div-goals-invest {
     text-align: left;
     padding: 50px;
-    font-family: 'Open Sans';
+    /*font-family: 'Open Sans', serif;*/
     font-size: 105%;
     position: relative;
     line-height: 26px;
@@ -73,22 +74,18 @@ button:hover {
 
 }
 
-.unordred {
+.unordered {
     list-style: inside;
-    padding: 2%;
-    padding-left: 3%;
+    padding: 2% 2% 2% 3%;
 }
 
-.ordred {
+.ordered {
     list-style: inside;
-    padding: 2%;
-    padding-left: 3%;
+    padding: 2% 2% 2% 3%;
 }
 
 .action {
-    padding: 10px 10px 10px 40px;
     line-height: 28px;
     color: rgb(194, 194, 194);
-    padding-left: 4%;
-    padding-bottom: 2.5%;
+    padding: 10px 10px 2.5% 4%;
 }

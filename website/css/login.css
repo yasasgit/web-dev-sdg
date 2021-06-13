@@ -48,37 +48,44 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  .container input {
+}
+
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  .checkmark {
+}
+
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
     height: 25px;
     width: 25px;
     background-color: #eee;
-  }
-  .checkmark:after {
+}
+
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  .container:hover input ~ .checkmark {
+}
+
+.container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
-  .container input:checked ~ .checkmark {
+}
+
+.container input:checked ~ .checkmark {
     background-color: #2196F3;
-  }
-  .container input:checked ~ .checkmark:after {
+}
+
+.container input:checked ~ .checkmark:after {
     display: block;
-  }
-  .container .checkmark:after {
+}
+
+.container .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -88,7 +95,7 @@ body {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
 label span {
     height: 13px;
@@ -101,7 +108,7 @@ label span {
     left: 12%;
 }
 
-.butn {
+.btn {
     border: 0;
     background: #7f5feb;
     color: #dfdeee;
@@ -116,7 +123,7 @@ label span {
     cursor: pointer;
 }
 
-.butn:hover {
+.btn:hover {
     background: #5d33e6;
 }
 
@@ -127,18 +134,17 @@ label span {
     font-size: 13px;
     float: right;
     right: 28px;
-    
+
 }
 
-.fogotpas {
+.forgot {
     position: center;
     color: black;
-    float: center;
     font-size: 13px;
     right: 78px;
 }
 
-.donthve {
+.sign {
     position: center;
     color: black;
     top: 80%;

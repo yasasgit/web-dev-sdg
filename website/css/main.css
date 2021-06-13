@@ -1,9 +1,16 @@
 body {
+    background-color: black;
 
 }
 
 html {
     scroll-snap-type: y mandatory;
+}
+
+@media screen and (max-width: 780px) {
+    .text {
+        font-size: 70%;
+    }
 }
 
 header {
@@ -71,7 +78,7 @@ img {
     text-align: right;
     color: rgb(255, 255, 255);
     position: absolute;
-    bottom: 3vh;
+    bottom: 4vh;
     right: 1vw;
 }
 
@@ -145,7 +152,8 @@ img {
     padding: 6px;
     height: 80vh;
 }
-.news-grid .row1{
+
+.news-grid .row1 {
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
     display: grid;
@@ -154,7 +162,8 @@ img {
     padding: 3px 6px;
     height: 35vh;
 }
-.news-grid .row2{
+
+.news-grid .row2 {
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
     display: grid;
@@ -163,6 +172,7 @@ img {
     padding: 3px 6px;
     height: 40vh;
 }
+
 [class*="item"] {
     border-radius: 3px;
     border: 1px solid #1c1a1a;

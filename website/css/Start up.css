@@ -1,10 +1,10 @@
-
-@media screen and (max-width: 780px){
-    .image{
-      width: 30vh;
-      height: 30vh;
-      float: none;
+@media screen and (max-width: 780px) {
+    .image {
+        width: 30vh;
+        height: 30vh;
+        float: none;
     }
+
     .div-main-vlog {
         width: 100%;
         height: 200vh;
@@ -29,19 +29,21 @@
     height: 80vh;
     background-color: rgb(63, 42, 42);
 }
+
 .div-main-vlog p {
     position: relative;
     color: white;
     margin: 1% 5% 2% 5%;
     text-indent: 30px;
     line-height: 30px;
-}    
+}
 
 .grid-container {
     margin: 2% 15% 2% 15%;
     display: grid;
     padding: 10px;
-  }
+}
+
 .grid-item {
     /* position: relative; */
     border-top: 1px solid rgba(0, 0, 0, 0.8);
@@ -49,36 +51,44 @@
     font-size: 100%;
     text-align: left;
     padding-bottom: 2vh;
-  }
-  .main_details{
-      line-height: 25px;
-      width: 75%;
-      padding-top: 3vh;
-      float: left;
+}
 
-  }
-  .image {
-      margin-top: 3vh;
-      width: 20vh;
-      height: 20vh;
-      background-color: brown;
-      float: right;
-  }
-  .date{
-      line-height: 40px;
-      font-size: 80%;
-  }
-  #more {display: none;}
+.main_details {
+    line-height: 25px;
+    width: 75%;
+    padding-top: 3vh;
+    float: left;
 
-  .more{
-      top: 5vh;
-      color: black;
-  }
-  #btn {
-      margin: 10px;
-      padding: 10px;
+}
 
-  }
+.image {
+    margin-top: 3vh;
+    width: 20vh;
+    height: 20vh;
+    background-color: brown;
+    float: right;
+}
+
+.date {
+    line-height: 40px;
+    font-size: 80%;
+}
+
+#more {
+    display: none;
+}
+
+.more {
+    top: 5vh;
+    color: black;
+}
+
+#btn {
+    margin: 10px;
+    padding: 10px;
+
+}
+
 .form {
     display: none;
     position: fixed;
@@ -87,8 +97,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-[class*="more"]{
+
+[class*="more"] {
 }

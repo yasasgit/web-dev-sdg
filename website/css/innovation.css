@@ -33,7 +33,7 @@ nav ul :hover {
     font-weight: lighter;
     font-size: 12px;
     position: absolute;
-    left: 1.5vh; 
+    left: 1.5vh;
     bottom: 2vh;
     color: rgba(255, 255, 255, 0.671);
 }
@@ -61,11 +61,11 @@ nav ul :hover {
     margin-top: 30px;
 }
 
-.main-div-for-innvo-list {
+.main-div {
     width: 100%;
 }
 
-.div-for-innvo-name {
+.div-name {
     width: 100%;
     height: 90px;
     background-color: blue;

@@ -15,17 +15,20 @@ body {
     height: 80vh;
     background-color: #afaf98;
 }
-.contact-list_ul{
+
+.contact-list_ul {
     display: inline-block;
 }
+
 .contact-list-item {
     display: inline-block;
 }
-h1{
-    color:white;
+
+h1 {
+    color: white;
 }
-p{
-    float:center;
+
+p {
 }
 
 .socials-list {

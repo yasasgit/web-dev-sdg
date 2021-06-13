@@ -122,7 +122,7 @@
         </div>
     </div>
 </div>
-<div id="modal" class="form">
+<div class="form" id="modal">
     <form>
         <label>
             name
@@ -151,7 +151,7 @@
         </label>
         upload uer proposal
         <input type="file">
-        <button type="button" onclick="document.getElementById('modal').style.display='none'">Cancel</button>
+        <button onclick="document.getElementById('modal').style.display='none'" type="button">Cancel</button>
     </form>
 </div>
 <footer>
@@ -237,11 +237,12 @@
 </script>
 <script>
     let modal = document.getElementById('modal');
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     }
+
     function showMore1() {
         let more1Text = document.getElementById("more1");
         let btn1Text = document.getElementById("btn1");
@@ -254,6 +255,7 @@
             more1Text.style.display = "inline";
         }
     }
+
     function showMore2() {
         let more2Text = document.getElementById("more2");
         let btn2Text = document.getElementById("btn2");
@@ -266,6 +268,7 @@
             more2Text.style.display = "inline";
         }
     }
+
     function showMore3() {
         let more3Text = document.getElementById("more3");
         let btn3Text = document.getElementById("btn3");
