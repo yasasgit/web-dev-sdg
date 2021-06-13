@@ -119,16 +119,15 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-function openAcc(evt, panName) {
-    let i, panel, acc;
-    panel = document.getElementsByClassName("panel");
-    for (i = 0; i < panel.length; i++) {
-        panel[i].style.display = "none";
+function openAcc(panName) {
+    let x = document.getElementById(panName);
+    if (x.className.indexOf("show") === -1) {
+        x.style.display = "block";
+        x.className += " show";
+        x.previousElementSibling.className += " active";
+    } else {
+        x.style.display = "none";
+        x.className = x.className.replace(" show", "");
+        x.previousElementSibling.className = x.previousElementSibling.className.replace(" active", "");
     }
-    acc = document.getElementsByClassName("accordion");
-    for (i = 0; i < acc.length; i++) {
-        acc[i].className = acc[i].className.replace(" active", "");
-    }
-    document.getElementById(panName).style.display = "block";
-    evt.currentTarget.className += " active";
 }

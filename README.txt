@@ -1,5 +1,14 @@
-NAV eka hama page ekema Transparent karamutheee?
-Background eka adala pata karamu
+*****************errors*********************
+
+*sratup eke click karama from eka hariyata enne naha
+*zone eke div 3 center karanna 						done
+*project eke grid eka center keranna					done
+*project01/02/03 covers daanna
+*project eken project 01/02/03 walta link karanna
+*NAV eka hama page ekema Transparent Background eka adala pata karamu
+*Accordion 								done
+
+
  
 lankawe sectors nathi business open karanna 
 
@@ -58,13 +67,3 @@ Other
 *form walin ena data tika filw write eken write wenna hadamu EX- investoer registation,sratup
 *projgect propolse eke template ekak download wenna damu
 *port city eke local ayata thaniyama invest karanna baha.invest karanwanm aniwaren fid ekak wenna ona(pita rata kenek ekkke ekathu wela witharai karanna puluwan)
-
-
-
-*****************errors*********************
-
-*sratup eke click karama from eka hariyata enne naha
-*zone eke div 3 center karanna
-*project eke grid eka center keranna
-*project01/02/03 covers daanna
-*project eken project 01/02/03 walta link karanna

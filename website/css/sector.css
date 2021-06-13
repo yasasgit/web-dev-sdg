@@ -18,7 +18,7 @@ header {
 }
 
 [class*="btn"] {
-    color: gray;
+    /*color: gray;*/
     padding: 10px 40px;
     cursor: pointer;
 }
@@ -56,15 +56,16 @@ header {
     transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.accordion.active, .accordion:hover {
     background-color: #ccc;
 }
 
 .panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
+    background-color: purple;
     overflow: hidden;
+    height: 300px;
 }
 
 /*
