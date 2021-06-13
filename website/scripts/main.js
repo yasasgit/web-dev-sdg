@@ -130,3 +130,14 @@ function openAcc(panName) {
         x.previousElementSibling.className = x.previousElementSibling.className.replace(" active", "");
     }
 }
+
+function showMore(moreText) {
+    let x = document.getElementById(moreText);
+    if (x.style.display !== "block") {
+        x.style.display = "block";
+        x.nextElementSibling.innerHTML = "Read less";
+    } else {
+        x.style.display = "none";
+        x.nextElementSibling.innerHTML = "Read more";
+    }
+}

@@ -51,8 +51,8 @@
                 <br>
                 <br>
                 <br>
-                <p class="more">
-                    <span id="more1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                <p class="more" id="more1">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
                         nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor.
                         Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
                         Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
@@ -60,7 +60,7 @@
                         Sed dapibus pulvinar nibh tempor porta.
                     </span>
                 </p>
-                <button id="btn1" onclick="showMore1()">Read more</button>
+                <button class="btn" onclick="showMore('more1')">Read more</button>
             </div>
             <div class="image"></div>
         </div>
@@ -79,15 +79,15 @@
                 <br>
                 <br>
                 <br>
-                <p class="more">
-                    <span id="more2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                <p class="more" id="more2">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
                         nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor.
                         Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
                         Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
                         Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
                         Sed dapibus pulvinar nibh tempor porta.</span>
                 </p>
-                <button id="btn2" onclick="showMore2()">Read more</button>
+                <button class="btn" onclick="showMore('more2')">Read more</button>
             </div>
             <div class="image"></div>
         </div>
@@ -105,15 +105,15 @@
                 <br>
                 <br>
                 <br>
-                <p class="more">
-                    <span id="more3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                <p class="more" id="more3">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
                         nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor.
                         Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
                         Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
                         Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
                         Sed dapibus pulvinar nibh tempor porta.</span>
                 </p>
-                <button id="btn3" onclick="showMore3()">Read more</button>
+                <button class="btn" onclick="showMore('more3')">Read more</button>
             </div>
             <div class="image"></div>
         </div>
@@ -234,51 +234,10 @@
     window.onscroll = function () {
         hideNav();
     }
-</script>
-<script>
     let modal = document.getElementById('modal');
     window.onclick = function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
-        }
-    }
-
-    function showMore1() {
-        let more1Text = document.getElementById("more1");
-        let btn1Text = document.getElementById("btn1");
-
-        if (more1Text.style.display === "inline") {
-            btn1Text.innerHTML = "Read more";
-            more1Text.style.display = "none";
-        } else {
-            btn1Text.innerHTML = "Read less";
-            more1Text.style.display = "inline";
-        }
-    }
-
-    function showMore2() {
-        let more2Text = document.getElementById("more2");
-        let btn2Text = document.getElementById("btn2");
-
-        if (more2Text.style.display === "inline") {
-            btn2Text.innerHTML = "Read more";
-            more2Text.style.display = "none";
-        } else {
-            btn2Text.innerHTML = "Read less";
-            more2Text.style.display = "inline";
-        }
-    }
-
-    function showMore3() {
-        let more3Text = document.getElementById("more3");
-        let btn3Text = document.getElementById("btn3");
-
-        if (more3Text.style.display === "inline") {
-            btn3Text.innerHTML = "Read more";
-            more3Text.style.display = "none";
-        } else {
-            btn3Text.innerHTML = "Read less";
-            more3Text.style.display = "inline";
         }
     }
 </script>

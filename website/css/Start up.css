@@ -74,19 +74,15 @@
     font-size: 80%;
 }
 
-#more {
-    display: none;
-}
-
 .more {
     top: 5vh;
     color: black;
+    display: none;
 }
 
-#btn {
+.btn {
     margin: 10px;
     padding: 10px;
-
 }
 
 .form {
