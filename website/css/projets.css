@@ -1,7 +1,17 @@
+.navi{ 
+    background-color: rgb(43, 43, 43);
+}
+.plus{
+    padding-top: 15vh;
+    font-size: 350%;
+    font-weight: lighter;
+}
+
 .div-for-main-cover {
+    position: relative;
     width: 100%;
-    height: 500px;
-    background-color: darkgreen;
+    height: 65vh;
+    background-color: rgb(213, 224, 58);
 }
 
 .div-for-main-content {
