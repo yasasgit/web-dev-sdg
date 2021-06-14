@@ -1,17 +1,24 @@
 .navi{ 
     background-color: rgb(43, 43, 43);
 }
-.plus{
+/* .plus{ 
     padding-top: 15vh;
-    font-size: 350%;
+    font-size: 380%;
+    width: 100%;
     font-weight: lighter;
 }
-
+.projectstopic{
+    padding-left: 52%;
+    top: 28vh;
+    position: fixed;
+    font-size: 250%;
+}
+*/
 .div-for-main-cover {
     position: relative;
     width: 100%;
     height: 65vh;
-    background-color: rgb(213, 224, 58);
+    background-image:url("../media/Untitled.jpg");
 }
 
 .div-for-main-content {
