@@ -39,8 +39,8 @@
     background-color: rgb(43, 43, 43);
 }
 .news-grid {
-    background-color: tomato;
-    padding: 6px;
+    background-color: rgb(43, 43, 43);
+    padding-top: 5vh;
     height: 100vh;
 }
 
@@ -48,9 +48,9 @@
     /*overflow: hidden;*/
     color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns:auto auto auto;
-    grid-gap: 8px;
-    padding: 3px 6px;
+    grid-template-columns:32% 32% 32%;
+    grid-gap: 1.5%;
+    padding: 1% 1.5%;
     height: 30vh;
 }
 
@@ -58,18 +58,18 @@
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
     display: grid;
-    grid-template-columns:auto auto auto;
-    grid-gap: 8px;
-    padding: 3px 6px;
+    grid-template-columns:32% 32% 32%;
+    grid-gap: 1.5%;
+    padding: 1% 1.5%;
     height: 30vh;
 }
 .news-grid .row3 {
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
     display: grid;
-    grid-template-columns:auto auto auto;
-    grid-gap: 8px;
-    padding: 3px 6px;
+    grid-template-columns:32% 32% 32%;
+    grid-gap: 1.5%;
+    padding: 1% 1.5%;
     height: 30vh;
 }
 [class*="item"] { 
@@ -83,7 +83,20 @@
     background-color: rgba(255, 255, 255, 0.062);
     transition: .6s;
 }
-
+.item1 h3{
+    line-height: 30px;
+    color: rgb(184, 184, 184);
+}
+.item1 h4{
+    color: rgb(27, 27, 27);
+}
+.news-grid a{
+    padding-top: 3vh;
+}
+hr.solid {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+  
 /* .news-grid div { 
     width: 100%;
     height: 100%;
