@@ -31,12 +31,83 @@
 }
 .div-for-main-content h1{
     margin: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 5vh;
 }
+.div-for-grid{
+    height: 100vh;
+    background-color: rgb(43, 43, 43);
+}
+.news-grid {
+    background-color: tomato;
+    padding: 6px;
+    height: 100vh;
+}
 
+.news-grid .row1 {
+    /*overflow: hidden;*/
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 8px;
+    padding: 3px 6px;
+    height: 30vh;
+}
+
+.news-grid .row2 {
+    /*overflow: hidden;*/
+    /*color: rgb(255, 255, 255);*/
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 8px;
+    padding: 3px 6px;
+    height: 30vh;
+}
+.news-grid .row3 {
+    /*overflow: hidden;*/
+    /*color: rgb(255, 255, 255);*/
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 8px;
+    padding: 3px 6px;
+    height: 30vh;
+}
+[class*="item"] { 
+    border-radius: 3px;
+    border: 1px solid #1c1a1a;
+    background-size: cover;
+}
+
+[class*="item"] :hover { 
+    color: black;
+    background-color: rgba(255, 255, 255, 0.062);
+    transition: .6s;
+}
+
+/* .news-grid div { 
+    width: 100%;
+    height: 100%;
+}*/
+
+.news-grid a:hover {
+    transition: .6s;
+    transform: scale(1.02);
+}
+
+.item1 {
+    background-color: rgb(87, 88, 88);
+}
+.item2 {
+    background-color: rgb(87, 88, 88);
+}
+.item3 {
+    background-color: rgb(87, 88, 88);
+}
+.pro_name{
+    color: white;
+}
 /* grid css */
-.div-for-grid {
+/* .div-for-grid { 
     width: 100%;
     height: 800px;
     background-color: rgb(43, 43, 43);
@@ -49,7 +120,7 @@
     margin: 0 auto;
 }
 
-/* grid row */
+ grid row 
 .div-grid-row01 {
     width: 100%;
     height: 200px;
@@ -68,7 +139,7 @@
     background-color: gold;
 }
 
-/* row 01 css */
+ row 01 css 
 .div-row-01 {
     width: 33.3%;
     height: 200px;
@@ -93,7 +164,7 @@
 
 }
 
-/* row 02 css */
+row 02 css 
 
 .div-row02-01 {
     width: 33.3%;
@@ -116,7 +187,7 @@
     float: left;
 }
 
-/* row 3 css */
+ row 3 css 
 
 .div-row03-01 {
     width: 33.3%;
@@ -137,4 +208,4 @@
     height: 200px;
     background-color: rgb(172, 27, 22);
     float: left;
-}
+}*/
