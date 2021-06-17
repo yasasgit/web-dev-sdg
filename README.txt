@@ -7,7 +7,7 @@
 *project eken project 01/02/03 walta link karanna
 *NAV eka hama page ekema Transparent Background eka adala pata karamu
 *Accordion 								done
-
+*projects highlighling issue
 
  
 lankawe sectors nathi business open karanna 
