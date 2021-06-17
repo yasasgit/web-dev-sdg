@@ -19,3 +19,38 @@
     outline: none;
     color: #d6d6d6;
 }
+.submit {
+    border: 0;
+    background: #7f5feb;
+    color: #dfdeee;
+    border-radius: 100px;
+    width: 340px;
+    height: 49px;
+    font-size: 16px;
+    position: center;
+    top: 50%;
+    left: 10%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #5d33e6;
+}
+.reset{
+    border: 0;
+    background: #7f5feb;
+    color: #dfdeee;
+    border-radius: 100px;
+    width: 340px;
+    height: 49px;
+    font-size: 16px;
+    position: center;
+    top: 50%;
+    left: 10%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.reset:hover{
+    background: #5d33e6;
+}
