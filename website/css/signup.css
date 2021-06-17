@@ -8,3 +8,14 @@
     background-color: #d1dce0;
     color: white;
 }
+.box input {
+    display: block;
+    margin: 20px auto;
+    background: #262e49;
+    border: 0;
+    border-radius: 5px;
+    padding: 14px 10px;
+    width: 320px;
+    outline: none;
+    color: #d6d6d6;
+}
