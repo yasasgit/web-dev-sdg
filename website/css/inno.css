@@ -77,13 +77,14 @@ nav ul :hover {
     height: auto;
     background-color: #5F6D70;
     padding: 3%;
-    text-align: left;
 }
 
 h2, p {
     color: white;
 }
-
+p {
+    text-align: left;
+}
 .are-you {
     background-color: rgba(0, 0, 0, 0.15);
     /*width: 30vh;*/
