@@ -2,126 +2,84 @@
 <html dir="ltr" lang="en">
 <head>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>why you should invest</title>
+    <title>Investor Registration</title>
     <link href="../css/normalize.css" rel="stylesheet">
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
     <!--Nav and Footer CSS -->
-    <link href="../css/invest.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <style>
-        .section{
-            margin-top: 90px;
-            width: 600px;
-        }
-        .section2{
-            background-color: rgb(133, 129, 129);
-            color: seashell;
-            width: 500px;
-            height: 20px;
-            border-radius: 100px;
-            padding: 10px;
-            }
-
-        .section3{
-            background-color: rgb(133, 129, 129);
-            color: seashell;
-            width: 50px;
-            height: 20px;
-            border-radius: 100px;
-            margin-right: 530px;
-            padding: 10px;
-            }
-        .section4{
-            background-color:rgb(133, 129, 129);
-            border: none;
-            color: white;
-            padding: 10px 12px;
-            text-align: center;
-            text-decoration: none;
-        }
-        .section5{
-            margin-right: 20px;
-        }
-       
-    
-    </style>
 </head>
 <body>
-<hr>
-<div class="section">
-<form>
-    <div>
-        <label>First Name</label><br>
-        <input type="text" name="First Name" class="section2">
+<header>
+    <div class="cover"></div>
+    <div class="about">
+        <h2>Registration Form</h2>
     </div>
-    <br>
-    <div>
-        <label>Last Name</label><br>
-        <input type="text" name="Last Name" class="section2">
-    </div>
-    <br>
-    <div>
-        <label>Address</label><br>
-        <input type="text" name="Address" class="section2">
-    </div>
-    <br>
-    <div>
-        <label>Company Name</label><br>
-        <input type="text" name="Company Name" class="section2">
-    </div>
-    <br>
-    <div>
-        <label>Email</label><br>
-        <input type="text" name="Email" class="section2">
-    </div>
-    <br>
-    <br>
-    <div>
-        <label>Type of investor<select name="industry level"><br>
-            <option value="">Angle</option>
-            <option value="">Family Office</option>
-            <option value="">Corporate</option>
-            <option value="">Corporate Venture Capital</option>
-            <option value="">Venture Capital Firm</option>
-            <option value="">Private Equity Firm</option>
-        </select></label>
+    <form>
+        <div>
+            <label>First Name<input class="section2" name="First Name" type="text"></label>
 
-    </div>
-    <br>
-    <div>
-        <label>Investment Stage</label><br>
+        </div>
 
-        <label>Angle<input name="Investor" type="radio"></label><br>
+        <div>
+            <label>Last Name<input class="section2" name="Last Name" type="text"></label>
 
-        <label>Speed/Startup<input name="Investor" type="radio"></label><br>
+        </div>
 
-        <label>Series A<input name="Investor" type="radio"></label>
+        <div>
+            <label>Address<input class="section2 wide" name="Address" type="text"></label>
 
-        <label>Series B<input name="Investor" type="radio"></label>
+        </div>
 
-        <label>Late Stage<input name="Investor" type="radio"></label>
-    </div>
-    <br>
-    <div>
-        <label>Investment amount</label><br>
+        <div>
+            <label>Company Name<input class="section2" name="Company Name" type="text"></label>
 
-        <label>USD250K<input name="Investor" type="radio"></label>
+        </div>
 
-        <label>USD250K-USD500K<input name="Investor" type="radio"></label>
+        <div>
+            <label>Email<input class="section2 wide" name="Email" type="text"></label>
 
-        <label>USD500K-USD1M<input name="Investor" type="radio"></label>
+        </div>
 
-        <label>USD1M-USD5M<input name="Investor" type="radio"></label>
 
-        <label>UPtoUSD5M<input name="Investor" type="radio"></label>
-    </div>
-    <div>
-        <input type="submit" value="Submit" class="section4">
-    </div>
-</form>
-</div>
+        <div>
+            <label>Type of investor
+                <select name="industry level">
+                    <option value="">Angle</option>
+                    <option value="">Family Office</option>
+                    <option value="">Corporate</option>
+                    <option value="">Corporate Venture Capital</option>
+                    <option value="">Venture Capital Firm</option>
+                    <option value="">Private Equity Firm</option>
+                </select>
+            </label>
+
+        </div>
+
+        <div>
+            <p>Investment Stage</p>
+            <label>Angle<input name="Investor" type="radio"></label>
+            <label>Speed/Startup<input name="Investor" type="radio"></label>
+            <label>Series A<input name="Investor" type="radio"></label>
+            <label>Series B<input name="Investor" type="radio"></label>
+            <label>Late Stage<input name="Investor" type="radio"></label>
+        </div>
+
+        <div>
+            <p>Investment amount</p>
+            <label>USD250K<input name="Investor" type="radio"></label>
+            <label>USD250K-USD500K<input name="Investor" type="radio"></label>
+            <label>USD500K-USD1M<input name="Investor" type="radio"></label>
+            <label>USD1M-USD5M<input name="Investor" type="radio"></label>
+            <label>UPtoUSD5M<input name="Investor" type="radio"></label>
+        </div>
+        <div>
+            <input class="section4" type="submit" value="Submit">
+        </div>
+    </form>
+</header>
 <footer>
     <div class="row1">
         <div class="col">

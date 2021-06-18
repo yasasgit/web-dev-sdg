@@ -3,7 +3,8 @@
 }
 
 header {
-    height: 240vh;
+    /*height: 240vh;*/
+    background-color: rgb(39, 39, 39);
 }
 
 @media screen and (max-width: 780px) {
@@ -12,27 +13,23 @@ header {
     }
 }
 
-.div-for-back {
-    width: 100%;
-    height: 90vh;
+.cover {
     background-image: url(../media/investorzone.jpg);
 }
 
 .div-for-describe-content {
-    font-size: 110%;
+    /*font-size: 110%;*/
     color: white;
     width: 100%;
     height: 50vh;
     background-color: rgb(39, 39, 39);
 }
-.divbody{
-    background-color: rgb(39, 39, 39);
-}
+
 .div-for-3main-inno {
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
 .div-for-01-inno {
@@ -42,7 +39,7 @@ header {
 }
 
 .div-for-02-inno {
-    margin:5% 0% 5% 3%;
+    margin: 5% 0 5% 3%;
     width: 45%;
     border-radius: 10px;
     float: left;
@@ -53,7 +50,7 @@ header {
 }
 
 .div-for-03-inno {
-    margin:5% 3% 5% 0%;
+    margin: 5% 3% 5% 0;
     position: relative;
     width: 45%;
     border-radius: 10px;
@@ -63,10 +60,12 @@ header {
     background-image: url(../media/forum0.jpg);
     background-size: cover;
 }
+
 .div-for-02-inno:hover {
     transition: .6s;
     transform: scale(1.02);
 }
+
 .div-for-03-inno:hover {
     transition: .6s;
     transform: scale(1.02);

@@ -8,7 +8,8 @@
     margin: 20px auto;
     padding: 84px 30px;
 }
-.signtop{
+
+.signtop {
     padding-top: 3%;
     position: relative;
     top: 80px;
@@ -16,12 +17,14 @@
     height: 150px;
     background-color: #5F6D70;
 }
+
 .box input {
     display: block;
     background: #262e49;
     width: 220px;
     position: relative;
 }
+
 .submit {
     border: 0;
     background: #7f5feb;
@@ -40,7 +43,8 @@
 .submit:hover {
     background: #5d33e6;
 }
-.reset{
+
+.reset {
     border: 0;
     background: #7f5feb;
     color: #dfdeee;
@@ -54,6 +58,7 @@
     transition: 0.3s;
     cursor: pointer;
 }
-.reset:hover{
+
+.reset:hover {
     background: #5d33e6;
 }

@@ -4,8 +4,8 @@ body {
     background-size: 100%;
 }
 
-h1 {
-    font-size: 72px;
+h2 {
+    /*font-size: 72px;*/
     color: white;
 }
 
@@ -14,13 +14,17 @@ h3 {
 }
 
 @media screen and (max-width: 780px) {
-    header {
-        font-size: 70%;
+    .styled-input {
+        /*width: 100px;*/
     }
 }
 
 header {
-    height: 200vh;
+    /*height: 200vh;*/
+}
+
+.cover {
+    height: 80px;
 }
 
 .row {
