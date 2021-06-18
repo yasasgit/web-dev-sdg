@@ -133,20 +133,15 @@ img {
 }
 
 .back {
-    scroll-snap-align: start;
     background-image: url("../media/body.jpg");
     background-size: cover;
     background-attachment: fixed;
+    scroll-snap-align: start;
 }
 
-.news {
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    color: white;
-    height: 20vh;
+.about {
+
+    /*height: 20vh;*/
 }
 
 .news-grid {

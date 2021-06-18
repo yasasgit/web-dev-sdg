@@ -48,8 +48,13 @@ header {
     color: white;
     padding: 35px;
     /*font-size: 110%;*/
-    line-height: 30px;
     /*height: 40%;*/
+}
+
+.about p {
+    line-height: 30px;
+    margin: 3% 5%;
+    text-indent: 30px;
 }
 
 @font-face {
