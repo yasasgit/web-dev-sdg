@@ -50,7 +50,7 @@ nav ul :hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: auto;
     background-color: #4b5557;
     background-image: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0, 0, 0, 0.349));
 }
