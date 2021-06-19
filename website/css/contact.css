@@ -10,8 +10,9 @@ header {
 .cover {
     background-image: url("../media/contactus.jpg");
 }
-.main{
-    padding: 120px 5% ;
+
+.main {
+    padding: 120px 5%;
     border-top: 1px solid #303030;
     border-bottom: 1px solid #303030;
     /*border-radius: 10px;*/
@@ -29,7 +30,8 @@ header {
 .bottom {
     padding: 5px;
 }
-.bottom h3{
+
+.bottom h3 {
     padding-top: 5%;
     color: #303030;
 }
