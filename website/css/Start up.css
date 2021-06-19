@@ -12,18 +12,12 @@
     }
 }
 
-
-.navi {
+.navi, .about {
     background-color: rgb(63, 42, 42);
 }
 
 .cover {
     background-image: url("../media/startupcover.jpg");
-}
-
-.about {
-    /*height: 80vh;*/
-    background-color: rgb(63, 42, 42);
 }
 
 .grid-container {

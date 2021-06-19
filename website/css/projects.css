@@ -1,5 +1,6 @@
-.navi {
+.navi, .about {
     background-color: rgb(43, 43, 43);
+    color: rgba(255, 255, 255, 0.575);
 }
 
 /* .plus{
@@ -17,11 +18,6 @@
 */
 .cover {
     background-image: url("../media/projectmain_cover.jpg");
-}
-
-.about {
-    color: rgba(255, 255, 255, 0.575);
-    background-color: rgb(43, 43, 43);
 }
 
 .div-for-main-content h2 {

@@ -1,6 +1,7 @@
-.navi {
-    background-color: rgb(75, 42, 75);
-background-color: purple;
+
+.navi, .about {
+    /*background-color: rgb(75, 42, 75);*/
+    background-color: purple;
 }
 
 header {
@@ -24,12 +25,7 @@ header {
 }
 
 .content {
-    padding-top: 3%;
     margin: 0 10%;
-    /*height: 80vh;*/
-    position: relative;
-    background-color: purple;
-    top: 80px;
 }
 
 .tab a.active {

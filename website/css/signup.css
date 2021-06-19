@@ -9,10 +9,9 @@
 
 .cover {
     height: 80px;
-    background-color: #5F6D70;
 }
 
-.about {
+.about, .navi {
     background-color: #5F6D70;
 }
 

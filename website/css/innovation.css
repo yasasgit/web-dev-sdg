@@ -1,5 +1,6 @@
-
-.navi {
+.navi, .about {
+    /*background-color: #4b5557;*/
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0, 0, 0, 0.349));*/
     background-color: #5F6D70;
 }
 
@@ -40,11 +41,6 @@ nav ul :hover {
 
 .cover {
     background-image: url('../media/innomain.jpg');
-}
-
-header {
-    background-color: #4b5557;
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0, 0, 0, 0.349));*/
 }
 
 .main-div {

@@ -4,9 +4,8 @@ body {
     background-size: 100%;
 }
 
-h2 {
-    /*font-size: 72px;*/
-    color: white;
+.navi, .about {
+    background-color: #c2c287;
 }
 
 h3 {

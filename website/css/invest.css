@@ -1,9 +1,8 @@
-
 body {
-    background-color: #5F6D70;
 }
 
 header {
+    background-color: #5F6D70;
     /*height: 200vh;*/
 }
 
@@ -12,9 +11,6 @@ header {
 }
 
 @media screen and (max-width: 780px) {
-    header {
-        font-size: 70%;
-    }
 }
 
 /* @font-face {
@@ -22,11 +18,7 @@ header {
     src: url('../media/Open Sans.ttf');
 }*/
 
-.navi {
-    background-color: #455153;
-}
-
-.about {
+.navi, .about {
     background-color: #455153;
 }
 

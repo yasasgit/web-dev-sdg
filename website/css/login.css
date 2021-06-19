@@ -1,14 +1,9 @@
-.navi {
+.navi, .about {
     background-color: #5F6D70;
 }
 
 .cover {
     height: 80px;
-}
-
-.about {
-    /*height: 150px;*/
-    background-color: #5F6D70;
 }
 
 body {

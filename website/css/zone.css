@@ -1,4 +1,4 @@
-.navi {
+.navi, .about {
     background-color: rgb(39, 39, 39);
 }
 
@@ -8,17 +8,10 @@ header {
 }
 
 @media screen and (max-width: 780px) {
-    header {
-        font-size: 70%;
-    }
 }
 
 .cover {
     background-image: url(../media/investorzone.jpg);
-}
-
-.about {
-    /*background-color: rgb(39, 39, 39);*/
 }
 
 .div-for-3main-inno {

@@ -1,7 +1,7 @@
 body {
 }
 
-header, .navi {
+.navi, .about {
     background-color: #afaf98;
 }
 
@@ -32,7 +32,6 @@ header, .navi {
 
 .about {
     width: 100%;
-    background-color: #afaf98;
 }
 
 .socials-list {

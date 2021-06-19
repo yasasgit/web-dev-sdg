@@ -63,8 +63,8 @@ nav ul :hover {
     background-image: url('../media/remote-controlled-smart-appliance.png');
 }
 
-header {
-    background-color: #5F6D70;
+.navi, .about {
+    background-color: #c2c287;
 }
 
 .div-inside-mid-about {
@@ -73,12 +73,9 @@ header {
     padding: 0 3%;
 }
 
-h2, p {
-    color: white;
-}
-
 p {
     text-align: left;
+    /*text-justify: auto;*/
 }
 
 .are-you {
@@ -92,10 +89,6 @@ p {
 
 .are-you:hover {
     background-color: rgba(255, 255, 255, 0.13);
-}
-
-h3, li {
-    color: white;
 }
 
 .fa-ul {
