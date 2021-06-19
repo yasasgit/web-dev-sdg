@@ -83,6 +83,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="form" onsubmit="checkForm()">
             <table>
                 <tr>
+                    <td class="box">Who Are You?</td>
+                    <td><input name="gender" type="radio">Investor
+                        <input name="gender" type="radio">Innovator
+                        <input name="gender" type="radio">Entrepreneur
+                    </td>
+                </tr>
+                <tr>
                     <td>First Name</td>
                     <td><input name="firstname" placeholder="Enter First Name" type="text"></td>
                 </tr>
@@ -92,99 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </tr>
                 <tr>
                     <td>Date of Birth</td>
-                    <td><select name="date">
-                        <option>Date</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                        <option>24</option>
-                        <option>25</option>
-                        <option>26</option>
-                        <option>27</option>
-                        <option>28</option>
-                        <option>29</option>
-                        <option>30</option>
-                        <option>31</option>
-                    </select>
-                        <select name="month">
-                            <option>Month</option>
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                        </select>
-                        <select name="year">
-                            <option>Year</option>
-                            <option>1980</option>
-                            <option>1981</option>
-                            <option>1982</option>
-                            <option>1983</option>
-                            <option>1984</option>
-                            <option>1985</option>
-                            <option>1986</option>
-                            <option>1987</option>
-                            <option>1988</option>
-                            <option>1989</option>
-                            <option>1990</option>
-                            <option>1991</option>
-                            <option>1992</option>
-                            <option>1993</option>
-                            <option>1994</option>
-                            <option>1995</option>
-                            <option>1996</option>
-                            <option>1997</option>
-                            <option>1998</option>
-                            <option>1999</option>
-                            <option>2000</option>
-                            <option>2001</option>
-                            <option>2002</option>
-                            <option>2003</option>
-                            <option>2004</option>
-                            <option>2005</option>
-                            <option>2006</option>
-                            <option>2007</option>
-                            <option>2008</option>
-                            <option>2009</option>
-                            <option>2010</option>
-                            <option>2011</option>
-                            <option>2012</option>
-                            <option>2013</option>
-                            <option>2014</option>
-                            <option>2015</option>
-                            <option>2016</option>
-                            <option>2017</option>
-                            <option>2018</option>
-                            <option>2019</option>
-                            <option>2020</option>
-                        </select>
+                    <td><input name="date" placeholder="Enter DOB" type="date"></td>
                 </tr>
                 <tr>
                     <td class="box">Gender</td>
@@ -203,15 +118,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     </select></td>
                 </tr>
                 <tr>
-                    <td>E-mail</td>
+                    <td>Phone</td>
+                    <td><input name="phone" placeholder="Enter Phone" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
                     <td>
-                        <input name="username" placeholder="Enter E-mail" type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                        <input name="username" placeholder="Enter an Username" type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                         <span class="invalid-feedback"><?php echo $username_err; ?></span>
                     </td>
                 </tr>
                 <tr>
-                    <td>Phone</td>
-                    <td><input name="phone" placeholder="Enter Phone" type="text"></td>
+                    <td>E-mail</td>
+                    <td>
+                        <input name="email" placeholder="Enter E-mail" type="email">
+                        <span class="invalid-feedback"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td>Password</td>
