@@ -217,7 +217,6 @@ footer {
     background-color: #000;
     color: #9b9b9b;
     font-size: 12px;
-    height: 60vh;
     display: block;
     scroll-snap-align: end;
 }

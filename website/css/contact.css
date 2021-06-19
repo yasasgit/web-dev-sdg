@@ -1,4 +1,6 @@
-body {
+header {
+    background-color: #8f8456;
+    background-image: linear-gradient(#6b6549, #8f8456);
 }
 
 .navi, .about {
@@ -9,20 +11,19 @@ body {
     background-image: url("../media/contactus.jpg");
 }
 .main{
-    padding: 3% 1% ;
-    background-color: #8f8456;
-    background-image: linear-gradient(#6b6549, #8f8456);
+    padding: 120px 5% ;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    /*border-radius: 10px;*/
 }
 
 .box {
-    margin: 1%;
+    /*margin: 1%;*/
     display: inline-block;
     background: rgba(255, 255, 255, 0);
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    width: 47%;
-    height: 500px;
-    padding: 150px;
+    width: 49%;
+    /*height: 500px;*/
+
 }
 
 .bottom {
@@ -30,6 +31,7 @@ body {
 }
 .bottom h3{
     padding-top: 5%;
+    color: #303030;
 }
 
 .contact-list_ul {
@@ -54,8 +56,8 @@ body {
 }
 
 .socials {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: block;
     background-size: contain;
     margin: 10px;
