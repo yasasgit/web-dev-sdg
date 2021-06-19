@@ -4,12 +4,16 @@ body {
     background-size: 100%;
 }
 
-.navi, .about {
-    background-color: #c2c287;
+.navi{
+    background-color: #404458;
+}
+.about{
+    padding: 5% 0%;
 }
 
-h3 {
-    color: #9b9b9b;
+h4 {
+    font-weight: 100;
+    color: #b9b9b9;
 }
 
 @media screen and (max-width: 780px) {
@@ -20,6 +24,8 @@ h3 {
 
 header {
     /*height: 200vh;*/
+    background-color: #404458;
+    background-image: linear-gradient(#5a5f79, #404458);
 }
 
 .cover {
@@ -27,6 +33,8 @@ header {
 }
 
 .row {
+    background-color: rgb(255, 255, 255);
+    padding: 3% 0%;
     display: flex;
     justify-content: center;
 }
@@ -85,10 +93,11 @@ textarea {
 }
 
 .submit-btn {
+    margin-top: 5%;
     float: right;
     padding: 7px 35px;
     border-radius: 60px;
-    background-color: #4b8cfb;
+    background-color: #5a5f79;
     color: white;
     font-size: 18px;
 }
