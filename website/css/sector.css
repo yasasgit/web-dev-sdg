@@ -93,7 +93,7 @@ header {
 
 .div-main-for-stat-data-00 {
     width: 80%;
-    height: 300px;
+    height: auto;
     background-color: bisque;
     float: right;
     margin-top: 45px;
