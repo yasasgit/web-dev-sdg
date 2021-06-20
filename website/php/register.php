@@ -175,7 +175,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <a href="../index.html">Home</a>
             <a href="./zone.html">Investor Zone</a>
             <a href="./contact.html">Contact</a>
-            <a href="#">hfhdghd</a>
+            <a href="#">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>

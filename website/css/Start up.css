@@ -85,3 +85,15 @@
 
 [class*="more"] {
 }
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    margin: 50px auto;
+    padding: 30px;
+}
+label{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
