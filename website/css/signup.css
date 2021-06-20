@@ -1,61 +1,16 @@
-.gt5 {
-    line-height: 30px;
-    background-color: #d1dce0;
-    color: white;
-    display: block;
-    margin: 0 auto;
-    padding: 84px 30px;
-}
-
-.cover {
-    height: 80px;
-}
-
 .about, .navi {
     background-color: #5F6D70;
 }
 
-.box input {
-    display: block;
-    background: #262e49;
-    width: 220px;
-    position: relative;
+.cover {
+    height: 80px;
+    background-color: #5F6D70;
 }
 
-.submit {
-    border: 0;
-    background: #7f5feb;
-    color: #dfdeee;
-    border-radius: 100px;
-    width: 100px;
-    height: 49px;
-    font-size: 16px;
-    position: relative;
-    top: 50%;
-    left: 10%;
-    transition: 0.3s;
-    cursor: pointer;
+header {
+    /*background-color: #d1dce0;*/
 }
 
-.submit:hover {
-    background: #5d33e6;
-}
 
-.reset {
-    border: 0;
-    background: #7f5feb;
-    color: #dfdeee;
-    border-radius: 100px;
-    width: 100px;
-    height: 49px;
-    font-size: 16px;
-    position: relative;
-    top: 50%;
-    left: 70%;
-    transition: 0.3s;
-    cursor: pointer;
-}
 
-.reset:hover {
-    background: #5d33e6;
-}
+

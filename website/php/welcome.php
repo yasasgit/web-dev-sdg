@@ -14,8 +14,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <body>
 <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
 <p>
-    <a href="reset-password.php" class="forgot" >Reset Your Password</a>
-    <a href="logout.php" >Sign Out of Your Account</a>
+    <a href="reset-password.php" class="forgot">Reset Your Password</a>
+    <a href="logout.php">Sign Out of Your Account</a>
 </p>
 </body>
 </html>

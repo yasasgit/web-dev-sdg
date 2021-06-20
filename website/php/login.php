@@ -1,47 +1,47 @@
 <?php
 session_start();
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: welcome.php");
     exit;
 }
 require_once "config.php";
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    if(empty(trim($_POST["username"]))){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty(trim($_POST["username"]))) {
         $username_err = "Please enter username.";
-    } else{
+    } else {
         $username = trim($_POST["username"]);
     }
-    if(empty(trim($_POST["password"]))){
+    if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter your password.";
-    } else{
+    } else {
         $password = trim($_POST["password"]);
     }
-    if(empty($username_err) && empty($password_err)){
+    if (empty($username_err) && empty($password_err)) {
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
-        if($stmt = mysqli_prepare($link, $sql)){
+        if ($stmt = mysqli_prepare($link, $sql)) {
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             $param_username = $username;
-            if(mysqli_stmt_execute($stmt)){
+            if (mysqli_stmt_execute($stmt)) {
                 mysqli_stmt_store_result($stmt);
-                if(mysqli_stmt_num_rows($stmt) == 1){
+                if (mysqli_stmt_num_rows($stmt) == 1) {
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
+                    if (mysqli_stmt_fetch($stmt)) {
+                        if (password_verify($password, $hashed_password)) {
                             session_start();
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
                             header("location: welcome.php");
-                        } else{
+                        } else {
                             $login_err = "Invalid username or password.";
                         }
                     }
-                } else{
+                } else {
                     $login_err = "Invalid username or password.";
                 }
-            } else{
+            } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
             mysqli_stmt_close($stmt);
@@ -61,6 +61,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <!--Nav and Footer CSS -->
     <link href="../css/login.css" rel="stylesheet">
     <!--Page CSS -->
+    <link href="../css/form.css" rel="stylesheet">
+    <!--Form CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <script src="../scripts/login.js"></script>
 </head>
@@ -70,30 +72,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="about">
         <h2>Sign in to your Account</h2>
     </div>
-    <div class="gt4">
-        <?php
-        if(!empty($login_err)){
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
-        }
-        ?>
-        <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <label>
-                <input name="username" placeholder="Email" type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+    <?php
+    if (!empty($login_err)) {
+        echo '<div class="alert alert-danger">' . $login_err . '</div>';
+    }
+    ?>
+    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <div class="gt5">
+            <label>Email
+                <input required name="username" placeholder="Email"
+                       type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>"
+                value="<?php echo $username; ?>">
             </label>
-            <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            <label>
-                <input name="password" placeholder="Password" type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+            <!--            <span class="invalid-feedback">--><?php //echo $username_err; ?><!--</span>-->
+            <label>Password
+                <input required name="password" placeholder="Password"
+                       type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
             </label>
-            <span class="invalid-feedback"><?php echo $password_err; ?></span>
+            <!--            <span class="invalid-feedback">--><?php //echo $password_err; ?><!--</span>-->
             <label class="container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-                <a class="remember" href="#">Remember me</a>
+                <!--                <span class="checkmark"></span>-->
+                <input type="checkbox">Remember me
             </label>
+            <p>Don’t have an account? <a class="sign" href="register.php">Sign up now</a></p>
             <input class="btn" type="submit" value="Sign in">
-        </form>
-        <a class="sign" href="register.php">Don’t have an account? Sign up now</a>
-    </div>
+        </div>
+    </form>
 </header>
 <footer>
     <div class="row1">
