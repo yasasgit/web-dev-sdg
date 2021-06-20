@@ -9,6 +9,8 @@
     <!--Nav and Footer CSS -->
     <link href="../css/Start up.css" rel="stylesheet">
     <!--Page CSS -->
+    <link href="../css/form.css" rel="stylesheet">
+    <!--Form CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
@@ -113,42 +115,47 @@
                 <div class="image"></div>
             </div>
             <div>
-                <button onclick="document.getElementById('modal').style.display='block'">Click</button>
+                <button class="btn" onclick="document.getElementById('modal').style.display='block'">Apply Now</button>
             </div>
         </div>
     </div>
     <div class="form" id="modal">
+
         <div class="container">
+            <h2>Apply Now!</h2>
             <form>
-                <label>
-                    name
-                    <input name="f_name" type="text">
-                </label>
-                <label>
-                    email
-                    <input type="email">
-                </label>
-                <label>
-                    district
-                    <select>
-                        <option>colombo</option>
-                        <option>colombo</option>
-                        <option>colombo</option>
-                        <option>colombo</option>
-                    </select>
-                </label>
-                <label>
-                    business sector
-                    <select>
-                        <option>agree</option>
-                        <option>services</option>
-                        <option>indo</option>
-                    </select>
-                </label>
-                <label>Upload your proposal
+                <div class="gt5">
+                    <label>
+                        Name
+                        <input name="f_name" type="text">
+                    </label>
+                    <label>
+                        Email
+                        <input type="email">
+                    </label>
+                    <label>
+                        District
+                        <select>
+                            <option>colombo</option>
+                            <option>colombo</option>
+                            <option>colombo</option>
+                            <option>colombo</option>
+                        </select>
+                    </label>
+                    <label>
+                        Business Sector
+                        <select>
+                            <option>agree</option>
+                            <option>services</option>
+                            <option>indo</option>
+                        </select>
+                    </label>
+                    <label>Upload Your Proposal </label>
                     <input type="file">
-                </label>
-                <button onclick="document.getElementById('modal').style.display='none'" type="button">Cancel</button>
+                    <button class="btn" onclick="document.getElementById('modal').style.display='none'" type="button">
+                        Cancel
+                    </button>
+                </div>
             </form>
         </div>
     </div>

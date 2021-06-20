@@ -66,11 +66,6 @@
     display: none;
 }
 
-.btn {
-    margin: 10px;
-    padding: 10px;
-}
-
 .form {
     display: none;
     position: fixed;
@@ -92,10 +87,4 @@
     background: white;
     margin: 50px auto;
     padding: 30px;
-}
-
-label {
-    display: flex;
-    align-items: center;
-    width: 200px;
 }
