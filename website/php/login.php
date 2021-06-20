@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!--                <span class="checkmark"></span>-->
                 <input type="checkbox">Remember me
             </label>
-            <p>Don’t have an account? <a class="sign" href="register.php">Sign up now</a></p>
+            <p>Don't have an account? <a class="sign" href="register.php">Sign up now</a></p>
             <input class="btn" type="submit" value="Sign in">
         </div>
     </form>
