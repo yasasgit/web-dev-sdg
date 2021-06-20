@@ -2,14 +2,17 @@ body {
 }
 
 html {
-    scroll-snap-type: y mandatory;
+    /*scroll-snap-type: y mandatory;*/
 }
 
 header {
-    scroll-snap-align: start;
     background-color: rgba(255, 255, 255, 0);
     /*height: 200vh;*/
     background-color: black;
+}
+
+footer{
+    /*scroll-snap-align: end;*/
 }
 
 @media screen and (max-width: 780px) {
@@ -19,6 +22,7 @@ header {
 }
 
 .slideshow {
+
     /*width: 100%;*/
 
 }
@@ -136,7 +140,6 @@ img {
     background-image: url("../media/body.jpg");
     background-size: cover;
     background-attachment: fixed;
-    scroll-snap-align: start;
 }
 
 .about {

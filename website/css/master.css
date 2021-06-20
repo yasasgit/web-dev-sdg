@@ -58,6 +58,15 @@ header {
     text-indent: 30px;
 }
 
+.about ul {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about a {
+    color: white;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: url('../media/OpenSans.ttf');
@@ -182,8 +191,7 @@ header {
     /*list-style-type: none;*/
 }
 
-.navi a {
-}
+
 
 .navi:hover {
     /*background-color: rgba(0, 0, 0, 0.4);*/
@@ -218,7 +226,6 @@ footer {
     color: #9b9b9b;
     font-size: 12px;
     display: block;
-    scroll-snap-align: end;
 }
 
 .col a:hover {
