@@ -67,28 +67,22 @@ nav ul :hover {
     background-color: #c2c287;
 }
 
-.div-inside-mid-about {
-    width: 100%;
-    height: auto;
-    padding: 0 3%;
-}
-
 p {
     text-align: left;
     /*text-justify: auto;*/
 }
 
-.are-you {
-    background-color: rgba(0, 0, 0, 0.15);
-    /*width: 30vh;*/
+.btn {
+    /*background-color: rgba(0, 0, 0, 0.15);*/
+    width: auto;
     /*height: 5vh;*/
     padding: 9px;
-    border-radius: 20px;
-    color: white;
+    /*border-radius: 20px;*/
+    /*color: white;*/
 }
 
-.are-you:hover {
-    background-color: rgba(255, 255, 255, 0.13);
-}
+/*.btn:hover {*/
+/*    background-color: rgba(255, 255, 255, 0.13);*/
+/*}*/
 
 /*#736747;*/

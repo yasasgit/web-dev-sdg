@@ -75,7 +75,6 @@ input[type="password"]:focus {
     outline: none;
 }
 
-.btn:hover,
 input[type="text"]:hover,
 input[type="date"]:hover,
 input[type="email"]:hover,
@@ -83,22 +82,6 @@ input[type="password"]:hover,
 select:hover {
     background: #eaeaea;
     transition: 0.4s;
-}
-
-.btn {
-    background: #eaeaea;
-    border-radius: 100px;
-    width: 95px;
-    height: 32px;
-    transition: 0.3s;
-    cursor: pointer;
-    color: black;
-    font-size: 13px;
-    margin: 0 32px;
-    /*border: 0;*/
-    /*border: none;*/
-
-    /*padding: 10px 12px;*/
 }
 
 .section3 {
