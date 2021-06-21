@@ -22,7 +22,6 @@ footer {
 }
 
 .slideshow {
-
     /*width: 100%;*/
 
 }
@@ -32,7 +31,6 @@ img {
 }
 
 .Slides {
-    background-color: rgba(255, 255, 255, 0);
     height: 100vh;
     display: none;
     overflow: hidden;
@@ -47,15 +45,16 @@ img {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50vh;
+    top: 46vh;
     width: auto;
-    margin-top: -22px;
+    /*margin-top: -22px;*/
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
+
 }
 
 .next {
@@ -69,7 +68,7 @@ img {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text-box {
@@ -82,10 +81,12 @@ img {
 
 .text {
     text-align: right;
-    color: rgb(255, 255, 255);
+    color: rgb(213, 208, 208);
     position: absolute;
-    bottom: 4vh;
+    bottom: 6vh;
     right: 1vw;
+    padding-left: 50%;
+
 }
 
 .dot {
@@ -102,7 +103,7 @@ img {
 .dots {
     left: 48vw;
     position: absolute;
-    bottom: 1vh;
+    bottom: 3vh;
 }
 
 .active, .dot:hover {
