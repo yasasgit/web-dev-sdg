@@ -67,6 +67,7 @@ header {
 .main-stat {
     display: flex;
     background-color: rgb(85, 76, 83);
+	
 }
 
 .left-stat {
@@ -81,6 +82,14 @@ header {
     width: 50%;
     margin: 15px 0;
     padding: 10px;
+	line-height: 400%;
+
+}
+
+.more-btn{
+	height: 35px;
+	width: 100px;
+	border-radius: 30px;
 
 }
 
