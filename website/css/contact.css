@@ -4,7 +4,10 @@ header {
 }
 
 .navi, .about {
-    background-color: #6b6549;
+    background-color: #3D9970;
+}
+.navi:hover {
+    background-color: #2e7455;
 }
 
 .cover {

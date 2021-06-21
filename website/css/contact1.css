@@ -4,8 +4,11 @@ body {
     background-size: 100%;
 }
 
-.navi {
+.navi,.about {
     background-color: #404458;
+}
+.navi:hover {
+    background-color: #24474b;
 }
 
 .about {

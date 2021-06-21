@@ -1,26 +1,26 @@
 <?php
 require_once "config.php";
 
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$email = $password = $confirm_password = "";
+$email_err = $password_err = $confirm_password_err = "";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty(trim($_POST["username"]))) {
-        $username_err = "Please enter a username.";
-    } elseif (!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["username"]))) {
-        $username_err = "Username can only contain letters, numbers, and underscores.";
+    if (empty(trim($_POST["email"]))) {
+        $email_err = "Please enter a email.";
+    } elseif (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", trim($_POST["email"]))) {
+        $email_err = "Email can only contain letters, numbers, and underscores.";
     } else {
-        $sql = "SELECT id FROM users WHERE username = ?";
+        $sql = "SELECT id FROM users WHERE email = ?";
         if ($stmt = mysqli_prepare($link, $sql)) {
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-            $param_username = trim($_POST["username"]);
+            mysqli_stmt_bind_param($stmt, "s", $param_email);
+            $param_email = trim($_POST["email"]);
             if (mysqli_stmt_execute($stmt)) {
                 mysqli_stmt_store_result($stmt);
                 if (mysqli_stmt_num_rows($stmt) == 1) {
-                    $username_err = "This username is already taken.";
+                    $email_err = "This email is already taken.";
                 } else {
-                    $username = trim($_POST["username"]);
+                    $email = trim($_POST["email"]);
                 }
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
@@ -43,11 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $confirm_password_err = "Password did not match.";
         }
     }
-    if (empty($username_err) && empty($password_err) && empty($confirm_password_err)) {
-        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+    if (empty($email_err) && empty($password_err) && empty($confirm_password_err)) {
+        $sql = "INSERT INTO users (email, password) VALUES (?, ?)";
         if ($stmt = mysqli_prepare($link, $sql)) {
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-            $param_username = $username;
+            mysqli_stmt_bind_param($stmt, "ss", $param_email, $param_password);
+            $param_email = $email;
             $param_password = password_hash($password, PASSWORD_DEFAULT);
             if (mysqli_stmt_execute($stmt)) {
                 header("location: login.php");
@@ -58,16 +58,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
     if (isset($_POST['submit'])) {
-        $accType = $_POST['acc-Type'];
+        $acctype = $_POST['acctype'];
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $dob = $_POST['dob'];
         $gender = $_POST['gender'];
         $country = $_POST['country'];
         $phone = $_POST['phone'];
-        $email = $_POST['email'];
-        mysqli_query($link, "UPDATE users SET accType = '$accType', firstname= '$firstname', lastname= '$lastname', dob= '$dob', gender= '$gender', country= '$country', phone= '$phone', email= '$email'
-        WHERE username = '$username';");
+        mysqli_query($link, "UPDATE users SET acctype = '$acctype', firstname= '$firstname', lastname= '$lastname', dob= '$dob', gender= '$gender', country= '$country', phone = '$phone'
+        WHERE email = '$email';");
     }
     mysqli_close($link);
 }
@@ -99,20 +98,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Please fill this form to create an account.</p>
     </div>
     <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
-          onsubmit="checkForm()">
+          onsubmit="return checkForm()">
         <div class="gt5">
             <span class="frm-text">Who Are You?</span>
             <div class="radio">
                 <label>
-                    <input name="acc-type" type="radio" value="invest">
+                    <input name="acctype" type="radio" value="invest">
                     Investor
                 </label>
                 <label>
-                    <input name="acc-type" type="radio" value="innovate">
+                    <input name="acctype" type="radio" value="innovate">
                     Innovator
                 </label>
                 <label>
-                    <input name="acc-type" type="radio" value="startup">
+                    <input name="acctype" type="radio" value="startup">
                     Entrepreneur
                 </label>
             </div>
@@ -130,6 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label>
                     <input name="gender" type="radio"
                            value="M" <?php if (isset($gender) && $gender == "M") echo "checked"; ?>>
+
                     Male
                 </label>
                 <label>
@@ -374,8 +374,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label>E-mail
                 <input name="email" placeholder="Enter E-mail"
                        type="email"
-                       value="<?php echo $username; ?>" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?> >
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                       value="<?php echo $email; ?>" <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?> >
+                <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </label>
             <label>Password
                 <input placeholder="Enter an Password" type="password"
@@ -408,7 +408,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="../php/login.php">Investor Zone</a>
+            <a href="welcome.php">Investor Zone</a>
             <a href="../html/contact.html">Contact</a>
             <a href="../php/login.php">Sign In</a>
         </div>
@@ -452,7 +452,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="../php/login.php">Investor Zone</a>
+                <a href="welcome.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>

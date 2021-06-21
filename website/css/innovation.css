@@ -1,7 +1,10 @@
 .navi, .about {
     /*background-color: #4b5557;*/
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0, 0, 0, 0.349));*/
-    background-color: #5F6D70;
+    background-color: #32383a;
+}
+.navi:hover {
+    background-color: #24282a;
 }
 
 /* nav a { 

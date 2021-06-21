@@ -38,24 +38,23 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <a href="../html/form.html">
             <div class="div-for-01-inno">
                 <!-- for invester register -->
-                <h3>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h3>
+                <h3>Hi, <b><?php echo htmlspecialchars($_SESSION["email"]); ?></b>. Welcome to our site.</h3>
                 <p>podi wisthrayak + terms & conditions</p>
-                <p>
-                    <a href="reset-password.php">Reset Your Password</a>
-                    <a href="logout.php">Sign Out of Your Account</a>
-                    <a href="delete-account.php">Delete Your Account</a>
-                </p>
+                <p><a href="reset-password.php">Reset Your Password</a></p>
+                <p><a href="logout.php">Sign Out of Your Account</a></p>
+                <p><a href="delete-account.php">Delete Your Account</a></p>
+
             </div>
         </a>
     </div>
     <hr>
     <div class="div-for-3main-inno">
-        <a href="innovate.html">
+        <a href="../html/innovate.html">
             <div class="div-for-02-inno"><h2>Innovation</h2>
                 <!-- for ivert Innovation -->
             </div>
         </a>
-        <a href="projects.html">
+        <a href="../html/projects.html">
             <div class="div-for-03-inno"><h2>Projects</h2>
                 <!-- thian busines walata salli danna -->
             </div>
@@ -66,17 +65,17 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="row1">
         <div class="col">
             <h4>Explore</h4>
-            <a href="./invest.html">Why Should You Invest?</a>
-            <a href="./economy.html">Statistics</a>
-            <a href="./innovate.html">Innovation</a>
-            <a href="./startup.html">Startup</a>
+            <a href="../html/invest.html">Why Should You Invest?</a>
+            <a href="../html/economy.html">Statistics</a>
+            <a href="../html/innovate.html">Innovation</a>
+            <a href="../html/startup.html">Startup</a>
         </div>
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="../php/login.php">Investor Zone</a>
-            <a href="./contact.html">Contact</a>
-            <a href="../php/login.php">Sign In</a>
+            <a href="welcome.php">Investor Zone</a>
+            <a href="../html/contact.html">Contact</a>
+            <a href="login.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
@@ -118,7 +117,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="../php/login.php">Investor Zone</a>
+                <a href="welcome.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>

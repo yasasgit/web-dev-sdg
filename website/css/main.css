@@ -11,6 +11,11 @@ header {
     background-color: black;
 }
 
+.navi:hover {
+    background-color: black;
+}
+
+
 footer {
     /*scroll-snap-align: end;*/
 }

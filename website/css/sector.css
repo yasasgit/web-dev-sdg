@@ -1,7 +1,10 @@
 
 .navi, .about {
     /*background-color: rgb(75, 42, 75);*/
-    background-color: #660b66;
+    background-color: #001f3f;
+}
+.navi:hover {
+    background-color: #00152b;
 }
 
 header {
@@ -67,7 +70,6 @@ header {
 .main-stat {
     display: flex;
     background-color: rgb(85, 76, 83);
-	
 }
 
 .left-stat {
@@ -82,10 +84,11 @@ header {
     width: 50%;
     margin: 15px 0;
     padding: 10px;
-	line-height: 400%;
+    line-height: 400%;
 
 }
-.get-data{
+
+.get-data {
     width: 500px;
     margin: 0 auto;
 }
