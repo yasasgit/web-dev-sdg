@@ -75,16 +75,16 @@ nav ul :hover {
     background-size: cover;
 }
 
-a div {
+.grid-container h4 {
     width: 100%;
     height: 100%;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    border-radius: 10px;
     color: rgba(255, 255, 255, 0.856);
 }
 
-[class*="item"] :hover {
+[class*="item"] h4:hover {
     background-color: rgba(255, 255, 255, 0.336);
-    border-radius: 10px;
     color: black;
     transition: .8s;
 }
@@ -125,8 +125,8 @@ a div {
     background-image: url('../media/remote-controlled-smart-appliance.jpg');
 }
 
-.item10 {
-    background-image: url('../media/add-more.png');
+.item10 img {
+    height: 180px;
 }
 
 /* .grid-container{
