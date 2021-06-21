@@ -41,9 +41,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <h3>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h3>
                 <p>podi wisthrayak + terms & conditions</p>
                 <p>
-                    <a href="reset-password.php" >Reset Your Password</a>
+                    <a href="reset-password.php">Reset Your Password</a>
                     <a href="logout.php">Sign Out of Your Account</a>
-                    <a href="delete-account.php" >Delete Your Account</a>
+                    <a href="delete-account.php">Delete Your Account</a>
                 </p>
             </div>
         </a>

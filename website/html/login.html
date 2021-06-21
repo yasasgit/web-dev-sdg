@@ -20,40 +20,43 @@
     <div class="about">
         <h2>Sign in to your Account</h2>
     </div>
-    <div class="gt4">
-        <form class="box">
-            <label>
-                <input name="email" placeholder="Email" type="text">
+    <form action="" method="post" onsubmit="validate()">
+        <div class="gt5">
+            <label>Email
+                <input name="email" placeholder="Email"
+                       type="text">
             </label>
-            <label>
-                <input name="password" placeholder="Password" type="password">
+            <span class="invalid-feedback"></span>
+            <label>Password
+                <input name="password" placeholder="Password"
+                       type="password">
             </label>
+            <span class="invalid-feedback"></span>
             <label class="container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-                <a class="remember" href="#">Remember me</a>
+                <!--                            <span class="checkmark"></span>-->
+                <input type="checkbox">Remember me
             </label>
-            <a class="forgot" href="#">Forgot Password?</a>
+            <p>Don't have an account?
+                <a class="sign" href="signup.html">Sign up now</a>
+            </p>
             <input class="btn" type="submit" value="Sign in">
-
-        </form>
-        <a class="sign" href="../html/signup.html">Don't have an account? Sign up</a>
-    </div>
+        </div>
+    </form>
 </header>
 <footer>
     <div class="row1">
         <div class="col">
             <h4>Explore</h4>
-            <a href="./invest.html">Why Should You Invest?</a>
-            <a href="./economy.html">Statistics</a>
-            <a href="./innovate.html">Innovation</a>
-            <a href="./startup.html">Startup</a>
+            <a href="../html/invest.html">Why Should You Invest?</a>
+            <a href="../html/economy.html">Statistics</a>
+            <a href="../html/innovate.html">Innovation</a>
+            <a href="../html/startup.html">Startup</a>
         </div>
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="./zone.html">Investor Zone</a>
-            <a href="./contact.html">Contact</a>
+            <a href="../html/zone.html">Investor Zone</a>
+            <a href="../html/contact.html">Contact</a>
             <a href="#">Sign In</a>
         </div>
         <div class="col">

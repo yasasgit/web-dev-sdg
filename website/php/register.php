@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter a password.";
     } elseif (strlen(trim($_POST["password"])) < 6) {
-        $password_err = "Password must have atleast 6 characters.";
+        $password_err = "Password must have at least 6 characters.";
     } else {
         $password = trim($_POST["password"]);
     }
@@ -103,30 +103,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="gt5">
             <label for="acc-type">Who Are You?</label>
             <div>
-                <input id="acc-type" name="acc-type" type="radio" required value="invest"><span class="frm-text">Investor</span>
+                <input id="acc-type" name="acc-type" type="radio" value="invest"><span class="frm-text">Investor</span>
                 <input id="" name="acc-type" type="radio" value="innovate"><span class="frm-text">Innovator</span>
                 <input id="" name="acc-type" type="radio" value="startup"><span class="frm-text">Entrepreneur</span>
             </div>
             <label for="">First Name
-                <input name="firstname" placeholder="Enter First Name" type="text" required>
+                <input name="firstname" placeholder="Enter First Name" type="text">
             </label>
             <label for="">Last Name
-                <input name="lastname" placeholder="Enter Last Name" type="text" required>
+                <input name="lastname" placeholder="Enter Last Name" type="text">
             </label>
             <label for="">Date of Birth
-                <input name="dob" placeholder="Enter Date of Birth" type="date" required>
+                <input name="dob" placeholder="Enter Date of Birth" type="date">
             </label>
             <label for="gender">Gender</label>
             <div>
                 <input id="gender" name="gender" type="radio"
                     <?php if (isset($gender) && $gender == "male") echo "checked"; ?>
-                       required value="m">
+                       value="m">
                 <span class="frm-text">Male</span>
                 <input id="" name="gender" type="radio" value="f">
                 <span class="frm-text">Female</span>
             </div>
             <label for="">Country
-                <select name="country" required>
+                <select name="country">
                     <option>Select Country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AL">Albania</option>
@@ -356,26 +356,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </select>
             </label>
             <label for="">Phone
-                <input name="phone" placeholder="Enter Phone" type="text" required>
+                <input name="phone" placeholder="Enter Phone" type="text">
             </label>
             <label for="">Username
-                <input required name="username" placeholder="Enter an Username"
+                <input name="username" placeholder="Enter an Username"
                        type="text"
                        value="<?php echo $username; ?>" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?> >
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </label>
             <label for="">E-mail
-                <input required name="email" placeholder="Enter E-mail" type="email" value="<?php echo $email; ?>">
+                <input name="email" placeholder="Enter E-mail" type="email" value="<?php echo $email; ?>">
                 <span class="invalid-feedback"></span>
             </label>
             <label for="">Password
-                <input required placeholder="Enter an Password" type="password"
+                <input placeholder="Enter an Password" type="password"
                        name="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </label>
             <label for="">Confirm Password
-                <input required placeholder="Confirm Password" type="password"
+                <input placeholder="Confirm Password" type="password"
                        name="confirm_password" <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback">

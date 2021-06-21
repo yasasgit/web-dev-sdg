@@ -80,13 +80,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="gt5">
             <label>Email
-                <input required name="username" placeholder="Email"
+                <input name="username" placeholder="Email"
                        type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $username; ?>">
             </label>
             <!--            <span class="invalid-feedback">--><?php //echo $username_err; ?><!--</span>-->
             <label>Password
-                <input required name="password" placeholder="Password"
+                <input name="password" placeholder="Password"
                        type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
             </label>
             <!--            <span class="invalid-feedback">--><?php //echo $password_err; ?><!--</span>-->
