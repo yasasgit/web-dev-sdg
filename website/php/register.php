@@ -1,7 +1,10 @@
 <?php
 require_once "config.php";
+
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty(trim($_POST["username"]))) {
         $username_err = "Please enter a username.";
@@ -28,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter a password.";
     } elseif (strlen(trim($_POST["password"])) < 6) {
-        $password_err = "Password must have at least 6 characters.";
+        $password_err = "Password must have atleast 6 characters.";
     } else {
         $password = trim($_POST["password"]);
     }
@@ -54,8 +57,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mysqli_stmt_close($stmt);
         }
     }
+    if (isset($_POST['submit'])) {
+        $accType = $_POST['acc-Type'];
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $dob = $_POST['dob'];
+        $gender = $_POST['gender'];
+        $country = $_POST['country'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        mysqli_query($link, "UPDATE users SET accType = '$accType', firstname= '$firstname', lastname= '$lastname', dob= '$dob', gender= '$gender', country= '$country', phone= '$phone', email= '$email'
+        WHERE username = '$username';");
+    }
     mysqli_close($link);
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -81,14 +98,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Sign up</h2>
         <p>Please fill this form to create an account.</p>
     </div>
-    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="form"
+    <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="form"
           onsubmit="checkForm()">
         <div class="gt5">
             <label for="acc-type">Who Are You?</label>
             <div>
-                <input id="acc-type" name="acc-type" type="radio" required><span class="frm-text">Investor</span>
-                <input id="" name="acc-type" type="radio"><span class="frm-text">Innovator</span>
-                <input id="" name="acc-type" type="radio"><span class="frm-text">Entrepreneur</span>
+                <input id="acc-type" name="acc-type" type="radio" required value="invest"><span class="frm-text">Investor</span>
+                <input id="" name="acc-type" type="radio" value="innovate"><span class="frm-text">Innovator</span>
+                <input id="" name="acc-type" type="radio" value="startup"><span class="frm-text">Entrepreneur</span>
             </div>
             <label for="">First Name
                 <input name="firstname" placeholder="Enter First Name" type="text" required>
@@ -97,12 +114,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input name="lastname" placeholder="Enter Last Name" type="text" required>
             </label>
             <label for="">Date of Birth
-                <input name="date" placeholder="Enter Date of Birth" type="date" required>
+                <input name="dob" placeholder="Enter Date of Birth" type="date" required>
             </label>
             <label for="gender">Gender</label>
             <div>
-                <input id="gender" name="gender" type="radio" required><span class="frm-text">Male</span>
-                <input id="" name="gender" type="radio"><span class="frm-text">Female</span>
+                <input id="gender" name="gender" type="radio"
+                    <?php if (isset($gender) && $gender == "male") echo "checked"; ?>
+                       required value="m">
+                <span class="frm-text">Male</span>
+                <input id="" name="gender" type="radio" value="f">
+                <span class="frm-text">Female</span>
             </div>
             <label for="">Country
                 <select name="country" required>
@@ -339,29 +360,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </label>
             <label for="">Username
                 <input required name="username" placeholder="Enter an Username"
-                       type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>"
-                value="<?php echo $username; ?>">
-                <!--                <span class="invalid-feedback">--><?php //echo $username_err; ?><!--</span>-->
+                       type="text"
+                       value="<?php echo $username; ?>" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?> >
+                <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </label>
             <label for="">E-mail
-                <input required name="email" placeholder="Enter E-mail" type="email">
-                <!--                <span class="invalid-feedback"></span>-->
+                <input required name="email" placeholder="Enter E-mail" type="email" value="<?php echo $email; ?>">
+                <span class="invalid-feedback"></span>
             </label>
             <label for="">Password
                 <input required placeholder="Enter an Password" type="password"
                        name="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $password; ?>">
-                <!--                <span class="invalid-feedback">--><?php //echo $password_err; ?><!--</span>-->
+                <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </label>
             <label for="">Confirm Password
                 <input required placeholder="Confirm Password" type="password"
                        name="confirm_password" <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $confirm_password; ?>">
-                <!--                <span class="invalid-feedback">-->
-                <?php //echo $confirm_password_err; ?><!--</span>-->
+                <span class="invalid-feedback">
+                <?php echo $confirm_password_err; ?></span>
             </label>
             <p>Already have an account? <a href="login.php">Login here.</a></p>
-            <input class="btn" type="Submit">
+            <input class="btn" type="Submit" name="submit">
             <input class="btn" type="Reset" value="Cancel">
         </div>
     </form>
