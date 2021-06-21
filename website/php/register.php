@@ -98,34 +98,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Sign up</h2>
         <p>Please fill this form to create an account.</p>
     </div>
-    <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="form"
+    <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
           onsubmit="checkForm()">
         <div class="gt5">
-            <label for="acc-type">Who Are You?</label>
-            <div>
-                <input id="acc-type" name="acc-type" type="radio" value="invest"><span class="frm-text">Investor</span>
-                <input id="" name="acc-type" type="radio" value="innovate"><span class="frm-text">Innovator</span>
-                <input id="" name="acc-type" type="radio" value="startup"><span class="frm-text">Entrepreneur</span>
+            <span class="frm-text">Who Are You?</span>
+            <div class="radio">
+                <label>
+                    <input name="acc-type" type="radio" value="invest">
+                    Investor
+                </label>
+                <label>
+                    <input name="acc-type" type="radio" value="innovate">
+                    Innovator
+                </label>
+                <label>
+                    <input name="acc-type" type="radio" value="startup">
+                    Entrepreneur
+                </label>
             </div>
-            <label for="">First Name
+            <label>First Name
                 <input name="firstname" placeholder="Enter First Name" type="text">
             </label>
-            <label for="">Last Name
+            <label>Last Name
                 <input name="lastname" placeholder="Enter Last Name" type="text">
             </label>
-            <label for="">Date of Birth
+            <label>Date of Birth
                 <input name="dob" placeholder="Enter Date of Birth" type="date">
             </label>
-            <label for="gender">Gender</label>
-            <div>
-                <input id="gender" name="gender" type="radio"
-                    <?php if (isset($gender) && $gender == "male") echo "checked"; ?>
-                       value="m">
-                <span class="frm-text">Male</span>
-                <input id="" name="gender" type="radio" value="f">
-                <span class="frm-text">Female</span>
+            <span class="frm-text">Gender</span>
+            <div class="radio">
+                <label>
+                    <input name="gender" type="radio"
+                           value="M" <?php if (isset($gender) && $gender == "M") echo "checked"; ?>>
+                    Male
+                </label>
+                <label>
+                    <input name="gender" type="radio"
+                           value="F" <?php if (isset($gender) && $gender == "F") echo "checked"; ?>>
+                    Female
+                </label>
             </div>
-            <label for="">Country
+            <label>Country
                 <select name="country">
                     <option>Select Country</option>
                     <option value="AF">Afghanistan</option>
@@ -355,26 +368,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <option value="ZW">Zimbabwe</option>
                 </select>
             </label>
-            <label for="">Phone
+            <label>Phone
                 <input name="phone" placeholder="Enter Phone" type="text">
             </label>
-            <label for="">Username
-                <input name="username" placeholder="Enter an Username"
-                       type="text"
+            <label>E-mail
+                <input name="email" placeholder="Enter E-mail"
+                       type="email"
                        value="<?php echo $username; ?>" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?> >
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </label>
-            <label for="">E-mail
-                <input name="email" placeholder="Enter E-mail" type="email" value="<?php echo $email; ?>">
-                <span class="invalid-feedback"></span>
-            </label>
-            <label for="">Password
+            <label>Password
                 <input placeholder="Enter an Password" type="password"
                        name="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </label>
-            <label for="">Confirm Password
+            <label>Confirm Password
                 <input placeholder="Confirm Password" type="password"
                        name="confirm_password" <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $confirm_password; ?>">
@@ -399,9 +408,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="../html/zone.html">Investor Zone</a>
+            <a href="../php/login.php">Investor Zone</a>
             <a href="../html/contact.html">Contact</a>
-            <a href="#">Sign In</a>
+            <a href="../php/login.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
@@ -443,7 +452,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="../html/zone.html">Investor Zone</a>
+                <a href="../php/login.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>

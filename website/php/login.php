@@ -8,10 +8,10 @@ require_once "config.php";
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty(trim($_POST["username"]))) {
+    if (empty(trim($_POST["email"]))) {
         $username_err = "Please enter username.";
     } else {
-        $username = trim($_POST["username"]);
+        $username = trim($_POST["email"]);
     }
     if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter your password.";
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = trim($_POST["password"]);
     }
     if (empty($username_err) && empty($password_err)) {
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        $sql = "SELECT id, email, password FROM users WHERE email = ?";
         if ($stmt = mysqli_prepare($link, $sql)) {
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             $param_username = $username;
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             session_start();
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;
+                            $_SESSION["email"] = $username;
                             header("location: welcome.php");
                         } else {
                             $login_err = "Invalid username or password.";
@@ -77,25 +77,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<div class="alert alert-danger">' . $login_err . '</div>';
     }
     ?>
-    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+    <form class="box" name="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
           onsubmit="return validate()">
         <div class="gt5">
-            <label>Email
-                <input name="username" placeholder="Email"
-                       type="text" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>"
+            <label id="email">Email
+                <input name="email" placeholder="Email"
+                       type="email" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $username; ?>">
             </label>
-            <!--            <span class="invalid-feedback">--><?php //echo $username_err; ?><!--</span>-->
-            <label>Password
+            <span class="invalid-feedback"><?php echo $username_err; ?></span>
+            <label id="password">Password
                 <input name="password" placeholder="Password"
                        type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
             </label>
-            <!--            <span class="invalid-feedback">--><?php //echo $password_err; ?><!--</span>-->
+            <span class="invalid-feedback"><?php echo $password_err; ?></span>
             <label class="container">
                 <!--                <span class="checkmark"></span>-->
                 <input type="checkbox">Remember me
             </label>
-            <p>Don't have an account? <a class="sign" href="register.php">Sign up now</a></p>
+            <p>Don't have an account?
+                <a class="sign" href="register.php">Sign up now</a>
+            </p>
             <input class="btn" type="submit" value="Sign in">
         </div>
     </form>
@@ -112,9 +114,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="../html/zone.html">Investor Zone</a>
+            <a href="../php/login.php">Investor Zone</a>
             <a href="../html/contact.html">Contact</a>
-            <a href="#">Sign In</a>
+            <a href="../php/login.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
@@ -156,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="../html/zone.html">Investor Zone</a>
+                <a href="../php/login.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>
