@@ -7,10 +7,11 @@
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
     <!--Nav and Footer CSS -->
-    <link href="../css/Start up.css" rel="stylesheet">
-    <!--Page CSS -->
     <link href="../css/form.css" rel="stylesheet">
     <!--Form CSS -->
+    <link href="../css/Start up.css" rel="stylesheet">
+    <!--Page CSS -->
+
     <link href="../media/gov-logo-ico.png" rel="icon">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
@@ -175,9 +176,14 @@
                     </label>
                     <label>Upload Your Proposal </label>
                     <input type="file">
-                    <button class="btn" onclick="document.getElementById('modal').style.display='none'" type="button">
-                        Cancel
-                    </button>
+                    <div>
+                        <input class="btn" name="submit" type="Submit">
+                        <input class="btn" type="Reset" value="Reset">
+                        <button class="btn" onclick="document.getElementById('modal').style.display='none'"
+                                type="button">
+                            Cancel
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
