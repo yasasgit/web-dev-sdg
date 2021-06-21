@@ -35,14 +35,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <li>chill</li>
         </ul>
         <!-- for describe about content -->
-        <a href="form.html">
+        <a href="../html/form.html">
             <div class="div-for-01-inno">
                 <!-- for invester register -->
                 <h3>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h3>
                 <p>podi wisthrayak + terms & conditions</p>
                 <p>
-                    <a href="reset-password.php" class="forgot">Reset Your Password</a>
+                    <a href="reset-password.php" >Reset Your Password</a>
                     <a href="logout.php">Sign Out of Your Account</a>
+                    <a href="delete-account.php" >Delete Your Account</a>
                 </p>
             </div>
         </a>
