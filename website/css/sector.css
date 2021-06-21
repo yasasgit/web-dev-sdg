@@ -85,14 +85,10 @@ header {
 	line-height: 400%;
 
 }
-
-.more-btn{
-	height: 35px;
-	width: 100px;
-	border-radius: 30px;
-
+.get-data{
+    width: 500px;
+    margin: 0 auto;
 }
-
 
 /*
 background:linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
