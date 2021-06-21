@@ -77,7 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<div class="alert alert-danger">' . $login_err . '</div>';
     }
     ?>
-    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+          onsubmit="return validate()">
         <div class="gt5">
             <label>Email
                 <input name="username" placeholder="Email"

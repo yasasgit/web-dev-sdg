@@ -1,19 +1,23 @@
 function validate() {
-    var email = document.form.email.value;
-    var password = document.form.password.value;
+    let email = document.login.email.value;
+    let password = document.login.password.value;
 
-// validation fails if the input is blank
-    if (email === "") {
-        alert("email is empty!");
-        return false;
+    if (email !== "" && password !== "") {
+        return true;
     }
     if (password === "") {
-        alert("password is empty!");
-        return false;
+        document.getElementById("password").style.color = "red";
+    } else {
+        document.getElementById("password").style.color = "black";
+    }
+    if (email === "") {
+        document.getElementById("email").style.color = "red";
+    } else {
+        document.getElementById("email").style.color = "black";
     }
 // validate email 
 //     if (!email.includes("@", ".")) {
 //         alert("Not a valid e-mail address");
-//         return false;
 //     }
+    return false;
 }

@@ -21,32 +21,39 @@
         <h2>Sign up</h2>
         <p>Please fill this form to create an account.</p>
     </div>
-    <form action="" class="box" method="post" name="form" onsubmit="checkForm()">
+    <form action="" class="box" method="post" name="signup" onsubmit="checkForm()">
         <div class="gt5">
-            <label for="acc-type">Who Are You?</label>
-            <div>
-                <input id="acc-type" name="acc-type" type="radio" value="invest"><span class="frm-text">Investor</span>
-                <input id="" name="acc-type" type="radio" value="innovate"><span class="frm-text">Innovator</span>
-                <input id="" name="acc-type" type="radio" value="startup"><span class="frm-text">Entrepreneur</span>
+            <span class="frm-text">Who Are You?</span>
+            <div class="radio">
+                <label>Investor
+                    <input name="acc-type" type="radio" value="invest">
+                </label>
+                <label>Innovator
+                    <input name="acc-type" type="radio" value="innovate">
+                </label>
+                <label>Entrepreneur
+                    <input name="acc-type" type="radio" value="startup">
+                </label>
             </div>
-            <label for="">First Name
+            <label>First Name
                 <input name="firstname" placeholder="Enter First Name" type="text">
             </label>
-            <label for="">Last Name
+            <label>Last Name
                 <input name="lastname" placeholder="Enter Last Name" type="text">
             </label>
-            <label for="">Date of Birth
+            <label>Date of Birth
                 <input name="dob" placeholder="Enter Date of Birth" type="date">
             </label>
-            <label for="gender">Gender</label>
-            <div>
-                <input id="gender" name="gender" type="radio"
-                       value="m">
-                <span class="frm-text">Male</span>
-                <input id="" name="gender" type="radio" value="f">
-                <span class="frm-text">Female</span>
+            <span class="frm-text">Gender</span>
+            <div class="radio">
+                <label>Male
+                    <input name="gender" type="radio" value="M">
+                </label>
+                <label>Female
+                    <input name="gender" type="radio" value="F">
+                </label>
             </div>
-            <label for="">Country
+            <label>Country
                 <select name="country">
                     <option>Select Country</option>
                     <option value="AF">Afghanistan</option>
@@ -276,26 +283,26 @@
                     <option value="ZW">Zimbabwe</option>
                 </select>
             </label>
-            <label for="">Phone
+            <label>Phone
                 <input name="phone" placeholder="Enter Phone" type="text">
             </label>
-            <label for="">Username
+            <label>Username
                 <input name="username" placeholder="Enter an Username"
                        type="text"
                        value="">
                 <span class="invalid-feedback"></span>
             </label>
-            <label for="">E-mail
+            <label>E-mail
                 <input name="email" placeholder="Enter E-mail" type="email" value="">
                 <span class="invalid-feedback"></span>
             </label>
-            <label for="">Password
+            <label>Password
                 <input name="password" placeholder="Enter an Password"
                        type="password"
                        value="">
                 <span class="invalid-feedback"></span>
             </label>
-            <label for="">Confirm Password
+            <label>Confirm Password
                 <input name="confirm_password" placeholder="Confirm Password"
                        type="password" value="">
                 <span class="invalid-feedback"></span>

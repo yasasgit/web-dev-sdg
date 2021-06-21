@@ -112,7 +112,7 @@ function openTab(evt, tabName) {
     for (i = 0; i < content.length; i++) {
         content[i].style.display = "none";
     }
-    btn = document.getElementsByClassName("btn");
+    btn = document.getElementsByClassName("tabbtn");
     for (i = 0; i < btn.length; i++) {
         btn[i].className = btn[i].className.replace(" active", "");
     }

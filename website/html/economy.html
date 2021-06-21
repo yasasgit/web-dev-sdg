@@ -7,6 +7,8 @@
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
     <!--Nav and Footer CSS -->
+    <link href="../css/form.css" rel="stylesheet">
+    <!--Form CSS -->
     <link href="../css/sector.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
@@ -18,13 +20,13 @@
     <!--        <h2>Statistics</h2>-->
     <!--    </div>-->
     <div class="tab">
-        <a class="btn" id="defaultOpen" onclick="openTab(event, 'econ')">
+        <a class="tabbtn" id="defaultOpen" onclick="openTab(event, 'econ')">
             Economy
         </a>
-        <a class="btn" onclick="openTab(event, 'edu')">
+        <a class="tabbtn" onclick="openTab(event, 'edu')">
             Academic
         </a>
-        <a class="btn" onclick="openTab(event, 'other')">
+        <a class="tabbtn" onclick="openTab(event, 'other')">
             Other Statistics
         </a>
     </div>
@@ -156,7 +158,7 @@
             <p>Paris is the capital of France.</p>
             <form action="">
                 District<select>
-                <option>Select</option>
+                <option>Select District</option>
                 <option>Colombo</option>
                 <option>Gampaha</option>
                 <option>Kalutara</option>
@@ -185,7 +187,7 @@
 
             </select>
                 Academic Stream <select>
-                <option>Select</option>
+                <option>Select Academic Stream</option>
                 <option>Arts</option>
                 <option>Management and Commerce</option>
                 <option>Law</option>
@@ -201,6 +203,7 @@
 
 
             </select>
+                <input class="btn" name="submit" type="Submit">
             </form>
         </div>
     </div>

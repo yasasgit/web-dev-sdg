@@ -1,14 +1,14 @@
 function checkForm() {
-    var firstname = document.form.firstname.value;
-    var lastname = document.form.lastname.value;
-    var dob = document.form.dob.value;
-    var gender = document.form.gender.value;
-    var country = document.form.country.value;
-    var email = document.form.email.value;
-    var phone = document.form.phone.value;
-    var username = document.form.phone.value;
-    var password = document.form.password.value;
-    var confirmpassword = document.form.confirmpassword.value;
+    let firstname = document.signup.value;
+    let lastname = document.signup.lastname.value;
+    let dob = document.signup.dob.value;
+    let gender = document.signup.gender.value;
+    let country = document.signup.country.value;
+    let email = document.signup.email.value;
+    let phone = document.signup.phone.value;
+    let username = document.signup.phone.value;
+    let password = document.signup.password.value;
+    let confirmpassword = document.signup.confirmpassword.value;
 
 
     // validation fails if the input is blank

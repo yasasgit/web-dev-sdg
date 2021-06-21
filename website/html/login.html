@@ -20,16 +20,14 @@
     <div class="about">
         <h2>Sign in to your Account</h2>
     </div>
-    <form action="" method="post" onsubmit="validate()">
+    <form action="../php/login.php" method="post" name="login" onsubmit="return validate()">
         <div class="gt5">
-            <label>Email
-                <input name="email" placeholder="Email"
-                       type="text">
+            <label id="email">Email
+                <input name="email" placeholder="Email" type="text">
             </label>
             <span class="invalid-feedback"></span>
-            <label>Password
-                <input name="password" placeholder="Password"
-                       type="password">
+            <label id="password">Password
+                <input name="password" placeholder="Password" type="password">
             </label>
             <span class="invalid-feedback"></span>
             <label class="container">

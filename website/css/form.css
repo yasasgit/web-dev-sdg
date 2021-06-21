@@ -15,6 +15,7 @@
 
 .frm-text {
     font-size: 12px;
+    display: flex;
 }
 
 .gt5 p {
@@ -33,6 +34,10 @@ label {
     letter-spacing: 0.5px;
 }
 
+.radio label {
+    display: inline-block;
+}
+
 input[type="text"], input[type="date"], input[type="email"], input[type="password"], select {
     width: 100%;
     padding: 0 20px;
@@ -41,7 +46,7 @@ input[type="text"], input[type="date"], input[type="email"], input[type="passwor
     height: 46px;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px;
     /*display: inline-block;*/
     /*display: block;*/
     /*color: #000;*/
