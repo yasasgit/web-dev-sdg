@@ -1,10 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: ../html/whyinvest.html");
-    exit;
-}
-
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -102,9 +97,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </ol>
     </div>
     <div class="button">
-        <a href="../php/investreg.php">
-            <button>Register Now</button>
-        </a>
+        <?php
+        if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+            echo '<a href="../php/signin.php"><button>Sign in to Register</button></a>';
+        } else {
+            echo '<a href="../php/investreg.php"><button>Register Now</button></a>';
+        }
+        ?>
     </div>
 </header>
 <footer>
@@ -160,7 +159,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="right">
         <ul class="nav">
             <li class="nav-li">
-                <a href="../php/whyinvest.php">Why Should You Invest?</a>
+                <a href="../php/whyinvest.php" class="active">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
                 <a href="../php/zone.php">Investor Zone</a>

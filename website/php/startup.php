@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: ../html/startup.html");
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -153,7 +149,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <p>
                     You can submit a request for this startup program using this form.
                 </p>
-                <button class="btn" onclick="document.getElementById('modal').style.display='block'">Apply Now</button>
+                <?php
+                if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+                    echo '<a href="../php/signin.php"><button class="btn">Sign in to Apply</button></a>';
+                } else {
+                    echo '<button class="btn" onclick="document.getElementById(\'modal\').style.display=\'block\'">Apply Now</button>';
+                }
+                ?>
             </div>
         </div>
     </div>

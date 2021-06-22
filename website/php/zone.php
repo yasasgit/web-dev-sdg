@@ -1,9 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: ../html/zone.html");
-    exit;
-}
+
 require_once "config.php";
 $new_password = $confirm_password = "";
 $new_password_err = $confirm_password_err = "";
@@ -99,28 +96,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li>chill</li>
         </ul>
         <!-- for describe about content -->
-        <a href="investreg.php">
-            <div class="div-for-01-inno">
-                <!-- for invester register -->
-                <h3>Hi, <b><?php echo htmlspecialchars($_SESSION["email"]); ?></b>. Welcome to our site.</h3>
-                <p>podi wisthrayak + terms & conditions</p>
-
-                <a href="logout.php">
-                    <button class="btn">Sign Out</button>
-                </a>
-                <a>
-                    <button class="btn" onclick="document.getElementById('modalreset').style.display='block'">Reset
-                        Password
-                    </button>
-                </a>
-                <a>
-                    <button class="btn" onclick="document.getElementById('modaldelete').style.display='block'">Delete
-                        Account
-                    </button>
-                </a>
-
-            </div>
-        </a>
+        <div class="div-for-01-inno">
+            <h3>meheme topic eka</h3>
+            <p>podi wisthrayak + terms & conditions</p>
+        </div>
+        <?php
+        if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+            echo '<a href="../php/signin.php"><h2>sign in to view dashboard</h2></a>';
+        } else {
+            echo '
+                <a href="investreg.php"><div class="dash">
+                <h3>Hi, <b>' . htmlspecialchars($_SESSION["email"]) . '</b>. Welcome to our site.</h3>
+                <a href="logout.php"><button class="btn">Sign Out</button></a>
+                <a><button class="btn" onclick="document.getElementById(\'modalreset\').style.display=\'block\'">Reset Password</button></a>
+                <a><button class="btn" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
+                </div></a>
+            ';
+        }
+        ?>
     </div>
     <hr>
     <div class="div-for-3main-inno">

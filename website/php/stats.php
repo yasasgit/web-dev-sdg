@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: ../html/stats.html");
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -232,6 +228,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <p>This data will show you why an investor should prefer Sri Lanka for their investments.</p>
         </div>
     </div>
+    <?php
+    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+        echo 'logged out';
+    } else {
+        echo 'logged in';
+    }
+    ?>
 </header>
 <footer>
     <div class="row1">

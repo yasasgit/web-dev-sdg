@@ -1,10 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: ../html/innovate.html");
-    exit;
-}
-
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -83,11 +78,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <h4>Remote Controlled Smart Appliance</h4>
             </div>
         </a>
-        <a href="../php/signin.php">
-            <div class="item10">
-                <img alt="" src="../media/add-more.png">
-            </div>
-        </a>
+        <?php
+        if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+            echo '<a href="../php/signin.php"><div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
+        } else {
+            echo '<a onclick="document.getElementById(\'modal\').style.display=\'block\'">add more<div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
+        }
+        ?>
+
+
     </div>
 </header>
 <footer>
