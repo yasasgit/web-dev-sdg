@@ -49,7 +49,7 @@ h2 {
 }
 
 .news-more-float01 {
-    width: 500px;
+    max-width: 500px;
     height: 300px;
     border: 1px solid black;
     margin-top: 42px;
@@ -57,7 +57,7 @@ h2 {
 }
 
 .news-more-float02 {
-    width: 500px;
+    max-width: 500px;
     height: 300px;
     border: 1px solid black;
     margin-top: 42px;
