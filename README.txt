@@ -68,6 +68,11 @@ Other
 *projgect propolse eke template ekak download wenna damu
 *port city eke local ayata thaniyama invest karanna baha.invest karanwanm aniwaren fid ekak wenna ona(pita rata kenek ekkke ekathu wela witharai karanna puluwan)
 
+
+***project proposal sample pdf ekkak download karanna damuda?
+
+
+
 *****************mistakes*************
 hama nav ekakam sector eka static kiyala wenas karanna ona
 sector eke campus nathuwa undergraduate wage namak danna ona
