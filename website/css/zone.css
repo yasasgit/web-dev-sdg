@@ -63,3 +63,7 @@ header {
     transition: .6s;
     transform: scale(1.02);
 }
+
+.about .btn {
+    width: auto;
+}

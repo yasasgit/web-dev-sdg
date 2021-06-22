@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                        type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
             </label>
             <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            <label class="container">
+            <label class="contain">
                 <!--                <span class="checkmark"></span>-->
                 <input type="checkbox">Remember me
             </label>
