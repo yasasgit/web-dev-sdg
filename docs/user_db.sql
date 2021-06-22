@@ -35,3 +35,8 @@ CREATE TABLE academystats
     ComputerScience       int         NOT NULL,
     OtherCourses          int         NOT NULL
 );
+
+INSERT INTO academystats
+VALUES ('Colombo', 451, 667, 45, 564, 178, 16, 26, 116, 230, 61, 291, 88);
+INSERT INTO academystats
+VALUES ('Colombo', 451, 667, 45, 564, 178, 16, 26, 116, 230, 61, 291, 88);
