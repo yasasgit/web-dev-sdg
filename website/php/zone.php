@@ -107,6 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo '
                 <a href="investreg.php"><div class="dash">
                 <h3>Hi, <b>' . htmlspecialchars($_SESSION["email"]) . '</b>. Welcome to our site.</h3>
+                <a href="../media/sample.pdf"><button class="btn">Download Proposal Sample</button></a>
                 <a href="logout.php"><button class="btn">Sign Out</button></a>
                 <a><button class="btn" onclick="document.getElementById(\'modalreset\').style.display=\'block\'">Reset Password</button></a>
                 <a><button class="btn" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
