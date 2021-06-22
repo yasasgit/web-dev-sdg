@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html dir="ltr" lang="en">
 <head>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Login</title>
+    <title>Sign In</title>
     <link href="../css/normalize.css" rel="stylesheet">
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
