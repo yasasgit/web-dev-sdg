@@ -51,14 +51,6 @@
 
 }
 
-.image {
-    margin-top: 3vh;
-    width: 20vh;
-    height: 20vh;
-    background-image: url(../media/Jiffry_Zulfer.jpg);
-    background-size: cover;
-    float: right;
-}
 
 .date {
     line-height: 40px;
@@ -71,7 +63,25 @@
     display: none;
 }
 
-[class*="more"] {
+[class*="image"] {
+    margin-top: 3vh;
+    width: 20vh;
+    height: 20vh;
+    background-image: url(../media/Jiffry_Zulfer.jpg);
+    background-size: cover;
+    float: right;
+}
+
+.image1 {
+
+}
+
+.image1 {
+
+}
+
+.image1 {
+
 }
 
 .btn {

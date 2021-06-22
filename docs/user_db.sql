@@ -18,3 +18,20 @@ CREATE TABLE users
     phone      VARCHAR(15)  NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE academystats
+(
+    id                    INT         NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    district              VARCHAR(50) NOT NULL UNIQUE,
+    ManagementandCommerce int         NOT NULL,
+    Law                   int         NOT NULL,
+    Science               int         NOT NULL,
+    Medicine              int         NOT NULL,
+    VeterinaryScience     int         NOT NULL,
+    Dentistry             int         NOT NULL,
+    Agriculture           int         NOT NULL,
+    Engineering           int         NOT NULL,
+    Architecture          int         NOT NULL,
+    ComputerScience       int         NOT NULL,
+    OtherCourses          int         NOT NULL
+);
