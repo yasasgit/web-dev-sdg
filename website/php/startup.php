@@ -20,6 +20,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <!--Page CSS -->
 
     <link href="../media/gov-logo-ico.png" rel="icon">
+    <script src="../scripts/startup.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
