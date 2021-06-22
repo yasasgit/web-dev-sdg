@@ -74,7 +74,7 @@ VALUES ('Trincomalee', 216, 32, 3, 7, 5, 1, 4);
 INSERT INTO academystats
 VALUES ('Kurunegala', 759, 182, 7, 170, 34, 4, 2);
 INSERT INTO academystats
-VALUES ('Puttalam', 254, 53, 6, 18, 13, 3, 2;
+VALUES ('Puttalam', 254, 53, 6, 18, 13, 3, 2);
 INSERT INTO academystats
 VALUES ('Anuradhapura', 425, 64, 9, 18, 15, 5, 7);
 INSERT INTO academystats
