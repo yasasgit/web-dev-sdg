@@ -9,6 +9,11 @@ html {
     scrollbar-color: #686868 #060606;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../media/OpenSans.ttf');
+}
+
 ::selection {
     color: #fff;
     background: #000;
@@ -26,73 +31,8 @@ html {
     background: #686868;
 }
 
-body {
-    font-family: "Open Sans", serif;
-    text-align: center;
-}
-
-header {
-    /*height: auto;*/
-    overflow: hidden;
-    background-color: white;
-}
-
-[class*="cover"] {
-    background-repeat: no-repeat;
-    min-width: 100%;
-    height: 88vh;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.about {
-    color: white;
-    padding: 35px;
-    /*font-size: 110%;*/
-    /*height: 40%;*/
-}
-
-.about p {
-    line-height: 30px;
-    margin: 1% 3%;
-    text-indent: 30px;
-}
-
-.about ul {
-    text-align: left;
-    margin: 0 auto;
-}
-
-.about a {
-    color: white;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../media/OpenSans.ttf');
-}
-
-.navi {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    transition: top 0.3s;
-}
-
-.gradient {
-    width: 100%;
-    height: 204px;
-    pointer-events: none;
-    background-image: url("../media/gradient.png");
-}
-
-.menu-li {
-    display: none;
-}
-
+/*responsive*/
 @media only screen and (orientation: portrait) {
-    /* Mobile Phone View */
     .nav {
     }
 }
@@ -162,6 +102,68 @@ header {
     }
 }
 
+/*body*/
+body {
+    font-family: "Open Sans", serif;
+    text-align: center;
+}
+
+header {
+    /*height: auto;*/
+    overflow: hidden;
+    background-color: white;
+}
+
+[class*="cover"] {
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 88vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about {
+    color: white;
+    padding: 35px;
+    /*font-size: 110%;*/
+    /*height: 40%;*/
+}
+
+.about p {
+    line-height: 30px;
+    margin: 1% 3%;
+    text-indent: 30px;
+}
+
+.about ul {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about a {
+    color: white;
+}
+
+/*navigation*/
+.navi {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    transition: top 0.3s;
+}
+
+.gradient {
+    width: 100%;
+    height: 204px;
+    pointer-events: none;
+    background-image: url("../media/gradient.png");
+}
+
+.menu-li {
+    display: none;
+}
+
 .left {
     float: left;
 }
@@ -210,7 +212,7 @@ header {
 :not(.active) {
 }
 
-
+/*form*/
 .form {
     display: none;
     position: fixed;
@@ -231,6 +233,89 @@ header {
     padding: 30px;
 }
 
+.formbox {
+    line-height: 30px;
+    /*color: #574b4b;*/
+    margin: 15px auto;
+    width: 450px;
+    /*display: block;*/
+    /*padding: 60px;*/
+    /*background-color: #d1dce0;*/
+}
+
+.formbox a {
+    color: black;
+    text-decoration: underline;
+}
+
+.frm-text {
+    font-size: 12px;
+    display: flex;
+}
+
+.formbox p {
+    font-size: 14px;
+    margin: 15px auto;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+
+.radio label {
+    display: inline-block;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 0 20px;
+    margin: 8px auto;
+    background: #f5f5f5;
+    height: 46px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    /*display: inline-block;*/
+    /*display: block;*/
+    /*color: #000;*/
+    /*transition: background-color .3s ease-in-out;*/
+}
+
+input[type="radio"] {
+    margin: 8px 14px;
+}
+
+input[type="file"] {
+    /*margin: 0 auto;*/
+    display: block;
+    font-size: 12px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: #eaeaea;
+    outline: none;
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+select:hover {
+    background: #eaeaea;
+    transition: 0.4s;
+}
+
 .btn {
     background: #f5f5f5;
     border-radius: 100px;
@@ -243,7 +328,6 @@ header {
     margin: 0 32px;
     /*border: 0;*/
     /*border: none;*/
-
     padding: 0 12px;
 }
 
@@ -252,6 +336,7 @@ header {
     transition: 0.4s;
 }
 
+/*footer*/
 footer {
     text-align: left;
     bottom: 0;

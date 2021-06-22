@@ -91,8 +91,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!--Nav and Footer CSS -->
     <link href="../css/signup.css" rel="stylesheet">
     <!--Page CSS -->
-    <link href="../css/form.css" rel="stylesheet">
-    <!--Form CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <script src="../scripts/signup.js"></script>
 </head>
@@ -105,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
           onsubmit="return checkForm()">
-        <div class="gt5">
+        <div class="formbox">
             <span class="frm-text">Who Are You?</span>
             <div class="radio">
                 <label>

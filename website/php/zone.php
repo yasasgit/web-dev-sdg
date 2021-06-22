@@ -74,8 +74,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
     <!--Nav and Footer CSS -->
-    <link href="../css/form.css" rel="stylesheet">
-    <!--Form CSS -->
     <link href="../css/zone.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
@@ -135,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="gt5">
+            <div class="formbox">
                 <label>New Password
                     <input type="password" name="new_password"
                            class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>"
@@ -161,7 +159,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Delete Account</h2>
         <p>Please fill out this form to delete your account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="gt5">
+            <div class="formbox">
                 <label>Password
                     <input type="password" name="new_password"
                            class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>"

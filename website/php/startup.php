@@ -10,8 +10,6 @@ session_start();
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
     <!--Nav and Footer CSS -->
-    <link href="../css/form.css" rel="stylesheet">
-    <!--Form CSS -->
     <link href="../css/Start up.css" rel="stylesheet">
     <!--Page CSS -->
 
@@ -164,7 +162,7 @@ session_start();
         <div class="container">
             <h2>Apply Now!</h2>
             <form>
-                <div class="gt5">
+                <div class="formbox">
                     <label>
                         Name
                         <input name="f_name" placeholder="Enter Name" type="text">

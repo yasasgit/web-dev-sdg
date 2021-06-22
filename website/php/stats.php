@@ -9,9 +9,7 @@ session_start();
     <link href="../css/normalize.css" rel="stylesheet">
     <!--Framework -->
     <link href="../css/master.css" rel="stylesheet">
-    <!--Nav and Footer CSS -->
-    <link href="../css/form.css" rel="stylesheet">
-    <!--Form CSS -->
+    <!--Nav and Footer CSS --><!--Form CSS -->
     <link href="../css/sector.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">

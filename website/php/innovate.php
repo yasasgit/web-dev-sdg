@@ -82,11 +82,34 @@ session_start();
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             echo '<a href="../php/signin.php"><div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
         } else {
-            echo '<a onclick="document.getElementById(\'modal\').style.display=\'block\'">add more<div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
+            echo '<div class="item10" onclick="document.getElementById(\'modal\').style.display=\'block\'">add more<img alt="" src="../media/add-more.png"></div>';
         }
         ?>
 
 
+    </div>
+    <div class="form" id="modal">
+        <div class="container">
+            <h2>Apply Now!</h2>
+            <form>
+                <div class="formbox">
+                    <label>
+                        Name
+                        <input name="f_name" placeholder="Enter Name" type="text">
+                    </label>
+                    <label>Upload Your Proposal </label>
+                    <input type="file">
+                    <div>
+                        <input class="btn" name="submit" type="Submit">
+                        <input class="btn" type="Reset" value="Reset">
+                        <button class="btn" onclick="document.getElementById('modal').style.display='none'"
+                                type="button">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </header>
 <footer>

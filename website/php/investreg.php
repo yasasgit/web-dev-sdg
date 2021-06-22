@@ -28,7 +28,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <h2>Registration Form</h2>
     </div>
     <form>
-        <div class="gt5">
+        <div class="formbox">
             <div>
                 <label>First Name
                     <input class="section" name="First Name" type="text">

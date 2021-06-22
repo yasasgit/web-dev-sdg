@@ -13,11 +13,6 @@ header {
 @media screen and (max-width: 780px) {
 }
 
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('../media/Open Sans.ttf');
-}*/
-
 .navi, .about {
     background-color: #455153;
 }

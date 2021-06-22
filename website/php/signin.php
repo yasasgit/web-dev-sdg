@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
     <form class="box" name="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
           onsubmit="return validate()">
-        <div class="gt5">
+        <div class="formbox">
             <label id="email">Email
                 <input name="email" placeholder="Email"
                        type="email" <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
