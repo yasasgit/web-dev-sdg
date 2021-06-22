@@ -1,15 +1,21 @@
 *****************errors*********************
+*Accordion 								done
+*project eke grid eka center keranna					done
+*zone eke div 3 center karanna 						done
 
 *sratup eke click karama from eka hariyata enne naha
-*zone eke div 3 center karanna 						done
-*project eke grid eka center keranna					done
 *project01/02/03 covers daanna
 *project eken project 01/02/03 walta link karanna
 *NAV eka hama page ekema Transparent Background eka adala pata karamu
-*Accordion 								done
 *projects highlighling issue
+***project proposal sample pdf ekkak download karanna damuda?
 
- 
+*****************mistakes*************
+hama nav ekakam sector eka static kiyala wenas karanna ona
+sector eke campus nathuwa undergraduate wage namak danna ona
+news page titles capitalize
+projects page titles capitalize
+
 lankawe sectors nathi business open karanna 
 
 
@@ -68,11 +74,3 @@ Other
 *projgect propolse eke template ekak download wenna damu
 *port city eke local ayata thaniyama invest karanna baha.invest karanwanm aniwaren fid ekak wenna ona(pita rata kenek ekkke ekathu wela witharai karanna puluwan)
 
-
-***project proposal sample pdf ekkak download karanna damuda?
-
-
-
-*****************mistakes*************
-hama nav ekakam sector eka static kiyala wenas karanna ona
-sector eke campus nathuwa undergraduate wage namak danna ona
