@@ -6,6 +6,7 @@ header {
 .navi, .about {
     background-color: #3D9970;
 }
+
 .navi:hover {
     background-color: #2e7455;
 }

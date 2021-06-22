@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("location: welcome.php");
+    header("location: zone.php");
     exit;
 }
 require_once "config.php";
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["email"] = $email;
-                            header("location: welcome.php");
+                            header("location: zone.php");
                         } else {
                             $login_err = "Invalid email or password.";
                         }
@@ -91,12 +91,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                        type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
             </label>
             <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            <label class="container">
+            <label class="contain">
                 <!--                <span class="checkmark"></span>-->
                 <input type="checkbox">Remember me
             </label>
             <p>Don't have an account?
-                <a class="sign" href="register.php">Sign up now</a>
+                <a class="sign" href="signup.php">Sign up now</a>
             </p>
             <input class="btn" type="submit" value="Sign in">
         </div>
@@ -114,9 +114,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="welcome.php">Investor Zone</a>
+            <a href="zone.php">Investor Zone</a>
             <a href="../html/contact.html">Contact</a>
-            <a href="../php/login.php">Sign In</a>
+            <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="welcome.php">Investor Zone</a>
+                <a href="zone.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>

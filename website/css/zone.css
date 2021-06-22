@@ -1,6 +1,7 @@
 .navi, .about {
     background-color: rgb(39, 39, 39);
 }
+
 .navi:hover {
     background-color: #87cdd4;
 }
@@ -61,4 +62,8 @@ header {
 .div-for-03-inno:hover {
     transition: .6s;
     transform: scale(1.02);
+}
+
+.about .btn {
+    width: auto;
 }

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: login.php");
+    header("location: signin.php");
     exit;
 }
 ?>
@@ -109,9 +109,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="../php/welcome.php">Investor Zone</a>
+            <a href="../php/zone.php">Investor Zone</a>
             <a href="../html/contact.html">Contact</a>
-            <a href="../php/login.php">Sign In</a>
+            <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
@@ -153,7 +153,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="../php/welcome.php">Investor Zone</a>
+                <a href="../php/zone.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>

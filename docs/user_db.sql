@@ -7,7 +7,7 @@ invest_db;
 CREATE TABLE users
 (
     id         INT          NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    email   VARCHAR(320) NOT NULL UNIQUE,
+    email      VARCHAR(320) NOT NULL UNIQUE,
     password   VARCHAR(255) NOT NULL,
     acctype    VARCHAR(8)   NOT NULL,
     firstame   VARCHAR(50)  NOT NULL,

@@ -3,7 +3,7 @@ h3 {
 }
 
 [class*="sector"] {
-    width: 640px;
+    max-width: 640px;
     height: 320px;
     background-size: cover;
     position: relative;

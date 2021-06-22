@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $param_email = $email;
             $param_password = password_hash($password, PASSWORD_DEFAULT);
             if (mysqli_stmt_execute($stmt)) {
-                header("location: login.php");
+                header("location: signin.php");
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
@@ -390,7 +390,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <span class="invalid-feedback">
                 <?php echo $confirm_password_err; ?></span>
             </label>
-            <p>Already have an account? <a href="login.php">Login here.</a></p>
+            <p>Already have an account? <a href="signin.php">Login here.</a></p>
             <input class="btn" type="Submit" name="submit">
             <input class="btn" type="Reset" value="Cancel">
         </div>
@@ -408,9 +408,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col">
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
-            <a href="welcome.php">Investor Zone</a>
+            <a href="zone.php">Investor Zone</a>
             <a href="../html/contact.html">Contact</a>
-            <a href="../php/login.php">Sign In</a>
+            <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
@@ -452,7 +452,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="../html/invest.html">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="welcome.php">Investor Zone</a>
+                <a href="zone.php">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../html/economy.html">Statistics</a>
