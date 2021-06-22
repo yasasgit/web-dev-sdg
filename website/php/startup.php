@@ -28,20 +28,23 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="cover"></div>
     <div class="about">
         <h2 class="red-text">Startup</h2>
-        <p>Sri Lankan government has planned to giveaway startup funds for school leavers selecting the best 2000
+        <p>
+            Sri Lankan government has planned to lend startup funds for school leavers by selecting the best 2000
             business ideas with the support of leading private businesses.
+            The main purpose of this project is to create new jobs even if these startups may not become 100% success.
+        </p>
+        <p>
+            Our goal is to lend money for school leavers and guide them with the support of industry
+            specialists and to monitor them. We expect this strategy will start more international level businesses.
+        </p>
+        <p>
+            We will also generate more than 100000 new jobs annually in startup hubs in every region.
             School leavers can apply for this opportunity free of charge if they think that their idea would become a
-            great
-            success.
-            The main purpose of this project is to create new jobs even if these startups may not become 100%
-            success.
+            great success.
+        </p>
+        <p>
             We were able to start new businesses with the help of this program last year.
             A 3% of new businesses became great success and they were able to create more than 100000 new jobs.
-            You can submit a request for this startup program using this form.
-            Our goal is to lend money for school leavers and guide them with the support of industry specialists and to
-            monitor them.
-            We expect this strategy will start more international level businesses.
-            We will also generate more than 100000 new jobs annually in startup hubs in every region.
         </p>
     </div>
 
@@ -70,10 +73,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         the Sri Lankan version of Uber, and he has worked to understand more about GPS and GIS system, coupled with the knowledge of good business,
                         he and some partners worked together in bringing the concept to live for the locals.<br><br>
                         Jiffry and his team worked on the concept, and succeeded in convincing investors, though still something new,
-                        but something unique on what Uber didn’t already have as at then. And as the team wanted to revolutionize the so-called tuk tuk system in Sri Lanka,
+                        but something unique on what Uber didn't already have as at then. And as the team wanted to revolutionize the so-called tuk tuk system in Sri Lanka,
                         the features of PickMe were what interested the people more, and the use of Google Maps and GPS system made tracking easier,
                         also easier to calculate the fare as well.<br><br>
-                        It is currently a heated competition between “PickMe Vs Uber” which is taking over the taxi industry in Sri Lanka.
+                        It is currently a heated competition between "PickMe Vs Uber" which is taking over the taxi industry in Sri Lanka.
                     </span>
                     </p>
                     <button class="btn" onclick="showMore('more1')">Read more</button>
@@ -103,7 +106,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <span>Sheran Corera is the founder of <a href="https://www.getlayup.com/"
                                                              rel="noopener nofollow noreferrer"
                                                              target="_blank">LayUp</a>,
-                        which is a new version of e-learning that applies the “Engaged Education Methodology” – an agile 3-step learning methodology.
+                        which is a new version of e-learning that applies the "Engaged Education Methodology" - an agile 3-step learning methodology.
                         While the cloud computing system also allows anyone with the access to study from anywhere and equally collaborate with others anytime.
                     <br><br>
                     Layup as the brainchild of Sheran Corera, won the best startup award of Seedstar Colombo in 2016. And it competed for the Seedstars Summit in Switzerland for $1 million in equity investment in March 2017.
@@ -134,10 +137,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <span>Dhanika Perera is the founder of Bhasha and <a href="https://www.payhere.lk/"
                                                                          rel="noopener nofollow noreferrer"
                                                                          target="_blank">Payhere</a>,
-                        which is a solution to the problem of Sri Lankans not having a proper online transaction method as PayPal wasn’t available in SriLanka.
+                        which is a solution to the problem of Sri Lankans not having a proper online transaction method as PayPal wasn't available in SriLanka.
                         While Bhasha wants to localize all software for Sri Lankans and Payhere as the way to have PayPal function for Sri Lankans.
                         <br><br>
-                        Dhanika calls it a “comprehensive solution for online payment in Sri Lanka, offering Online Payment Accepting facilities to Sri Lankan Online Merchants”
+                        Dhanika calls it a "comprehensive solution for online payment in Sri Lanka, offering Online Payment Accepting facilities to Sri Lankan Online Merchants"
                         in a more convenient and affordable way. It basically offers a platform for online payment facilities to Sri Lankan merchants,
                         who are allowed a free of charge set up of account on Payhere, unlike the local banks.
                     </span>
@@ -147,6 +150,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <div class="image3"></div>
             </div>
             <div>
+                <p>
+                    You can submit a request for this startup program using this form.
+                </p>
                 <button class="btn" onclick="document.getElementById('modal').style.display='block'">Apply Now</button>
             </div>
         </div>
@@ -233,15 +239,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
             <a href="../php/zone.php">Investor Zone</a>
-            <a href="./contact.html">Contact</a>
+            <a href="../html/contact.html">Contact</a>
             <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">
             <h4>Our Partners</h4>
-            <a href="https://investsrilanka.com">hgfggffhdhd</a>
-            <a href="https://www.ugc.ac.lk">hfhggfdhd</a>
-            <a href="https://www.portcitycolombo.lk">hfhfdhd</a>
-            <a href="http://www.statistics.gov.lk">hfhdgfghd</a>
+            <a href="https://investsrilanka.com">BOI</a>
+            <a href="https://www.ugc.ac.lk">UGC</a>
+            <a href="https://www.portcitycolombo.lk">Port City</a>
+            <a href="http://www.statistics.gov.lk">Statistics.lk</a>
         </div>
         <div class="col">
             <h4>Follow</h4>
@@ -285,7 +291,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="../php/innovate.php">Innovation</a>
             </li>
             <li class="nav-li">
-                <a href="../php/startup.php">Startup</a>
+                <a href="../php/startup.php" class="active">Startup</a>
             </li>
             <li class="nav-li">
                 <a href="../html/contact.html">Contact</a>

@@ -244,7 +244,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="../php/whyinvest.php">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
-                <a href="zone.php">Investor Zone</a>
+                <a href="zone.php" class="active">Investor Zone</a>
             </li>
             <li class="nav-li">
                 <a href="../php/stats.php">Statistics</a>

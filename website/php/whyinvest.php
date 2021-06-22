@@ -120,7 +120,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
             <a href="../php/zone.php">Investor Zone</a>
-            <a href="./contact.html">Contact</a>
+            <a href="../html/contact.html">Contact</a>
             <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">

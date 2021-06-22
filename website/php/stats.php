@@ -246,7 +246,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
             <a href="../php/zone.php">Investor Zone</a>
-            <a href="./contact.html">Contact</a>
+            <a href="../html/contact.html">Contact</a>
             <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">
@@ -292,7 +292,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="../php/zone.php">Investor Zone</a>
             </li>
             <li class="nav-li">
-                <a href="../php/stats.php">Statistics</a>
+                <a href="../php/stats.php" class="active">Statistics</a>
             </li>
             <li class="nav-li">
                 <a href="../php/innovate.php">Innovation</a>

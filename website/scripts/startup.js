@@ -3,8 +3,8 @@ function checkForm() {
     let email = document.startup.email.value;
     let discrict = document.startup.discrict.value;
     // validation fails if the input is blank
-    if (name === ""||
-        email === ""|| 
+    if (name === "" ||
+        email === "" ||
         discrict === "Select discrict") {
         alert("Error: Input is empty!");
         return false;

@@ -152,7 +152,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="../php/stats.php">Statistics</a>
             </li>
             <li class="nav-li">
-                <a href="../php/innovate.php">Innovation</a>
+                <a href="../php/innovate.php" class="active">Innovation</a>
             </li>
             <li class="nav-li">
                 <a href="../php/startup.php">Startup</a>

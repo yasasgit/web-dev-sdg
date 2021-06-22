@@ -196,24 +196,20 @@ header {
     transition: .6s;
 }
 
-.navi :hover {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    transition: .4s;
+.nav-li a {
+    /*color: rgb(206, 206, 206);*/
+    color: rgb(180, 180, 180);
 }
 
-.nav-li a {
-    color: rgb(206, 206, 206);
-    /*color: rgb(180, 180, 180);*/
+.nav-li a.active, .navi :hover {
+    color: rgb(255, 255, 255);
+    /*font-weight: 400;*/
+    transition: .4s;
 }
 
 :not(.active) {
 }
 
-.active {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-}
 
 .form {
     display: none;
