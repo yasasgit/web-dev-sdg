@@ -71,7 +71,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <h3>employment by percentage 31.2% </h3>
                     <h3> Exports 462.89 (Rs. million)</h3>
                     <!-- for sum -->
-                    <button class="btn" onclick="location.href='../media/agriculture.png';">more data</button>
+                    <button class="btn" onclick="location.href='../media/agriculture.png';">More data</button>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <h3> National Income by Industries 2,608,211(Rs. million) </h3>
                     <h3> employment by percentage 25.9% </h3>
                     <h3> Exports 862.89 (Rs. million)</h3>
-                    <button class="btn" onclick="location.href='../media/industries.png';">more data</button>
+                    <button class="btn" onclick="location.href='../media/industries.png';">More data</button>
                     <!-- for sum -->
                 </div>
                 <!--dont use center tag. use css-->
@@ -156,7 +156,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <h3>employment by percentage 42.9% </h3>
                     <h3> Exports 162.89 (Rs. million)</h3>
 
-                    <button class="btn" onclick="location.href='../media/services.png';">more data</button>
+                    <button class="btn" onclick="location.href='../media/services.png';">More data</button>
                     <!-- for sum -->
                 </div>
             </div>
