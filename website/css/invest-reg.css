@@ -1,6 +1,7 @@
 .navi, .about {
     background-color: #4b8cfb;
 }
+
 .navi:hover {
     background-color: #8ad79d;
 }

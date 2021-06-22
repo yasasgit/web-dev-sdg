@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: login.php");
+    header("location: signin.php");
     exit;
 }
 require_once "config.php";
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $param_id = $_SESSION["id"];
             if (mysqli_stmt_execute($stmt)) {
                 session_destroy();
-                header("location: login.php");
+                header("location: signin.php");
                 exit();
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
@@ -54,21 +54,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p>Please fill out this form to delete your account.</p>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="form-group">
-            <label>Password</label>
-            <input type="password" name="new_password"
-                   class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>"
-                   value="<?php echo $new_password; ?>">
+            <label>Password
+                <input type="password" name="new_password"
+                       class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>"
+                       value="<?php echo $new_password; ?>">
+            </label>
             <span class="invalid-feedback"><?php echo $new_password_err; ?></span>
         </div>
         <div class="form-group">
-            <label>Confirm Password</label>
-            <input type="password" name="confirm_password"
-                   class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
+            <label>Confirm Password
+                <input type="password" name="confirm_password"
+                       class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
+            </label>
             <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
         </div>
         <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Delete">
-            <a class="btn btn-link ml-2" href="login.php">Cancel</a>
+            <a class="btn btn-link ml-2" href="signin.php">Cancel</a>
         </div>
     </form>
 </div>

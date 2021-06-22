@@ -66,6 +66,7 @@ nav ul :hover {
 .navi, .about {
     background-color: #c2c287;
 }
+
 .navi:hover {
     background-color: #a7d0d2;
 }
