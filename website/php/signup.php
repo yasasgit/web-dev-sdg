@@ -374,12 +374,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label>E-mail
                 <input name="email" placeholder="Enter E-mail"
                        type="email"
-                       value="<?php echo $email; ?>" <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?> >
+                <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
+                value="<?php echo $email; ?>">
                 <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </label>
             <label>Password
                 <input placeholder="Enter an Password" type="password"
-                       name="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
+                       name="password"
+                <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
                 value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </label>

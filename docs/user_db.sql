@@ -1,8 +1,8 @@
 CREATE
-DATABASE invest_db;
+    DATABASE invest_db;
 
 USE
-invest_db;
+    invest_db;
 
 CREATE TABLE users
 (
