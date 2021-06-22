@@ -37,6 +37,28 @@ CREATE TABLE academystats
 );
 
 INSERT INTO academystats
-VALUES ('Colombo', 451, 667, 45, 564, 178, 16, 26, 116, 230, 61, 291, 88);
+VALUES ('Colombo', 460, 650,34,540,194,24,25);
 INSERT INTO academystats
-VALUES ('Colombo', 451, 667, 45, 564, 178, 16, 26, 116, 230, 61, 291, 88);
+VALUES ('Gampaha', 603,259,12,209,51,7,1);
+INSERT INTO academystats
+VALUES ('Kalutara', 474,171,8,122,22,2,1);
+INSERT INTO academystats
+VALUES ('Kandy', 398,110,11,184,40,4,8);
+INSERT INTO academystats
+VALUES ('Matale', 171,22,2,18,10,2,3);
+INSERT INTO academystats
+VALUES ('Nuwara Eliya', 152,27,4,5,3,5,6);
+INSERT INTO academystats
+VALUES ('Galle', 563,179,9,168,60,10,5);
+INSERT INTO academystats
+VALUES ('Matara', 394,139,4,162,42,2,2);
+INSERT INTO academystats
+VALUES ('Hambantota', 297,44,6,85,16,4,3);
+INSERT INTO academystats
+VALUES ('Jaffna', 331,43,8,70,18,1,9);
+INSERT INTO academystats
+VALUES ('Kilinochchi', 42,4,5,2,1,7,9);
+INSERT INTO academystats
+VALUES ('Mannar', 48,6,1,5,3,2,7);
+INSERT INTO academystats
+VALUES ('Mullaitivu', 40,5,2,5,1,7,8);
