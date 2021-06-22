@@ -6,7 +6,22 @@ $new_password = $confirm_password = "";
 $new_password_err = $confirm_password_err = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+    if (isset($_POST['delete'])) {
+        $sql = "DELETE FROM users WHERE password = ? && id = ?";
+        if ($stmt = mysqli_prepare($link, $sql)) {
+            mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
+            $param_id = $_SESSION["id"];
+                if (mysqli_stmt_execute($stmt)) {
+                    session_destroy();
+                    header("location: signup.php");
+                    exit();
+                } else {
+                    echo "Oops! Something went wrong. Please try again later.";
+                }
+            mysqli_stmt_close($stmt);
+        }
+    }
+    if (isset($_POST['reset'])) {
     if (empty(trim($_POST["new_password"]))) {
         $new_password_err = "Please enter the new password.";
     } elseif (strlen(trim($_POST["new_password"])) < 6) {
@@ -22,27 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $confirm_password_err = "Password did not match.";
         }
     }
-
     if (empty($new_password_err) && empty($confirm_password_err)) {
-
-        if (isset($_POST['delete'])) {
-            $sql = "DELETE FROM users WHERE id = ? ";
-            if ($stmt = mysqli_prepare($link, $sql)) {
-                mysqli_stmt_bind_param($stmt, "i", $param_id);
-                $param_password = password_hash($new_password, PASSWORD_DEFAULT);
-                $param_id = $_SESSION["id"];
-                if (mysqli_stmt_execute($stmt)) {
-                    session_destroy();
-                    header("location: signin.php");
-                    exit();
-                } else {
-                    echo "Oops! Something went wrong. Please try again later.";
-                }
-                mysqli_stmt_close($stmt);
-            }
-        }
-
-        if (isset($_POST['reset'])) {
             $sql = "UPDATE users SET password = ? WHERE id = ?";
             if ($stmt = mysqli_prepare($link, $sql)) {
                 mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
@@ -166,10 +161,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                            value="<?php echo $new_password; ?>">
                 </label>
                 <span class="invalid-feedback"><?php echo $new_password_err; ?></span>
-                <label>Confirm Password
-                    <input type="password" name="confirm_password"
-                           class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
-                </label>
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
                 <input class="btn" name="delete" value="Delete" type="Submit">
                 <button class="btn" onclick="document.getElementById('modaldelete').style.display='none'"
