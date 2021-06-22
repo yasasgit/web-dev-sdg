@@ -153,10 +153,10 @@ img {
     /*height: 20vh;*/
 }
 
-.news-grid {
-    padding: 6px;
-    height: 80vh;
-}
+/*.news-grid {*/
+/*    padding: 6px;*/
+/*    height: 80vh;*/
+/*}*/
 
 .news-grid .row1 {
     /*overflow: hidden;*/
@@ -186,31 +186,31 @@ img {
 
 }
 
-.item1 {
-    background-image: url('../media/news-01.jpg');
-}
+/*.item1 {*/
+/*    background-image: url('../media/news-01.jpg');*/
+/*}*/
 
-.item2 {
-    background-image: url('../media/forum0.jpg');
-}
+/*.item2 {*/
+/*    background-image: url('../media/forum0.jpg');*/
+/*}*/
 
-.item3 {
-    background-image: url('../media/news3.jpg');
-}
+/*.item3 {*/
+/*    background-image: url('../media/news3.jpg');*/
+/*}*/
 
-.item4 {
-    background-image: url('../media/f1car-01.jpg');
-}
+/*.item4 {*/
+/*    background-image: url('../media/f1car-01.jpg');*/
+/*}*/
 
-.item5 {
-    background-image: url('../media/f1car-01.jpg');
-}
+/*.item5 {*/
+/*    background-image: url('../media/f1car-01.jpg');*/
+/*}*/
 
-[class*="item"] :hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.062);
-    transition: .6s;
-}
+/*[class*="item"] :hover {*/
+/*    color: black;*/
+/*    background-color: rgba(255, 255, 255, 0.062);*/
+/*    transition: .6s;*/
+/*}*/
 
 .news-grid div {
     width: 100%;

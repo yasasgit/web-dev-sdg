@@ -40,13 +40,13 @@ header {
     color: #303030;
 }
 
-.contact-list_ul {
-    display: inline-block;
-}
+/*.contact-list_ul {*/
+/*    display: inline-block;*/
+/*}*/
 
-.contact-list-item {
-    display: inline-block;
-}
+/*.contact-list-item {*/
+/*    display: inline-block;*/
+/*}*/
 
 .about {
     width: 100%;

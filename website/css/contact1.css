@@ -13,7 +13,7 @@ body {
 }
 
 .about {
-    padding: 5% 0%;
+    padding: 5% 0;
 }
 
 h4 {
@@ -39,7 +39,7 @@ header {
 
 .row {
     background-color: rgb(255, 255, 255);
-    padding: 3% 0%;
+    padding: 3% 0;
     display: flex;
     justify-content: center;
 }

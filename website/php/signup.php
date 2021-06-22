@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    header("location: zone.php");
+    exit;
+}
+
 require_once "config.php";
 
 $email = $password = $confirm_password = "";
@@ -402,10 +408,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="row1">
         <div class="col">
             <h4>Explore</h4>
-            <a href="../html/invest.html">Why Should You Invest?</a>
-            <a href="../html/economy.html">Statistics</a>
-            <a href="../html/innovate.html">Innovation</a>
-            <a href="../html/startup.html">Startup</a>
+            <a href="../php/whyinvest.php">Why Should You Invest?</a>
+            <a href="../php/stats.php">Statistics</a>
+            <a href="../php/innovate.php">Innovation</a>
+            <a href="../php/startup.php">Startup</a>
         </div>
         <div class="col">
             <h4>Quick Links</h4>
@@ -451,19 +457,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="right">
         <ul class="nav">
             <li class="nav-li">
-                <a href="../html/invest.html">Why Should You Invest?</a>
+                <a href="../php/whyinvest.php">Why Should You Invest?</a>
             </li>
             <li class="nav-li">
                 <a href="zone.php">Investor Zone</a>
             </li>
             <li class="nav-li">
-                <a href="../html/economy.html">Statistics</a>
+                <a href="../php/stats.php">Statistics</a>
             </li>
             <li class="nav-li">
-                <a href="../html/innovate.html">Innovation</a>
+                <a href="../php/innovate.php">Innovation</a>
             </li>
             <li class="nav-li">
-                <a href="../html/startup.html">Startup</a>
+                <a href="../php/startup.php">Startup</a>
             </li>
             <li class="nav-li">
                 <a href="../html/contact.html">Contact</a>

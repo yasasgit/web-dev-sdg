@@ -30,10 +30,10 @@
     padding-top: 5vh;
 }
 
-.div-for-grid {
-    height: 100vh;
-    background-color: rgb(43, 43, 43);
-}
+/*.div-for-grid {*/
+/*    height: 100vh;*/
+/*    background-color: rgb(43, 43, 43);*/
+/*}*/
 
 .news-grid {
     background-color: rgb(43, 43, 43);
@@ -114,17 +114,17 @@ hr.solid {
     background-color: rgb(87, 88, 88);
 }
 
-.item2 {
-    background-color: rgb(87, 88, 88);
-}
+/*.item2 {*/
+/*    background-color: rgb(87, 88, 88);*/
+/*}*/
 
-.item3 {
-    background-color: rgb(87, 88, 88);
-}
+/*.item3 {*/
+/*    background-color: rgb(87, 88, 88);*/
+/*}*/
 
-.pro_name {
-    color: white;
-}
+/*.pro_name {*/
+/*    color: white;*/
+/*}*/
 
 /* grid css */
 /* .div-for-grid { 

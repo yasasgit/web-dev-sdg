@@ -85,19 +85,19 @@ select:hover {
     transition: 0.4s;
 }
 
-.section3 {
-    /*background-color: rgb(133, 129, 129);*/
-    /*color: seashell;*/
-    /*width: 50px;*/
-    /*height: 20px;*/
-    /*border-radius: 100px;*/
-    /*margin-right: 530px;*/
-    /*padding: 10px;*/
-}
+/*.section3 {*/
+/*    background-color: rgb(133, 129, 129);*/
+/*    color: seashell;*/
+/*    width: 50px;*/
+/*    height: 20px;*/
+/*    border-radius: 100px;*/
+/*    margin-right: 530px;*/
+/*    padding: 10px;*/
+/*}*/
 
-.section5 {
-    /*margin-right: 20px;*/
-}
+/*.section5 {*/
+/*    margin-right: 20px;*/
+/*}*/
 
 label span {
     /*height: 33px;*/
@@ -111,12 +111,12 @@ label span {
 }
 
 
-.forgot {
-    /*position: center;*/
-    /*color: black;*/
-    /*font-size: 13px;*/
-    /*right: 78px;*/
-}
+/*.forgot {*/
+/*    position: center;*/
+/*    color: black;*/
+/*    font-size: 13px;*/
+/*    right: 78px;*/
+/*}*/
 
 .sign {
     /*position: center;*/
@@ -140,42 +140,42 @@ label span {
     /*width: 0;*/
 }
 
-.checkmark {
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*height: 25px;*/
-    /*width: 25px;*/
-    /*background-color: #eee;*/
-}
+/*.checkmark {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 25px;*/
+/*    width: 25px;*/
+/*    background-color: #eee;*/
+/*}*/
 
-.checkmark:after {
-    /*content: "";*/
-    /*position: absolute;*/
-    /*display: none;*/
-}
+/*.checkmark:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    display: none;*/
+/*}*/
 
-.container:hover input ~ .checkmark {
-    /*background-color: #ccc;*/
-}
+/*.container:hover input ~ .checkmark {*/
+/*    background-color: #ccc;*/
+/*}*/
 
-.container input:checked ~ .checkmark {
-    /*background-color: #2196F3;*/
-}
+/*.container input:checked ~ .checkmark {*/
+/*    background-color: #2196F3;*/
+/*}*/
 
-.container input:checked ~ .checkmark:after {
-    /*display: block;*/
-}
+/*.container input:checked ~ .checkmark:after {*/
+/*    display: block;*/
+/*}*/
 
-.container .checkmark:after {
-    /*left: 9px;*/
-    /*top: 5px;*/
-    /*width: 5px;*/
-    /*height: 10px;*/
-    /*border: solid white;*/
-    /*border-width: 0 3px 3px 0;*/
-    /*-webkit-transform: rotate(45deg);*/
-    /*-ms-transform: rotate(45deg);*/
-    /*transform: rotate(45deg);*/
-}
+/*.container .checkmark:after {*/
+/*    left: 9px;*/
+/*    top: 5px;*/
+/*    width: 5px;*/
+/*    height: 10px;*/
+/*    border: solid white;*/
+/*    border-width: 0 3px 3px 0;*/
+/*    -webkit-transform: rotate(45deg);*/
+/*    -ms-transform: rotate(45deg);*/
+/*    transform: rotate(45deg);*/
+/*}*/
 
