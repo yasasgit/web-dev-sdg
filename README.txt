@@ -1,18 +1,8 @@
 *****************errors*********************
-*Accordion 								done
-*project eke grid eka center keranna					done
-*zone eke div 3 center karanna 						done
-
-*sratup eke click karama from eka hariyata enne naha
-*project01/02/03 covers daanna
-*project eken project 01/02/03 walta link karanna
-*NAV eka hama page ekema Transparent Background eka adala pata karamu
 *projects highlighling issue
-***project proposal sample pdf ekkak download karanna damuda?
 
 *****************mistakes*************
-hama nav ekakam sector eka static kiyala wenas karanna ona
-sector eke campus nathuwa undergraduate wage namak danna ona
+
 news page titles capitalize
 projects page titles capitalize
 
