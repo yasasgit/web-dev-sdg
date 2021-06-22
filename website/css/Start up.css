@@ -55,7 +55,8 @@
     margin-top: 3vh;
     width: 20vh;
     height: 20vh;
-    background-color: brown;
+    background-image: url(../media/Jiffry_Zulfer.jpg);
+    background-size: cover;
     float: right;
 }
 
