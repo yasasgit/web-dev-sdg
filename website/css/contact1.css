@@ -49,7 +49,7 @@ header {
 }
 
 input:focus::placeholder, textarea:focus::placeholder {
-    font-size: 0.75em;
+    /*font-size: 0.75em;*/
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 
@@ -86,7 +86,7 @@ input, textarea {
     padding: 30px;
     border: 0;
     width: 100%;
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     background-color: #2d2d2d;
     color: white;
     border-radius: 4px;

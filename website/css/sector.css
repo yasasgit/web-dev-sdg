@@ -12,33 +12,28 @@ header {
     /*height: 600px;*/
 }
 
-@media screen and (max-width: 780px) {
-    header {
-        font-size: 70%;
-    }
-}
-
 .cover {
     height: 110px;
 }
 
-.tab a {
-    padding: 10px 40px;
-    border-bottom: 1px solid rgb(144, 144, 144);
+.tabbtn {
+    padding: 10px 38px;
     cursor: pointer;
+    background-color: transparent;
+    width: 148px;
 }
 
 .content {
     margin: 30px 10%;
 }
 
-.tab a.active {
+.tabbtn.active {
     font-weight: bold;
     color: black;
     border-bottom: 3px solid rgb(0, 0, 0);
 }
 
-.tab a:hover {
+.tabbtn:hover {
     color: black;
 
 }
@@ -219,3 +214,13 @@ nav ul :hover{
 		height: 30px;
 		margin: 20px;
 		border-radius: 15px;}
+ */
+
+@media screen and (max-width: 780px) {
+    header {
+    }
+
+    .tabbtn {
+        width: 138px;
+    }
+}

@@ -20,12 +20,6 @@ footer {
     /*scroll-snap-align: end;*/
 }
 
-@media screen and (max-width: 780px) {
-    header {
-        font-size: 70%;
-    }
-}
-
 .slideshow {
     /*width: 100%;*/
 
@@ -91,7 +85,6 @@ img {
     bottom: 6vh;
     right: 1vw;
     padding-left: 50%;
-
 }
 
 .dot {
@@ -227,6 +220,14 @@ img {
     height: 100%;
 }
 
+@media screen and (max-width: 780px) {
+    header {
+        /*font-size: 70%;*/
+    }
 
+    .text {
+        padding-left: 20%;
+    }
+}
 
 

@@ -10,9 +10,6 @@ header {
     height: 80px;
 }
 
-@media screen and (max-width: 780px) {
-}
-
 .navi, .about {
     background-color: #455153;
 }
@@ -29,7 +26,7 @@ header {
     text-align: left;
     padding: 50px;
     /*font-family: 'Open Sans', serif;*/
-    font-size: 105%;
+    /*font-size: 105%;*/
     position: relative;
     line-height: 26px;
     top: 20px;
@@ -67,7 +64,7 @@ button {
 
 button:hover {
     background-color: #36b83a;
-    font-size: 105%;
+    /*font-size: 105%;*/
     transition: .9s;
 
 }
@@ -86,4 +83,13 @@ button:hover {
     line-height: 28px;
     color: rgb(194, 194, 194);
     padding: 10px 10px 2.5% 4%;
+}
+
+@media screen and (max-width: 780px) {
+    .div-goals-invest {
+        padding: 10px;
+        line-height: 19px;
+        width: auto;
+        margin: 2px;
+    }
 }

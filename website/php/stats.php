@@ -21,15 +21,15 @@ session_start();
     <!--        <h2>Statistics</h2>-->
     <!--    </div>-->
     <div class="tab">
-        <a class="tabbtn" id="defaultOpen" onclick="openTab(event, 'econ')">
+        <button class="tabbtn" id="defaultOpen" onclick="openTab(event, 'econ')">
             Economy
-        </a>
-        <a class="tabbtn" onclick="openTab(event, 'edu')">
+        </button>
+        <button class="tabbtn" onclick="openTab(event, 'edu')">
             Academic
-        </a>
-        <a class="tabbtn" onclick="openTab(event, 'other')">
-            Other Statistics
-        </a>
+        </button>
+        <button class="tabbtn" onclick="openTab(event, 'other')">
+            Other
+        </button>
     </div>
     <div class="content" id="econ">
         <div class="about">
@@ -222,7 +222,7 @@ session_start();
 
     <div class="content" id="other">
         <div class="about">
-            <h2>Other</h2>
+            <h2>Other Statistics</h2>
             <p>This data will show you why an investor should prefer Sri Lanka for their investments.</p>
         </div>
     </div>
