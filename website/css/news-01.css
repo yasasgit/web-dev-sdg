@@ -1,6 +1,10 @@
 * {
     margin: 0;
 }
+.navi, .body {
+    background-color: rgb(70, 70, 70);
+}
+
 
 .cover {
     background-image: url(../media/Port_City_Colombo_for_news.jpg);
@@ -8,28 +12,32 @@
 
 .div-news-back {
     width: 100%;
-    height: 600px;
-    /* background-color: blanchedalmond; */
+    background-color: rgb(211, 134, 18); 
 }
 
 .div-news-content {
-    width: 45%;
-    height: 450px;
-    border: 1px solid black;
-    margin-top: 60px;
+    padding: 1% 5% 5% 5%;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: rgb(212, 212, 212);
+    line-height: 25px;
 }
 
 .div-news-back-content {
-    width: 30%;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
     height: 150px;
-    border: 5px solid wheat;
 }
 
 h2 {
+    font-weight: 500;
+    padding-top: 2%;
     color: white;
 }
 
-.div-news-more-news {
+/* .div-news-more-news { 
     width: 100%;
     height: 400px;
     background-color: teal;
@@ -62,6 +70,6 @@ h2 {
     border: 1px solid black;
     margin-top: 42px;
     float: right;
-    margin-right: 40px;
+    margin-right: 40px;*/
 }
 
