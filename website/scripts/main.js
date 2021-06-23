@@ -66,12 +66,12 @@ function responsive() {
     }
 }
 
-function showMail() {
-    let txt = confirm("Do you want to contact innovator?");
+function showMail(x) {
+    let txt = confirm("Do you want to contact this innovator?");
     if (txt === true) {
-        window.location.href = "mailto:mail@example.org";
+        window.location.href = "mailto:" + x;
     } else {
-        alert("thank you");
+        alert("Thank You");
     }
 }
 
