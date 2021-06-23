@@ -1,5 +1,8 @@
 *****************errors*********************
 *****************mistakes*************
+web site ekata namak hadala logo eka wenas krnn one
+hma page ekema titles dala logo eka danna one title eka gawa
+
 log wela inne kiyan aicon eka pennane koheda?
 5 slides descriptions (nikan copy karala dapuwa thiyenne)
 news page titles capitalize

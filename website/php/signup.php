@@ -80,6 +80,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Sign Up</title>
     <link href="../css/normalize.css" rel="stylesheet">
