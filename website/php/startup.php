@@ -65,11 +65,11 @@ session_start();
                                                              rel="noopener nofollow noreferrer"
                                                              target="_blank">PickMe</a>,
                         the Sri Lankan version of Uber, and he has worked to understand more about GPS and GIS system, coupled with the knowledge of good business,
-                        he and some partners worked together in bringing the concept to live for the locals.<br><br>
+                        he and some partners worked together in bringing the concept to live for the locals.<br/><br/>
                         Jiffry and his team worked on the concept, and succeeded in convincing investors, though still something new,
                         but something unique on what Uber didn't already have as at then. And as the team wanted to revolutionize the so-called tuk tuk system in Sri Lanka,
                         the features of PickMe were what interested the people more, and the use of Google Maps and GPS system made tracking easier,
-                        also easier to calculate the fare as well.<br><br>
+                        also easier to calculate the fare as well.<br/><br/>
                         It is currently a heated competition between "PickMe Vs Uber" which is taking over the taxi industry in Sri Lanka.
                     </span>
                     </p>
@@ -102,7 +102,7 @@ session_start();
                                                              target="_blank">LayUp</a>,
                         which is a new version of e-learning that applies the "Engaged Education Methodology" - an agile 3-step learning methodology.
                         While the cloud computing system also allows anyone with the access to study from anywhere and equally collaborate with others anytime.
-                    <br><br>
+                    <br/><br/>
                     Layup as the brainchild of Sheran Corera, won the best startup award of Seedstar Colombo in 2016. And it competed for the Seedstars Summit in Switzerland for $1 million in equity investment in March 2017.
                 </span>
                     </p>
@@ -133,7 +133,7 @@ session_start();
                                                                          target="_blank">Payhere</a>,
                         which is a solution to the problem of Sri Lankans not having a proper online transaction method as PayPal wasn't available in SriLanka.
                         While Bhasha wants to localize all software for Sri Lankans and Payhere as the way to have PayPal function for Sri Lankans.
-                        <br><br>
+                        <br/><br/>
                         Dhanika calls it a "comprehensive solution for online payment in Sri Lanka, offering Online Payment Accepting facilities to Sri Lankan Online Merchants"
                         in a more convenient and affordable way. It basically offers a platform for online payment facilities to Sri Lankan merchants,
                         who are allowed a free of charge set up of account on Payhere, unlike the local banks.
