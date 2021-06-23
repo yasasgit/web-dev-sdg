@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-            echo '<a href="../php/signin.php"><h2>sign in to view dashboard</h2></a>';
+            echo '<a href="../php/signin.php"><h2>Sign in to View Dashboard</h2></a>';
         } else {
             echo '
                 <a href="investreg.php"><div class="dash">
