@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    /*border: 0;*/
+    border: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -207,7 +207,12 @@ label {
     display: inline-block;
 }
 
-input[type="text"], input[type="date"], input[type="email"], input[type="password"], select {
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
     width: 100%;
     padding: 0 20px;
     margin: 8px auto;
@@ -235,7 +240,8 @@ input[type="file"] {
 input[type="text"]:focus,
 input[type="date"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+textarea:focus{
     background-color: #eaeaea;
     outline: none;
 }
@@ -244,6 +250,7 @@ input[type="text"]:hover,
 input[type="date"]:hover,
 input[type="email"]:hover,
 input[type="password"]:hover,
+textarea:hover,
 select:hover {
     background: #eaeaea;
     transition: 0.4s;

@@ -136,9 +136,9 @@ img {
 }
 
 .back {
-    background-image: url("../media/body.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    /*background-image: url("../media/body.jpg");*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
 }
 
 .about {
@@ -154,27 +154,27 @@ img {
 .news-grid .row1 {
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
-    display: grid;
-    grid-template-columns:auto auto auto;
-    grid-gap: 8px;
-    padding: 3px 6px;
-    height: 35vh;
+    /*display: grid;*/
+    /*grid-template-columns:auto auto auto;*/
+    /*grid-gap: 8px;*/
+    /*padding: 3px 6px;*/
+    /*height: 35vh;*/
 }
 
 .news-grid .row2 {
     /*overflow: hidden;*/
     /*color: rgb(255, 255, 255);*/
-    display: grid;
-    grid-template-columns:auto auto;
-    grid-gap: 8px;
-    padding: 3px 6px;
-    height: 40vh;
+    /*display: grid;*/
+    /*grid-template-columns:auto auto;*/
+    /*grid-gap: 8px;*/
+    /*padding: 3px 6px;*/
+    /*height: 40vh;*/
 }
 
 [class*="item"] {
-    border-radius: 3px;
-    border: 1px solid #1c1a1a;
-    background-size: cover;
+    /*border-radius: 3px;*/
+    /*border: 1px solid #1c1a1a;*/
+    /*background-size: cover;*/
 
 
 }
@@ -206,18 +206,18 @@ img {
 /*}*/
 
 .news-grid div {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 
 .news-grid a:hover {
-    transition: .6s;
-    transform: scale(1.02);
+    /*transition: .6s;*/
+    /*transform: scale(1.02);*/
 }
 
 .news-grid h3 {
-    color: white;
-    height: 100%;
+    /*color: white;*/
+    /*height: 100%;*/
 }
 
 @media screen and (max-width: 780px) {

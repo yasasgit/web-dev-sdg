@@ -18,7 +18,6 @@ session_start();
 <header>
     <div class="cover"></div>
     <div class="nav-div-inno">
-        <!-- <div class="div-head"><h2>Innovation</h2><span class="description"></span></div> -->
     </div>
     <div class="about">
         <h2>Innovation</h2>
