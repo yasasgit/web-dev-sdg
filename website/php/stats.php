@@ -224,7 +224,8 @@ session_start();
         <div class="about">
             <h2>Other Statistics</h2>
             <p>This data will show you why an investor should prefer Sri Lanka for their investments.
-            Provides statistical time series on socio economic and financial variables including provincially disaggregated data, where available. Released annually</p>
+                Provides statistical time series on socio economic and financial variables including provincially
+                disaggregated data, where available. Released annually</p>
         </div>
     </div>
     <?php

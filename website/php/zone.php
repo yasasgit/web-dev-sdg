@@ -32,10 +32,11 @@ session_start();
             <li>Innovations invented by young innovators.</li>
             <li>Deceased businesses that need to be recharged.</li>
         </ul>
-        <p>Create a free account to start easy navigating and pick any scheme to invest.</p>
+
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-            echo '<a href="../php/signin.php"><h2>Sign in to View Dashboard</h2></a>';
+            echo '<p>Create a free account to start easy navigating and pick any scheme to invest.</p>
+<a href="../php/signin.php"><h2>Sign in to View Dashboard</h2></a>';
         } else {
             require_once "config.php";
             $new_password = $confirm_password = "";
