@@ -20,21 +20,19 @@ session_start();
     <div class="cover"></div>
     <div class="about">
         <h2>Investor Zone</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate delectus
-            enim illo inventore libero, officia porro quam veniam vitae!
-            Amet aspernatur at commodi ducimus expedita fugit, natus quasi? Aut. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit.
-            Architecto, debitis ducimus minima numquam omnis quibusdam sequi voluptas voluptatibus.
-            Amet beatae dolor earum iusto labore minima nulla odit officiis quia quibusdam.</p>
-        <ul>methanin awal tikk dapan
-            <li>cepa hambawenawa</li>
-            <li>chill</li>
+        <p>Usually, it takes four months to approve a foreign Investor over 23 government legal offices. You can use
+            this online registration to work that out from less than 2 months. You can submit your project reports even
+            being abroad. We would like to benefit our country by acquiring more foreign direct investments. Which will
+            set up creating more jobs and bringing our per capita to $12400 by 2030. Discovering a project this simple
+            and free is a great opportunity.</p>
+        <p>You can invest on all the following schemes using this friendly platform.</p>
+        <ul>
+            <li>Businesses and Projects you finance by your own.</li>
+            <li>Businesses And Project that financed by other parties.</li>
+            <li>Innovations invented by young innovators.</li>
+            <li>Deceased businesses that need to be recharged.</li>
         </ul>
-        <!-- for describe about content -->
-        <div class="div-for-01-inno">
-            <h3>meheme topic eka</h3>
-            <p>podi wisthrayak + terms & conditions</p>
-        </div>
+        <p>Create a free account to start easy navigating and pick any scheme to invest.</p>
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             echo '<a href="../php/signin.php"><h2>Sign in to View Dashboard</h2></a>';
@@ -96,13 +94,18 @@ session_start();
                 mysqli_close($link);
             }
             echo '
-                <a href="investreg.php"><div class="dash">
-                <h3>Hi, <b>' . htmlspecialchars($_SESSION["email"]) . '</b>. Welcome to our site.</h3>
-                <a href="../media/sample.pdf"><button class="btn">Download Proposal Sample</button></a>
-                <a><button class="btn" onclick="document.getElementById(\'modalout\').style.display=\'block\'">Sign Out</button></a>
-                <a><button class="btn" onclick="document.getElementById(\'modalreset\').style.display=\'block\'">Reset Password</button></a>
-                <a><button class="btn" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
-                </div></a>
+            <!-- for describe about content -->
+            <div class="div-for-01-inno">
+            <a href="investreg.php"><h3>Investor Registration Form</h3></a>
+            <p>podi wisthrayak + terms & conditions</p>
+            </div>
+            <div class="dash">
+            <h3>Hi, <b>' . htmlspecialchars($_SESSION["email"]) . '</b>. Welcome to our site.</h3>
+            <a href="../media/sample.pdf"><button class="btn">Download Proposal Sample</button></a>
+            <a><button class="btn" onclick="document.getElementById(\'modalout\').style.display=\'block\'">Sign Out</button></a>
+            <a><button class="btn" onclick="document.getElementById(\'modalreset\').style.display=\'block\'">Reset Password</button></a>
+            <a><button class="btn" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
+            </div>
             ';
         }
         ?>
