@@ -19,17 +19,16 @@ CREATE TABLE users
     created_at   DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE investor
+CREATE TABLE investors
 (
-    email           VARCHAR(320) NOT NULL PRIMARY KEY,
-    firstname       VARCHAR(50)  NOT NULL,
-    lastname        VARCHAR(50)  NOT NULL,
-    address1        VARCHAR(255) NOT NULL,
-    address2        VARCHAR(255) NOT NULL,
-    company_name    VARCHAR(50)  NOT NULL,
-    investment_type VARCHAR(30)  NOT NULL,
-    invest_amount   VARCHAR(25)  NOT NULL,
-    file_path       VARCHAR(255) NOT NULL,
+    email            VARCHAR(320) NOT NULL PRIMARY KEY,
+    address1         VARCHAR(255) NOT NULL,
+    address2         VARCHAR(255) NOT NULL,
+    company_name     VARCHAR(50)  NOT NULL,
+    investment_type  VARCHAR(30)  NOT NULL,
+    investment_stage VARCHAR(20)  NOT NULL,
+    invest_amount    VARCHAR(25)  NOT NULL,
+    file_path        VARCHAR(255) NOT NULL,
     FOREIGN KEY (email) REFERENCES users (email)
 );
 

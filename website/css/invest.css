@@ -47,7 +47,7 @@ header {
     color: rgb(233, 232, 232);
 }
 
-.button {
+.register {
     width: 100%;
     padding: 1em;
 }
@@ -59,6 +59,7 @@ button {
     border-radius: 6px;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 button:hover {

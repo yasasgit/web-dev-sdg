@@ -24,7 +24,7 @@ header {
 }
 
 .content {
-    margin: 1em 2em;
+    margin: 1em 4em;
 }
 
 .tabbtn.active {
@@ -42,7 +42,7 @@ header {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 1em;
+    padding: 1.5em;
     width: 100%;
     border: none;
     text-align: left;

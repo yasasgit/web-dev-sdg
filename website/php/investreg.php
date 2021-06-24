@@ -4,10 +4,28 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: signin.php");
     exit;
 } else {
-    $email = $password = "";
-    $login_err = "";
+    $email = $_SESSION["email"];
+    $firstname = $_SESSION["firstname"];
+    $lastname = $_SESSION["lastname"];
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "config.php";
+        $email = trim($_POST["email"]);
+        $firstname = trim($_POST['firstname']);
+        $lastname = trim($_POST['lastname']);
+        $sql = "INSERT INTO investors (email, address1, address2, company_name, investment_type, investment_stage, invest_amount, file_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        if ($stmt = mysqli_prepare($link, $sql)) {
+            mysqli_stmt_bind_param($stmt, "ssssssss", $param_email, $param_address1, $param_address2, $param_company_name, $param_investment_type, $param_investment_stage, $param_invest_amount, $param_file_path);
+            $param_email = $email;
+            $param_firstname = $firstname;
+            $param_lastname = $lastname;
+            if (mysqli_stmt_execute($stmt)) {
+                header("location: zone.php");
+            } else {
+                echo "Oops! Something went wrong. Please try again later.";
+            }
+            mysqli_stmt_close($stmt);
+        }
+        mysqli_close($link);
     }
 }
 ?>
@@ -40,36 +58,42 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="formbox">
             <div>
                 <label>First Name
-                    <input class="section" name="firstname" type="text">
+                    <input class="section" name="firstname" type="text" disabled
+                           value="<?php if (isset($firstname)) {
+                               echo $firstname;
+                           } ?>">
                 </label>
             </div>
-
             <div>
                 <label>Last Name
-                    <input class="section" name="lastname" type="text">
+                    <input class="section" name="lastname" type="text" disabled
+                           value="<?php if (isset($lastname)) {
+                               echo $lastname;
+                           } ?>">
                 </label>
             </div>
-
             <div>
                 <label>Address Line #1
-                    <input class="section wide" name="address1" type="text">
+                    <input class="section wide" name="address1" type="text" placeholder="Enter address">
                 </label>
             </div>
             <div>
                 <label>Address Line #2
-                    <input class="section wide" name="address2" type="text">
+                    <input class="section wide" name="address2" type="text" placeholder="Enter address">
                 </label>
             </div>
-
             <div>
                 <label>Company Name
-                    <input class="section" name="company_name" type="text">
+                    <input class="section" name="company_name" type="text" placeholder="Enter Company Name">
                 </label>
             </div>
-
             <div>
-                <label>Email
-                    <input class="section wide" name="email" type="text">
+                <label>E-mail
+                    <input class="section wide" name="email" placeholder="Enter E-mail" disabled
+                           type="email" value="<?php if (isset($email)) {
+                        echo $email;
+                    } ?>">
+                    <span class="frm-text"><?php echo $email_err; ?></span>
                 </label>
             </div>
             <div>

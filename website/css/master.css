@@ -59,7 +59,7 @@ header {
 .about {
     color: white;
     padding: 2em;
-    line-height: 1.5em;
+    line-height: 2em;
     text-indent: 1em;
     /*font-size: 110%;*/
     /*height: 40%;*/
@@ -71,11 +71,11 @@ header {
 
 }
 
-.about ul li {
+.about ul {
     text-align: left;
     /*margin: 0 auto;*/
-    margin: 0 2em;
-    max-width: 500px;
+    margin: 0 4em;
+    /*max-width: 500px;*/
 }
 
 .about a {
@@ -202,7 +202,7 @@ label {
     flex-wrap: wrap;
     font-size: 12px;
     /*font-weight: bold;*/
-    color: black;
+    /*color: black;*/
     /*font-weight: 400;*/
     letter-spacing: 0.5px;
     user-select: none;

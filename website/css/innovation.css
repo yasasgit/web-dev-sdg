@@ -130,8 +130,14 @@ nav ul :hover {
     background-image: url('../media/remote-controlled-smart-appliance.jpg');
 }
 
+.item10 {
+    border: 1px solid black;
+    padding: 2em;
+}
+
 .item10 img {
-    height: 180px;
+    height: 100%;
+    /*margin: 2em;*/
 }
 
 /* .grid-container{
