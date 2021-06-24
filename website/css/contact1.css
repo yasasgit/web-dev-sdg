@@ -14,7 +14,7 @@ body {
 }
 
 .about {
-    padding: 5% 0;
+    padding: 2em 0;
 }
 
 h4 {
@@ -40,7 +40,7 @@ header {
 
 .row {
     background-color: rgb(255, 255, 255);
-    padding: 3% 0;
+    padding: 2em 0;
     display: flex;
     justify-content: center;
 }
@@ -64,7 +64,7 @@ input:focus, textarea:focus {
 .styled-input {
     display: inline-block;
     width: 293px;
-    margin: 2px;
+    margin: 0.2em 0;
     border-radius: 4px;
 }
 
@@ -84,7 +84,7 @@ input:focus, textarea:focus {
 }
 
 input, textarea {
-    padding: 20px;
+    padding: 1.5em;
     /*border: 0;*/
     width: 100%;
     /*font-size: 1rem;*/
@@ -99,9 +99,9 @@ textarea {
 }
 
 .submit-btn {
-    margin-top: 5%;
+    margin-top: 1em;
     float: right;
-    padding: 7px 35px;
+    padding: 0.5em 1.5em;
     border-radius: 60px;
     background-color: #404458;
     color: white;

@@ -78,9 +78,9 @@ p {
 
 .btn {
     /*background-color: rgba(0, 0, 0, 0.15);*/
-    width: auto;
+    /*width: auto;*/
     /*height: 5vh;*/
-    padding: 9px;
+    /*padding: 1em;*/
     /*border-radius: 20px;*/
     /*color: white;*/
 }

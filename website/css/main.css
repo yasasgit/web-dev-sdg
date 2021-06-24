@@ -52,7 +52,7 @@ img {
     top: 46vh;
     width: auto;
     /*margin-top: -22px;*/
-    padding: 16px;
+    padding: 1em;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -97,24 +97,27 @@ img {
     cursor: pointer;
     height: 10px;
     width: 10px;
-    margin: 0 2px;
-    background-color: rgb(109, 109, 109);
-    border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #D5D0D0FF;
+    border-radius: 10px
 }
 
 .dots {
     /*left: 48vw;*/
     /*margin: 0 auto;*/
     position: sticky;
-    bottom: 1em;
+    bottom: .6em;
 }
 
-.active, .dot:hover {
-    height: 11px;
-    width: 11px;
-    background-color: rgb(255, 255, 255);
+.dot:hover {
+    background-color: #D5D0D0FF
+}
+
+.dot.active {
+    width: 22px;
 }
 
 .fade {

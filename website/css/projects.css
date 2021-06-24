@@ -27,7 +27,7 @@
 .div-for-main-content h2 {
     margin: 0;
     color: rgb(255, 255, 255);
-    padding-top: 5vh;
+    padding-top: 1em;
 }
 
 /*.div-for-grid {*/
@@ -37,7 +37,7 @@
 
 .news-grid {
     background-color: rgb(43, 43, 43);
-    padding-top: 5vh;
+    padding-top: 1em;
     height: 100vh;
 }
 
@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns:32% 32% 32%;
     grid-gap: 1.5%;
-    padding: 1% 1.5%;
+    padding: 1em 1.5em;
     height: 30vh;
 }
 
@@ -57,7 +57,7 @@
     display: grid;
     grid-template-columns:32% 32% 32%;
     grid-gap: 1.5%;
-    padding: 1% 1.5%;
+    padding: 1em 1.5em;
     height: 30vh;
 }
 
@@ -67,7 +67,7 @@
     display: grid;
     grid-template-columns:32% 32% 32%;
     grid-gap: 1.5%;
-    padding: 1% 1.5%;
+    padding: 1em 1.5em;
     height: 30vh;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .item1 h3 {
-    line-height: 30px;
+    line-height: 1.5em;
     color: rgb(184, 184, 184);
 }
 
@@ -93,7 +93,7 @@
 }
 
 .news-grid a {
-    padding-top: 3vh;
+    padding-top: 2em;
 }
 
 .solid {

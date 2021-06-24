@@ -52,10 +52,10 @@ nav ul :hover {
 }
 
 .div-name {
-    padding-top: 2vh;
+    padding: 1em;
     color: rgb(196, 196, 196);
     width: 100%;
-    height: 90px;
+    /*height: 90px;*/
     background-color: #788588;
     background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349));
 }
@@ -64,7 +64,7 @@ nav ul :hover {
     display: grid;
     grid-template-columns:31% 31% 31%;
     grid-gap: 3%;
-    padding: 3%;
+    padding: 2em;
     background-color: #4b5557;
     background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0));
 }

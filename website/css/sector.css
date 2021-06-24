@@ -17,14 +17,14 @@ header {
 }
 
 .tabbtn {
-    padding: 10px 38px;
+    padding: 1em 2em;
     cursor: pointer;
     background-color: transparent;
     width: 148px;
 }
 
 .content {
-    margin: 30px 10%;
+    margin: 1em 2em;
 }
 
 .tabbtn.active {
@@ -42,7 +42,7 @@ header {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 1em;
     width: 100%;
     border: none;
     text-align: left;
@@ -56,7 +56,7 @@ header {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 1em;
     display: none;
     background-color: #660b66;
     overflow: hidden;
@@ -71,16 +71,16 @@ header {
 .left-stat {
     background-color: bisque;
     width: 50%;
-    margin: 15px 0;
-    padding: 10px;
+    margin: 0.5em 0;
+    padding: 1em;
 }
 
 .right-stat {
     background-color: rgb(228, 133, 18);
     width: 50%;
-    margin: 15px 0;
-    padding: 10px;
-    line-height: 400%;
+    margin: 0.5em 0;
+    padding: 1em;
+    line-height: 4em;
 
 }
 

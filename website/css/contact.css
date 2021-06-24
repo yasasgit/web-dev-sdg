@@ -17,7 +17,7 @@ header {
 
 .main {
     background-color: #353535;
-    padding: 120px 5%;
+    padding: 5em 1em;
     border-top: 1px solid #5e5e5e;
     border-bottom: 1px solid #303030;
     /*border-radius: 10px;*/
@@ -28,16 +28,17 @@ header {
     display: inline-block;
     background: rgba(255, 255, 255, 0);
     width: 49%;
+    line-height: 2em;
     /*height: 500px;*/
 
 }
 
 .bottom {
-    padding: 5px;
+    padding: 1em;
 }
 
 .bottom h3 {
-    padding-top: 5%;
+    padding-top: 2em;
     color: #303030;
 }
 
@@ -50,7 +51,7 @@ header {
 /*}*/
 
 .about {
-    padding-bottom: 3%;
+    padding-bottom: 2em;
     width: 100%;
 }
 
@@ -58,7 +59,8 @@ header {
     display: flex;
     justify-content: center;
 }
-.fp-contact-tel{
+
+.fp-contact-tel {
     color: white;
 }
 
@@ -71,7 +73,7 @@ header {
     height: 60px;
     display: block;
     background-size: contain;
-    margin: 10px;
+    margin: 0.5em;
     /*cursor: pointer;*/
 }
 
