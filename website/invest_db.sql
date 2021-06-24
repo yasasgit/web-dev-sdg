@@ -1,28 +1,27 @@
 CREATE
-DATABASE invest_db;
+    DATABASE invest_db;
 
 USE
-invest_db;
+    invest_db;
 
 CREATE TABLE users
 (
-    id         INT          NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    email      VARCHAR(320) NOT NULL UNIQUE,
-    password   VARCHAR(255) NOT NULL,
-    acctype    VARCHAR(8)   NOT NULL,
-    firstame   VARCHAR(50)  NOT NULL,
-    lastname   VARCHAR(50)  NOT NULL,
-    dob        VARCHAR(20)  NOT NULL,
-    gender     VARCHAR(1)   NOT NULL,
-    country    VARCHAR(2)   NOT NULL,
-    phone      VARCHAR(15)  NOT NULL,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    id           INT          NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    email        VARCHAR(320) NOT NULL UNIQUE,
+    password     VARCHAR(255) NOT NULL,
+    account_type VARCHAR(8)   NOT NULL,
+    firstname    VARCHAR(50)  NOT NULL,
+    lastname     VARCHAR(50)  NOT NULL,
+    dob          VARCHAR(20)  NOT NULL,
+    gender       VARCHAR(1)   NOT NULL,
+    country      VARCHAR(2)   NOT NULL,
+    phone        VARCHAR(15)  NOT NULL,
+    created_at   DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE academystats
 (
-    id                    INT         NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    district              VARCHAR(50) NOT NULL UNIQUE,
+    district              VARCHAR(50) NOT NULL PRIMARY KEY,
     Arts                  int         NOT NULL,
     ManagementandCommerce int         NOT NULL,
     Law                   int         NOT NULL,
@@ -68,7 +67,7 @@ VALUES ('Vavuniya', 73, 12, 1, 1, 5, 1, 2, 2, 6, 1, 9, 3);
 INSERT INTO academystats
 VALUES ('Batticalo', 228, 25, 3, 6, 4, 5, 3, 2, 8, 4, 35, 21);
 INSERT INTO academystats
-VALUES ('Ampara', 352, 25, 3, 8, 1, 3, 1, 8,  10, 3, 54, 19);
+VALUES ('Ampara', 352, 25, 3, 8, 1, 3, 1, 8, 10, 3, 54, 19);
 INSERT INTO academystats
 VALUES ('Trincomalee', 216, 32, 3, 7, 5, 1, 4, 3, 4, 1, 16, 14);
 INSERT INTO academystats
@@ -82,8 +81,8 @@ VALUES ('Polonnaruwa', 131, 23, 2, 2, 2, 4, 3, 6, 1, 5, 13, 1);
 INSERT INTO academystats
 VALUES ('Badulla', 269, 50, 6, 56, 11, 3, 2, 12, 20, 2, 56, 16);
 INSERT INTO academystats
-VALUES ('Moneragala', 171, 33, 1, 2, 3, 4, 2, 2,  8, 1, 17, 3);
+VALUES ('Moneragala', 171, 33, 1, 2, 3, 4, 2, 2, 8, 1, 17, 3);
 INSERT INTO academystats
 VALUES ('Rathnapura', 449, 133, 8, 107, 29, 2, 1, 41, 26, 3, 89, 34);
 INSERT INTO academystats
-VALUES ('Kegalle', 339, 65, 2, 75, 6, 1, 9, 30,  26, 2, 52, 15);
+VALUES ('Kegalle', 339, 65, 2, 75, 6, 1, 9, 30, 26, 2, 52, 15);

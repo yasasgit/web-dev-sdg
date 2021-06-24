@@ -5,14 +5,12 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     exit;
 } else {
     $email = $password = $confirm_password = "";
-    $email_err = $password_err = $confirm_password_err = "";
+    $email_err = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "config.php";
-        if (empty(trim($_POST["email"]))) {
-            $email_err = "Please enter a email.";
-        } elseif (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", trim($_POST["email"]))) {
-            $email_err = "Email can only contain letters, numbers, and underscores.";
+        if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i", trim($_POST["email"]))) {
+            $email_err = "Please enter a valid Email.";
         } else {
             $sql = "SELECT id FROM users WHERE email = ?";
             if ($stmt = mysqli_prepare($link, $sql)) {
@@ -31,27 +29,28 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 mysqli_stmt_close($stmt);
             }
         }
-        if (empty(trim($_POST["password"]))) {
-            $password_err = "Please enter a password.";
-        } elseif (strlen(trim($_POST["password"])) < 6) {
-            $password_err = "Password must have at least 6 characters.";
-        } else {
-            $password = trim($_POST["password"]);
-        }
-        if (empty(trim($_POST["confirm_password"]))) {
-            $confirm_password_err = "Please confirm password.";
-        } else {
-            $confirm_password = trim($_POST["confirm_password"]);
-            if (empty($password_err) && ($password != $confirm_password)) {
-                $confirm_password_err = "Password did not match.";
-            }
-        }
-        if (empty($email_err) && empty($password_err) && empty($confirm_password_err)) {
-            $sql = "INSERT INTO users (email, password) VALUES (?, ?)";
+        $account_type = $_POST['account_type'];
+        $firstname = trim($_POST['firstname']);
+        $lastname = trim($_POST['lastname']);
+        $dob = $_POST['dob'];
+        $gender = $_POST['gender'];
+        $country = $_POST['country'];
+        $phone = trim($_POST['phone']);
+        $password = trim($_POST["password"]);
+        $confirm_password = trim($_POST["confirm_password"]);
+        if (empty($email_err)) {
+            $sql = "INSERT INTO users (email, password, account_type, firstname, lastname, dob, gender, country, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             if ($stmt = mysqli_prepare($link, $sql)) {
-                mysqli_stmt_bind_param($stmt, "ss", $param_email, $param_password);
+                mysqli_stmt_bind_param($stmt, "sssssssss", $param_email, $param_password, $param_account_type, $param_firstname, $param_lastname, $param_dob, $param_gender, $param_country, $param_phone);
                 $param_email = $email;
                 $param_password = password_hash($password, PASSWORD_DEFAULT);
+                $param_account_type = $account_type;
+                $param_firstname = $firstname;
+                $param_lastname = $lastname;
+                $param_dob = $dob;
+                $param_gender = $gender;
+                $param_country = $country;
+                $param_phone = $phone;
                 if (mysqli_stmt_execute($stmt)) {
                     header("location: signin.php");
                 } else {
@@ -59,17 +58,6 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 }
                 mysqli_stmt_close($stmt);
             }
-        }
-        if (isset($_POST['submit'])) {
-            $acctype = $_POST['acctype'];
-            $firstname = $_POST['firstname'];
-            $lastname = $_POST['lastname'];
-            $dob = $_POST['dob'];
-            $gender = $_POST['gender'];
-            $country = $_POST['country'];
-            $phone = $_POST['phone'];
-            mysqli_query($link, "UPDATE users SET acctype = '$acctype', firstname= '$firstname', lastname= '$lastname', dob= '$dob', gender= '$gender', country= '$country', phone = '$phone'
-        WHERE email = '$email';");
         }
         mysqli_close($link);
     }
@@ -105,16 +93,19 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             <span class="frm-text">Who Are You?</span>
             <div class="radio">
                 <label>
-                    <input name="acctype" type="radio" value="invest">
-                    Investor
+                    <input name="account_type" type="radio"
+                           value="investor" <?php if (isset($account_type) && $account_type == "investor") echo "checked"; ?>>
+                    An Investor
                 </label>
                 <label>
-                    <input name="acctype" type="radio" value="innovate">
-                    Innovator
+                    <input name="account_type" type="radio"
+                           value="innovator" <?php if (isset($account_type) && $account_type == "innovator") echo "checked"; ?>>
+                    An Innovator
                 </label>
                 <label>
-                    <input name="acctype" type="radio" value="startup">
-                    Entrepreneur
+                    <input name="account_type" type="radio"
+                           value="entrepreneur" <?php if (isset($account_type) && $account_type == "entrepreneur") echo "checked"; ?>>
+                    An Entrepreneur
                 </label>
             </div>
             <label>First Name
@@ -375,24 +366,18 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             </label>
             <label>E-mail
                 <input name="email" placeholder="Enter E-mail"
-                       type="email"
-                <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
-                value="<?php echo $email; ?>">
-                <span class="invalid-feedback"><?php echo $email_err; ?></span>
+                       type="email" value="<?php if (isset($email)) {
+                    echo $email;
+                } ?>">
+                <span class="frm-text"><?php echo $email_err; ?></span>
             </label>
             <label>Password
                 <input placeholder="Enter an Password" type="password"
-                       name="password"
-                <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
-                value="<?php echo $password; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                       name="password">
             </label>
             <label>Confirm Password
                 <input placeholder="Confirm Password" type="password"
-                       name="confirm_password" <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>"
-                value="<?php echo $confirm_password; ?>">
-                <span class="invalid-feedback">
-                <?php echo $confirm_password_err; ?></span>
+                       name="confirm_password">
             </label>
             <p>Already have an account? <a href="signin.php">Login here.</a></p>
             <input class="btn" type="Submit" name="submit">

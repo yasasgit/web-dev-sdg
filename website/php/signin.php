@@ -5,47 +5,36 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     exit;
 } else {
     $email = $password = "";
-    $email_err = $password_err = $login_err = "";
+    $login_err = "";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "config.php";
-        if (empty(trim($_POST["email"]))) {
-            $email_err = "Please enter email.";
-        } else {
-            $email = trim($_POST["email"]);
-        }
-        if (empty(trim($_POST["password"]))) {
-            $password_err = "Please enter your password.";
-        } else {
-            $password = trim($_POST["password"]);
-        }
-        if (empty($email_err) && empty($password_err)) {
-            $sql = "SELECT id, email, password FROM users WHERE email = ?";
-            if ($stmt = mysqli_prepare($link, $sql)) {
-                mysqli_stmt_bind_param($stmt, "s", $param_email);
-                $param_email = $email;
-                if (mysqli_stmt_execute($stmt)) {
-                    mysqli_stmt_store_result($stmt);
-                    if (mysqli_stmt_num_rows($stmt) == 1) {
-                        mysqli_stmt_bind_result($stmt, $id, $email, $hashed_password);
-                        if (mysqli_stmt_fetch($stmt)) {
-                            if (password_verify($password, $hashed_password)) {
-                                session_start();
-                                $_SESSION["loggedin"] = true;
-                                $_SESSION["id"] = $id;
-                                $_SESSION["email"] = $email;
-                                header("location: zone.php");
-                            } else {
-                                $login_err = "Invalid email or password.";
-                            }
+        $email = trim($_POST["email"]);
+        $password = trim($_POST["password"]);
+        if ($stmt = mysqli_prepare($link, "SELECT id, email, password FROM users WHERE email = ?")) {
+            mysqli_stmt_bind_param($stmt, "s", $param_email);
+            $param_email = $email;
+            if (mysqli_stmt_execute($stmt)) {
+                mysqli_stmt_store_result($stmt);
+                if (mysqli_stmt_num_rows($stmt) == 1) {
+                    mysqli_stmt_bind_result($stmt, $id, $email, $hashed_password);
+                    if (mysqli_stmt_fetch($stmt)) {
+                        if (password_verify($password, $hashed_password)) {
+                            session_start();
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["email"] = $email;
+                            header("location: zone.php");
+                        } else {
+                            $login_err = "Invalid Email or Password.";
                         }
-                    } else {
-                        $login_err = "Invalid email or password.";
                     }
                 } else {
-                    echo "Oops! Something went wrong. Please try again later.";
+                    $login_err = "Invalid Email or Password.";
                 }
-                mysqli_stmt_close($stmt);
+            } else {
+                echo "Oops! Something went wrong. Please try again later.";
             }
+            mysqli_stmt_close($stmt);
         }
         mysqli_close($link);
     }
@@ -77,23 +66,24 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     </div>
     <?php
     if (!empty($login_err)) {
-        echo '<div class="alert alert-danger">' . $login_err . '</div>';
+        echo '<div class="frm-text">' . $login_err . '</div>';
     }
     ?>
     <form class="box" name="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
           onsubmit="return validate()">
         <div class="formbox">
             <label id="email">Email
-                <input name="email" placeholder="Email"
-                       type="email" <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
-                value="<?php echo $email; ?>">
+                <input name="email" placeholder="Email" type="email"
+                <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
+                value="
+                <?php echo $email; ?>">
             </label>
-            <span class="invalid-feedback"><?php echo $email_err; ?></span>
             <label id="password">Password
                 <input name="password" placeholder="Password"
-                       type="password" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                       type="password"
+                <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
+                >
             </label>
-            <span class="invalid-feedback"><?php echo $password_err; ?></span>
             <label class="contain">
                 <!--                <span class="checkmark"></span>-->
                 <input type="checkbox">Remember me

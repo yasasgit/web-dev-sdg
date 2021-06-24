@@ -97,3 +97,6 @@ label span {
 /*    transform: rotate(45deg);*/
 /*}*/
 
+.frm-text {
+    display: block;
+}

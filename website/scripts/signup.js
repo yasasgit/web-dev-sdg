@@ -19,6 +19,12 @@ function checkForm() {
         alert("Error: Input is empty!");
         return false;
     }
+
+    if (password.length < 8) {
+        alert("Password must have at least 8 characters.");
+        return false;
+    }
+
     // validate phone number
     if (isNaN(phone) || phone.length !== 10) {
         alert("Not a valid phone number");
@@ -30,5 +36,4 @@ function checkForm() {
         alert("Password confirmation failed");
         return false;
     }
-
 }
