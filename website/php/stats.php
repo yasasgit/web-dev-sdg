@@ -187,7 +187,7 @@ require_once "config.php";
                             <?php if (isset($district)) {
                                 echo 'selected="selected"';
                             } ?>
-                            <option value="0">Select District</option>
+                            <option value="0" hidden>Select District</option>
                             <option>Colombo</option>
                             <option>Gampaha</option>
                             <option>Kalutara</option>
@@ -217,7 +217,7 @@ require_once "config.php";
                     </label>
                     <label> Academic Stream
                         <select name="stream">
-                            <option value="0">Select Academic Stream</option>
+                            <option value="0" hidden>Select Academic Stream</option>
                             <option>Arts</option>
                             <option>Management and Commerce</option>
                             <option>Law</option>

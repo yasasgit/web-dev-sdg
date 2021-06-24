@@ -75,7 +75,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div>
                 <label>Investment Type
                     <select name="industrylevel">
-                        <option value="">Select Investment Type</option>
+                        <option value="" hidden>Select Investment Type</option>
                         <option value="">Angle</option>
                         <option value="">Family Office</option>
                         <option value="">Corporate</option>

@@ -133,7 +133,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             </div>
             <label>Country
                 <select name="country">
-                    <option>Select Country</option>
+                    <option hidden>Select Country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AL">Albania</option>
                     <option value="DZ">Algeria</option>

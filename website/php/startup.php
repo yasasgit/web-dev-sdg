@@ -175,7 +175,7 @@ session_start();
                     <label>
                         District
                         <select>
-                            <option>District</option>
+                            <option hidden>District</option>
                             <option>Ampara</option>
                             <option>Anuradhapura</option>
                             <option>Badulla</option>
@@ -206,7 +206,7 @@ session_start();
                     <label>
                         Business Sector
                         <select>
-                            <option>Business Sector</option>
+                            <option hidden>Business Sector</option>
                             <option>Agriculture</option>
                             <option>Industries</option>
                             <option>Services</option>
