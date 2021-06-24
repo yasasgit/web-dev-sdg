@@ -145,7 +145,7 @@ session_start();
                 <div class="image3"></div>
             </div>
             <div>
-                <p>
+                <p class="frm-text">
                     You can submit a request for this startup program using this form.
                 </p>
                 <?php
