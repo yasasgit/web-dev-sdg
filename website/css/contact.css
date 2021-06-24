@@ -4,11 +4,11 @@ header {
 }
 
 .navi, .about {
-    background-color: #3D9970;
+    background-color: #353535;
 }
 
 .navi:hover {
-    background-color: #2e7455;
+    background-color: #000000;
 }
 
 .cover {
@@ -16,8 +16,9 @@ header {
 }
 
 .main {
+    background-color: #353535;
     padding: 120px 5%;
-    border-top: 1px solid #303030;
+    border-top: 1px solid #5e5e5e;
     border-bottom: 1px solid #303030;
     /*border-radius: 10px;*/
 }
@@ -49,12 +50,16 @@ header {
 /*}*/
 
 .about {
+    padding-bottom: 3%;
     width: 100%;
 }
 
 .socials-list {
     display: flex;
     justify-content: center;
+}
+.fp-contact-tel{
+    color: white;
 }
 
 .socials-list li {
