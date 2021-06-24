@@ -91,7 +91,7 @@ session_start();
     <div class="form" id="modal">
         <div class="container">
             <h2>Apply Now!</h2>
-            <form>
+            <form enctype="multipart/form-data">
                 <div class="formbox">
                     <label>
                         Name

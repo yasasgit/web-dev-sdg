@@ -3,6 +3,12 @@ session_start();
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: signin.php");
     exit;
+} else {
+$email = $password = "";
+$login_err = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    require_once "config.php";
+}
 }
 ?>
 
@@ -28,40 +34,48 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="about">
         <h2>Registration Form</h2>
     </div>
-    <form>
+    <form class="box" enctype="multipart/form-data" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
+          method="post" name="investreg"
+          onsubmit="return checkForm()">
         <div class="formbox">
             <div>
                 <label>First Name
-                    <input class="section" name="First Name" type="text">
+                    <input class="section" name="firstname" type="text">
                 </label>
             </div>
 
             <div>
                 <label>Last Name
-                    <input class="section" name="Last Name" type="text">
+                    <input class="section" name="lastname" type="text">
                 </label>
             </div>
 
             <div>
-                <label>Address
-                    <input class="section wide" name="Address" type="text">
+                <label>Address Line 1
+                    <input class="section wide" name="address1" type="text">
+                </label>
+            </div>
+            <div>
+                <label>Address Line 2
+                    <input class="section wide" name="address2" type="text">
                 </label>
             </div>
 
             <div>
                 <label>Company Name
-                    <input class="section" name="Company Name" type="text">
+                    <input class="section" name="companyname" type="text">
                 </label>
             </div>
 
             <div>
                 <label>Email
-                    <input class="section wide" name="Email" type="text">
+                    <input class="section wide" name="email" type="text">
                 </label>
             </div>
             <div>
-                <label>Type of investor
-                    <select name="industry level">
+                <label>Investment Type
+                    <select name="industrylevel">
+                        <option value="">Select Investment Type</option>
                         <option value="">Angle</option>
                         <option value="">Family Office</option>
                         <option value="">Corporate</option>
@@ -73,27 +87,48 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </div>
             <div>
                 <p>Investment Stage</p>
-                <label>Angle<input name="Investor" type="radio"></label>
-                <label>Speed/Startup<input name="Investor" type="radio"></label>
-                <label>Series A<input name="Investor" type="radio"></label>
-                <label>Series B<input name="Investor" type="radio"></label>
-                <label>Late Stage<input name="Investor" type="radio"></label>
+                <label>
+                    <input name="investmentstage" type="radio">Angle
+                </label>
+                <label>
+                    <input name="investmentstage" type="radio">Speed/Startup
+                </label>
+                <label>
+                    <input name="investmentstage" type="radio">Series A
+                </label>
+                <label>
+                    <input name="investmentstage" type="radio">Series B
+                </label>
+                <label>
+                    <input name="investmentstage" type="radio">Late Stage
+                </label>
             </div>
 
             <div>
                 <p>Investment amount</p>
-                <label>USD250K<input name="Investor" type="radio"></label>
-                <label>USD250K-USD500K<input name="Investor" type="radio"></label>
-                <label>USD500K-USD1M<input name="Investor" type="radio"></label>
-                <label>USD1M-USD5M<input name="Investor" type="radio"></label>
-                <label>UPtoUSD5M<input name="Investor" type="radio"></label>
+                <label>
+                    <input name="investoramount" type="radio">Upto USD 250 K
+                </label>
+                <label>
+                    <input name="investoramount" type="radio">USD 250K - USD 500K
+                </label>
+                <label>
+                    <input name="investoramount" type="radio">USD 500K - USD 1M
+                </label>
+                <label>
+                    <input name="investoramount" type="radio">USD 1M - USD 5M
+                </label>
+                <label>
+                    <input name="investoramount" type="radio">From USD5M
+                </label>
             </div>
             <div>
                 <label>Upload Your Proposal</label>
-                <input type="file">
+                <input type="file" name="proposal" size="">
             </div>
             <div>
                 <input class="btn" type="submit" value="Submit">
+                <input class="btn" name="reset" type="reset">
             </div>
         </div>
     </form>
