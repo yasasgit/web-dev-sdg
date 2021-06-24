@@ -86,7 +86,7 @@ button:hover {
 
 @media screen and (max-width: 780px) {
     .div-goals-invest {
-        padding: 8px;
+        padding: 16px 8px;
         line-height: 19px;
         width: auto;
         margin: 5px;

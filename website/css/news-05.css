@@ -1,68 +1,67 @@
 * {
-    margin: 0;
+    /*margin: 0;*/
 }
 
 .cover {
     background-image: url(../media/news-5.jpg);
-    width: ;
 }
 
-.div-news-back {
-    width: 100%;
-    height: 600px;
-    /* background-color: blanchedalmond; */
+.about {
+    /*width: 100%;*/
+    /*height: 600px;*/
+    background-color: blanchedalmond;
 }
 
 .div-news-content {
-    width: 45%;
-    height: 450px;
-    border: 1px solid black;
-    margin-top: 60px;
+    /*width: 45%;*/
+    /*height: 450px;*/
+    /*border: 1px solid black;*/
+    /*margin-top: 60px;*/
 }
 
 .div-news-back-content {
-    width: 30%;
-    height: 150px;
-    border: 5px solid wheat;
+    /*width: 30%;*/
+    /*height: 150px;*/
+    /*border: 5px solid wheat;*/
 }
 
 h2 {
-    color: white;
+    /*color: white;*/
 }
 
 .div-news-more-news {
-    width: 100%;
-    height: 400px;
-    background-color: teal;
+    /*width: 100%;*/
+    /*height: 400px;*/
+    /*background-color: teal;*/
 }
 
 .news-more-news01 {
-    width: 50%;
-    height: 100%;
-    background-color: yellow;
-    float: right;
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*background-color: yellow;*/
+    /*float: right;*/
 }
 
 .news-more-news02 {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(211, 72, 17);
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*background-color: rgb(211, 72, 17);*/
 }
 
 .news-more-float01 {
-    max-width: 500px;
-    height: 300px;
-    border: 1px solid black;
-    margin-top: 42px;
-    margin-left: 40px;
+    /*max-width: 500px;*/
+    /*height: 300px;*/
+    /*border: 1px solid black;*/
+    /*margin-top: 42px;*/
+    /*margin-left: 40px;*/
 }
 
 .news-more-float02 {
-    max-width: 500px;
-    height: 300px;
-    border: 1px solid black;
-    margin-top: 42px;
-    float: right;
-    margin-right: 40px;
+    /*max-width: 500px;*/
+    /*height: 300px;*/
+    /*border: 1px solid black;*/
+    /*margin-top: 42px;*/
+    /*float: right;*/
+    /*margin-right: 40px;*/
 }
 
