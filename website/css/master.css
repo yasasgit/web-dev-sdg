@@ -203,9 +203,10 @@ label {
     font-size: 12px;
     /*font-weight: bold;*/
     color: black;
-    font-weight: 400;
+    /*font-weight: 400;*/
     letter-spacing: 0.5px;
     user-select: none;
+    margin: 1em 0;
 }
 
 .radio label {
@@ -233,11 +234,11 @@ textarea {
 }
 
 input[type="radio"] {
-    margin: 8px 14px;
+    margin: 0 14px;
 }
 
 input[type="file"] {
-    /*margin: 0 auto;*/
+    margin: 1em 0;
     display: block;
     font-size: 12px;
 }

@@ -19,6 +19,14 @@ CREATE TABLE users
     created_at   DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE investor
+(
+    email        VARCHAR(320) NOT NULL PRIMARY KEY,
+    firstname    VARCHAR(50)  NOT NULL,
+    lastname     VARCHAR(50)  NOT NULL,
+    FOREIGN KEY (email) REFERENCES users (email)
+);
+
 CREATE TABLE academystats
 (
     district              VARCHAR(50) NOT NULL PRIMARY KEY,
