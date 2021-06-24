@@ -215,7 +215,7 @@ session_start();
                     <label>Upload Your Proposal </label>
                     <input type="file">
                     <div>
-                        <input class="btn" name="submit" type="Submit">
+                        <input class="btn" name="apply" type="Submit">
                         <input class="btn" type="Reset" value="Reset">
                         <button class="btn" onclick="document.getElementById('modal').style.display='none'"
                                 type="button">

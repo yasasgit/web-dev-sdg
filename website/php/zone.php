@@ -180,7 +180,7 @@ session_start();
         <p>Are you sure you want to sign out?</p>
         <form action="logout.php" method="post">
             <div class="formbox">
-                <input class="btn" name="delete" value="Yes" type="Submit">
+                <input class="btn" name="sign_out" value="Yes" type="Submit">
                 <button class="btn" onclick="document.getElementById('modalout').style.display='none'"
                         type="button">
                     No

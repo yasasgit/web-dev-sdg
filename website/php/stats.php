@@ -257,7 +257,7 @@ require_once "config.php";
     if ((isset($_GET['academic'])) && !(($_GET['stream'] = '0') && ($_GET['district'] = '0'))) {
         $district = $_GET["district"];
         $stream = $_GET["stream"];
-        $result = mysqli_query($link, "SELECT $stream FROM academystats WHERE district='$district';");
+        $result = mysqli_query($link, "SELECT $stream FROM academy_stats WHERE district='$district';");
         while ($row = mysqli_fetch_assoc($result)) {
             print_r($row);
         }

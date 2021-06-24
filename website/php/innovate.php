@@ -95,7 +95,7 @@ session_start();
                 <div class="formbox">
                     <label>
                         Name
-                        <input name="f_name" placeholder="Enter Name" type="text">
+                        <input name="firstname" placeholder="Enter Name" type="text">
                     </label>
                     <label>Upload Your Proposal </label>
                     <input type="file">

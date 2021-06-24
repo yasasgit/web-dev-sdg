@@ -91,7 +91,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             <p>Don't have an account?
                 <a class="sign" href="signup.php">Sign up now</a>
             </p>
-            <input class="btn" type="submit" value="Sign in">
+            <input class="btn" type="submit" name="sign_in" value="Sign in">
         </div>
     </form>
 </header>

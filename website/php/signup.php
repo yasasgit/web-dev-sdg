@@ -380,7 +380,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                        name="confirm_password">
             </label>
             <p>Already have an account? <a href="signin.php">Login here.</a></p>
-            <input class="btn" type="Submit" name="submit">
+            <input class="btn" type="Submit" name=sign_in">
             <input class="btn" type="Reset" value="Cancel">
         </div>
     </form>

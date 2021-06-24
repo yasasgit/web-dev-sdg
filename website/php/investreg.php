@@ -51,19 +51,19 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </div>
 
             <div>
-                <label>Address Line 1
+                <label>Address Line #1
                     <input class="section wide" name="address1" type="text">
                 </label>
             </div>
             <div>
-                <label>Address Line 2
+                <label>Address Line #2
                     <input class="section wide" name="address2" type="text">
                 </label>
             </div>
 
             <div>
                 <label>Company Name
-                    <input class="section" name="companyname" type="text">
+                    <input class="section" name="company_name" type="text">
                 </label>
             </div>
 
@@ -74,7 +74,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </div>
             <div>
                 <label>Investment Type
-                    <select name="industrylevel">
+                    <select name="investment_type">
                         <option value="" hidden>Select Investment Type</option>
                         <option value="">Angle</option>
                         <option value="">Family Office</option>
@@ -88,38 +88,38 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <div>
                 <p>Investment Stage</p>
                 <label>
-                    <input name="investmentstage" type="radio">Angle
+                    <input name="investment_stage" type="radio">Angle
                 </label>
                 <label>
-                    <input name="investmentstage" type="radio">Speed/Startup
+                    <input name="investment_stage" type="radio">Speed/Startup
                 </label>
                 <label>
-                    <input name="investmentstage" type="radio">Series A
+                    <input name="investment_stage" type="radio">Series A
                 </label>
                 <label>
-                    <input name="investmentstage" type="radio">Series B
+                    <input name="investment_stage" type="radio">Series B
                 </label>
                 <label>
-                    <input name="investmentstage" type="radio">Late Stage
+                    <input name="investment_stage" type="radio">Late Stage
                 </label>
             </div>
 
             <div>
                 <p>Investment amount</p>
                 <label>
-                    <input name="investoramount" type="radio">Upto USD 250 K
+                    <input name="invest_amount" type="radio">Upto USD 250 K
                 </label>
                 <label>
-                    <input name="investoramount" type="radio">USD 250K - USD 500K
+                    <input name="invest_amount" type="radio">USD 250K - USD 500K
                 </label>
                 <label>
-                    <input name="investoramount" type="radio">USD 500K - USD 1M
+                    <input name="invest_amount" type="radio">USD 500K - USD 1M
                 </label>
                 <label>
-                    <input name="investoramount" type="radio">USD 1M - USD 5M
+                    <input name="invest_amount" type="radio">USD 1M - USD 5M
                 </label>
                 <label>
-                    <input name="investoramount" type="radio">From USD5M
+                    <input name="invest_amount" type="radio">From USD5M
                 </label>
             </div>
             <div>
