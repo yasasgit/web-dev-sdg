@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once "config.php";
+
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -22,12 +24,27 @@ session_start();
     <!--        <h2>Statistics</h2>-->
     <!--    </div>-->
     <div class="tab">
-        <button class="tabbtn" id="defaultOpen" onclick="openTab(event, 'econ')">
+        <?php
+        if (isset($_GET['academic'])) {
+            echo '
+            <button class="tabbtn" onclick="openTab(event, \'econ\')">
             Economy
-        </button>
-        <button class="tabbtn" onclick="openTab(event, 'edu')">
+            </button>
+            <button class="tabbtn" id="defaultOpen" onclick="openTab(event, \'edu\')">
             Academic
-        </button>
+            </button>
+        ';
+        } else {
+            echo '
+            <button class="tabbtn" id="defaultOpen" onclick="openTab(event, \'econ\')">
+            Economy
+            </button>
+            <button class="tabbtn" onclick="openTab(event, \'edu\')">
+            Academic
+            </button>
+        ';
+        }
+        ?>
         <button class="tabbtn" onclick="openTab(event, 'other')">
             Other
         </button>
@@ -164,10 +181,13 @@ session_start();
             <p>Our government will provide you real-time data about undergraduates in each district in Sri Lanka.
                 This will improve new job creation for undergraduates even outside Colombo district.</p>
             <div class="get-data">
-                <form action="">
+                <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
                     <label>District
-                        <select>
-                            <option>Select District</option>
+                        <select name="district">
+                            <?php if (isset($district)) {
+                                echo 'selected="selected"';
+                            } ?>
+                            <option value="0">Select District</option>
                             <option>Colombo</option>
                             <option>Gampaha</option>
                             <option>Kalutara</option>
@@ -193,12 +213,11 @@ session_start();
                             <option>Moneragala</option>
                             <option>Ratnapura</option>
                             <option>Kegalle</option>
-
                         </select>
                     </label>
                     <label> Academic Stream
-                        <select>
-                            <option>Select Academic Stream</option>
+                        <select name="stream">
+                            <option value="0">Select Academic Stream</option>
                             <option>Arts</option>
                             <option>Management and Commerce</option>
                             <option>Law</option>
@@ -211,11 +230,9 @@ session_start();
                             <option>Architecture</option>
                             <option>Computer Science</option>
                             <option>Other Courses</option>
-
-
                         </select>
                     </label>
-                    <input class="btn" name="submit" type="Submit">
+                    <input class="btn" name="academic" type="Submit">
                 </form>
             </div>
         </div>
@@ -225,7 +242,7 @@ session_start();
         <div class="about">
             <h2>Other Statistics</h2>
             <p>This data will show you why an investor should prefer Sri Lanka for their investments.
-                Provides statistical time series on socio economic and financial variables including provincially
+                Provides statistical time series on social economic and financial variables including provincially
                 disaggregated data, where available. Released annually</p>
         </div>
     </div>
@@ -234,6 +251,17 @@ session_start();
         echo 'logged out';
     } else {
         echo 'logged in';
+    }
+    ?>
+    <?php
+    if ((isset($_GET['academic'])) && !(($_GET['stream'] = '0') && ($_GET['district'] = '0'))) {
+        $district = $_GET["district"];
+        $stream = $_GET["stream"];
+        $result = mysqli_query($link, "SELECT $stream FROM academystats WHERE district='$district';");
+        while ($row = mysqli_fetch_assoc($result)) {
+            print_r($row);
+        }
+        mysqli_close($link);
     }
     ?>
 </header>

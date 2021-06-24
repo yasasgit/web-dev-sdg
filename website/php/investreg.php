@@ -4,11 +4,11 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: signin.php");
     exit;
 } else {
-$email = $password = "";
-$login_err = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    require_once "config.php";
-}
+    $email = $password = "";
+    $login_err = "";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        require_once "config.php";
+    }
 }
 ?>
 

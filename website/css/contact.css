@@ -10,7 +10,8 @@ header {
 .navi:hover {
     background-color: #000000;
 }
-.about h2{
+
+.about h2 {
     padding: 2% 0% 3% 0%;
 }
 
@@ -38,12 +39,14 @@ header {
     /*height: 500px;*/
 
 }
-.box h2{
+
+.box h2 {
     font-weight: 300;
     padding: 3% 0%;
     color: rgb(197, 197, 197);
 }
-.details{
+
+.details {
     padding-left: 5%;
     color: rgb(185, 183, 183);
 }
@@ -69,14 +72,16 @@ header {
     padding-bottom: 2em;
     width: 100%;
 }
-.careercover{
+
+.careercover {
     border-bottom: 1px solid #7a7a7a;
     background-image: url("../media/Careers.jpg");
     background-size: cover;
     background-attachment: unset;
     height: 40vh;
 }
-.moreinfocover{
+
+.moreinfocover {
     background-image: url("../media/Contactdiv.jpg");
     background-size: cover;
     background-attachment: unset;

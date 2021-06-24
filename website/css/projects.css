@@ -115,7 +115,8 @@
 .item1 {
     background-color: rgb(77, 77, 77);
 }
-.rtop, .rbot{
+
+.rtop, .rbot {
     line-height: 20px;
     color: rgba(228, 228, 228, 0.822);
     padding: 4% 0% 0% 4%;
@@ -124,16 +125,18 @@
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
-.rmore{
+
+.rmore {
     padding-left: 3%;
     flex: 0 0 auto;
     width: 45%;
 }
+
 .rmore span {
-    font-size: 12px!important;
-    color:rgba(187, 187, 187, 0.705) ;
+    font-size: 12px !important;
+    color: rgba(187, 187, 187, 0.705);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
