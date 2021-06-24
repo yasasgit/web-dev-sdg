@@ -85,7 +85,9 @@
 
 .item1 h3 {
     line-height: 1.5em;
-    color: rgb(184, 184, 184);
+    color: rgb(235, 235, 235);
+    font-weight: 500;
+    padding-bottom: 2%;
 }
 
 .item1 h4 {
@@ -111,7 +113,32 @@
 }
 
 .item1 {
-    background-color: rgb(87, 88, 88);
+    background-color: rgb(77, 77, 77);
+}
+.rtop, .rbot{
+    line-height: 20px;
+    color: rgba(228, 228, 228, 0.822);
+    padding: 4% 0% 0% 4%;
+    text-align: left;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.rmore{
+    padding-left: 3%;
+    flex: 0 0 auto;
+    width: 45%;
+}
+.rmore span {
+    font-size: 12px!important;
+    color:rgba(187, 187, 187, 0.705) ;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    min-height: auto;
 }
 
 /*.item2 {*/
