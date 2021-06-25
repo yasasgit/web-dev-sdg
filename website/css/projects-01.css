@@ -60,6 +60,7 @@ body {
 
 .row-03-02 {
     width: 50%;
+    padding-bottom: 5%;
     /*height: 350px;*/
     float: right;
     margin: 10px 0;
@@ -97,11 +98,14 @@ body {
 }
 
 .topic {
+    padding-bottom: 1%;
     text-align: left;
 }
 
 .content {
     text-align: left;
+    padding-bottom: 5%;
+    line-height: 20px;
 }
 
 hr {
