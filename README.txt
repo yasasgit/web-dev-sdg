@@ -1,5 +1,6 @@
 *****************errors*********************
 *****************mistakes*************
+formswala selectwala wate yana ira ain karanna
 web site ekata namak hadala logo eka wenas krnn one
 hma page ekema titles dala logo eka danna one title eka gawa
 
