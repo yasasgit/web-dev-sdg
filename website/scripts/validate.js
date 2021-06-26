@@ -2,14 +2,17 @@
 function contact() {
 
 }
+
 //innovate.php
 function addinno() {
 
 }
+
 //investreg.php
 function investreg() {
 
 }
+
 //signin.php
 function signin() {
     let email = document.login.email.value;
@@ -34,6 +37,7 @@ function signin() {
 //     }
     return false;
 }
+
 //signup.php
 function signup() {
     let acctype = document.signup.acctype.value;
@@ -74,6 +78,7 @@ function signup() {
         return false;
     }
 }
+
 //startup.php
 function startupapply() {
     let name = document.startup.name.value;
@@ -87,14 +92,17 @@ function startupapply() {
         return false;
     }
 }
+
 //stats.php
 function getinfo() {
 
 }
+
 //zone.php
 function resetpw() {
 
 }
+
 //zone.php
 function deleteacc() {
 

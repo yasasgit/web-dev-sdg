@@ -171,9 +171,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <input type="file" name="proposal" size="">
             </div>
             <div>
-                <label>
+                <label class="contain">
                     <input type="checkbox" name="agree">
-                    i accep t
+                    I hereby declare that the information given above is true and accurate to the best of my knowledge.
                 </label>
 
             </div>
