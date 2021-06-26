@@ -1,15 +1,16 @@
+//contactus.php
 function contact() {
 
 }
-
+//innovate.php
 function addinno() {
 
 }
-
+//investreg.php
 function investreg() {
 
 }
-
+//signin.php
 function signin() {
     let email = document.login.email.value;
     let password = document.login.password.value;
@@ -33,7 +34,7 @@ function signin() {
 //     }
     return false;
 }
-
+//signup.php
 function signup() {
     let acctype = document.signup.acctype.value;
     let firstname = document.signup.firstname.value;
@@ -73,7 +74,7 @@ function signup() {
         return false;
     }
 }
-
+//startup.php
 function startupapply() {
     let name = document.startup.name.value;
     let email = document.startup.email.value;
@@ -86,15 +87,15 @@ function startupapply() {
         return false;
     }
 }
-
+//stats.php
 function getinfo() {
 
 }
-
+//zone.php
 function resetpw() {
 
 }
-
+//zone.php
 function deleteacc() {
 
 }
