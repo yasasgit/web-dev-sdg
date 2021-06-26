@@ -107,10 +107,10 @@ session_start();
             <div class="div-for-01-inno">
             <a href="investreg.php"><h3>Investor Registration Form</h3></a>
             <p>podi wisthrayak + terms & conditions</p>
+            <a href="../media/sample.pdf"><button class="btn">Download Proposal Sample</button></a>
             </div>
             <div class="dash">
-            <h3>Hi, <b>' . htmlspecialchars($_SESSION["email"]) . '</b>. Welcome to our site.</h3>
-            <a href="../media/sample.pdf"><button class="btn">Download Proposal Sample</button></a>
+            <h3>Hi, <b>' . htmlspecialchars($_SESSION["firstname"]) . ' ' . htmlspecialchars($_SESSION["lastname"]) . '</b>. Welcome to our site.</h3>
             <a><button class="btn" onclick="document.getElementById(\'modalout\').style.display=\'block\'">Sign Out</button></a>
             <a><button class="btn" onclick="document.getElementById(\'modalreset\').style.display=\'block\'">Reset Password</button></a>
             <a><button class="btn" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
