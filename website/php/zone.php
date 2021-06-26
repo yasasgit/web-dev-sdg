@@ -105,15 +105,19 @@ session_start();
             echo '
             <!-- for describe about content -->
             <div class="div-for-01-inno">
-            <a href="investreg.php"><h3>Investor Registration Form</h3></a>
-            <p>podi wisthrayak + terms & conditions</p>
-            <a href="../media/sample.pdf"><button class="btn">Download Proposal Sample</button></a>
+            <p>podi wisthrayak</p>
+            <ul>
+            <li> + terms & conditions y</li>
+            <li>ou can dondload a proposal samlp</li>
+</ul>
+            <a href="../media/sample.pdf"><button class="regbtn">Download Sample</button></a>
+            <a href="../php/investreg.php"><button class="regbtn">Register Now</button></a>
             </div>
             <div class="dash">
-            <h3>Hi, <b>' . htmlspecialchars($_SESSION["firstname"]) . ' ' . htmlspecialchars($_SESSION["lastname"]) . '</b>. Welcome to our site.</h3>
+            <h3>Hi, ' . htmlspecialchars($_SESSION["firstname"]) . ' ' . htmlspecialchars($_SESSION["lastname"]) . '. Welcome to our site.</h3>
             <a><button class="btn" onclick="document.getElementById(\'modalout\').style.display=\'block\'">Sign Out</button></a>
             <a><button class="btn" onclick="document.getElementById(\'modalreset\').style.display=\'block\'">Reset Password</button></a>
-            <a><button class="btn" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
+            <a><button class="btn red" onclick="document.getElementById(\'modaldelete\').style.display=\'block\'">Delete Account</button></a>
             </div>
             ';
         }

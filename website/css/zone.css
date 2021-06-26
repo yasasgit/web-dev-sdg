@@ -26,6 +26,10 @@ header {
 
 }
 
+.dash h3 {
+    padding: 2em;
+}
+
 .div-for-01-inno {
     /*display: block;*/
     /*height: 30vh;*/

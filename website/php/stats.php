@@ -55,7 +55,7 @@ require_once "config.php";
         <div class="about">
             <h2>Economy</h2>
             <p>Latest statistical data about the fields Agriculture, Industries, and Services were collected in 2020.
-
+                You can get data from last 6 years. Go to 'Other' section for full report.
             </p>
             <h4>Expand for more.</h4>
         </div>
@@ -248,6 +248,7 @@ require_once "config.php";
             <p>This data will show you why an investor should prefer Sri Lanka for their investments.
                 Provides statistical time series on social economic and financial variables including provincially
                 disaggregated data, where available. Released annually</p>
+            <button class="btn" onclick="location.href='../media/statistics.pdf';">Full Report</button>
         </div>
     </div>
     <?php
@@ -261,7 +262,20 @@ require_once "config.php";
         $stream = $_GET["stream"];
         $result = mysqli_query($link, "SELECT $stream FROM academy_stats WHERE district='$district';");
         while ($row = mysqli_fetch_assoc($result)) {
-            print_r($row);
+            echo '
+            <div class="form" id="modalcount" style="display: block">
+                <div class="container">
+                    <h2>' . print_r($row) . '</h2>
+                    <p>is the count.</p>
+                    <div class="formbox">
+                    <button class="btn" onclick="document.getElementById(\'modalcount\').style.display=\'none\'"
+                        type="button">
+                    Cancel
+                    </button>
+                     </div>
+                </div>
+            </div>
+            ';
         }
         mysqli_close($link);
     }

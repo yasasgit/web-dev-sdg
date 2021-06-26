@@ -107,9 +107,9 @@ session_start();
     <div class="register">
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-            echo '<a href="../php/signin.php"><button>Sign in to Register</button></a>';
+            echo '<a href="../php/signin.php"><button class="regbtn">Sign in to Register</button></a>';
         } else {
-            echo '<a href="../php/investreg.php"><button>Register Now</button></a>';
+            echo '<a href="../php/investreg.php"><button class="regbtn">Register Now</button></a>';
         }
         ?>
     </div>
