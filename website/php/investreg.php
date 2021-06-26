@@ -171,6 +171,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <input type="file" name="proposal" size="">
             </div>
             <div>
+                <label>
+                    <input type="checkbox" name="agree">
+                    i accep t
+                </label>
+
+            </div>
+            <div>
                 <input class="btn" type="submit" value="Submit">
                 <input class="btn" name="reset" type="reset">
             </div>

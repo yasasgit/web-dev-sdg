@@ -21,6 +21,7 @@ function signin() {
 //     }
     return false;
 }
+
 function signup() {
     let acctype = document.signup.acctype.value;
     let firstname = document.signup.firstname.value;
@@ -60,6 +61,7 @@ function signup() {
         return false;
     }
 }
+
 function checkForm2() {
     let name = document.startup.name.value;
     let email = document.startup.email.value;
