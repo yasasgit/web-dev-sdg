@@ -14,8 +14,8 @@ session_start();
     <link href="../css/innovation.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/main.js" type="text/javascript">
-    </script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
+    <script src="../scripts/validate.js"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -98,7 +98,7 @@ session_start();
     <div class="form" id="modal">
         <div class="container">
             <h2>Apply Now!</h2>
-            <form enctype="multipart/form-data">
+            <form enctype="multipart/form-data" onsubmit="return addinno()">
                 <div class="formbox">
                     <label>
                         Name

@@ -78,9 +78,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <link href="../css/signup.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
+    <script src="../scripts/main.js" type="text/javascript"></script>
     <script src="../scripts/validate.js"></script>
-    <script src="../scripts/main.js" type="text/javascript">
-    </script>
 </head>
 <body>
 <script type="text/javascript">

@@ -16,16 +16,10 @@ require_once "config.php";
     <link href="../css/sector.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/main.js" type="text/javascript">
-    </script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
+    <script src="../scripts/validate.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-    document.getElementById("defaultOpen").click();
-    window.onscroll = function () {
-        hideNav();
-    }
-</script>
 <header>
     <div class="cover"></div>
     <!--    <div class="about">-->
@@ -189,7 +183,8 @@ require_once "config.php";
             <p>Our government will provide you real-time data about undergraduates in each district in Sri Lanka.
                 This will improve new job creation for undergraduates even outside Colombo district.</p>
             <div class="get-data">
-                <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
+                <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get"
+                      onsubmit="return getinfo()">
                     <label>District
                         <select name="district">
                             <?php if (isset($district)) {
@@ -260,8 +255,6 @@ require_once "config.php";
     } else {
         echo 'logged in';
     }
-    ?>
-    <?php
     if ((isset($_GET['academic'])) && !(($_GET['stream'] = '0') && ($_GET['district'] = '0'))) {
         $district = $_GET["district"];
         $stream = $_GET["stream"];
@@ -347,6 +340,12 @@ require_once "config.php";
     </div>
     <div class="gradient"></div>
 </div>
+<script type="text/javascript">
+    document.getElementById("defaultOpen").click();
+    window.onscroll = function () {
+        hideNav();
+    }
+</script>
 </body>
 </html>
 

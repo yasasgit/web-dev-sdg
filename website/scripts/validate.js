@@ -1,3 +1,15 @@
+function contact() {
+
+}
+
+function addinno() {
+
+}
+
+function investreg() {
+
+}
+
 function signin() {
     let email = document.login.email.value;
     let password = document.login.password.value;
@@ -62,7 +74,7 @@ function signup() {
     }
 }
 
-function checkForm2() {
+function startupapply() {
     let name = document.startup.name.value;
     let email = document.startup.email.value;
     let discrict = document.startup.discrict.value;
@@ -74,3 +86,16 @@ function checkForm2() {
         return false;
     }
 }
+
+function getinfo() {
+
+}
+
+function resetpw() {
+
+}
+
+function deleteacc() {
+
+}
+

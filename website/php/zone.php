@@ -15,8 +15,8 @@ session_start();
     <link href="../css/zone.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/main.js" type="text/javascript">
-    </script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
+    <script src="../scripts/validate.js"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -137,7 +137,7 @@ session_start();
     <div class="container">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return resetpw()">
             <div class="formbox">
                 <label>New Password
                     <input type="password" name="new_password"
@@ -163,7 +163,8 @@ session_start();
     <div class="container">
         <h2>Delete Account</h2>
         <p>Please fill out this form to delete your account.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+              onsubmit="return deleteacc()">
             <div class="formbox">
                 <label>Password
                     <input type="password" name="new_password"

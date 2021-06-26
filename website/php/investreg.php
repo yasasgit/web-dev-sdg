@@ -58,8 +58,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <link href="../css/form.css" rel="stylesheet">
     <!--Form CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/main.js" type="text/javascript">
-    </script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
+    <script src="../scripts/validate.js"></script>
 </head>
 <body>
 <script type="text/javascript">
