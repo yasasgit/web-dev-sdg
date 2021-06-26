@@ -13,12 +13,23 @@ session_start();
     <!--Nav and Footer CSS -->
     <link href="../css/Start up.css" rel="stylesheet">
     <!--Page CSS -->
-
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/startup.js"></script>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <script src="../scripts/validate.js"></script>
+    <script src="../scripts/main.js" type="text/javascript">
+    </script>
 </head>
 <body>
+<script type="text/javascript">
+    window.onscroll = function () {
+        hideNav();
+    }
+    let modal = document.getElementById('modal');
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 <header>
     <div class="cover"></div>
     <div class="about">
@@ -301,19 +312,6 @@ session_start();
     </div>
     <div class="gradient"></div>
 </div>
-<script src="../scripts/main.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-    window.onscroll = function () {
-        hideNav();
-    }
-    let modal = document.getElementById('modal');
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 </body>
 </html>
 

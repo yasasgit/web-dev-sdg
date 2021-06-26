@@ -1,4 +1,27 @@
-function checkForm() {
+function signin() {
+    let email = document.login.email.value;
+    let password = document.login.password.value;
+
+    if (email !== "" && password !== "") {
+        return true;
+    }
+    if (password === "") {
+        document.getElementById("password").style.color = "red";
+    } else {
+        document.getElementById("password").style.color = "black";
+    }
+    if (email === "") {
+        document.getElementById("email").style.color = "red";
+    } else {
+        document.getElementById("email").style.color = "black";
+    }
+// validate email
+//     if (!email.includes("@", ".")) {
+//         alert("Not a valid e-mail address");
+//     }
+    return false;
+}
+function signup() {
     let acctype = document.signup.acctype.value;
     let firstname = document.signup.firstname.value;
     let lastname = document.signup.lastname.value;
@@ -34,6 +57,18 @@ function checkForm() {
     //validate password confirmation
     if (password !== confirm_password) {
         alert("Password confirmation failed");
+        return false;
+    }
+}
+function checkForm2() {
+    let name = document.startup.name.value;
+    let email = document.startup.email.value;
+    let discrict = document.startup.discrict.value;
+    // validation fails if the input is blank
+    if (name === "" ||
+        email === "" ||
+        discrict === "Select discrict") {
+        alert("Error: Input is empty!");
         return false;
     }
 }

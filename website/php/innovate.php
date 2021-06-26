@@ -14,8 +14,15 @@ session_start();
     <link href="../css/innovation.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
+    <script src="../scripts/main.js" type="text/javascript">
+    </script>
 </head>
 <body>
+<script type="text/javascript">
+    window.onscroll = function () {
+        hideNav();
+    }
+</script>
 <header>
     <div class="cover"></div>
     <div class="nav-div-inno">
@@ -186,13 +193,6 @@ session_start();
     </div>
     <div class="gradient"></div>
 </div>
-<script src="../scripts/main.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-    window.onscroll = function () {
-        hideNav();
-    }
-</script>
 </body>
 </html>
 

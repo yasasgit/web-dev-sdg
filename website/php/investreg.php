@@ -58,8 +58,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <link href="../css/form.css" rel="stylesheet">
     <!--Form CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
+    <script src="../scripts/main.js" type="text/javascript">
+    </script>
 </head>
 <body>
+<script type="text/javascript">
+    window.onscroll = function () {
+        hideNav();
+    }
+</script>
 <header>
     <div class="cover"></div>
     <div class="about">
@@ -67,7 +74,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div>
     <form class="box" enctype="multipart/form-data" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
           method="post" name="investreg"
-          onsubmit="return checkForm()">
+          onsubmit="return investreg()">
         <div class="formbox">
             <div>
                 <label>First Name
@@ -244,11 +251,4 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div>
     <div class="gradient"></div>
 </div>
-<script src="../scripts/main.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-    window.onscroll = function () {
-        hideNav();
-    }
-</script>
 </body>

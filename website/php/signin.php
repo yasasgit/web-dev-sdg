@@ -58,9 +58,16 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <link href="../css/form.css" rel="stylesheet">
     <!--Form CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/login.js"></script>
+    <script src="../scripts/validate.js"></script>
+    <script src="../scripts/main.js" type="text/javascript">
+    </script>
 </head>
 <body>
+<script type="text/javascript">
+    window.onscroll = function () {
+        hideNav();
+    }
+</script>
 <header>
     <div class="cover"></div>
     <div class="about">
@@ -72,16 +79,16 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     }
     ?>
     <form class="box" name="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
-          onsubmit="return validate()">
+          onsubmit="return signin()">
         <div class="formbox">
             <label id="email">Email
-                <input name="email" placeholder="Email" type="email"
+                <input name="email" placeholder="Enter your Email" type="email"
                 <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
                 value="
                 <?php echo $email; ?>">
             </label>
             <label id="password">Password
-                <input name="password" placeholder="Password"
+                <input name="password" placeholder="Enter your Password"
                        type="password"
                 <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
                 >
@@ -171,12 +178,5 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     </div>
     <div class="gradient"></div>
 </div>
-<script src="../scripts/main.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-    window.onscroll = function () {
-        hideNav();
-    }
-</script>
 </body>
 </html>

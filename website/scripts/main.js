@@ -3,7 +3,6 @@ let slideIndex = 0;
 let slides = document.getElementsByClassName("Slides");
 let dots = document.getElementsByClassName("dot");
 let prevScrollPos = window.pageYOffset;
-showSlides();
 
 function showSlides() {
 

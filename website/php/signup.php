@@ -78,9 +78,16 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <link href="../css/signup.css" rel="stylesheet">
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
-    <script src="../scripts/signup.js"></script>
+    <script src="../scripts/validate.js"></script>
+    <script src="../scripts/main.js" type="text/javascript">
+    </script>
 </head>
 <body>
+<script type="text/javascript">
+    window.onscroll = function () {
+        hideNav();
+    }
+</script>
 <header>
     <div class="cover"></div>
     <div class="about">
@@ -88,7 +95,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         <p>Please fill this form to create an account.</p>
     </div>
     <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
-          onsubmit="return checkForm()">
+          onsubmit="return signup()">
         <div class="formbox">
             <span class="frm-text">Who Are You?</span>
             <div class="radio">
@@ -459,12 +466,5 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     </div>
     <div class="gradient"></div>
 </div>
-<script src="../scripts/main.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-    window.onscroll = function () {
-        hideNav();
-    }
-</script>
 </body>
 </html>
