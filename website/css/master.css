@@ -60,7 +60,6 @@ header {
     color: white;
     padding: 2em;
     line-height: 2em;
-    text-indent: 1em;
     /*font-size: 110%;*/
     /*height: 40%;*/
 }
@@ -68,6 +67,7 @@ header {
 .about p {
     text-align: justify;
     margin: 1em 2em;
+    text-indent: 1em;
 
 }
 

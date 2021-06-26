@@ -55,8 +55,9 @@ require_once "config.php";
         <div class="about">
             <h2>Economy</h2>
             <p>Latest statistical data about the fields Agriculture, Industries, and Services were collected in 2020.
-                Expand for more.
+
             </p>
+            <h4>Expand for more.</h4>
         </div>
         <button class="accordion" onclick="openAcc('p1')">Agriculture</button>
         <div class="panel" id="p1">
