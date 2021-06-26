@@ -1,5 +1,15 @@
 *****************errors*********************
 *****************mistakes*************
+zone - eke register button eke penne naha eke poddak penna hadapan
+     -log unama nama hi yasasa@gmail.com pennane eka yata reset delete ekai 
+       pennana thana poddak line heigt ekak dapan
+project -eka athulta gihilla podi karama kotuwen eliyata paninawa wachana
+Contact- eke piti passe div eka sudu karanna ona
+statics -campus data retrive wela display wena eka
+        -other eke bution eakak dala pfd report eka link karanna 
+home-slide walta news eke topic ekai dot tikakui dapan
+
+
 web site ekata namak hadala logo eka wenas krnn one
 hma page ekema titles dala logo eka danna one title eka gawa
 
