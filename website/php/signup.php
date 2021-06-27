@@ -35,7 +35,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         $dob = $_POST['dob'];
         $gender = $_POST['gender'];
         $country = $_POST['country'];
-        $phone = trim($_POST['phone']);
+        $phone = trim($_POST["phone"]);
         $password = sha1($_POST["password"]);
         if (empty($email_err)) {
             if (!mysqli_query($link, "INSERT INTO users (email, password, account_type, firstname, lastname, dob, gender, country, phone) VALUES ('$email', '$password', '$account_type', '$firstname', '$lastname', '$dob', '$gender', '$country', '$phone')")) {

@@ -38,6 +38,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 echo "Oops! Something went wrong. Please try again later.";
             }
             mysqli_stmt_close($stmt);
+        } else {
+            echo mysqli_error($link);
         }
         mysqli_close($link);
     }

@@ -98,8 +98,3 @@ function resetpw() {
 
 }
 
-//zone.php
-function deleteacc() {
-
-}
-
