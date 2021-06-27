@@ -11,8 +11,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         require_once "config.php";
         $address1 = trim($_POST['address1']);
         $address2 = trim($_POST['address2']);
-        $company_name = trim($_POST["company_name"]);
-        $investment_type = $_POST["investment_type"];
+        $company_name = trim($_POST['company_name']);
+        $investment_type = $_POST['investment_type'];
         $investment_stage = $_POST['investment_stage'];
         $invest_amount = $_POST['invest_amount'];
 
@@ -106,12 +106,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <label>Investment Type
                     <select name="investment_type">
                         <option value="" hidden>Select Investment Type</option>
-                        <option value="">Angle</option>
-                        <option value="">Family Office</option>
-                        <option value="">Corporate</option>
-                        <option value="">Corporate Venture Capital</option>
-                        <option value="">Venture Capital Firm</option>
-                        <option value="">Private Equity Firm</option>
+                        <option value="a">Angle</option>
+                        <option value="b">Family Office</option>
+                        <option value="c">Corporate</option>
+                        <option value="d">Corporate Venture Capital</option>
+                        <option value="e">Venture Capital Firm</option>
+                        <option value="f">Private Equity Firm</option>
                     </select>
                 </label>
             </div>
