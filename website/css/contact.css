@@ -1,6 +1,5 @@
 header {
-    background-color: #8f8456;
-    background-image: linear-gradient(#6b6549, #8f8456);
+    /*background-image: linear-gradient(#6b6549, #8f8456);*/
 }
 
 .navi, .about {
@@ -20,7 +19,7 @@ header {
 }
 
 .main {
-    background-color: #353535;
+    /*background-color: #353535;*/
     /*border-top: 1px solid #7a7a7a;*/
     /*border-bottom: 1px solid #7a7a7a;*/
     /*border-radius: 10px;*/
@@ -57,6 +56,7 @@ header {
 
 .bottom {
     padding: 1em;
+    background-color: #8f8456;
 }
 
 .bottom h3 {
@@ -73,8 +73,8 @@ header {
 /*}*/
 
 .about {
-    padding-bottom: 2em;
-    width: 100%;
+    /*padding-bottom: 2em;*/
+    /*width: 100%;*/
 }
 
 .careercover {
