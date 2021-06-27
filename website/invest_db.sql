@@ -32,6 +32,7 @@ CREATE TABLE investors
     FOREIGN KEY (email) REFERENCES users (email)
 );
 
+
 CREATE TABLE academy_stats
 (
     district              VARCHAR(50) NOT NULL PRIMARY KEY,

@@ -9,36 +9,21 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     $lastname = $_SESSION["lastname"];
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "config.php";
-        $email = $_POST["email"];
         $address1 = trim($_POST['address1']);
         $address2 = trim($_POST['address2']);
         $company_name = trim($_POST["company_name"]);
-        $investment_type = $_POST['investment_type'];
+        $investment_type = $_POST["investment_type"];
         $investment_stage = $_POST['investment_stage'];
         $invest_amount = $_POST['invest_amount'];
 
         $file_path = getcwd() . DIRECTORY_SEPARATOR . 'proposals' . DIRECTORY_SEPARATOR . $firstname . $lastname;
         $path = move_uploaded_file($_FILES['proposal']['tmp_name'], $file_path);
 
-        $sql = "INSERT INTO investors (email, address1, address2, company_name, investment_type, investment_stage, invest_amount, file_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-        if ($stmt = mysqli_prepare($link, $sql)) {
-            mysqli_stmt_bind_param($stmt, "ssssssss", $param_email, $param_address1, $param_address2, $param_company_name, $param_investment_type, $param_investment_stage, $param_invest_amount, $param_file_path);
-            $param_email = $email;
-            $param_address1 = $address1;
-            $param_address2 = $address2;
-            $param_company_name = $company_name;
-            $param_investment_type = $investment_type;
-            $param_investment_stage = $investment_stage;
-            $param_invest_amount = $invest_amount;
-            $param_file_path = $file_path;
-            if (mysqli_stmt_execute($stmt)) {
-                header("location: zone.php");
-            } else {
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-            mysqli_stmt_close($stmt);
+        if (!mysqli_query($link, "INSERT INTO investors (email, address1, address2, company_name, investment_type, investment_stage, invest_amount, file_path) VALUES ('$email', '$address1', '$address2', '$company_name', '$investment_type', '$investment_stage', '$invest_amount', '$file_path')")) {
+            echo "Oops! Something went wrong. Please try again later." . mysqli_error($link);
+        } else {
+            header("location: zone.php");
         }
-
         mysqli_close($link);
     }
 }
