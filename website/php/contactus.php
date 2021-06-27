@@ -1,5 +1,16 @@
 <?php
 session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fullname = $_POST['fullname'];
+    $email = trim($_POST["email"]);
+    $phone = trim($_POST['phone']);
+    $message = $_POST['message'];
+    $to = "yasas99@outlook.com";
+    $text = 'Phone:' . $phone . 'Message:' . $message;
+    $headers = "From:" . $email;
+    mail($to, $fullname, $text, $headers);
+}
 ?>
 
 <!DOCTYPE html>
@@ -32,9 +43,10 @@ session_start();
     </div>
     <div class="row">
         <div class="input-container">
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return contact()">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return contact()"
+                  method="post">
                 <div class="styled-input wide">
-                    <input aria-label="Name" placeholder="Name" type="text"
+                    <input aria-label="Name" placeholder="Name" type="text" name="fullname"
                            value="<?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                                $firstname = $_SESSION["firstname"];
                                $lastname = $_SESSION["lastname"];
@@ -43,7 +55,7 @@ session_start();
                     />
                 </div>
                 <div class="styled-input">
-                    <input aria-label="Email" placeholder="Email" type="text"
+                    <input aria-label="Email" placeholder="Email" type="text" name="email"
                            value="<?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                                $email = $_SESSION["email"];
                                echo $email;
@@ -51,15 +63,15 @@ session_start();
                     />
                 </div>
                 <div class="styled-input">
-                    <input aria-label="Phone Number" placeholder="Phone Number" type="text"/>
+                    <input aria-label="Phone Number" placeholder="Phone Number" type="text" name="phone"/>
                 </div>
                 <div class="styled-input wide">
-                    <textarea aria-label="Message" placeholder="Message"></textarea>
+                    <textarea aria-label="Message" placeholder="Message" name="message"></textarea>
                 </div>
                 <a href="">
-                    <div class="btn-lrg submit-btn">
+                    <button class="btn-lrg submit-btn" type="Submit" name=contact">
                         Send Message
-                    </div>
+                    </button>
                 </a>
             </form>
         </div>
@@ -78,7 +90,7 @@ session_start();
             <h4>Quick Links</h4>
             <a href="../index.html">Home</a>
             <a href="../php/zone.php">Investor Zone</a>
-            <a href="./contact.html">Contact</a>
+            <a href="../html/contact.html">Contact</a>
             <a href="../php/signin.php">Sign In</a>
         </div>
         <div class="col">

@@ -189,8 +189,11 @@ require_once "config.php";
                     <label>District
                         <select name="district">
                             <option value="0" hidden>Select District</option>
-                            <option <?php if (isset($district)) {echo 'selected';}?>>Colombo</option>
-                            <option >Gampaha</option>
+                            <option <?php if (isset($district)) {
+                                echo 'selected';
+                            } ?>>Colombo
+                            </option>
+                            <option>Gampaha</option>
                             <option>Kalutara</option>
                             <option>Kandy</option>
                             <option>Matale</option>
@@ -262,7 +265,7 @@ require_once "config.php";
             echo '
             <div class="form" id="modalcount" style="display: block">
                 <div class="container">
-                    <h2>There are '.$row[$stream].' '.$stream.' students in '.$district.'</h2>
+                    <h2>There are ' . $row[$stream] . ' ' . $stream . ' students in ' . $district . '</h2>
                     <p>is the count.</p>
                     <div class="formbox">
                     <button class="btn" onclick="document.getElementById(\'modalcount\').style.display=\'none\'"
