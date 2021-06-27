@@ -188,12 +188,9 @@ require_once "config.php";
                       onsubmit="return getinfo()">
                     <label>District
                         <select name="district">
-                            <?php if (isset($district)) {
-                                echo 'selected="selected"';
-                            } ?>
                             <option value="0" hidden>Select District</option>
-                            <option>Colombo</option>
-                            <option>Gampaha</option>
+                            <option <?php if (isset($district)) {echo 'selected';}?>>Colombo</option>
+                            <option >Gampaha</option>
                             <option>Kalutara</option>
                             <option>Kandy</option>
                             <option>Matale</option>
@@ -223,17 +220,17 @@ require_once "config.php";
                         <select name="stream">
                             <option value="0" hidden>Select Academic Stream</option>
                             <option>Arts</option>
-                            <option>Management and Commerce</option>
+                            <option value="ManagementAndCommerce">Management and Commerce</option>
                             <option>Law</option>
                             <option>Science</option>
                             <option>Medicine</option>
-                            <option>Veterinary Science</option>
+                            <option value="VeterinaryScience">Veterinary Science</option>
                             <option>Dentistry</option>
                             <option>Agriculture</option>
                             <option>Engineering</option>
                             <option>Architecture</option>
-                            <option>Computer Science</option>
-                            <option>Other Courses</option>
+                            <option value="ComputerScience">Computer Science</option>
+                            <option value="OtherCourses">Other Courses</option>
                         </select>
                     </label>
                     <input class="btn" name="academic" type="Submit">
@@ -257,7 +254,7 @@ require_once "config.php";
     } else {
         echo 'logged in';
     }
-    if ((isset($_GET['academic'])) && !(($_GET['stream'] = '0') && ($_GET['district'] = '0'))) {
+    if ((isset($_GET['academic'])) && !(($_GET['stream'] === '0') && !($_GET['district'] === '0'))) {
         $district = $_GET["district"];
         $stream = $_GET["stream"];
         $result = mysqli_query($link, "SELECT $stream FROM academy_stats WHERE district='$district';");
@@ -265,7 +262,7 @@ require_once "config.php";
             echo '
             <div class="form" id="modalcount" style="display: block">
                 <div class="container">
-                    <h2>' . print_r($row) . '</h2>
+                    <h2>There are '.$row[$stream].' '.$stream.' students in '.$district.'</h2>
                     <p>is the count.</p>
                     <div class="formbox">
                     <button class="btn" onclick="document.getElementById(\'modalcount\').style.display=\'none\'"
