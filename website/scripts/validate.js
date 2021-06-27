@@ -40,7 +40,7 @@ function signin() {
 
 //signup.php
 function signup() {
-    let acctype = document.signup.acctype.value;
+    let account_type = document.signup.account_type.value;
     let firstname = document.signup.firstname.value;
     let lastname = document.signup.lastname.value;
     let dob = document.signup.dob.value;
@@ -52,30 +52,22 @@ function signup() {
     let confirm_password = document.signup.confirm_password.value;
 
     // validation fails if the input is blank
-    if (firstname === ""
-        || lastname === "" || gender === ""
-        || email === "" || phone === ""
-        || password === "" || confirm_password === ""
-        || acctype === "" || dob === "" || country === "Select Country") {
-        alert("Error: Input is empty!");
+    if (account_type === "" || firstname === "" || lastname === "" || dob === "" || gender === "" || country === "Select Country" || phone === "" || email === "" || password === "" || confirm_password === "") {
         return false;
     }
 
     if (password.length < 8) {
         alert("Password must have at least 8 characters.");
-        return false;
     }
 
     // validate phone number
     if (isNaN(phone) || phone.length !== 10) {
         alert("Not a valid phone number");
-        return false;
     }
 
     //validate password confirmation
     if (password !== confirm_password) {
         alert("Password confirmation failed");
-        return false;
     }
 }
 

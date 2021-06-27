@@ -16,7 +16,7 @@ session_start();
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <script src="../scripts/main.js" type="text/javascript"></script>
-    <script src="../scripts/validate.js"></script>
+    <script src="../scripts/validate.js" type="text/javascript"></script>
 </head>
 <body>
 <script type="text/javascript">

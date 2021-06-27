@@ -36,27 +36,12 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         $gender = $_POST['gender'];
         $country = $_POST['country'];
         $phone = trim($_POST['phone']);
-        $password = trim($_POST["password"]);
-        $confirm_password = trim($_POST["confirm_password"]);
+        $password = sha1($_POST["password"]);
         if (empty($email_err)) {
-            $sql = "INSERT INTO users (email, password, account_type, firstname, lastname, dob, gender, country, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            if ($stmt = mysqli_prepare($link, $sql)) {
-                mysqli_stmt_bind_param($stmt, "sssssssss", $param_email, $param_password, $param_account_type, $param_firstname, $param_lastname, $param_dob, $param_gender, $param_country, $param_phone);
-                $param_email = $email;
-                $param_password = password_hash($password, PASSWORD_DEFAULT);
-                $param_account_type = $account_type;
-                $param_firstname = $firstname;
-                $param_lastname = $lastname;
-                $param_dob = $dob;
-                $param_gender = $gender;
-                $param_country = $country;
-                $param_phone = $phone;
-                if (mysqli_stmt_execute($stmt)) {
-                    header("location: signin.php");
-                } else {
-                    echo "Oops! Something went wrong. Please try again later.";
-                }
-                mysqli_stmt_close($stmt);
+            if (!mysqli_query($link, "INSERT INTO users (email, password, account_type, firstname, lastname, dob, gender, country, phone) VALUES ($email, $password, $account_type, $firstname, $lastname, $dob, $gender, $country, $phone)")) {
+                echo "Oops! Something went wrong. Please try again later." . mysqli_error($link);
+            } else {
+                header("location: signin.php");
             }
         }
         mysqli_close($link);
@@ -79,7 +64,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <script src="../scripts/main.js" type="text/javascript"></script>
-    <script src="../scripts/validate.js"></script>
+    <script src="../scripts/validate.js" type="text/javascript"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -93,7 +78,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         <h2>Sign up</h2>
         <p>Please fill this form to create an account.</p>
     </div>
-    <form class="box" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
+    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
           onsubmit="return signup()">
         <div class="formbox">
             <span class="frm-text">Who Are You?</span>
@@ -386,7 +371,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                        name="confirm_password">
             </label>
             <p>Already have an account? <a href="signin.php">Login here.</a></p>
-            <input class="btn" type="Submit" name=sign_in">
+            <input class="btn" type="Submit" name=sign_up">
             <input class="btn" type="Reset" value="Cancel">
         </div>
     </form>
