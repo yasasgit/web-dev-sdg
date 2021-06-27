@@ -89,7 +89,7 @@ session_start();
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             echo '<a href="../php/signin.php"><div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
         } else {
-            echo '<div class="item10" onclick="document.getElementById(\'modal\').style.display=\'block\'">add more<img alt="" src="../media/add-more.png"></div>';
+            echo '<a onclick="document.getElementById(\'modal\').style.display=\'block\'"><div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
         }
         ?>
 
@@ -97,15 +97,21 @@ session_start();
     </div>
     <div class="form" id="modal">
         <div class="container">
-            <h2>Apply Now!</h2>
+            <h2>Add your innovation</h2>
             <form enctype="multipart/form-data" onsubmit="return addinno()">
                 <div class="formbox">
                     <label>
                         Name
                         <input name="firstname" placeholder="Enter Name" type="text">
                     </label>
-                    <label>Upload Your Proposal </label>
-                    <input type="file">
+                    <label>
+                        Name
+                        <input name="firstname" placeholder="Enter Name" type="text">
+                    </label>
+                    <label>
+                        Name
+                        <input name="firstname" placeholder="Enter Name" type="text">
+                    </label>
                     <div>
                         <input class="btn" name="submit" type="Submit">
                         <input class="btn" type="Reset" value="Reset">
