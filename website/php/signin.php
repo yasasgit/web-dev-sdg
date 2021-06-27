@@ -6,10 +6,11 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 } else {
     $email = $password = "";
     $login_err = "";
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "config.php";
         $email = trim($_POST["email"]);
-        $password = trim($_POST["password"]);
+        $password = sha1($_POST["password"]);
         if ($stmt = mysqli_prepare($link, "SELECT id, email, firstname, lastname, password FROM users WHERE email = ?")) {
             mysqli_stmt_bind_param($stmt, "s", $param_email);
             $param_email = $email;
@@ -18,7 +19,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 if (mysqli_stmt_num_rows($stmt) == 1) {
                     mysqli_stmt_bind_result($stmt, $id, $email, $firstname, $lastname, $hashed_password);
                     if (mysqli_stmt_fetch($stmt)) {
-                        if (password_verify($password, $hashed_password)) {
+                        if ($password === $hashed_password) {
                             session_start();
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
@@ -78,7 +79,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     }
     ?>
     <form class="box" name="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
-          onsubmit="return signin()">
+          onsubmit="return signin();">
         <div class="formbox">
             <label id="email">Email
                 <input name="email" placeholder="Enter your Email" type="email"

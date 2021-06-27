@@ -17,7 +17,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         $investment_stage = $_POST['investment_stage'];
         $invest_amount = $_POST['invest_amount'];
 
-        $file_path = '../media/proposals/' . $firstname . $lastname;
+        $file_path = getcwd() . DIRECTORY_SEPARATOR . 'proposals' . DIRECTORY_SEPARATOR . $firstname . $lastname;
         $path = move_uploaded_file($_FILES['proposal']['tmp_name'], $file_path);
 
         $sql = "INSERT INTO investors (email, address1, address2, company_name, investment_type, investment_stage, invest_amount, file_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -38,6 +38,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             }
             mysqli_stmt_close($stmt);
         }
+
         mysqli_close($link);
     }
 }

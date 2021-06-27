@@ -38,7 +38,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         $phone = trim($_POST['phone']);
         $password = sha1($_POST["password"]);
         if (empty($email_err)) {
-            if (!mysqli_query($link, "INSERT INTO users (email, password, account_type, firstname, lastname, dob, gender, country, phone) VALUES ($email, $password, $account_type, $firstname, $lastname, $dob, $gender, $country, $phone)")) {
+            if (!mysqli_query($link, "INSERT INTO users (email, password, account_type, firstname, lastname, dob, gender, country, phone) VALUES ('$email', '$password', '$account_type', '$firstname', '$lastname', '$dob', '$gender', '$country', '$phone')")) {
                 echo "Oops! Something went wrong. Please try again later." . mysqli_error($link);
             } else {
                 header("location: signin.php");
@@ -47,7 +47,6 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         mysqli_close($link);
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +63,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <script src="../scripts/main.js" type="text/javascript"></script>
-    <script src="../scripts/validate.js" type="text/javascript"></script>
+    <!--    <script src="../scripts/validate.js" type="text/javascript"></script>-->
 </head>
 <body>
 <script type="text/javascript">
@@ -79,7 +78,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         <p>Please fill this form to create an account.</p>
     </div>
     <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
-          onsubmit="return signup()">
+          onsubmit="return signup();">
         <div class="formbox">
             <span class="frm-text">Who Are You?</span>
             <div class="radio">
@@ -371,7 +370,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                        name="confirm_password">
             </label>
             <p>Already have an account? <a href="signin.php">Login here.</a></p>
-            <input class="btn" type="Submit" name=sign_up">
+            <input class="btn" type="submit" name=sign_up">
             <input class="btn" type="Reset" value="Cancel">
         </div>
     </form>
