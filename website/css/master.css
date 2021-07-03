@@ -284,11 +284,11 @@ select:hover {
 }
 
 .red {
-    background-color: red;
+    background: #a43d3d;
 }
 
 .red:hover {
-    background: #a43d3d;
+    background-color: red;
 }
 
 .regbtn {

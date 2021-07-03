@@ -176,11 +176,22 @@ session_start();
                 <div class="formbox">
                     <label>
                         Name
-                        <input name="f_name" placeholder="Enter Name" type="text">
+                        <input name="f_name" placeholder="Enter Name" type="text"
+                               value="<?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                                   $firstname = $_SESSION["firstname"];
+                                   $lastname = $_SESSION["lastname"];
+                                   echo $firstname . ' ' . $lastname;
+                               } ?>"
+                        >
                     </label>
                     <label>
                         Email
-                        <input placeholder="Enter E-mail" type="email">
+                        <input placeholder="Enter E-mail" type="email"
+                               value="<?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                                   $email = $_SESSION["email"];
+                                   echo $email;
+                               } ?>"
+                        >
                     </label>
                     <label>
                         District

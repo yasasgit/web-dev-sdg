@@ -66,14 +66,17 @@ nav ul :hover {
 .navi, .about {
     background-color: #616145;
 }
-.about{
+
+.about {
     padding-bottom: 2%;
 }
-.about h2{
+
+.about h2 {
     padding: 1% 0% 3% 0%;
     color: rgb(255, 255, 255);
 }
-.about p{
+
+.about p {
     line-height: 25px;
     color: rgb(255, 255, 255);
     padding-bottom: 1%;

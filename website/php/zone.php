@@ -148,7 +148,7 @@ session_start();
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
               onsubmit="return deleteacc()">
             <div class="formbox">
-                <input class="btn" name="delete" value="Delete" type="Submit">
+                <input class="btn red" name="delete" value="Delete" type="Submit">
                 <button class="btn" onclick="document.getElementById('modaldelete').style.display='none'"
                         type="button">
                     Cancel

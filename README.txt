@@ -8,6 +8,7 @@ statics -campus data retrive wela display wena eka
 **other eke bution eakak dala pfd report eka link karanna
 **home-slide walta news eke topic ekai dot tikakui dapan
 
+contact wala email button wada nah --- minissu dennage positions dala nah
 web site ekata namak hadala logo eka wenas krnn one
 ??hma page ekema titles dala logo eka danna one title eka gawa
 log wela inne kiyan aicon eka pennane koheda?
@@ -17,7 +18,7 @@ why sholu invest descript galapenne nah wge ex: palleha 1 why you should invest?
 investor dashboard ekt enne monada thawa
 innovation best innovation description
 innovations add more button eka kathai
-add more innovations eke fields monada?
+********add more innovations eke fields monada?*******
 innovations paragraph kadapan hariyt
 project wala cover eka kathai(page ekama kathai :))
 economy accordian 3 backgroun ain krpn paragraph kdpn
