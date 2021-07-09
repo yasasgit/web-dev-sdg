@@ -36,11 +36,11 @@ function signup() {
 
 //contactus.php
 function contact() {
-    var firstname = document.contact.firstname.value;
- 	var lastname = document.contact.lastname.value;
-    var email = document.contact.email.value;
- 	var phone = document.contact.phone.value;
-    var message =document.contact.message.value;
+    let firstname = document.contact.firstname.value;
+ 	let lastname = document.contact.lastname.value;
+    let email = document.contact.email.value;
+ 	let phone = document.contact.phone.value;
+    let message =document.contact.message.value;
 
     // validation fails if the input is blank
     if(firstname == ""|| lastname ==""|| email== "" || phone== "" || message== "" ) 
@@ -104,9 +104,9 @@ function startupapply() {
     let email = document.startupapply.email.value;
     let discrict = document.startupapply.discrict.value;
     // validation fails if the input is blank
-    if (name === "" ||
-        email === "" ||
-        discrict === "Select discrict") {
+    if (name == "" ||
+        email == "" ||
+        discrict == "Select discrict") {
         alert("Error: Input is empty!");
         return false;
     }
