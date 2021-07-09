@@ -36,6 +36,31 @@ function signup() {
 
 //contactus.php
 function contact() {
+    var firstname = document.contact.firstname.value;
+ 	var lastname = document.contact.lastname.value;
+    var email = document.contact.email.value;
+ 	var phone = document.contact.phone.value;
+    var message =document.contact.message.value;
+
+    // validation fails if the input is blank
+    if(firstname == ""|| lastname ==""|| email== "" || phone== "" || message== "" ) 
+    {
+    	alert("Error: Input is empty!");
+    	return false;
+    }
+    // validate email 
+	if (!email.includes("@",".")) 
+	{
+	    alert("Not a valid e-mail address");
+	    return false;
+    }   
+
+	// validate phone number
+	if (isNaN(phone) || phone.length != 10) 
+	{
+	    alert("Not a valid phone number");
+	    return false;
+    }
 
 }
 
@@ -51,8 +76,8 @@ function investreg() {
 
 //signin.php
 function signin() {
-    let email = document.login.email.value;
-    let password = document.login.password.value;
+    let email = document.signin.email.value;
+    let password = document.signin.password.value;
 
     if (email !== "" && password !== "") {
         return true;
@@ -67,18 +92,17 @@ function signin() {
     } else {
         document.getElementById("email").style.color = "black";
     }
-// validate email
-//     if (!email.includes("@", ".")) {
-//         alert("Not a valid e-mail address");
-//     }
+    if (!email.includes("@", ".")) {
+        alert("Not a valid e-mail address");
+    }
     return false;
 }
 
 //startup.php
 function startupapply() {
-    let name = document.startup.name.value;
-    let email = document.startup.email.value;
-    let discrict = document.startup.discrict.value;
+    let name = document.startupapply.name.value;
+    let email = document.startupapply.email.value;
+    let discrict = document.startupapply.discrict.value;
     // validation fails if the input is blank
     if (name === "" ||
         email === "" ||
