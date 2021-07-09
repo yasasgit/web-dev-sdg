@@ -36,27 +36,26 @@ function signup() {
 
 //contactus.php
 function contact() {
-    let firstname = document.contact.firstname.value;
- 	let lastname = document.contact.lastname.value;
-    let email = document.contact.email.value;
- 	let phone = document.contact.phone.value;
-    let message =document.contact.message.value;
+    let Name = document.contact.Name.value;
+    let Email = document.contact.Email.value;
+ 	let Phone_Number = document.contact.Phone_Number.value;
+    let Message =document.contact.Message.value;
 
     // validation fails if the input is blank
-    if(firstname == ""|| lastname ==""|| email== "" || phone== "" || message== "" ) 
+    if(Name == ""|| Email== "" || Phone_Number== "" || Message== "" ) 
     {
     	alert("Error: Input is empty!");
     	return false;
     }
     // validate email 
-	if (!email.includes("@",".")) 
+	if (!Email.includes("@",".")) 
 	{
 	    alert("Not a valid e-mail address");
 	    return false;
     }   
 
 	// validate phone number
-	if (isNaN(phone) || phone.length != 10) 
+	if (isNaN(Phone_Number || Phone_Number != 10) 
 	{
 	    alert("Not a valid phone number");
 	    return false;
