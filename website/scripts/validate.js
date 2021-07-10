@@ -42,7 +42,7 @@ function contact() {
     let Message = document.contact.Message.value;
 
     // validation fails if the input is blank
-    if (Name == "" || Email == "" || Phone_Number == "" || Message == "") {
+    if (Name === "" || Email === "" || Phone_Number === "" || Message === "") {
         alert("Error: Input is empty!");
         return false;
     }
@@ -53,8 +53,7 @@ function contact() {
     }
 
     // validate phone number
-    if (isNaN(Phone_Number || Phone_Number != 10)
-    {
+    if (isNaN(Phone_Number || Phone_Number !== 10)) {
         alert("Not a valid phone number");
         return false;
     }
@@ -64,111 +63,109 @@ function contact() {
 //innovate.php
 function addinno() {
     var firstname = document.addinno.firstname.value;
-    if (firstname == "") {
+    if (firstname === "") {
         alert("Error: Input is empty!");
         return false;
-        document.getElementById("modal").reset();
-
     }
+}
 
 //investreg.php
-    function investreg() {
-        {
-            var firstname = document.investreg.firstname.value;
-            var lastname = document.investreg.lastname.value;
-            var address1 = document.investreg.address1.value;
-            var address2 = document.investreg.address2.value;
-            var company_name = document.investreg.company_name.value;
-            var email = document.investreg.email.value;
-            var investment_type = document.investreg.investment_type.value;
-            var investment_stage = document.investreg.investment_stage.value;
-            var invest_amount = document.investreg.invest_amount.value;
-            var agree = document.investreg.agree.value;
+function investreg() {
+    var firstname = document.investreg.firstname.value;
+    var lastname = document.investreg.lastname.value;
+    var address1 = document.investreg.address1.value;
+    var address2 = document.investreg.address2.value;
+    var company_name = document.investreg.company_name.value;
+    var email = document.investreg.email.value;
+    var investment_type = document.investreg.investment_type.value;
+    var investment_stage = document.investreg.investment_stage.value;
+    var invest_amount = document.investreg.invest_amount.value;
+    var agree = document.investreg.agree.value;
 
 
-            // validation fails if the input is blank
-            if (firstname == "" || lastname == "" || address1 == "" || address2 == "" || company_name == "" || email == "" ||
-                investment_type == "Select investment_type" || investment_stage == "Select investment_stage" || invest_amount == "Select invest_amount") {
-                alert("Error: Input is empty!");
-                return false;
+    // validation fails if the input is blank
+    if (firstname === "" || lastname === "" || address1 === "" || address2 === "" || company_name === "" || email === "" ||
+        investment_type === "Select investment_type" || investment_stage === "Select investment_stage" || invest_amount === "Select invest_amount") {
+        alert("Error: Input is empty!");
+        return false;
+    }
+    if (!email.includes("@", ".")) {
+        alert("Not a valid e-mail address");
+        return false;
 
-                if (!email.includes("@", ".")) {
-                    alert("Not a valid e-mail address");
-                    return false;
+        if (!this.investreg.agree.checked) {
+            alert('You must agree to the terms first.');
+            return false;
+        }
 
-                    if (!this.investreg.agree.checked) {
-                        alert('You must agree to the terms first.');
-                        return false;
-                    }
-
-                }
+    }
+}
 
 //signin.php
-                function signin() {
-                    let email = document.signin.email.value;
-                    let password = document.signin.password.value;
+function signin() {
+    let email = document.signin.email.value;
+    let password = document.signin.password.value;
 
-                    if (email !== "" && password !== "") {
-                        return true;
-                    }
-                    if (password === "") {
-                        document.getElementById("password").style.color = "red";
-                    } else {
-                        document.getElementById("password").style.color = "black";
-                    }
-                    if (email === "") {
-                        document.getElementById("email").style.color = "red";
-                    } else {
-                        document.getElementById("email").style.color = "black";
-                    }
-                    if (!email.includes("@", ".")) {
-                        alert("Not a valid e-mail address");
-                    }
-                    return false;
-                }
+    if (email !== "" && password !== "") {
+        return true;
+    }
+    if (password === "") {
+        document.getElementById("password").style.color = "red";
+    } else {
+        document.getElementById("password").style.color = "black";
+    }
+    if (email === "") {
+        document.getElementById("email").style.color = "red";
+    } else {
+        document.getElementById("email").style.color = "black";
+    }
+    if (!email.includes("@", ".")) {
+        alert("Not a valid e-mail address");
+    }
+    return false;
+}
 
 //startup.php
-                function startupapply() {
-                    let Name = document.startupapply.Name.value;
-                    let email = document.startupapply.email.value;
-                    let discrict = document.startupapply.discrict.value;
-                    let Business_Sector = document.startupapply.Business_Sector.value;
-                    let modal = document.getElementById("modal").value;
-                    // validation fails if the input is blank
-                    if (Name == "" ||
-                        email == "" ||
-                        discrict == "Select discrict" || Business_Sector == "select Business_sector") {
-                        alert("Error: Input is empty!");
-                        return false;
-                        document.getElementById("modal").reset();
-                    }
-                }
+function startupapply() {
+    let Name = document.startupapply.Name.value;
+    let email = document.startupapply.email.value;
+    let district = document.startupapply.discrict.value;
+    let Business_Sector = document.startupapply.Business_Sector.value;
+    let modal = document.getElementById("modal").value;
+    // validation fails if the input is blank
+    if (Name === "" ||
+        email === "" ||
+        district === "Select district" || Business_Sector === "select Business_sector") {
+        alert("Error: Input is empty!");
+        return false;
+    }
+}
 
 //stats.php
-                function getinfo() {
+function getinfo() {
 
-                }
+}
 
 //zone.php
-                function resetpw() {
-                    var oldP = document.getElementById("oldP").value;
-                    var newP = document.getElementById("newP").value;
-                    var confirmP = document.getElementById("confirmP").value;
+function resetpw() {
+    var oldP = document.getElementById("oldP").value;
+    var newP = document.getElementById("newP").value;
+    var confirmP = document.getElementById("confirmP").value;
 
-                    if (oldP != "" && newP != "" && confirmP != "") {
-                        if (oldP != newP) {
-                            if (newP == confirmP) {
-                                return true;
-                            } else {
-                                alert("Confirm password is not same as you new password.");
-                                return false;
-                            }
-                        } else {
-                            alert(" This Is Your Old Password,Please Provide A New Password");
-                            return false;
-                        }
-                    } else {
-                        alert("All Fields Are Required");
-                        return false;
-                    }
-                }
+    if (oldP !== "" && newP !== "" && confirmP !== "") {
+        if (oldP !== newP) {
+            if (newP === confirmP) {
+                return true;
+            } else {
+                alert("Confirm password is not same as you new password.");
+                return false;
+            }
+        } else {
+            alert(" This Is Your Old Password,Please Provide A New Password");
+            return false;
+        }
+    } else {
+        alert("All Fields Are Required");
+        return false;
+    }
+}
