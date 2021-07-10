@@ -1,3 +1,27 @@
+//signin.php
+function signin() {
+    let email = document.sign_in.email.value;
+    let password = document.sign_in.password.value;
+
+    if (email !== "" && password !== "") {
+        return true;
+    }
+    if (password === "") {
+        document.getElementById("password").style.color = "red";
+    } else {
+        document.getElementById("password").style.color = "black";
+    }
+    if (email === "") {
+        document.getElementById("email").style.color = "red";
+    } else {
+        document.getElementById("email").style.color = "black";
+    }
+    // if (!email.includes("@", ".")) {
+    //     alert("Not a valid e-mail address");
+    // }
+    return false;
+}
+
 //signup.php
 function signup() {
     let account_type = document.signup.account_type.value;
@@ -99,30 +123,6 @@ function investreg() {
         }
 
     }
-}
-
-//signin.php
-function signin() {
-    let email = document.signin.email.value;
-    let password = document.signin.password.value;
-
-    if (email !== "" && password !== "") {
-        return true;
-    }
-    if (password === "") {
-        document.getElementById("password").style.color = "red";
-    } else {
-        document.getElementById("password").style.color = "black";
-    }
-    if (email === "") {
-        document.getElementById("email").style.color = "red";
-    } else {
-        document.getElementById("email").style.color = "black";
-    }
-    if (!email.includes("@", ".")) {
-        alert("Not a valid e-mail address");
-    }
-    return false;
 }
 
 //startup.php

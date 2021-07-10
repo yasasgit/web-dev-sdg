@@ -80,7 +80,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         echo '<div class="frm-text">' . $login_err . '</div>';
     }
     ?>
-    <form class="box" name="signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+    <form class="box" name="sign_in" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
           onsubmit="return signin();">
         <div class="formbox">
             <label id="email">Email
