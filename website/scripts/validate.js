@@ -77,7 +77,7 @@ function contact() {
     }
 
     // validate phone number
-    if (isNaN(Phone_Number || Phone_Number !== 10)) {
+    if (isNaN(Phone_Number) || (Phone_Number !== 10)) {
         alert("Not a valid phone number");
         return false;
     }
@@ -86,7 +86,7 @@ function contact() {
 
 //innovate.php
 function addinno() {
-    var firstname = document.addinno.firstname.value;
+    let firstname = document.addinno.firstname.value;
     if (firstname === "") {
         alert("Error: Input is empty!");
         return false;
@@ -95,16 +95,16 @@ function addinno() {
 
 //investreg.php
 function investreg() {
-    var firstname = document.investreg.firstname.value;
-    var lastname = document.investreg.lastname.value;
-    var address1 = document.investreg.address1.value;
-    var address2 = document.investreg.address2.value;
-    var company_name = document.investreg.company_name.value;
-    var email = document.investreg.email.value;
-    var investment_type = document.investreg.investment_type.value;
-    var investment_stage = document.investreg.investment_stage.value;
-    var invest_amount = document.investreg.invest_amount.value;
-    var agree = document.investreg.agree.value;
+    let firstname = document.investreg.firstname.value;
+    let lastname = document.investreg.lastname.value;
+    let address1 = document.investreg.address1.value;
+    let address2 = document.investreg.address2.value;
+    let company_name = document.investreg.company_name.value;
+    let email = document.investreg.email.value;
+    let investment_type = document.investreg.investment_type.value;
+    let investment_stage = document.investreg.investment_stage.value;
+    let invest_amount = document.investreg.invest_amount.value;
+    let agree = document.investreg.agree.value;
 
 
     // validation fails if the input is blank
@@ -148,9 +148,9 @@ function getinfo() {
 
 //zone.php
 function resetpw() {
-    var oldP = document.getElementById("oldP").value;
-    var newP = document.getElementById("newP").value;
-    var confirmP = document.getElementById("confirmP").value;
+    let oldP = document.getElementById("oldP").value;
+    let newP = document.getElementById("newP").value;
+    let confirmP = document.getElementById("confirmP").value;
 
     if (oldP !== "" && newP !== "" && confirmP !== "") {
         if (oldP !== newP) {
