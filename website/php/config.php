@@ -3,5 +3,5 @@
 $link = mysqli_connect("localhost", "root", "", "invest_db");
 
 if ($link === false) {
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+    die("ERROR: Could not connect. Try running SQL" . mysqli_connect_error());
 }

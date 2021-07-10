@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once "config.php";
 
 ?>
 <!DOCTYPE html>
@@ -28,6 +27,7 @@ require_once "config.php";
     <div class="tab">
         <?php
         if (isset($_GET['academic'])) {
+            require_once "config.php";
             echo '
             <button class="tabbtn" onclick="openTab(event, \'econ\')">
             Economy

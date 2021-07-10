@@ -356,9 +356,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             </label>
             <label>E-mail
                 <input name="email" placeholder="Enter E-mail"
-                       type="email" value="<?php if (isset($email)) {
-                    echo $email;
-                } ?>">
+                       type="email" value="<?php if (isset($email)) echo $email; ?>">
                 <span class="frm-text"><?php echo $email_err; ?></span>
             </label>
             <label>Password
