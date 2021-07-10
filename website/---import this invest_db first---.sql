@@ -1,8 +1,8 @@
 CREATE
-DATABASE invest_db;
+    DATABASE invest_db;
 
 USE
-invest_db;
+    invest_db;
 
 CREATE TABLE users
 (
@@ -29,6 +29,28 @@ CREATE TABLE investors
     investment_stage VARCHAR(20)  NOT NULL,
     invest_amount    VARCHAR(25)  NOT NULL,
     file_path        VARCHAR(255) NOT NULL,
+    FOREIGN KEY (email) REFERENCES users (email)
+);
+
+CREATE TABLE innovators
+(
+    email  VARCHAR(320) NOT NULL PRIMARY KEY,
+    field1 VARCHAR(255) NOT NULL,
+    field2 VARCHAR(255) NOT NULL,
+    field3 VARCHAR(50)  NOT NULL,
+    field4 VARCHAR(30)  NOT NULL,
+    field5 VARCHAR(20)  NOT NULL,
+    FOREIGN KEY (email) REFERENCES users (email)
+);
+
+CREATE TABLE entrepreneurs
+(
+    email    VARCHAR(320) NOT NULL PRIMARY KEY,
+    district VARCHAR(255) NOT NULL,
+    business VARCHAR(255) NOT NULL,
+    field3   VARCHAR(50)  NOT NULL,
+    field4   VARCHAR(30)  NOT NULL,
+    field5   VARCHAR(20)  NOT NULL,
     FOREIGN KEY (email) REFERENCES users (email)
 );
 
