@@ -84,16 +84,10 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
           onsubmit="return signin();">
         <div class="formbox">
             <label id="email">Email
-                <input name="email" placeholder="Enter your Email" type="email"
-                <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>"
-                value="
-                <?php echo $email; ?>">
+                <input name="email" placeholder="Enter your Email" type="email" value="<?php echo $email; ?>">
             </label>
             <label id="password">Password
-                <input name="password" placeholder="Enter your Password"
-                       type="password"
-                <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"
-                >
+                <input name="password" placeholder="Enter your Password" type="password">
             </label>
             <label class="contain">
                 <!--                <span class="checkmark"></span>-->
