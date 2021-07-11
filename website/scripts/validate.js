@@ -1,5 +1,5 @@
 //signin.php
-function signin() {
+function signInVali() {
     let email = document.sign_in.email.value;
     let password = document.sign_in.password.value;
 
@@ -23,39 +23,42 @@ function signin() {
 }
 
 //signup.php
-function signup() {
-    let account_type = document.signup.account_type.value;
-    let firstname = document.signup.firstname.value;
-    let lastname = document.signup.lastname.value;
-    let dob = document.signup.dob.value;
-    let gender = document.signup.gender.value;
-    let country = document.signup.country.value;
-    let phone = document.signup.phone.value;
-    let email = document.signup.email.value;
-    let password = document.signup.password.value;
-    let confirm_password = document.signup.confirm_password.value;
+function signUpVali() {
+    // let account_type = document.sgnup.account_type.value;
+    let firstname = document.sgnup.firstname.value;
+    // let lastname = document.sgnup.lastname.value;
+    // let dob = document.sgnup.dob.value;
+    // let gender = document.sgnup.gender.value;
+    // let country = document.sgnup.country.value;
+    // let phone = document.sgnup.phone.value;
+    // let email = document.sgnup.email.value;
+    // let password = document.sgnup.password.value;
+    // let confirm_password = document.sgnup.confirm_password.value;
+
+    return firstname !== "";
+
 
     // validation fails if the input is blank
-    if (account_type === "" || firstname === "" || lastname === "" || dob === "" || gender === "" || country === "Select Country" || phone === "" || email === "" || password === "" || confirm_password === "") {
-        return false;
-    }
+    // if (account_type === "" || firstname === "" || lastname === "" || dob === "" || gender === "" || country === "Select Country" || phone === "" || email === "" || password === "" || confirm_password === "") {
+    //     return false;
+    // }
 
-    if (password.length < 8) {
-        alert("Password must have at least 8 characters.");
-        return false;
-    }
+    // if (password.length < 8) {
+    //     alert("Password must have at least 8 characters.");
+    //     return false;
+    // }
 
     // validate phone number
-    if (isNaN(phone) || phone.length !== 10) {
-        alert("Not a valid phone number");
-        return false;
-    }
+    // if (isNaN(phone) || phone.length !== 10) {
+    //     alert("Not a valid phone number");
+    //     return false;
+    // }
 
     //validate password confirmation
-    if (password !== confirm_password) {
-        alert("Password confirmation failed");
-        return false;
-    }
+    // if (password !== confirm_password) {
+    //     alert("Password confirmation failed");
+    //     return false;
+    // }
 }
 
 //contactus.php
@@ -91,9 +94,8 @@ function addinno() {
     let innovation_1 = document.addinno.innovation_1.value;
     let innovation_2 = document.addinno.innovation_2.value;
     let innovation_3 = document.addinno.innovation_3.value;
-    if (firstname === "" || lastname === ""|| innovation_1 ===""|| innovation_2 ===""|| innovation_3 ==="")
-        {
-            alert("Error: Input is empty!");
+    if (firstname === "" || lastname === "" || innovation_1 === "" || innovation_2 === "" || innovation_3 === "") {
+        alert("Error: Input is empty!");
         return false;
     }
 }
@@ -149,7 +151,7 @@ function startupapply() {
 function getinfo() {
     let district = document.getinfo.discrict.value;
     let stream = documnet.getinfo.stream.value;
-    if(district === "Select district" || stream === "Select stream"){
+    if (district === "Select district" || stream === "Select stream") {
         alert("cannot be empty!");
         return false;
     }

@@ -81,7 +81,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     }
     ?>
     <form class="box" name="sign_in" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
-          onsubmit="return signin();">
+          onsubmit="return signInVali();">
         <div class="formbox">
             <label id="email">Email
                 <input name="email" placeholder="Enter your Email" type="email" value="<?php echo $email; ?>">

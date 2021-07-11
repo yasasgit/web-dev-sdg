@@ -77,8 +77,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         <h2>Sign up</h2>
         <p>Please fill this form to create an account.</p>
     </div>
-    <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" name="signup"
-          onsubmit="return signup();">
+    <form class="box" name="sgnup" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+          onsubmit="return signUpVali();">
         <div class="formbox">
             <span class="frm-text">Who Are You?</span>
             <div class="radio">
@@ -368,7 +368,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                        name="confirm_password">
             </label>
             <p>Already have an account? <a href="signin.php">Login here.</a></p>
-            <input class="btn" type="submit" name=sign_up">
+            <input class="btn" type="submit" name=signup" value="Sign In">
             <input class="btn" type="Reset" value="Cancel">
         </div>
     </form>
