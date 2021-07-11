@@ -60,24 +60,24 @@ function signup() {
 
 //contactus.php
 function contact() {
-    let Name = document.contact.Name.value;
-    let Email = document.contact.Email.value;
-    let Phone_Number = document.contact.Phone_Number.value;
-    let Message = document.contact.Message.value;
+    let fullname = document.contact.fullname.value;
+    let email = document.contact.email.value;
+    let phone = document.contact.phone.value;
+    let message = document.message.value;
 
     // validation fails if the input is blank
-    if (Name === "" || Email === "" || Phone_Number === "" || Message === "") {
+    if (fullname === "" || email === "" || phone === "" || message === "") {
         alert("Error: Input is empty!");
         return false;
     }
     // validate email 
-    if (!Email.includes("@", ".")) {
+    if (!email.includes("@", ".")) {
         alert("Not a valid e-mail address");
         return false;
     }
 
     // validate phone number
-    if (isNaN(Phone_Number) || (Phone_Number !== 10)) {
+    if (isNaN(phone) || (phone !== 10)) {
         alert("Not a valid phone number");
         return false;
     }
@@ -149,7 +149,7 @@ function startupapply() {
 function getinfo() {
     let district = document.getinfo.discrict.value;
     let stream = documnet.getinfo.stream.value;
-    if(district === "Select district" || Business_Sector === "Select stream"){
+    if(district === "Select district" || stream === "Select stream"){
         alert("cannot be empty!");
         return false;
     }
