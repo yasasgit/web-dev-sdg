@@ -87,8 +87,13 @@ function contact() {
 //innovate.php
 function addinno() {
     let firstname = document.addinno.firstname.value;
-    if (firstname === "") {
-        alert("Error: Input is empty!");
+    let lastname = document.addinno.lastname.value;
+    let innovation_1 = document.addinno.innovation_1.value;
+    let innovation_2 = document.addinno.innovation_2.value;
+    let innovation_3 = document.addinno.innovation_3.value;
+    if (firstname === "" || lastname === ""|| innovation_1 ===""|| innovation_2 ===""|| innovation_3 ==="")
+        {
+            alert("Error: Input is empty!");
         return false;
     }
 }
@@ -131,11 +136,10 @@ function startupapply() {
     let email = document.startupapply.email.value;
     let district = document.startupapply.discrict.value;
     let Business_Sector = document.startupapply.Business_Sector.value;
-    let modal = document.getElementById("modal").value;
     // validation fails if the input is blank
     if (Name === "" ||
         email === "" ||
-        district === "Select district" || Business_Sector === "select Business_sector") {
+        district === "Select district" || Business_Sector === "Select Business_sector") {
         alert("Error: Input is empty!");
         return false;
     }
@@ -143,6 +147,12 @@ function startupapply() {
 
 //stats.php
 function getinfo() {
+    let district = document.getinfo.discrict.value;
+    let stream = documnet.getinfo.stream.value;
+    if(district === "Select district" || Business_Sector === "Select stream"){
+        alert("cannot be empty!");
+        return false;
+    }
 
 }
 
