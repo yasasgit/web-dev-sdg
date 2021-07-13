@@ -73,7 +73,7 @@ function contact() {
         alert("Error: Input is empty!");
         return false;
     }
-    // validate email 
+    // validate email
     if (!email.includes("@", ".")) {
         alert("Not a valid e-mail address");
         return false;
