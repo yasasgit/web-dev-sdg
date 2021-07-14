@@ -120,8 +120,13 @@ session_start();
     <div class="container">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return resetpw()">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+              onsubmit="return resetpwVali();" name="reset_pw">
             <div class="formbox">
+                <label>Old Password
+                    <input type="password" name="old_password"
+                           class="form-control">
+                </label>
                 <label>New Password
                     <input type="password" name="new_password"
                            class="form-control">

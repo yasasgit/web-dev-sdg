@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $phone = trim($_POST['phone']);
     $message = $_POST['message'];
-    $to = "yasas99@outlook.com";
+    $to = "ourmail@outlook.com";
     $text = 'Phone:' . $phone . 'Message:' . $message;
     $headers = "From:" . $email;
     mail($to, $fullname, $text, $headers);
@@ -43,7 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="row">
         <div class="input-container">
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return contact()"
+            <form name="contact" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
+                  onsubmit="return contactVali();"
                   method="post">
                 <div class="styled-input wide">
                     <input aria-label="Name" placeholder="Name" type="text" name="fullname"
@@ -69,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <textarea aria-label="Message" placeholder="Message" name="message"></textarea>
                 </div>
                 <a href="">
-                    <button class="btn-lrg submit-btn" type="Submit" name=contact">
+                    <button class="btn-lrg submit-btn" type="Submit" name=send">
                         Send Message
                     </button>
                 </a>

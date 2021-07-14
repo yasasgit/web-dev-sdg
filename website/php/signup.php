@@ -63,7 +63,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <!--Page CSS -->
     <link href="../media/gov-logo-ico.png" rel="icon">
     <script src="../scripts/main.js" type="text/javascript"></script>
-        <script src="../scripts/validate.js" type="text/javascript"></script>
+    <script src="../scripts/validate.js" type="text/javascript"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -77,7 +77,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         <h2>Sign up</h2>
         <p>Please fill this form to create an account.</p>
     </div>
-    <form class="box" name="sgnup" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+    <form class="box" name="sign_up" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
           onsubmit="return signUpVali();">
         <div class="formbox">
             <span class="frm-text">Who Are You?</span>

@@ -172,7 +172,7 @@ session_start();
 
         <div class="container">
             <h2>Apply Now!</h2>
-            <form enctype="multipart/form-data" onsubmit="return startupapply()">
+            <form enctype="multipart/form-data" onsubmit="return startupapplyVali()" name="startup_apply">
                 <div class="formbox">
                     <label>
                         Name
@@ -196,7 +196,7 @@ session_start();
                     <label>
                         District
                         <select>
-                            <option hidden>District</option>
+                            <option hidden>Select District</option>
                             <option>Ampara</option>
                             <option>Anuradhapura</option>
                             <option>Badulla</option>
@@ -227,7 +227,7 @@ session_start();
                     <label>
                         Business Sector
                         <select>
-                            <option hidden>Business Sector</option>
+                            <option hidden>Select Business Sector</option>
                             <option>Agriculture</option>
                             <option>Industries</option>
                             <option>Services</option>

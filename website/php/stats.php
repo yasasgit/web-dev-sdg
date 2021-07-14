@@ -185,7 +185,8 @@ session_start();
                 This will improve new job creation for undergraduates even outside Colombo district.</p>
             <div class="get-data">
                 <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get"
-                      onsubmit="return getinfo()">
+                      name="get_info"
+                      onsubmit="return getinfoVali();">
                     <label>District
                         <select name="district">
                             <option value="0" hidden>Select District</option>

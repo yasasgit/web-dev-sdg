@@ -98,19 +98,27 @@ session_start();
     <div class="form" id="modal">
         <div class="container">
             <h2>Add your innovation</h2>
-            <form enctype="multipart/form-data" onsubmit="return addinno()">
+            <form enctype="multipart/form-data" onsubmit="return addinnoVali()" name="addinnovation">
                 <div class="formbox">
                     <label>
-                        Name
+                        First Name
                         <input name="firstname" placeholder="Enter Name" type="text">
                     </label>
                     <label>
-                        Name
-                        <input name="firstname" placeholder="Enter Name" type="text">
+                        Last Name
+                        <input name="lastname" placeholder="Enter Name" type="text">
                     </label>
                     <label>
                         Name
-                        <input name="firstname" placeholder="Enter Name" type="text">
+                        <input name="innovation_1" placeholder="Enter Name" type="text">
+                    </label>
+                    <label>
+                        Name
+                        <input name="innovation_2" placeholder="Enter Name" type="text">
+                    </label>
+                    <label>
+                        Name
+                        <input name="innovation_3" placeholder="Enter Name" type="text">
                     </label>
                     <div>
                         <input class="btn" name="submit" type="Submit">

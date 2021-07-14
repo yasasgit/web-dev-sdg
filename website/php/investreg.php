@@ -59,8 +59,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <h2>Registration Form</h2>
     </div>
     <form class="box" enctype="multipart/form-data" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"
-          method="post" name="investreg"
-          onsubmit="return investreg()">
+          method="post" name="invest_reg"
+          onsubmit="return investregVali()">
         <div class="formbox">
             <div>
                 <label>First Name
