@@ -20,6 +20,7 @@ header {
 
 .main {
     background-color: #444444;
+    /* background-color: white; */
     border-top: 5px solid #444444;
     /*border-bottom: 1px solid #7a7a7a;*/
     /*border-radius: 10px;*/
@@ -52,6 +53,7 @@ header {
 .details {
     padding-left: 3em;
     color: rgb(185, 183, 183);
+    
 }
 
 .bottom {

@@ -19,6 +19,37 @@
     window.onscroll = function () {
         hideNav();
     }
+
+    function mail1(){
+        
+    var cat=confirm ("Do you want to contact us");
+
+    if(cat==true){
+        window.open("mailto:ChalaniHansika@abc.com");
+    }
+    else{
+    alert("Thank you");
+    }
+    }
+
+    function mail2(){
+        
+        var ram = confirm ("Do you want to contact us");
+    
+        if(ram==true){
+            window.open("mailto:KasunSandeepa@abc.com");
+        }
+        else{
+
+        alert("Thank you");
+
+        }
+        }
+
+
+
+
+
 </script>
 <header>
     <div class="cover"></div>
@@ -31,13 +62,13 @@
             <div class="details">
                 <h2>Careers</h2>
                 <p>Ms.Chalani Hansika</p>
-                <p>Title</p>
+                <p>Human Resource Manager</p>
                 <p>Address 1</p>
                 <p>Address 2</p>
                 <p>
                     <a class="fp-contact-tel" href="tel:+9411123123">+011123123</a>
                 </p>
-                <button class="btn">Email</button>
+                <button class="btn" onclick="mail1()">Email</button>
             </div>
         </div>
         <div class="box">
@@ -45,13 +76,13 @@
             <div class="details">
                 <h2>More Info</h2>
                 <p>Mr.Kasun Sandeepa</p>
-                <p>Title</p>
+                <p>human resources department </p>
                 <p>Address 1</p>
                 <p>Address 2</p>
                 <p>
                     <a class="fp-contact-tel" href="tel:+9411123123">+011123123</a>
                 </p>
-                <button class="btn">Email</button>
+                <button class="btn" onclick="mail2()">Email</button>
             </div>
         </div>
     </div>

@@ -14,23 +14,16 @@ web site ekata namak hadala logo eka wenas krnn one
 log wela inne kiyan aicon eka pennane koheda?
 ??5 slides descriptions (nikan copy karala dapuwa thiyenne)
 why sholu invest descript galapenne nah wge ex: palleha 1 why you should invest? blpn
-???investor registration form eke fields confirm da?
+
 investor dashboard ekt enne monada thawa
 innovation best innovation description
 innovations add more button eka kathai
-********add more innovations eke fields monada?*******
-innovations paragraph kadapan hariyt
-project wala cover eka kathai(page ekama kathai :))
-economy accordian 3 backgroun ain krpn paragraph kdpn
-more data click karama modal ekk open wenw(academic walath)
-other wala mukuth nah
-startup page eke namidu karanawa kiyapuwain bagayakwath karala nah(futureprunuer) ex:
-Frequently Asked Questions (https://www.futurpreneur.ca/en/get-started/faq)show more option
-starup form fields confirm da?
-navigation bar wala patawal hadalath nah
-contact page eka kathai (minissu dennage nam dala nah hariyt)
-footer eka iwara karalath nah
-SQL PATAN GATTE WATH NAH THAMA LABBAK DA KARANNE UBALA :)
+
+
+
+
+
+
 
 lankawe sectors nathi business open karanna 
 

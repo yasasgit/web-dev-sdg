@@ -36,7 +36,7 @@ session_start();
     <div class="main-div"></div>
     <div class="div-name">
         <h2>Best Innovations</h2>
-        <p>small description</p>
+        <!-- <p>small description</p> -->
     </div>
 
     <div class="grid-container">
