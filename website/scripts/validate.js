@@ -24,41 +24,41 @@ function signInVali() {
 
 //signup.php
 function signUpVali() {
-    // let account_type = document.sgnup.account_type.value;
+    let account_type = document.sgnup.account_type.value;
     let firstname = document.sgnup.firstname.value;
-    // let lastname = document.sgnup.lastname.value;
-    // let dob = document.sgnup.dob.value;
-    // let gender = document.sgnup.gender.value;
-    // let country = document.sgnup.country.value;
-    // let phone = document.sgnup.phone.value;
-    // let email = document.sgnup.email.value;
-    // let password = document.sgnup.password.value;
-    // let confirm_password = document.sgnup.confirm_password.value;
+    let lastname = document.sgnup.lastname.value;
+    let dob = document.sgnup.dob.value;
+    let gender = document.sgnup.gender.value;
+    let country = document.sgnup.country.value;
+    let phone = document.sgnup.phone.value;
+    let email = document.sgnup.email.value;
+    let password = document.sgnup.password.value;
+    let confirm_password = document.sgnup.confirm_password.value;
 
-    return firstname !== "";
+
 
 
     // validation fails if the input is blank
-    // if (account_type === "" || firstname === "" || lastname === "" || dob === "" || gender === "" || country === "Select Country" || phone === "" || email === "" || password === "" || confirm_password === "") {
-    //     return false;
-    // }
+    if (account_type === "" || firstname === "" || lastname === "" || dob === "" || gender === "" || country === "Select Country" || phone === "" || email === "" || password === "" || confirm_password === "") {
+        return false;
+    }
 
-    // if (password.length < 8) {
-    //     alert("Password must have at least 8 characters.");
-    //     return false;
-    // }
+    if (password.length < 8) {
+        alert("Password must have at least 8 characters.");
+        return false;
+    }
 
     // validate phone number
-    // if (isNaN(phone) || phone.length !== 10) {
-    //     alert("Not a valid phone number");
-    //     return false;
-    // }
+    if (isNaN(phone) || phone.length !== 10) {
+        alert("Not a valid phone number");
+        return false;
+    }
 
     //validate password confirmation
-    // if (password !== confirm_password) {
-    //     alert("Password confirmation failed");
-    //     return false;
-    // }
+    if (password !== confirm_password) {
+        alert("Password confirmation failed");
+        return false;
+    }
 }
 
 //contactus.php
