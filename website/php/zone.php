@@ -39,7 +39,7 @@ session_start();
             <li>Businesses And Project that financed by other parties.</li>
             <li>Innovations invented by young innovators.</li>
             <li>Deceased businesses that need to be recharged.</li>
-        </ul>
+        </ul><br><br>
 
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
@@ -84,11 +84,7 @@ session_start();
             echo '
             <!-- for describe about content -->
             <div class="div-for-01-inno">
-            <p>podi wisthrayak</p>
-            <ul>
-            <li> + terms & conditions y</li>
-            <li>ou can dondload a proposal samlp</li>
-</ul>
+            
             <a href="../media/sample.pdf"><button class="regbtn">Download Sample</button></a>
             <a href="../php/investreg.php"><button class="regbtn">Register Now</button></a>
             </div>
@@ -120,13 +116,8 @@ session_start();
     <div class="container">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
-              onsubmit="return resetpwVali();" name="reset_pw">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return resetpw()">
             <div class="formbox">
-                <label>Old Password
-                    <input type="password" name="old_password"
-                           class="form-control">
-                </label>
                 <label>New Password
                     <input type="password" name="new_password"
                            class="form-control">
