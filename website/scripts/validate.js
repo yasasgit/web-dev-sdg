@@ -90,10 +90,11 @@ function contactVali() {
 function addinnoVali() {
     let firstname = document.addinnovation.firstname.value;
     let lastname = document.addinnovation.lastname.value;
-    let innovation_1 = document.addinnovation.innovation_1.value;
-    let innovation_2 = document.addinnovation.innovation_2.value;
+    let email = document.addinnovation.email.value;
+    let district = document.addinnovation.discrict.value;
+    let Business_Sector = document.addinnovation.Business_Sector.value;
     let innovation_3 = document.addinnovation.innovation_3.value;
-    if (firstname === "" || lastname === "" || innovation_1 === "" || innovation_2 === "" || innovation_3 === "") {
+    if (firstname === "" || lastname === "" || email === "" || district === "Select District" || Business_Sector === "Select Business Sector" || innovation_3 === "") {
         alert("Error:An Input is empty!");
         return false;
     }
