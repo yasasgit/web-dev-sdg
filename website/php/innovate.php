@@ -110,24 +110,73 @@ session_start();
                 <div class="formbox">
                     <label>
                         First Name
-                        <input name="firstname" placeholder="Enter Name" type="text">
+                        <input name="firstname" placeholder="Enter First Name" type="text">
                     </label>
                     <label>
                         Last Name
-                        <input name="lastname" placeholder="Enter Name" type="text">
+                        <input name="lastname" placeholder="Enter Last Name" type="text">
                     </label>
                     <label>
-                        Name
-                        <input name="innovation_1" placeholder="Enter Name" type="text">
+                        Email
+                        <input name="email" placeholder="Enter E-mail" type="email">
                     </label>
                     <label>
-                        Name
-                        <input name="innovation_2" placeholder="Enter Name" type="text">
+                        District
+                        <select>
+                            <option hidden>Select District</option>
+                            <option>Ampara</option>
+                            <option>Anuradhapura</option>
+                            <option>Badulla</option>
+                            <option>Batticaloa</option>
+                            <option>Colombo</option>
+                            <option>Galle</option>
+                            <option>Gampaha</option>
+                            <option>Hambantota</option>
+                            <option>Jaffna</option>
+                            <option>Kalutara</option>
+                            <option>Kandy</option>
+                            <option>Kegalle</option>
+                            <option>Kilinochchi</option>
+                            <option>Kurunegala</option>
+                            <option>Mannar</option>
+                            <option>Matale</option>
+                            <option>Matara</option>
+                            <option>Monaragala</option>
+                            <option>Mullaitivu</option>
+                            <option>Nuwara Eliya</option>
+                            <option>Polonnaruwa</option>
+                            <option>Puttalam</option>
+                            <option>Ratnapura</option>
+                            <option>Trincomalee</option>
+                            <option>Vavuniya</option>
+                        </select>
                     </label>
                     <label>
-                        Name
-                        <input name="innovation_3" placeholder="Enter Name" type="text">
+                        Business Sector
+                        <select>
+                            <option hidden>Select Business Sector</option>
+                            <option>Agriculture</option>
+                            <option>Industries</option>
+                            <option>Services</option>
+                        </select>
                     </label>
+                    <div>
+                <p>Investment amount</p>
+                <label>
+                    <input name="invest_amount" type="radio" value="a">Upto USD 1M
+                </label>
+                <label>
+                    <input name="invest_amount" type="radio" value="b">USD 1M - USD 10M
+                </label>
+                <label>
+                    <input name="invest_amount" type="radio" value="c">USD 10M - USD 100M
+                </label>
+                <label>
+                    <input name="invest_amount" type="radio" value="e">From USD100M
+                </label>
+                    </div>
+                    <label>Upload Your Proposal </label>
+                    <input type="file">
                     <div>
                         <input class="btn" name="submit" type="Submit">
                         <input class="btn" type="Reset" value="Reset">
