@@ -28,16 +28,32 @@ session_start();
     <div class="about">
         <h2>INVESTMENT PROMOTION</h2>
         <p>
-        Strategically located on the major shipping routes of South Asia and the Far East, the island of Sri Lanka is emerging as  one of the most attractive best investment locations in the South Asian Region.
-
-Sri Lanka has positioned itself as the “Services & Trading hub” of the vast Indian subcontinent.
-
-Today, Sri Lanka is ranked as the most liberalized economy in South Asia. Investors are provided with preferential tax rates, constitutional guarantees on investment agreements, exemptions from exchange control and 100% repatriation of profits. The safety of the foreign investment is guaranteed by the Constitution. An advance legal and regulatory framework exists, covering, for instance, intellectual property, settlement of disputes through arbitration, company law etc. Equal treatment is assured for foreign and local investors under the investment and general law of the country.
-
-The economy has been benefited by policies that give freedom to the private sector, with low barriers to trade and investment. External trading relations have been strengthened with the expansion in bilateral, regional and multilateral trading arrangements.
-
-The Sri Lankan work force accounts for 35% of the total population. Sri Lanka boasts high levels of education and the highest literacy rate in South Asia (92%). Approximately 50% of the students who have completed their higher education are trained in technical and business disciplines. English is widely spoken in the country and is the main language used by the business community.<br>
-
+            Strategically located on the major shipping routes of South Asia and the Far East, the island of Sri Lanka
+            is emerging as one of the most attractive best investment locations in the South Asian Region.
+        </p>
+        <p>
+            Sri Lanka has positioned itself as the “Services and Trading hub” of the vast Indian subcontinent.
+        </p>
+        <p>
+            Today, Sri Lanka is ranked as the most liberalized economy in South Asia. Investors are provided with
+            preferential tax rates, constitutional guarantees on investment agreements, exemptions from exchange control
+            and 100% repatriation of profits. The safety of the foreign investment is guaranteed by the Constitution. An
+            advance legal and regulatory framework exists, covering, for instance, intellectual property, settlement of
+            disputes through arbitration, company law etc. Equal treatment is assured for foreign and local investors
+            under the investment and general law of the country.
+        </p>
+        <p>
+            The economy has been benefited by policies that give freedom to the private sector, with low barriers to
+            trade and investment. External trading relations have been strengthened with the expansion in bilateral,
+            regional and multilateral trading arrangements.
+        </p>
+        <p>
+            The Sri Lankan work force accounts for 35% of the total population. Sri Lanka boasts high levels of
+            education and the highest literacy rate in South Asia (92%). Approximately 50% of the students who have
+            completed their higher education are trained in technical and business disciplines. English is widely spoken
+            in the country and is the main language used by the business community.<br>
+        </p>
+        <p>
             Foreign Direct Investment (FDI) has been used by developing countries as a tool to solve their economic
             problems in the recent past.
             Sri Lanka is also not an exception to this practice.

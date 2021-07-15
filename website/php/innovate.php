@@ -87,9 +87,17 @@ session_start();
         </a>
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-            echo '<a href="../php/signin.php"><div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
+            echo '<a href="../php/signin.php">
+                    <div class="item10">
+                    <h4>Add Your Innovation</h4>
+                    </div>
+                    </a>';
         } else {
-            echo '<a onclick="document.getElementById(\'modal\').style.display=\'block\'"><div class="item10"><img alt="" src="../media/add-more.png"></div></a>';
+            echo '<a onclick="document.getElementById(\'modal\').style.display=\'block\'">
+                    <div class="item10">
+                    <h4>Add Your Innovation</h4>
+                    </div>
+                    </a>';
         }
         ?>
 
