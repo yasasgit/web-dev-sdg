@@ -88,13 +88,14 @@ function contactVali() {
 
 //innovate.php
 function addinnoVali() {
+
     let firstname = document.addinnovation.firstname.value;
     let lastname = document.addinnovation.lastname.value;
     let email = document.addinnovation.email.value;
-    let district = document.addinnovation.discrict.value;
-    let Business_Sector = document.addinnovation.Business_Sector.value;
-    let innovation_3 = document.addinnovation.innovation_3.value;
-    if (firstname === "" || lastname === "" || email === "" || district === "Select District" || Business_Sector === "Select Business Sector" || innovation_3 === "") {
+    let district = document.addinnovation.district.value;
+    let business_sector = document.addinnovation.business_sector.value;
+    let invest_amount = document.addinnovation.invest_amount.value;
+    if (firstname === "" || lastname === "" || email === "" || district === "Select District" || business_sector === "Select Business Sector" || invest_amount === "") {
         alert("Error:An Input is empty!");
         return false;
     }
@@ -177,3 +178,4 @@ function resetpwVali() {
         return false;
     }
 }
+

@@ -1,19 +1,3 @@
-
-
-??log unama nama hi yasasa@gmail.com pennane eka yata reset delete ekai pennana thana poddak line heigt ekak dapan
-web site ekata namak hadala logo eka wenas krnn one
-why sholu invest descript galapenne nah wge ex: palleha 1 why you should invest? blpn
-innovation best innovation description
-innovations add more button eka kathai
-
-
-
-
-
-
-
-lankawe sectors nathi business open karanna 
-
 •	About
 •	Home
 
@@ -54,3 +38,13 @@ startup tab
 Other
 *port city eke local ayata thaniyama invest karanna baha.
 invest karanwanm aniwaren fid ekak wenna ona(pita rata kenek ekkke ekathu wela witharai karanna puluwan)
+
+
+
+??log unama nama hi yasasa@gmail.com pennane eka yata reset delete ekai pennana thana poddak line heigt ekak dapan
+web site ekata namak hadala logo eka wenas krnn one
+why sholu invest descript galapenne nah wge ex: palleha 1 why you should invest? blpn
+innovation best innovation description
+innovations add more button eka kathai
+
+lankawe sectors nathi business open karanna
