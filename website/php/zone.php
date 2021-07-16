@@ -143,8 +143,7 @@ session_start();
     <div class="container">
         <h2>Delete Account</h2>
         <p>Are you sure you want to delete your account?</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
-              onsubmit="return deleteacc()">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="formbox">
                 <input class="btn red" name="delete" value="Delete" type="Submit">
                 <button class="btn" onclick="document.getElementById('modaldelete').style.display='none'"
