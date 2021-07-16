@@ -67,7 +67,7 @@ header {
 .about p {
     text-align: justify;
     margin: 0.5em;
-    text-indent: 3em;
+    text-indent: 4em;
 
 }
 
@@ -359,7 +359,7 @@ footer .row1 {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 927px) {
     header {
         font-size: 85%;
     }

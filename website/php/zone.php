@@ -39,7 +39,8 @@ session_start();
             <li>Businesses And Project that financed by other parties.</li>
             <li>Innovations invented by young innovators.</li>
             <li>Deceased businesses that need to be recharged.</li>
-        </ul><br><br>
+        </ul>
+        <br><br>
 
         <?php
         if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {

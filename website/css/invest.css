@@ -68,7 +68,7 @@ header {
     padding: 1.5em;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 927px) {
     .div-goals-invest {
         padding: 1em 0.8em;
         line-height: 1em;

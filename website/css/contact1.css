@@ -22,7 +22,7 @@ h4 {
     color: #b9b9b9;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 927px) {
     .styled-input {
         /*width: 100px;*/
     }

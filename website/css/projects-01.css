@@ -112,7 +112,7 @@ hr {
     border: inherit;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 927px) {
     .main-div {
         width: 320px;
     }

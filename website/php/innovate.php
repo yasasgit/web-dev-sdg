@@ -161,19 +161,19 @@ session_start();
                         </select>
                     </label>
                     <div>
-                <p>Investment amount</p>
-                <label>
-                    <input name="invest_amount" type="radio" value="a">Upto USD 1M
-                </label>
-                <label>
-                    <input name="invest_amount" type="radio" value="b">USD 1M - USD 10M
-                </label>
-                <label>
-                    <input name="invest_amount" type="radio" value="c">USD 10M - USD 100M
-                </label>
-                <label>
-                    <input name="invest_amount" type="radio" value="e">From USD100M
-                </label>
+                        <p>Investment amount</p>
+                        <label>
+                            <input name="invest_amount" type="radio" value="a">Upto USD 1M
+                        </label>
+                        <label>
+                            <input name="invest_amount" type="radio" value="b">USD 1M - USD 10M
+                        </label>
+                        <label>
+                            <input name="invest_amount" type="radio" value="c">USD 10M - USD 100M
+                        </label>
+                        <label>
+                            <input name="invest_amount" type="radio" value="e">From USD100M
+                        </label>
                     </div>
                     <label>Upload Your Proposal </label>
                     <input type="file">
